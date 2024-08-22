@@ -1,0 +1,68 @@
+.storybook-button {
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15cm;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.35;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: baseline;
+  width: auto;
+}
+
+
+.storybook-button--primary {
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.storybook-button--secondary {
+  background-color: #F3F4F6;
+  color: rgba(55, 65, 81, 0.85);
+}
+
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.storybook-button--hover {
+  background-color: #E5E7EB;
+  color: rgba(31, 41, 55, 0.85);
+  border-color: rgba(31, 41, 55, 0.2);
+}
+
+.storybook-button--pressed {
+  background-color: #D1D5DB;
+  color: rgba(17, 24, 39, 0.85);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-color: rgba(17, 24, 39, 0.3);
+}
+
+.storybook-button--noborder {
+  border: none;
+  box-shadow: none;
+}

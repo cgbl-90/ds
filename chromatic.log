@@ -1,0 +1,111 @@
+18:17:08.329  Chromatic CLI v11.7.0
+              https://www.chromatic.com/docs/cli 
+ 
+18:17:08.331  Skipping update check 
+18:17:08.331  Authenticating with Chromatic 
+18:17:08.331      → Connecting to https://index.chromatic.com
+18:17:08.673  Authenticated with Chromatic
+                  → Using project ID 'Project:66c61912622bdf9d8de37009' and user token
+18:17:08.674  Retrieving git information
+18:17:08.736  ✖ Found only one commit
+              This typically means you have ran into one of the following scenarios:
+              - You've checked out a shallow copy of the Git repository, which some CI systems do by default.
+                In order for Chromatic to correctly determine baseline commits, we need access to the full Git history graph.
+                Refer to your CI provider's documentation for details.
+              - You've only made a single commit so far.  
+                Please make at least one additional commit in order for Chromatic to be able to detect what's changed.
+18:17:08.736  git info: {"commit":{"commit":"54519d8a529e71821abf61b0f4e5eca9eb9c797b","committedAt":1724258813000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
+18:17:09.130  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"54519d8a529e71821abf61b0f4e5eca9eb9c797b","committedAt":1724258813000}
+18:17:09.162  Adding last branch build commit 54519d8a529e71821abf61b0f4e5eca9eb9c797b to commits with builds
+18:17:09.162  step: checking 20 up to 1724258813
+18:17:09.162  step: commitsWithBuilds: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
+18:17:09.162  step: commitsWithoutBuilds:
+18:17:09.162  running git rev-list HEAD       --since 1724258813       -n 20 --not 54519d8a529e71821abf61b0f4e5eca9eb9c797b
+18:17:09.183  command output:
+18:17:09.183  step: candidateCommits: , visitedCommitsWithoutBuilds:
+18:17:09.183  step: no candidateCommits; we are done
+18:17:09.505  Final commitsWithBuilds: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
+18:17:09.505  running git rev-list 54519d8a529e71821abf61b0f4e5eca9eb9c797b --not "54519d8a529e71821abf61b0f4e5eca9eb9c797b^@"
+18:17:09.532  command output: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
+18:17:09.532  Found parentCommits: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
+18:17:09.868  Retrieved git information
+                  → Commit '54519d8' on branch 'main'; found 1 parent build
+18:17:09.869  Collecting Storybook metadata
+18:17:09.870  {"configDir":".storybook","mainConfig":{"default":{"stories":["../src/**/*.mdx","../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],"addons":["@storybook/preset-create-react-app","@storybook/addon-onboarding","@storybook/addon-links","@storybook/addon-essentials","@storybook/addon-interactions",{"name":"@chromatic-com/storybook","options":{"configFile":"chromatic.config.json"}}],"framework":{"name":"@storybook/react-webpack5","options":{}},"staticDirs":["../public"]}}}
+18:17:09.888  [{"status":"fulfilled","value":{"addons":[]}},{"status":"fulfilled","value":{}},{"status":"fulfilled","value":{"viewLayer":"react","version":"8.2.8"}},{"status":"rejected","reason":{}}]
+18:17:09.888  Collected Storybook metadata
+                  → Storybook 8.2.8 for React; no supported addons found
+18:17:09.889  Initializing build
+18:17:09.889  Got environment:
+              {}
+18:17:10.840  Initialized build
+                  → Build 6 initialized
+18:17:10.848  Building your Storybook
+18:17:10.848      → Running command: npm run build-storybook -- --output-dir /var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--91303-DbNjZVgczvJr
+18:17:10.849      → [*                   ]
+18:17:10.851  Running build command: npm run build-storybook -- --output-dir /var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--91303-DbNjZVgczvJr
+18:17:10.851  Runtime metadata: {
+                "nodePlatform": "darwin",
+                "nodeVersion": "18.20.1",
+                "packageManager": "npm",
+                "packageManagerVersion": "9.5.0"
+              }
+18:17:16.313  Storybook built in 5 seconds
+                  → View build log at /Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log
+18:17:16.314  Publish your built Storybook
+18:17:16.314      → Validating Storybook files
+18:17:16.318  Publishing your built Storybook
+18:17:16.319      → Calculating file hashes
+18:17:16.326  Calculated file hashes in 7ms
+18:17:16.326  Publishing your built Storybook
+18:17:16.326      → Starting publish
+18:17:16.327  Running uploadBuild batch 1 / 1
+18:17:16.710  Adding to zip archive: iframe.html
+18:17:16.711  Adding to zip archive: index.json
+18:17:16.713  Adding to zip archive: main.771ec8c7.iframe.bundle.js
+18:17:16.713  Adding to zip archive: project.json
+18:17:16.713  Adding to zip archive: runtime~main.ac2d1627.iframe.bundle.js
+18:17:16.713  Adding to zip archive: static/css/stories-Atoms-Links-stories.338db990.chunk.css
+18:17:16.713  Adding to zip archive: static/css/stories-Pages-Page-stories.5ea08209.chunk.css
+18:17:16.714  Adding to zip archive: stories-Atoms-Links-stories.d38f77d6.iframe.bundle.js
+18:17:16.714  Adding to zip archive: stories-Atoms-Typography-stories.d0204904.iframe.bundle.js
+18:17:16.714  Adding to zip archive: stories-Pages-Page-stories.e475f4aa.iframe.bundle.js
+18:17:16.714  Finalizing zip archive
+18:17:16.726  Compression reduced upload size by 65%
+18:17:16.727  Uploading /.chromatic/storybook.zip (17.65 kB)
+18:17:16.732      → [====================] 100%
+18:17:17.544  Uploaded /.chromatic/storybook.zip (17.65 kB)
+18:17:17.544  Publishing your built Storybook
+18:17:17.544      → Finalizing upload
+18:17:17.545  Waiting for 'files-copied.286282854.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-gpkqfkhzah/.chromatic/files-copied.286282854.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20240822%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240822T181716Z&X-Amz-Expires=1800&X-Amz-Signature=1b494c2bf47dc9287985f7c86832693e1fe95e118abbd1e09571bd5360a8a396&X-Amz-SignedHeaders=host&x-id=GetObject
+18:17:17.547  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-gpkqfkhzah/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20240822%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240822T181716Z&X-Amz-Expires=1980&X-Amz-Signature=d429283fe6781f2553ec1df9a21f44c8b7cbdc9b4b3248ea7702a1336b57536b&X-Amz-SignedHeaders=host&x-id=GetObject
+18:17:18.088  Sentinel file 'files-copied.286282854.txt' OK.
+18:17:19.634  Sentinel file 'zip-unpacked.txt' OK.
+18:17:19.636  Publish complete in 3 seconds
+                  → Uploaded 10 files (17.65 kB), skipped 60 files
+18:17:19.636  Verifying your Storybook
+18:17:19.636      → This may take a few minutes
+18:17:19.636      → [*                   ]
+18:17:24.810  ✔ Storybook published
+              We found 8 components with 33 stories.
+              ℹ View your Storybook at https://66c61912622bdf9d8de37009-gpkqfkhzah.chromatic.com/
+18:17:24.811  Started build 6
+                  → View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=6
+18:17:24.812  Running 33 tests
+18:17:24.812      → This may take a few minutes
+18:17:25.118      → [=                   ] 1/33
+18:17:35.686      → [==========          ] 16/33
+18:17:46.306      → [=================== ] 31/33
+18:17:51.561  ✔ Build 6 passed!
+              7 visual changes were found in this build.
+              ℹ View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=6
+18:17:51.561  Build 6 completed
+                  → Tested 33 stories across 8 components; captured 33 snapshots in 27 seconds
+18:17:51.562  Generating build report
+18:17:51.562      → Collecting build information
+18:17:51.906  ℹ Wrote JUnit XML report to /Users/camy-chroma/GitHub/cgbl-design-system/chromatic-build-6.xml
+18:17:51.906  Generated build report
+                  → View report at /Users/camy-chroma/GitHub/cgbl-design-system/chromatic-build-6.xml
+18:17:51.906  Tasks completed
+18:17:51.911  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
+18:19:01.839  Unhandled promise rejection: {"sanitizedErr":{}}

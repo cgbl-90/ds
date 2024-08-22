@@ -1,0 +1,18 @@
+.storybook-icon {
+    display: block;
+}
+
+.storybook-icon--small {
+    width: 24px;
+    height: auto;
+}
+
+.storybook-icon--medium {
+    width: 36px;
+    height: auto;
+}
+
+.storybook-icon--large {
+    width: 96px;
+    height: auto;
+}

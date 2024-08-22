@@ -1,0 +1,28 @@
+.badge {
+    padding: 3px 5px;
+    border-radius: 45px;
+    display: inline-block;
+}
+
+.badge-text {
+    font-size: 10px;
+    font-family: "Work Sans", sans-serif;
+    text-transform: capitalize;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+.badge--new {
+    background-color: #2e09d0;
+    color: white;
+}
+
+.badge--success {
+    background-color: #11b302;
+    color: white;
+}
+
+.badge--warning {
+    background-color: #ef1906;
+    color: white;
+}
