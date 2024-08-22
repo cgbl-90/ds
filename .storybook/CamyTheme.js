@@ -11,7 +11,7 @@ export default create({
   brandTarget: "_self",
 
   //
-  colorPrimary: "#3A10E5",
+  colorPrimary: "#2e09d0",
   colorSecondary: "#585C6D",
 
   // UI
@@ -19,7 +19,7 @@ export default create({
   appContentBg: "#ffffff",
   appPreviewBg: "#ffffff",
   appBorderColor: "#585C6D",
-  appBorderRadius: 4,
+  appBorderRadius: 5,
 
   // Text colors
   textColor: "#10162F",
@@ -28,7 +28,7 @@ export default create({
   // Toolbar default and active colors
   barTextColor: "#9E9E9E",
   barSelectedColor: "#585C6D",
-  barHoverColor: "#585C6D",
+  barHoverColor: "#2e09d0",
   barBg: "#ffffff",
 
   // Form colors

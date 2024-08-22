@@ -9,7 +9,6 @@ const config = {
     {
       name: "@chromatic-com/storybook",
       options: {
-        //👇 Loads the configuration file based on the current environment
         configFile:
           process.env.NODE_ENV === "development"
             ? "chromatic.config.json"
