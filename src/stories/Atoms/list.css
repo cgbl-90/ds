@@ -1,0 +1,33 @@
+.storybook-list {
+    font-family: "Work Sans", sans-serif;
+    padding-left: 10px;
+    list-style-type: none;
+    padding: 5px 0;
+    gap: 10px;
+}
+
+.storybook-list--none {
+    list-style-type: none;
+}
+
+.storybook-list--decimal {
+    list-style-type: decimal;
+}
+
+.storybook-list--circle {
+    list-style-type: circle;
+}
+
+.storybook-list--devanagari {
+    list-style-type: '\0966';
+}
+
+.storybook-list--custom-icon {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.storybook-list--custom-icon li {
+    display: flex;
+    align-items: center;
+}
