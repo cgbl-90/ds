@@ -1,114 +1,30 @@
-19:51:30.253  Chromatic CLI v11.7.0
+15:06:12.604  Chromatic CLI v11.10.4
               https://www.chromatic.com/docs/cli 
  
-19:51:30.255  Skipping update check 
-19:51:30.255  Authenticating with Chromatic 
-19:51:30.256      → Connecting to https://index.chromatic.com
-19:51:30.737  Authenticated with Chromatic
-                  → Using project ID 'Project:66c61912622bdf9d8de37009' and user token
-19:51:30.737  Retrieving git information
-19:51:30.815  git info: {"commit":{"commit":"c99e5bc42c0ec028eef8cc159e78c9da8b708823","committedAt":1724355081000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
-19:51:31.211  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"54519d8a529e71821abf61b0f4e5eca9eb9c797b","committedAt":1724258813000}
-19:51:31.240  Adding last branch build commit 54519d8a529e71821abf61b0f4e5eca9eb9c797b to commits with builds
-19:51:31.240  step: checking 20 up to 1724258813
-19:51:31.240  step: commitsWithBuilds: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:31.240  step: commitsWithoutBuilds:
-19:51:31.240  running git rev-list HEAD       --since 1724258813       -n 20 --not 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:31.260  command output: c99e5bc42c0ec028eef8cc159e78c9da8b708823,c5dd662ce0016d908b17dc946dc475656d0c68df,f5523c93ef96541cf3a148fa73371cd0b180db12,ed4d4ad6365d167cf48abb5d17d029073b68dc71,35acb68d88c728e12d7b62d42ef51e2dd15ed162
-19:51:31.261  step: candidateCommits: c99e5bc42c0ec028eef8cc159e78c9da8b708823,c5dd662ce0016d908b17dc946dc475656d0c68df,f5523c93ef96541cf3a148fa73371cd0b180db12,ed4d4ad6365d167cf48abb5d17d029073b68dc71,35acb68d88c728e12d7b62d42ef51e2dd15ed162, visitedCommitsWithoutBuilds: c99e5bc42c0ec028eef8cc159e78c9da8b708823,c5dd662ce0016d908b17dc946dc475656d0c68df,f5523c93ef96541cf3a148fa73371cd0b180db12,ed4d4ad6365d167cf48abb5d17d029073b68dc71,35acb68d88c728e12d7b62d42ef51e2dd15ed162
-19:51:31.575  step: newCommitsWithBuilds:
-19:51:31.576  step: checking 40 up to 1724258813
-19:51:31.576  step: commitsWithBuilds: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:31.576  step: commitsWithoutBuilds: c99e5bc42c0ec028eef8cc159e78c9da8b708823,c5dd662ce0016d908b17dc946dc475656d0c68df,f5523c93ef96541cf3a148fa73371cd0b180db12,ed4d4ad6365d167cf48abb5d17d029073b68dc71,35acb68d88c728e12d7b62d42ef51e2dd15ed162
-19:51:31.576  running git rev-list HEAD       --since 1724258813       -n 45 --not 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:31.607  command output: c99e5bc42c0ec028eef8cc159e78c9da8b708823,c5dd662ce0016d908b17dc946dc475656d0c68df,f5523c93ef96541cf3a148fa73371cd0b180db12,ed4d4ad6365d167cf48abb5d17d029073b68dc71,35acb68d88c728e12d7b62d42ef51e2dd15ed162
-19:51:31.608  step: candidateCommits: , visitedCommitsWithoutBuilds: c99e5bc42c0ec028eef8cc159e78c9da8b708823,c5dd662ce0016d908b17dc946dc475656d0c68df,f5523c93ef96541cf3a148fa73371cd0b180db12,ed4d4ad6365d167cf48abb5d17d029073b68dc71,35acb68d88c728e12d7b62d42ef51e2dd15ed162
-19:51:31.608  step: no candidateCommits; we are done
-19:51:32.264  Final commitsWithBuilds: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:32.264  running git rev-list 54519d8a529e71821abf61b0f4e5eca9eb9c797b --not "54519d8a529e71821abf61b0f4e5eca9eb9c797b^@"
-19:51:32.292  command output: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:32.292  Found parentCommits: 54519d8a529e71821abf61b0f4e5eca9eb9c797b
-19:51:32.626  Retrieved git information
-                  → Commit 'c99e5bc' on branch 'main'; found 1 parent build
-19:51:32.626  Collecting Storybook metadata
-19:51:32.627  {"configDir":".storybook","mainConfig":{"default":{"stories":["../src/**/*.mdx","../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],"addons":["@storybook/preset-create-react-app","@storybook/addon-links","@storybook/addon-essentials","@storybook/addon-interactions",{"name":"@chromatic-com/storybook","options":{"configFile":"chromatic.config.json"}}],"framework":{"name":"@storybook/react-webpack5","options":{}},"staticDirs":["../public"]}}}
-19:51:32.646  [{"status":"fulfilled","value":{"addons":[]}},{"status":"fulfilled","value":{}},{"status":"fulfilled","value":{"viewLayer":"react","version":"8.2.9"}},{"status":"rejected","reason":{}}]
-19:51:32.646  Collected Storybook metadata
-                  → Storybook 8.2.9 for React; no supported addons found
-19:51:32.647  Initializing build
-19:51:32.648  Got environment:
-              {}
-19:51:33.452  Initialized build
-                  → Build 7 initialized
-19:51:33.457  Building your Storybook
-19:51:33.457      → Running command: npm run build-storybook -- --output-dir /var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--10435-1Vly3sGgIdcj
-19:51:33.458      → [*                   ]
-19:51:33.460  Running build command: npm run build-storybook -- --output-dir /var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--10435-1Vly3sGgIdcj
-19:51:33.460  Runtime metadata: {
-                "nodePlatform": "darwin",
-                "nodeVersion": "18.20.1",
-                "packageManager": "npm",
-                "packageManagerVersion": "9.5.0"
-              }
-19:51:39.723  Storybook built in 6 seconds
-                  → View build log at /Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log
-19:51:39.724  Publish your built Storybook
-19:51:39.724      → Validating Storybook files
-19:51:39.726  Publishing your built Storybook
-19:51:39.726      → Calculating file hashes
-19:51:39.733  Calculated file hashes in 7ms
-19:51:39.734  Publishing your built Storybook
-19:51:39.734      → Starting publish
-19:51:39.734  Running uploadBuild batch 1 / 1
-19:51:40.117  Adding to zip archive: 538.2300999f.iframe.bundle.js
-19:51:40.118  Adding to zip archive: iframe.html
-19:51:40.118  Adding to zip archive: index.html
-19:51:40.118  Adding to zip archive: index.json
-19:51:40.119  Adding to zip archive: main.c7769654.iframe.bundle.js
-19:51:40.119  Adding to zip archive: project.json
-19:51:40.119  Adding to zip archive: runtime~main.f86ce78c.iframe.bundle.js
-19:51:40.119  Adding to zip archive: sb-addons/storybook-11/manager-bundle.js
-19:51:40.120  Adding to zip archive: sb-manager/globals-runtime.js
-19:51:40.120  Adding to zip archive: static/css/stories-Atoms-Checkbox-stories.ed5496a3.chunk.css
-19:51:40.120  Adding to zip archive: static/css/stories-Atoms-Input-stories.298e3ec4.chunk.css
-19:51:40.120  Adding to zip archive: static/css/stories-Atoms-Radio-stories.9f029a92.chunk.css
-19:51:40.120  Adding to zip archive: stories-Atoms-Checkbox-stories.fe13c2ce.iframe.bundle.js
-19:51:40.120  Adding to zip archive: stories-Atoms-Input-stories.e5d9aa2e.iframe.bundle.js
-19:51:40.120  Adding to zip archive: stories-Atoms-Radio-stories.c91cd20b.iframe.bundle.js
-19:51:40.120  Finalizing zip archive
-19:51:40.251  Compression reduced upload size by 73%
-19:51:40.251  Uploading /.chromatic/storybook.zip (572.65 kB)
-19:51:40.254      → [==                  ] 11%
-19:51:41.742  Uploaded /.chromatic/storybook.zip (572.65 kB)
-19:51:41.743  Publishing your built Storybook
-19:51:41.743      → Finalizing upload
-19:51:41.743  Waiting for 'files-copied.287269203.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-paxjrslibk/.chromatic/files-copied.287269203.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20240822%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240822T195140Z&X-Amz-Expires=1800&X-Amz-Signature=a0c77586eadd0e39dc1cd67c6a1267902b111c915965616c97364a9ad617a220&X-Amz-SignedHeaders=host&x-id=GetObject
-19:51:41.746  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-paxjrslibk/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20240822%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240822T195140Z&X-Amz-Expires=1980&X-Amz-Signature=de24e71b0d5c9b66dca23a2156c64f1801ed41b0e280236c7cad48c97f625f28&X-Amz-SignedHeaders=host&x-id=GetObject
-19:51:42.296  Sentinel file 'files-copied.287269203.txt' OK.
-19:51:43.848  Sentinel file 'zip-unpacked.txt' OK.
-19:51:43.851  Publish complete in 4 seconds
-                  → Uploaded 15 files (572.65 kB), skipped 61 files
-19:51:43.852  Verifying your Storybook
-19:51:43.852      → This may take a few minutes
-19:51:43.852      → [*                   ]
-19:51:48.223  ✔ Storybook published
-              We found 11 components with 47 stories.
-              ℹ View your Storybook at https://66c61912622bdf9d8de37009-paxjrslibk.chromatic.com/
-19:51:48.224  Started build 7
-                  → View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=7
-19:51:48.225  Running 47 tests
-19:51:48.225      → This may take a few minutes
-19:51:48.225  ℹ Speed up Continuous Integration
-              Your project is linked to GitHub so Chromatic will report results there.
-              This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
-              Read more here: https://www.chromatic.com/docs/cli#chromatic-options
-19:51:48.541      → [                    ] 1/47
-19:51:59.402      → [===========         ] 27/47
-19:52:10.007      → [=================== ] 44/47
-19:52:15.772  ✔ Build 7 passed!
-              14 visual changes were found in this build.
-              ℹ View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=7
-19:52:15.773  Build 7 completed
-                  → Tested 47 stories across 11 components; captured 47 snapshots in 28 seconds
-19:52:15.773  Tasks completed
-19:52:15.784  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
+15:06:12.608  Authenticating with Chromatic 
+15:06:12.608      → Connecting to https://index.chromatic.com
+15:06:12.935  Authenticated with Chromatic
+                  → Using project token '****************b48e'
+15:06:12.936  Retrieving git information
+15:06:12.996  git info: {"commit":{"commit":"aa8b8825efc6e7dfdfd8164e6fae75012c850a17","committedAt":1726049387000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
+15:06:13.417  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"aa8b8825efc6e7dfdfd8164e6fae75012c850a17","committedAt":1726049387000}
+15:06:13.449  Adding last branch build commit aa8b8825efc6e7dfdfd8164e6fae75012c850a17 to commits with builds
+15:06:13.450  step: checking 20 up to 1724258813
+15:06:13.450  step: commitsWithBuilds: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
+15:06:13.450  step: commitsWithoutBuilds:
+15:06:13.450  running git rev-list HEAD       --since 1724258813       -n 20 --not aa8b8825efc6e7dfdfd8164e6fae75012c850a17
+15:06:13.471  command output:
+15:06:13.471  step: candidateCommits: , visitedCommitsWithoutBuilds:
+15:06:13.471  step: no candidateCommits; we are done
+15:06:13.797  Final commitsWithBuilds: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
+15:06:13.798  running git rev-list aa8b8825efc6e7dfdfd8164e6fae75012c850a17 --not "aa8b8825efc6e7dfdfd8164e6fae75012c850a17^@"
+15:06:13.828  command output: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
+15:06:13.828  Found parentCommits: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
+15:06:14.141  Skipping build
+                  → Skipping rebuild of an already fully passed/accepted build
+15:06:14.142  ℹ Skipping rebuild of an already fully passed/accepted build
+              A build for the same commit as the last build on the branch is considered a rebuild.
+              If the last build is passed or accepted, the rebuild is skipped because it shouldn't change anything.
+              You can override this using the --force-rebuild flag.
+15:06:14.144  Tasks completed
+15:06:14.147  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
