@@ -38,5 +38,3 @@ jobs:
           debug: true
           zip: true
           junitReport: true
-  env:
-    LOG_LEVEL: "error"
