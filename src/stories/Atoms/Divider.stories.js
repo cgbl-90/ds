@@ -1,5 +1,3 @@
-// Divider.stories.js
-import React from "react";
 import Divider from "./Divider";
 
 export default {
