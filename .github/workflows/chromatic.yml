@@ -38,3 +38,12 @@ jobs:
           debug: true
           zip: true
           junitReport: true
+
+      # Step 5: Upload Reports as Artifacts
+      - name: Upload Build Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: chromatic-reports
+          path: |
+            chromatic-diagnostics.json
+            chromatic-build-*.xml
