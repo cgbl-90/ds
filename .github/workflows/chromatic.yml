@@ -15,20 +15,28 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # or your preferred version
+          node-version: "20" # or your preferred version
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
       # Step 4: Run Storybook Chromatic
-      - name: Publish to Chromatic
-        run: npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
-        env:
-          CHROMATIC_PROJECT_TOKEN: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          skip: "dependabot/**"
+          debug: true
+          zip: true
+          junitReport: true
+  env:
+    LOG_LEVEL: "error"
