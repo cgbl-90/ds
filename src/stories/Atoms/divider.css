@@ -1,0 +1,39 @@
+/* divider.css */
+.divider {
+    border: 0;
+    height: 1px;
+    margin: 20px 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.divider--primary {
+    background-color: #007bff;
+}
+
+.divider--secondary {
+    background-color: #6c757d;
+}
+
+.divider--success {
+    background-color: #28a745;
+}
+
+.divider--warning {
+    background-color: #ffc107;
+}
+
+.divider--danger {
+    background-color: #dc3545;
+}
+
+.divider--dashed {
+    border-top: 1px dashed;
+}
+
+.divider--dotted {
+    border-top: 1px dotted;
+}
+
+.divider--bold {
+    height: 3px;
+}
