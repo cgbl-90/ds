@@ -8,10 +8,16 @@
   "exitCode": 0,
   "exitCodeKey": "OK",
   "flags": {
+    "ci": true,
+    "diagnosticsFile": "",
+    "junitReport": "",
+    "zip": true,
+    "onlyStoryFiles": [
+      "src/Atoms/**"
+    ],
     "outputDir": [],
     "storybookBuildDir": [],
     "externals": [],
-    "onlyStoryFiles": [],
     "onlyStoryNames": [],
     "untraced": [],
     "fileHashing": true,
@@ -21,22 +27,22 @@
   "git": {
     "version": "2.39.3 (Apple Git-146)",
     "gitUserEmail": "carmenbaez2000@gmail.com",
-    "uncommittedHash": "a949a1bd9a9257b7a8f7e0ba5fe8e2e8fc761d5d",
-    "commit": "aa8b8825efc6e7dfdfd8164e6fae75012c850a17",
-    "committedAt": 1726049387000,
+    "uncommittedHash": "3be0c05015999945e2c2b279ed992d1e15bb9b30",
+    "commit": "0fe2d6876a9b117feb25939ce33d3c56ebab2a7d",
+    "committedAt": 1727982008000,
     "committerEmail": "carmenbaez2000@gmail.com",
     "committerName": "Carmen Lopez",
     "branch": "main",
     "slug": "cgbl-90/ds",
-    "fromCI": false,
+    "fromCI": true,
     "parentCommits": [
-      "aa8b8825efc6e7dfdfd8164e6fae75012c850a17"
+      "0fe2d6876a9b117feb25939ce33d3c56ebab2a7d"
     ]
   },
   "input": [],
   "isOnboarding": false,
   "options": {
-    "fromCI": false,
+    "fromCI": true,
     "inAction": false,
     "dryRun": false,
     "debug": true,
@@ -45,13 +51,23 @@
     "exitOnceUploaded": false,
     "diagnosticsFile": "chromatic-diagnostics.json",
     "fileHashing": true,
-    "interactive": true,
+    "interactive": false,
     "isLocalBuild": false,
     "originalArgv": [
       "--project-token",
-      "chpt_1dfeeb5e0e7b48e"
+      "chpt_1dfeeb5e0e7b48e",
+      "--ci",
+      "--diagnostics-file",
+      "--junit-report",
+      "--zip",
+      "--only-story-files",
+      "src/Atoms/**"
+    ],
+    "onlyStoryFiles": [
+      "src/Atoms/**"
     ],
     "logFile": "chromatic.log",
+    "junitReport": "chromatic-build-{buildNumber}.xml",
     "zip": true,
     "buildScriptName": "build-storybook",
     "storybookLogFile": "build-storybook.log",
@@ -124,16 +140,16 @@
   },
   "packagePath": "/Users/camy-chroma/GitHub/cgbl-design-system/package.json",
   "rebuildForBuild": {
-    "id": "66eac5c2e04bd01a96467f1d",
+    "id": "66fee9e29fab0dc409b13cdd",
     "status": "ACCEPTED",
-    "storybookUrl": "https://66c61912622bdf9d8de37009-wfprygpnav.chromatic.com/",
-    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=9"
+    "storybookUrl": "https://66c61912622bdf9d8de37009-uivrrdcspt.chromatic.com/",
+    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=14"
   },
-  "rebuildForBuildId": "66eac5c2e04bd01a96467f1d",
-  "sessionId": "a0204945-7130-4356-af27-2d19204c97b5",
+  "rebuildForBuildId": "66fee9e29fab0dc409b13cdd",
+  "sessionId": "5dd39e75-bef9-4466-85eb-10df727ef9c9",
   "skip": true,
-  "startedAt": 1727967972936,
-  "storybookUrl": "https://66c61912622bdf9d8de37009-wfprygpnav.chromatic.com/",
+  "startedAt": 1728049213562,
+  "storybookUrl": "https://66c61912622bdf9d8de37009-uivrrdcspt.chromatic.com/",
   "task": "gitInfo",
   "userError": false
 }

@@ -1,30 +1,30 @@
-15:06:12.604  Chromatic CLI v11.10.4
+13:40:13.166  Chromatic CLI v11.10.4
               https://www.chromatic.com/docs/cli 
  
-15:06:12.608  Authenticating with Chromatic 
-15:06:12.608      → Connecting to https://index.chromatic.com
-15:06:12.935  Authenticated with Chromatic
+13:40:13.171  Authenticating with Chromatic 
+13:40:13.171      → Connecting to https://index.chromatic.com
+13:40:13.562  Authenticated with Chromatic
                   → Using project token '****************b48e'
-15:06:12.936  Retrieving git information
-15:06:12.996  git info: {"commit":{"commit":"aa8b8825efc6e7dfdfd8164e6fae75012c850a17","committedAt":1726049387000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
-15:06:13.417  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"aa8b8825efc6e7dfdfd8164e6fae75012c850a17","committedAt":1726049387000}
-15:06:13.449  Adding last branch build commit aa8b8825efc6e7dfdfd8164e6fae75012c850a17 to commits with builds
-15:06:13.450  step: checking 20 up to 1724258813
-15:06:13.450  step: commitsWithBuilds: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
-15:06:13.450  step: commitsWithoutBuilds:
-15:06:13.450  running git rev-list HEAD       --since 1724258813       -n 20 --not aa8b8825efc6e7dfdfd8164e6fae75012c850a17
-15:06:13.471  command output:
-15:06:13.471  step: candidateCommits: , visitedCommitsWithoutBuilds:
-15:06:13.471  step: no candidateCommits; we are done
-15:06:13.797  Final commitsWithBuilds: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
-15:06:13.798  running git rev-list aa8b8825efc6e7dfdfd8164e6fae75012c850a17 --not "aa8b8825efc6e7dfdfd8164e6fae75012c850a17^@"
-15:06:13.828  command output: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
-15:06:13.828  Found parentCommits: aa8b8825efc6e7dfdfd8164e6fae75012c850a17
-15:06:14.141  Skipping build
+13:40:13.562  Retrieving git information
+13:40:13.623  git info: {"commit":{"commit":"0fe2d6876a9b117feb25939ce33d3c56ebab2a7d","committedAt":1727982008000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":true}
+13:40:14.006  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"0fe2d6876a9b117feb25939ce33d3c56ebab2a7d","committedAt":1727982008000}
+13:40:14.037  Adding last branch build commit 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d to commits with builds
+13:40:14.037  step: checking 20 up to 1724258813
+13:40:14.037  step: commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:14.038  step: commitsWithoutBuilds:
+13:40:14.038  running git rev-list HEAD       --since 1724258813       -n 20 --not 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:14.059  command output:
+13:40:14.059  step: candidateCommits: , visitedCommitsWithoutBuilds:
+13:40:14.059  step: no candidateCommits; we are done
+13:40:14.378  Final commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:14.378  running git rev-list 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d --not "0fe2d6876a9b117feb25939ce33d3c56ebab2a7d^@"
+13:40:14.390  command output: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:14.390  Found parentCommits: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:14.694  Skipping build
                   → Skipping rebuild of an already fully passed/accepted build
-15:06:14.142  ℹ Skipping rebuild of an already fully passed/accepted build
+13:40:14.696  ℹ Skipping rebuild of an already fully passed/accepted build
               A build for the same commit as the last build on the branch is considered a rebuild.
               If the last build is passed or accepted, the rebuild is skipped because it shouldn't change anything.
               You can override this using the --force-rebuild flag.
-15:06:14.144  Tasks completed
-15:06:14.147  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
+13:40:14.697  Tasks completed
+13:40:14.700  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
