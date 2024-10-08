@@ -1,30 +1,109 @@
-13:40:13.166  Chromatic CLI v11.10.4
+13:40:48.059  Chromatic CLI v11.10.4
               https://www.chromatic.com/docs/cli 
  
-13:40:13.171  Authenticating with Chromatic 
-13:40:13.171      → Connecting to https://index.chromatic.com
-13:40:13.562  Authenticated with Chromatic
+13:40:48.063  Authenticating with Chromatic 
+13:40:48.063      → Connecting to https://index.chromatic.com
+13:40:48.406  Authenticated with Chromatic
                   → Using project token '****************b48e'
-13:40:13.562  Retrieving git information
-13:40:13.623  git info: {"commit":{"commit":"0fe2d6876a9b117feb25939ce33d3c56ebab2a7d","committedAt":1727982008000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":true}
-13:40:14.006  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"0fe2d6876a9b117feb25939ce33d3c56ebab2a7d","committedAt":1727982008000}
-13:40:14.037  Adding last branch build commit 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d to commits with builds
-13:40:14.037  step: checking 20 up to 1724258813
-13:40:14.037  step: commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
-13:40:14.038  step: commitsWithoutBuilds:
-13:40:14.038  running git rev-list HEAD       --since 1724258813       -n 20 --not 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
-13:40:14.059  command output:
-13:40:14.059  step: candidateCommits: , visitedCommitsWithoutBuilds:
-13:40:14.059  step: no candidateCommits; we are done
-13:40:14.378  Final commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
-13:40:14.378  running git rev-list 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d --not "0fe2d6876a9b117feb25939ce33d3c56ebab2a7d^@"
-13:40:14.390  command output: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
-13:40:14.390  Found parentCommits: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
-13:40:14.694  Skipping build
-                  → Skipping rebuild of an already fully passed/accepted build
-13:40:14.696  ℹ Skipping rebuild of an already fully passed/accepted build
-              A build for the same commit as the last build on the branch is considered a rebuild.
-              If the last build is passed or accepted, the rebuild is skipped because it shouldn't change anything.
-              You can override this using the --force-rebuild flag.
-13:40:14.697  Tasks completed
-13:40:14.700  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
+13:40:48.406  Retrieving git information
+13:40:48.487  git info: {"commit":{"commit":"5e456730b2d27d36769920f639d81a50c141b358","committedAt":1728049237000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":true}
+13:40:48.865  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"0fe2d6876a9b117feb25939ce33d3c56ebab2a7d","committedAt":1727982008000}
+13:40:48.894  Adding last branch build commit 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d to commits with builds
+13:40:48.895  step: checking 20 up to 1724258813
+13:40:48.895  step: commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:48.895  step: commitsWithoutBuilds:
+13:40:48.895  running git rev-list HEAD       --since 1724258813       -n 20 --not 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:48.913  command output: 5e456730b2d27d36769920f639d81a50c141b358
+13:40:48.913  step: candidateCommits: 5e456730b2d27d36769920f639d81a50c141b358, visitedCommitsWithoutBuilds: 5e456730b2d27d36769920f639d81a50c141b358
+13:40:49.215  step: newCommitsWithBuilds:
+13:40:49.215  step: checking 40 up to 1724258813
+13:40:49.215  step: commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:49.215  step: commitsWithoutBuilds: 5e456730b2d27d36769920f639d81a50c141b358
+13:40:49.215  running git rev-list HEAD       --since 1724258813       -n 41 --not 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:49.232  command output: 5e456730b2d27d36769920f639d81a50c141b358
+13:40:49.232  step: candidateCommits: , visitedCommitsWithoutBuilds: 5e456730b2d27d36769920f639d81a50c141b358
+13:40:49.232  step: no candidateCommits; we are done
+13:40:49.794  Final commitsWithBuilds: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:49.795  running git rev-list 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d --not "0fe2d6876a9b117feb25939ce33d3c56ebab2a7d^@"
+13:40:49.824  command output: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:49.824  Found parentCommits: 0fe2d6876a9b117feb25939ce33d3c56ebab2a7d
+13:40:50.148  Retrieved git information
+                  → Commit '5e45673' on branch 'main'; found 1 parent build
+13:40:50.148  Collecting Storybook metadata
+13:40:50.152  {"storybookV6error":{}}
+13:40:50.173  {"storybookV7error":{}}
+13:40:50.182  No viewlayer package listed in dependencies. Checking transitive dependencies.
+13:40:50.184  [{"status":"fulfilled","value":{"addons":[]}},{"status":"fulfilled","value":{}},{"status":"fulfilled","value":{"viewLayer":"react","version":"8.2.9"}},{"status":"rejected","reason":{}}]
+13:40:50.185  Collected Storybook metadata
+                  → Storybook 8.2.9 for React; no supported addons found
+13:40:50.185  Initializing build
+13:40:50.185  Got environment:
+              {}
+13:40:51.628  Initialized build
+                  → Build 15 initialized
+13:40:51.635  Building your Storybook
+13:40:51.635      → Running command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--10541-zrehpbjffBGD
+13:40:51.635      → [*                   ]
+13:40:51.638  Running build command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--10541-zrehpbjffBGD
+13:40:51.638  Runtime metadata: {
+                "nodePlatform": "darwin",
+                "nodeVersion": "18.20.1",
+                "packageManager": "npm",
+                "packageManagerVersion": "9.5.0"
+              }
+13:41:01.637      → [ *                  ]
+13:41:02.226  Storybook built in 11 seconds
+                  → View build log at /Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log
+13:41:02.227  Publish your built Storybook
+13:41:02.227      → Validating Storybook files
+13:41:02.230  Publishing your built Storybook
+13:41:02.230      → Calculating file hashes
+13:41:02.245  Calculated file hashes in 15ms
+13:41:02.245  Publishing your built Storybook
+13:41:02.245      → Starting publish
+13:41:02.246  Running uploadBuild batch 1 / 1
+13:41:02.701  Adding to zip archive: iframe.html
+13:41:02.702  Adding to zip archive: index.json
+13:41:02.702  Adding to zip archive: main.ccf7421c.iframe.bundle.js
+13:41:02.702  Adding to zip archive: project.json
+13:41:02.702  Adding to zip archive: runtime~main.ff6d7ced.iframe.bundle.js
+13:41:02.702  Adding to zip archive: static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css
+13:41:02.702  Adding to zip archive: static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map
+13:41:02.702  Adding to zip archive: stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js
+13:41:02.703  Finalizing zip archive
+13:41:02.716  Compression reduced upload size by 75%
+13:41:02.716  Uploading /.chromatic/storybook.zip (14.7 kB)
+13:41:02.720      → [====================] 100%
+13:41:03.529  Uploaded /.chromatic/storybook.zip (14.7 kB)
+13:41:03.529  Publishing your built Storybook
+13:41:03.529      → Finalizing upload
+13:41:03.530  Waiting for 'files-copied.60520525.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-sbbczjrjwf/.chromatic/files-copied.60520525.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241004T134102Z&X-Amz-Expires=1800&X-Amz-Signature=a795559a1b7a9c26455532c2a8fd8fdd8171babe2e3946f5cf5324cf48af2745&X-Amz-SignedHeaders=host&x-id=GetObject
+13:41:03.531  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-sbbczjrjwf/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241004T134102Z&X-Amz-Expires=1980&X-Amz-Signature=95222a84c37dbde90c287c97fa739b8856793454c8fdf8c88315e55f0761ef96&X-Amz-SignedHeaders=host&x-id=GetObject
+13:41:05.613  Sentinel file 'files-copied.60520525.txt' OK.
+13:41:05.629  Sentinel file 'zip-unpacked.txt' OK.
+13:41:05.631  Publish complete in 3 seconds
+                  → Uploaded 8 files (14.7 kB), skipped 122 files
+13:41:05.631  Verifying your Storybook
+13:41:05.631      → This may take a few minutes
+13:41:05.631      → [*                   ]
+13:41:06.808  Starting partial build
+13:41:06.808      → Snapshots will be limited to story files matching 'src/Pages/**'
+13:41:11.508  ✔ Storybook published
+              We found 16 components with 64 stories.
+              ℹ View your Storybook at https://66c61912622bdf9d8de37009-sbbczjrjwf.chromatic.com/
+13:41:11.509  Started build 15
+                  → View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=15
+13:41:11.509  Finalizing build
+13:41:11.509      → No tests run
+13:41:11.849  ✔ Build 15 passed!
+              No visual changes were found in this build.
+              ℹ View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=15
+13:41:11.849  Build 15 passed!
+                  → Tested 64 stories across 16 components; captured 0 snapshots in 0 seconds
+13:41:11.850  Generating build report
+13:41:11.850      → Collecting build information
+13:41:12.231  ℹ Wrote JUnit XML report to /Users/camy-chroma/GitHub/cgbl-design-system/chromatic-build-15.xml
+13:41:12.231  Generated build report
+                  → View report at /Users/camy-chroma/GitHub/cgbl-design-system/chromatic-build-15.xml
+13:41:12.232  Tasks completed
+13:41:12.237  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
