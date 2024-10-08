@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Chromatic build 15" time="19" timestamp="2024-10-04T13:40:51.248Z" tests="64" failures="0" errors="0" skipped="4">
+    <properties>
+      <property name="buildNumber" value="15"/>
+      <property name="buildStatus" value="PASSED"/>
+      <property name="buildUrl" value="https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&amp;number=15"/>
+      <property name="storybookUrl" value="https://66c61912622bdf9d8de37009-sbbczjrjwf.chromatic.com/"/>
+    </properties>
+    <testcase classname="ATOMS.Avatar" name="Small "/>
+    <testcase classname="ATOMS.Avatar" name="Medium "/>
+    <testcase classname="ATOMS.Avatar" name="Large "/>
+    <testcase classname="Atoms.Badge" name="Default "/>
+    <testcase classname="Atoms.Badge" name="Success "/>
+    <testcase classname="Atoms.Badge" name="Warning "/>
+    <testcase classname="ATOMS.Button" name="Primary "/>
+    <testcase classname="ATOMS.Button" name="Secondary "/>
+    <testcase classname="ATOMS.Button" name="Large "/>
+    <testcase classname="ATOMS.Button" name="Small "/>
+    <testcase classname="ATOMS.Button" name="Primary Pressed "/>
+    <testcase classname="ATOMS.Button" name="Secondary Hover "/>
+    <testcase classname="ATOMS.Button" name="Primary No Border "/>
+    <testcase classname="ATOMS.Button" name="Secondary No Border "/>
+    <testcase classname="ATOMS.Checkbox" name="Unchecked "/>
+    <testcase classname="ATOMS.Checkbox" name="Checked "/>
+    <testcase classname="ATOMS.Checkbox" name="Hover "/>
+    <testcase classname="ATOMS.Checkbox" name="Pressed "/>
+    <testcase classname="Atoms.Divider" name="Primary "/>
+    <testcase classname="Atoms.Divider" name="Secondary Bold Dashed "/>
+    <testcase classname="Atoms.Divider" name="Success Dotted "/>
+    <testcase classname="ATOMS.Icon" name="Small "/>
+    <testcase classname="ATOMS.Icon" name="Medium "/>
+    <testcase classname="ATOMS.Icon" name="Large "/>
+    <testcase classname="ATOMS.Input" name="Default "/>
+    <testcase classname="ATOMS.Input" name="Small "/>
+    <testcase classname="ATOMS.Input" name="Large "/>
+    <testcase classname="ATOMS.Input" name="Hover "/>
+    <testcase classname="ATOMS.Input" name="Focused "/>
+    <testcase classname="ATOMS.Input" name="Disabled "/>
+    <testcase classname="Atoms.Links" name="Primary "/>
+    <testcase classname="Atoms.Links" name="Secondary "/>
+    <testcase classname="Atoms.Links" name="Success "/>
+    <testcase classname="Atoms.Links" name="Warning "/>
+    <testcase classname="Atoms.Links" name="Danger "/>
+    <testcase classname="ATOMS.List" name="Without Style "/>
+    <testcase classname="ATOMS.List" name="With Numbers "/>
+    <testcase classname="ATOMS.List" name="With Symbols "/>
+    <testcase classname="ATOMS.List" name="With Devanagari Numbers "/>
+    <testcase classname="ATOMS.List" name="With Custom Icon "/>
+    <testcase classname="Atoms.Loader" name="Default "/>
+    <testcase classname="Atoms.Progress Bar" name="Default "/>
+    <testcase classname="Atoms.Progress Bar" name="Complete "/>
+    <testcase classname="Atoms.Progress Bar" name="In Progress "/>
+    <testcase classname="Atoms.Progress Bar" name="Minimal "/>
+    <testcase classname="ATOMS.Radio" name="Unchecked "/>
+    <testcase classname="ATOMS.Radio" name="Checked "/>
+    <testcase classname="ATOMS.Radio" name="Hover "/>
+    <testcase classname="ATOMS.Radio" name="Pressed "/>
+    <testcase classname="Atoms.Tooltip" name="Default ">
+      <skipped/>
+    </testcase>
+    <testcase classname="Atoms.Tooltip" name="Long Text Tooltip ">
+      <skipped/>
+    </testcase>
+    <testcase classname="Atoms.Tooltip" name="Multiple Tooltips ">
+      <skipped/>
+    </testcase>
+    <testcase classname="Atoms.Tooltip" name="Custom Styled Tooltip ">
+      <skipped/>
+    </testcase>
+    <testcase classname="Typography" name="Title "/>
+    <testcase classname="Typography" name="Subtitle "/>
+    <testcase classname="Typography" name="Text "/>
+    <testcase classname="Typography" name="Code "/>
+    <testcase classname="Typography" name="Italic Text "/>
+    <testcase classname="Typography" name="Bold Text "/>
+    <testcase classname="Typography" name="Underline Text "/>
+    <testcase classname="COMPONENTS.Header" name="Logged In "/>
+    <testcase classname="COMPONENTS.Header" name="Logged Out "/>
+    <testcase classname="PAGES.Page" name="Logged Out "/>
+    <testcase classname="PAGES.Page" name="Logged In "/>
+  </testsuite>
+</testsuites>
