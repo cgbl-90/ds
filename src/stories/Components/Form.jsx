@@ -1,9 +1,9 @@
 // Form.jsx
 import React, { useState } from "react";
-import { Label } from "../Label/Label"; // Ensure correct path based on your directory structure
-import { Input } from "../Input/Input"; // Ensure correct path based on your directory structure
-import { Checkbox } from "../Checkbox/Checkbox"; // Ensure correct path based on your directory structure
-import { Radio } from "../Radio/Radio"; // Ensure correct path based on your directory structure
+import { Label } from "../Atoms/Label"; // Ensure correct path based on your directory structure
+import { Input } from "../Atoms/Input"; // Ensure correct path based on your directory structure
+import { Checkbox } from "../Atoms/Checkbox"; // Ensure correct path based on your directory structure
+import { Radio } from "../Atoms/Radio"; // Ensure correct path based on your directory structure
 import "./form.css";
 
 export const Form = () => {
