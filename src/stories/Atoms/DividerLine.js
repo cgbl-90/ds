@@ -1,5 +1,5 @@
 import React from "react";
-import "./divider.css";
+import "./divider-line.css";
 
 const Divider = ({ style, dashed, dotted, bold }) => {
   let className = `divider divider--${style}`;
