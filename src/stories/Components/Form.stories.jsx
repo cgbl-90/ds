@@ -1,5 +1,6 @@
 // Form.stories.jsx
 import { Form } from "./Form";
+import { within, userEvent } from "@storybook/testing-library";
 
 export default {
   title: "COMPONENTS/Form",
@@ -20,17 +21,17 @@ export const FilledForm = {
     const canvas = within(canvasElement);
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your name/i),
-      "John Doe"
+      "Jane Doe"
     );
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your email/i),
-      "john@example.com"
+      "jane@example.com"
     );
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your favorite color/i),
       "Blue"
     );
-    await userEvent.click(canvas.getByLabelText(/male/i));
+    await userEvent.click(canvas.getByLabelText(/female/i));
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your feedback/i),
       "Great product!"

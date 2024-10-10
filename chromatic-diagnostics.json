@@ -1,15 +1,1370 @@
 {
   "announcedBuild": {
-    "id": "6707eec91696febab0185a0b",
-    "number": 22,
-    "status": "ANNOUNCED",
+    "id": "6707f49190c69cca8f6c18a4",
+    "number": 26,
+    "status": "PUBLISHED",
     "autoAcceptChanges": false,
     "app": {
       "id": "66c61912622bdf9d8de37009",
       "turboSnapAvailability": "UNAVAILABLE"
-    }
+    },
+    "storybookUrl": "https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/"
   },
-  "buildCommand": "npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--22092-1o6IF7D0pOAj",
+  "build": {
+    "id": "6707f49190c69cca8f6c18a4",
+    "number": 26,
+    "status": "IN_PROGRESS",
+    "autoAcceptChanges": false,
+    "app": {
+      "manageUrl": "https://www.chromatic.com/manage?appId=66c61912622bdf9d8de37009",
+      "setupUrl": "https://www.chromatic.com/setup?appId=66c61912622bdf9d8de37009",
+      "account": {
+        "exceededThreshold": false,
+        "paymentRequired": false,
+        "billingUrl": "https://www.chromatic.com/billing?accountId=638f8821fb445a1e9499f5ad"
+      },
+      "repository": {
+        "provider": "github"
+      }
+    },
+    "storybookUrl": "https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/",
+    "specCount": 82,
+    "componentCount": 20,
+    "testCount": 82,
+    "changeCount": 0,
+    "errorCount": 0,
+    "actualTestCount": 82,
+    "actualCaptureCount": 82,
+    "inheritedCaptureCount": 0,
+    "interactionTestFailuresCount": 0,
+    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=26",
+    "browsers": [
+      {
+        "browser": "chrome"
+      }
+    ],
+    "features": {
+      "uiTests": true,
+      "uiReview": true
+    },
+    "turboSnapEnabled": null,
+    "wasLimited": false,
+    "tests": [
+      {
+        "spec": {
+          "name": "Small",
+          "component": {
+            "name": "ATOMS/Avatar",
+            "displayName": "Avatar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Medium",
+          "component": {
+            "name": "ATOMS/Avatar",
+            "displayName": "Avatar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large",
+          "component": {
+            "name": "ATOMS/Avatar",
+            "displayName": "Avatar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Hover Interaction",
+          "component": {
+            "name": "ATOMS/Avatar",
+            "displayName": "Avatar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
+            "name": "Atoms/Badge",
+            "displayName": "Badge"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Success",
+          "component": {
+            "name": "Atoms/Badge",
+            "displayName": "Badge"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Warning",
+          "component": {
+            "name": "Atoms/Badge",
+            "displayName": "Badge"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Primary",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Secondary",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Small",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Primary Pressed",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Secondary Hover",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Primary No Border",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Secondary No Border",
+          "component": {
+            "name": "ATOMS/Button",
+            "displayName": "Button"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Unchecked",
+          "component": {
+            "name": "ATOMS/Checkbox",
+            "displayName": "Checkbox"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Checked",
+          "component": {
+            "name": "ATOMS/Checkbox",
+            "displayName": "Checkbox"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Hover",
+          "component": {
+            "name": "ATOMS/Checkbox",
+            "displayName": "Checkbox"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Pressed",
+          "component": {
+            "name": "ATOMS/Checkbox",
+            "displayName": "Checkbox"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Primary",
+          "component": {
+            "name": "Atoms/Divider",
+            "displayName": "Divider"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Secondary Bold Dashed",
+          "component": {
+            "name": "Atoms/Divider",
+            "displayName": "Divider"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Success Dotted",
+          "component": {
+            "name": "Atoms/Divider",
+            "displayName": "Divider"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Small",
+          "component": {
+            "name": "ATOMS/Icon",
+            "displayName": "Icon"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Medium",
+          "component": {
+            "name": "ATOMS/Icon",
+            "displayName": "Icon"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large",
+          "component": {
+            "name": "ATOMS/Icon",
+            "displayName": "Icon"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
+            "name": "ATOMS/Input",
+            "displayName": "Input"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Small",
+          "component": {
+            "name": "ATOMS/Input",
+            "displayName": "Input"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large",
+          "component": {
+            "name": "ATOMS/Input",
+            "displayName": "Input"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Hover",
+          "component": {
+            "name": "ATOMS/Input",
+            "displayName": "Input"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Focused",
+          "component": {
+            "name": "ATOMS/Input",
+            "displayName": "Input"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Disabled",
+          "component": {
+            "name": "ATOMS/Input",
+            "displayName": "Input"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default Label",
+          "component": {
+            "name": "ATOMS/Label",
+            "displayName": "Label"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Small Primary Label",
+          "component": {
+            "name": "ATOMS/Label",
+            "displayName": "Label"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large Secondary Label",
+          "component": {
+            "name": "ATOMS/Label",
+            "displayName": "Label"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Medium Primary Label",
+          "component": {
+            "name": "ATOMS/Label",
+            "displayName": "Label"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Small Default Label",
+          "component": {
+            "name": "ATOMS/Label",
+            "displayName": "Label"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Primary",
+          "component": {
+            "name": "Atoms/Links",
+            "displayName": "Links"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Secondary",
+          "component": {
+            "name": "Atoms/Links",
+            "displayName": "Links"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Success",
+          "component": {
+            "name": "Atoms/Links",
+            "displayName": "Links"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Warning",
+          "component": {
+            "name": "Atoms/Links",
+            "displayName": "Links"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Danger",
+          "component": {
+            "name": "Atoms/Links",
+            "displayName": "Links"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Without Style",
+          "component": {
+            "name": "ATOMS/List",
+            "displayName": "List"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "With Numbers",
+          "component": {
+            "name": "ATOMS/List",
+            "displayName": "List"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "With Symbols",
+          "component": {
+            "name": "ATOMS/List",
+            "displayName": "List"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "With Devanagari Numbers",
+          "component": {
+            "name": "ATOMS/List",
+            "displayName": "List"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "With Custom Icon",
+          "component": {
+            "name": "ATOMS/List",
+            "displayName": "List"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
+            "name": "Atoms/Loader",
+            "displayName": "Loader"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large Green Dot",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Blue Dot Bottom Left",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Yellow Dot Top Left",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
+            "name": "Atoms/Progress Bar",
+            "displayName": "Progress Bar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Complete",
+          "component": {
+            "name": "Atoms/Progress Bar",
+            "displayName": "Progress Bar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "In Progress",
+          "component": {
+            "name": "Atoms/Progress Bar",
+            "displayName": "Progress Bar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Minimal",
+          "component": {
+            "name": "Atoms/Progress Bar",
+            "displayName": "Progress Bar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Unchecked",
+          "component": {
+            "name": "ATOMS/Radio",
+            "displayName": "Radio"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Checked",
+          "component": {
+            "name": "ATOMS/Radio",
+            "displayName": "Radio"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Hover",
+          "component": {
+            "name": "ATOMS/Radio",
+            "displayName": "Radio"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Pressed",
+          "component": {
+            "name": "ATOMS/Radio",
+            "displayName": "Radio"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
+            "name": "Atoms/Tooltip",
+            "displayName": "Tooltip"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Long Text Tooltip",
+          "component": {
+            "name": "Atoms/Tooltip",
+            "displayName": "Tooltip"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Multiple Tooltips",
+          "component": {
+            "name": "Atoms/Tooltip",
+            "displayName": "Tooltip"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Custom Styled Tooltip",
+          "component": {
+            "name": "Atoms/Tooltip",
+            "displayName": "Tooltip"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Title",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Subtitle",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Text",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Code",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Italic Text",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Bold Text",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Underline Text",
+          "component": {
+            "name": "Typography",
+            "displayName": "Typography"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default Card",
+          "component": {
+            "name": "COMPONENTS/Card",
+            "displayName": "Card"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Card With Long Description",
+          "component": {
+            "name": "COMPONENTS/Card",
+            "displayName": "Card"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Card Without Description",
+          "component": {
+            "name": "COMPONENTS/Card",
+            "displayName": "Card"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Card With Custom Button",
+          "component": {
+            "name": "COMPONENTS/Card",
+            "displayName": "Card"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Card With Different Avatar Size",
+          "component": {
+            "name": "COMPONENTS/Card",
+            "displayName": "Card"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default Form",
+          "component": {
+            "name": "COMPONENTS/Form",
+            "displayName": "Form"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Filled Form",
+          "component": {
+            "name": "COMPONENTS/Form",
+            "displayName": "Form"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Submitted Form",
+          "component": {
+            "name": "COMPONENTS/Form",
+            "displayName": "Form"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged In",
+          "component": {
+            "name": "COMPONENTS/Header",
+            "displayName": "Header"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged Out",
+          "component": {
+            "name": "COMPONENTS/Header",
+            "displayName": "Header"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged Out",
+          "component": {
+            "name": "PAGES/Page",
+            "displayName": "Page"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Logged In",
+          "component": {
+            "name": "PAGES/Page",
+            "displayName": "Page"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      }
+    ]
+  },
+  "buildCommand": "npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--25131-rNeSLPCnCYWK",
   "buildLogFile": "/Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log",
   "configuration": {
     "configFile": "chromatic.config.json",
@@ -20,9 +1375,885 @@
   "environment": {},
   "exitCode": 0,
   "exitCodeKey": "OK",
+  "fileInfo": {
+    "lengths": [
+      {
+        "pathname": "126.3de80df4.iframe.bundle.js",
+        "contentLength": 1052726,
+        "knownAs": "126.3de80df4.iframe.bundle.js"
+      },
+      {
+        "pathname": "126.3de80df4.iframe.bundle.js.LICENSE.txt",
+        "contentLength": 547,
+        "knownAs": "126.3de80df4.iframe.bundle.js.LICENSE.txt"
+      },
+      {
+        "pathname": "126.3de80df4.iframe.bundle.js.map",
+        "contentLength": 1231547,
+        "knownAs": "126.3de80df4.iframe.bundle.js.map"
+      },
+      {
+        "pathname": "294.2d6e4361.iframe.bundle.js",
+        "contentLength": 1631,
+        "knownAs": "294.2d6e4361.iframe.bundle.js"
+      },
+      {
+        "pathname": "364.4259c6de.iframe.bundle.js",
+        "contentLength": 505,
+        "knownAs": "364.4259c6de.iframe.bundle.js"
+      },
+      {
+        "pathname": "461.ee19b29e.iframe.bundle.js",
+        "contentLength": 39547,
+        "knownAs": "461.ee19b29e.iframe.bundle.js"
+      },
+      {
+        "pathname": "613.161e3322.iframe.bundle.js",
+        "contentLength": 3345,
+        "knownAs": "613.161e3322.iframe.bundle.js"
+      },
+      {
+        "pathname": "653.f85b4f61.iframe.bundle.js",
+        "contentLength": 2264330,
+        "knownAs": "653.f85b4f61.iframe.bundle.js"
+      },
+      {
+        "pathname": "653.f85b4f61.iframe.bundle.js.LICENSE.txt",
+        "contentLength": 1619,
+        "knownAs": "653.f85b4f61.iframe.bundle.js.LICENSE.txt"
+      },
+      {
+        "pathname": "653.f85b4f61.iframe.bundle.js.map",
+        "contentLength": 808346,
+        "knownAs": "653.f85b4f61.iframe.bundle.js.map"
+      },
+      {
+        "pathname": "6f0263d4d5d96e23f440.png",
+        "contentLength": 5865171,
+        "knownAs": "6f0263d4d5d96e23f440.png"
+      },
+      {
+        "pathname": "favicon.ico",
+        "contentLength": 3870,
+        "knownAs": "favicon.ico"
+      },
+      {
+        "pathname": "favicon.svg",
+        "contentLength": 1251,
+        "knownAs": "favicon.svg"
+      },
+      {
+        "pathname": "iframe.html",
+        "contentLength": 15650,
+        "knownAs": "iframe.html"
+      },
+      {
+        "pathname": "index.css",
+        "contentLength": 50,
+        "knownAs": "index.css"
+      },
+      {
+        "pathname": "index.html",
+        "contentLength": 4860,
+        "knownAs": "index.html"
+      },
+      {
+        "pathname": "index.json",
+        "contentLength": 23188,
+        "knownAs": "index.json"
+      },
+      {
+        "pathname": "logo192.png",
+        "contentLength": 5347,
+        "knownAs": "logo192.png"
+      },
+      {
+        "pathname": "logo512.png",
+        "contentLength": 9664,
+        "knownAs": "logo512.png"
+      },
+      {
+        "pathname": "main.0a574511.iframe.bundle.js",
+        "contentLength": 10809,
+        "knownAs": "main.0a574511.iframe.bundle.js"
+      },
+      {
+        "pathname": "manifest.json",
+        "contentLength": 510,
+        "knownAs": "manifest.json"
+      },
+      {
+        "pathname": "nunito-sans-bold-italic.woff2",
+        "contentLength": 49460,
+        "knownAs": "nunito-sans-bold-italic.woff2"
+      },
+      {
+        "pathname": "nunito-sans-bold.woff2",
+        "contentLength": 47144,
+        "knownAs": "nunito-sans-bold.woff2"
+      },
+      {
+        "pathname": "nunito-sans-italic.woff2",
+        "contentLength": 49620,
+        "knownAs": "nunito-sans-italic.woff2"
+      },
+      {
+        "pathname": "nunito-sans-regular.woff2",
+        "contentLength": 47072,
+        "knownAs": "nunito-sans-regular.woff2"
+      },
+      {
+        "pathname": "project.json",
+        "contentLength": 1512,
+        "knownAs": "project.json"
+      },
+      {
+        "pathname": "robots.txt",
+        "contentLength": 67,
+        "knownAs": "robots.txt"
+      },
+      {
+        "pathname": "runtime~main.e675c210.iframe.bundle.js",
+        "contentLength": 10230,
+        "knownAs": "runtime~main.e675c210.iframe.bundle.js"
+      },
+      {
+        "pathname": "sb-addons/chromatic-com-storybook-10/manager-bundle.js",
+        "contentLength": 572127,
+        "knownAs": "sb-addons/chromatic-com-storybook-10/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt",
+        "contentLength": 1684,
+        "knownAs": "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-actions-3/manager-bundle.js",
+        "contentLength": 41065,
+        "knownAs": "sb-addons/essentials-actions-3/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-actions-3/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-actions-3/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-backgrounds-4/manager-bundle.js",
+        "contentLength": 13622,
+        "knownAs": "sb-addons/essentials-backgrounds-4/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-backgrounds-4/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-backgrounds-4/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-controls-2/manager-bundle.js",
+        "contentLength": 505242,
+        "knownAs": "sb-addons/essentials-controls-2/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-controls-2/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-controls-2/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-measure-7/manager-bundle.js",
+        "contentLength": 6354,
+        "knownAs": "sb-addons/essentials-measure-7/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-measure-7/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-measure-7/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-outline-8/manager-bundle.js",
+        "contentLength": 6396,
+        "knownAs": "sb-addons/essentials-outline-8/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-outline-8/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-outline-8/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-toolbars-6/manager-bundle.js",
+        "contentLength": 5157,
+        "knownAs": "sb-addons/essentials-toolbars-6/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-toolbars-6/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-toolbars-6/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/essentials-viewport-5/manager-bundle.js",
+        "contentLength": 13898,
+        "knownAs": "sb-addons/essentials-viewport-5/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/essentials-viewport-5/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/essentials-viewport-5/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/interactions-9/manager-bundle.js",
+        "contentLength": 329898,
+        "knownAs": "sb-addons/interactions-9/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/interactions-9/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/interactions-9/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/links-1/manager-bundle.js",
+        "contentLength": 891,
+        "knownAs": "sb-addons/links-1/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/links-1/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/links-1/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/storybook-11/manager-bundle.js",
+        "contentLength": 3632,
+        "knownAs": "sb-addons/storybook-11/manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/storybook-11/manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/storybook-11/manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js",
+        "contentLength": 1116,
+        "knownAs": "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js"
+      },
+      {
+        "pathname": "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js.LEGAL.txt",
+        "contentLength": 0,
+        "knownAs": "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js.LEGAL.txt"
+      },
+      {
+        "pathname": "sb-common-assets/favicon.svg",
+        "contentLength": 1251,
+        "knownAs": "sb-common-assets/favicon.svg"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-bold-italic.woff2",
+        "contentLength": 49460,
+        "knownAs": "sb-common-assets/nunito-sans-bold-italic.woff2"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-bold.woff2",
+        "contentLength": 47144,
+        "knownAs": "sb-common-assets/nunito-sans-bold.woff2"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-italic.woff2",
+        "contentLength": 49620,
+        "knownAs": "sb-common-assets/nunito-sans-italic.woff2"
+      },
+      {
+        "pathname": "sb-common-assets/nunito-sans-regular.woff2",
+        "contentLength": 47072,
+        "knownAs": "sb-common-assets/nunito-sans-regular.woff2"
+      },
+      {
+        "pathname": "sb-manager/globals-module-info.js",
+        "contentLength": 21932,
+        "knownAs": "sb-manager/globals-module-info.js"
+      },
+      {
+        "pathname": "sb-manager/globals-runtime.js",
+        "contentLength": 1887269,
+        "knownAs": "sb-manager/globals-runtime.js"
+      },
+      {
+        "pathname": "sb-manager/globals.js",
+        "contentLength": 2428,
+        "knownAs": "sb-manager/globals.js"
+      },
+      {
+        "pathname": "sb-manager/runtime.js",
+        "contentLength": 430165,
+        "knownAs": "sb-manager/runtime.js"
+      },
+      {
+        "pathname": "sb-preview/globals.js",
+        "contentLength": 1793,
+        "knownAs": "sb-preview/globals.js"
+      },
+      {
+        "pathname": "sb-preview/runtime.js",
+        "contentLength": 349780,
+        "knownAs": "sb-preview/runtime.js"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css",
+        "contentLength": 426,
+        "knownAs": "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css.map",
+        "contentLength": 698,
+        "knownAs": "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css",
+        "contentLength": 571,
+        "knownAs": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map",
+        "contentLength": 872,
+        "knownAs": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css",
+        "contentLength": 1500,
+        "knownAs": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map",
+        "contentLength": 2022,
+        "knownAs": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css",
+        "contentLength": 1014,
+        "knownAs": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map",
+        "contentLength": 1382,
+        "knownAs": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css",
+        "contentLength": 604,
+        "knownAs": "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css.map",
+        "contentLength": 946,
+        "knownAs": "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css",
+        "contentLength": 345,
+        "knownAs": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map",
+        "contentLength": 587,
+        "knownAs": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css",
+        "contentLength": 954,
+        "knownAs": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map",
+        "contentLength": 1323,
+        "knownAs": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css",
+        "contentLength": 522,
+        "knownAs": "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css.map",
+        "contentLength": 817,
+        "knownAs": "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css",
+        "contentLength": 638,
+        "knownAs": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map",
+        "contentLength": 1003,
+        "knownAs": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css",
+        "contentLength": 619,
+        "knownAs": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map",
+        "contentLength": 934,
+        "knownAs": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css",
+        "contentLength": 374,
+        "knownAs": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map",
+        "contentLength": 614,
+        "knownAs": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css",
+        "contentLength": 241,
+        "knownAs": "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map",
+        "contentLength": 439,
+        "knownAs": "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css",
+        "contentLength": 558,
+        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map",
+        "contentLength": 859,
+        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css",
+        "contentLength": 1038,
+        "knownAs": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map",
+        "contentLength": 1411,
+        "knownAs": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css",
+        "contentLength": 584,
+        "knownAs": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map",
+        "contentLength": 879,
+        "knownAs": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css",
+        "contentLength": 670,
+        "knownAs": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map",
+        "contentLength": 1018,
+        "knownAs": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Components-Card-stories.81c743b1.chunk.css",
+        "contentLength": 2712,
+        "knownAs": "static/css/stories-Components-Card-stories.81c743b1.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map",
+        "contentLength": 3835,
+        "knownAs": "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Components-Form-stories.3ad16338.chunk.css",
+        "contentLength": 3621,
+        "knownAs": "static/css/stories-Components-Form-stories.3ad16338.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map",
+        "contentLength": 4979,
+        "knownAs": "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css",
+        "contentLength": 2360,
+        "knownAs": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map",
+        "contentLength": 3295,
+        "knownAs": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map"
+      },
+      {
+        "pathname": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css",
+        "contentLength": 3216,
+        "knownAs": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css"
+      },
+      {
+        "pathname": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map",
+        "contentLength": 4573,
+        "knownAs": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map"
+      },
+      {
+        "pathname": "stories-Atoms-Avatar-stories.2df88c65.iframe.bundle.js",
+        "contentLength": 3445,
+        "knownAs": "stories-Atoms-Avatar-stories.2df88c65.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Badge-stories.c40f31ee.iframe.bundle.js",
+        "contentLength": 1882,
+        "knownAs": "stories-Atoms-Badge-stories.c40f31ee.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Button-stories.88568add.iframe.bundle.js",
+        "contentLength": 4989,
+        "knownAs": "stories-Atoms-Button-stories.88568add.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Checkbox-stories.a483658e.iframe.bundle.js",
+        "contentLength": 2980,
+        "knownAs": "stories-Atoms-Checkbox-stories.a483658e.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-DividerLine-stories.c9d848c0.iframe.bundle.js",
+        "contentLength": 2232,
+        "knownAs": "stories-Atoms-DividerLine-stories.c9d848c0.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Icon-stories.c2ff5d54.iframe.bundle.js",
+        "contentLength": 4162,
+        "knownAs": "stories-Atoms-Icon-stories.c2ff5d54.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Input-stories.3bca0f83.iframe.bundle.js",
+        "contentLength": 3877,
+        "knownAs": "stories-Atoms-Input-stories.3bca0f83.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Label-stories.ff0b9fd1.iframe.bundle.js",
+        "contentLength": 3992,
+        "knownAs": "stories-Atoms-Label-stories.ff0b9fd1.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Links-stories.fee4b84e.iframe.bundle.js",
+        "contentLength": 2704,
+        "knownAs": "stories-Atoms-Links-stories.fee4b84e.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-List-stories.b3974454.iframe.bundle.js",
+        "contentLength": 3413,
+        "knownAs": "stories-Atoms-List-stories.b3974454.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Loader-stories.f4444e66.iframe.bundle.js",
+        "contentLength": 1015,
+        "knownAs": "stories-Atoms-Loader-stories.f4444e66.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js",
+        "contentLength": 3147,
+        "knownAs": "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js",
+        "contentLength": 2575,
+        "knownAs": "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js",
+        "contentLength": 2917,
+        "knownAs": "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Tooltip-stories.38470de7.iframe.bundle.js",
+        "contentLength": 3126,
+        "knownAs": "stories-Atoms-Tooltip-stories.38470de7.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Atoms-Typography-stories.1c670c23.iframe.bundle.js",
+        "contentLength": 4434,
+        "knownAs": "stories-Atoms-Typography-stories.1c670c23.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Components-Card-stories.c85d5472.iframe.bundle.js",
+        "contentLength": 9013,
+        "knownAs": "stories-Components-Card-stories.c85d5472.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Components-Form-stories.24ae6f43.iframe.bundle.js",
+        "contentLength": 11382,
+        "knownAs": "stories-Components-Form-stories.24ae6f43.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Components-Header-stories.9ad566d1.iframe.bundle.js",
+        "contentLength": 7660,
+        "knownAs": "stories-Components-Header-stories.9ad566d1.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Configure-mdx.f1877e78.iframe.bundle.js",
+        "contentLength": 10094,
+        "knownAs": "stories-Configure-mdx.f1877e78.iframe.bundle.js"
+      },
+      {
+        "pathname": "stories-Pages-Page-stories.23b06d5d.iframe.bundle.js",
+        "contentLength": 10476,
+        "knownAs": "stories-Pages-Page-stories.23b06d5d.iframe.bundle.js"
+      }
+    ],
+    "paths": [
+      "126.3de80df4.iframe.bundle.js",
+      "126.3de80df4.iframe.bundle.js.LICENSE.txt",
+      "126.3de80df4.iframe.bundle.js.map",
+      "294.2d6e4361.iframe.bundle.js",
+      "364.4259c6de.iframe.bundle.js",
+      "461.ee19b29e.iframe.bundle.js",
+      "613.161e3322.iframe.bundle.js",
+      "653.f85b4f61.iframe.bundle.js",
+      "653.f85b4f61.iframe.bundle.js.LICENSE.txt",
+      "653.f85b4f61.iframe.bundle.js.map",
+      "6f0263d4d5d96e23f440.png",
+      "favicon.ico",
+      "favicon.svg",
+      "iframe.html",
+      "index.css",
+      "index.html",
+      "index.json",
+      "logo192.png",
+      "logo512.png",
+      "main.0a574511.iframe.bundle.js",
+      "manifest.json",
+      "nunito-sans-bold-italic.woff2",
+      "nunito-sans-bold.woff2",
+      "nunito-sans-italic.woff2",
+      "nunito-sans-regular.woff2",
+      "project.json",
+      "robots.txt",
+      "runtime~main.e675c210.iframe.bundle.js",
+      "sb-addons/chromatic-com-storybook-10/manager-bundle.js",
+      "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-actions-3/manager-bundle.js",
+      "sb-addons/essentials-actions-3/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-backgrounds-4/manager-bundle.js",
+      "sb-addons/essentials-backgrounds-4/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-controls-2/manager-bundle.js",
+      "sb-addons/essentials-controls-2/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-measure-7/manager-bundle.js",
+      "sb-addons/essentials-measure-7/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-outline-8/manager-bundle.js",
+      "sb-addons/essentials-outline-8/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-toolbars-6/manager-bundle.js",
+      "sb-addons/essentials-toolbars-6/manager-bundle.js.LEGAL.txt",
+      "sb-addons/essentials-viewport-5/manager-bundle.js",
+      "sb-addons/essentials-viewport-5/manager-bundle.js.LEGAL.txt",
+      "sb-addons/interactions-9/manager-bundle.js",
+      "sb-addons/interactions-9/manager-bundle.js.LEGAL.txt",
+      "sb-addons/links-1/manager-bundle.js",
+      "sb-addons/links-1/manager-bundle.js.LEGAL.txt",
+      "sb-addons/storybook-11/manager-bundle.js",
+      "sb-addons/storybook-11/manager-bundle.js.LEGAL.txt",
+      "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js",
+      "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js.LEGAL.txt",
+      "sb-common-assets/favicon.svg",
+      "sb-common-assets/nunito-sans-bold-italic.woff2",
+      "sb-common-assets/nunito-sans-bold.woff2",
+      "sb-common-assets/nunito-sans-italic.woff2",
+      "sb-common-assets/nunito-sans-regular.woff2",
+      "sb-manager/globals-module-info.js",
+      "sb-manager/globals-runtime.js",
+      "sb-manager/globals.js",
+      "sb-manager/runtime.js",
+      "sb-preview/globals.js",
+      "sb-preview/runtime.js",
+      "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css",
+      "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css.map",
+      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css",
+      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map",
+      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css",
+      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map",
+      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css",
+      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map",
+      "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css",
+      "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css.map",
+      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css",
+      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map",
+      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css",
+      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map",
+      "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css",
+      "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css.map",
+      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css",
+      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map",
+      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css",
+      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map",
+      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css",
+      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map",
+      "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css",
+      "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map",
+      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css",
+      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map",
+      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css",
+      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map",
+      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css",
+      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map",
+      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css",
+      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map",
+      "static/css/stories-Components-Card-stories.81c743b1.chunk.css",
+      "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map",
+      "static/css/stories-Components-Form-stories.3ad16338.chunk.css",
+      "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map",
+      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css",
+      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map",
+      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css",
+      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map",
+      "stories-Atoms-Avatar-stories.2df88c65.iframe.bundle.js",
+      "stories-Atoms-Badge-stories.c40f31ee.iframe.bundle.js",
+      "stories-Atoms-Button-stories.88568add.iframe.bundle.js",
+      "stories-Atoms-Checkbox-stories.a483658e.iframe.bundle.js",
+      "stories-Atoms-DividerLine-stories.c9d848c0.iframe.bundle.js",
+      "stories-Atoms-Icon-stories.c2ff5d54.iframe.bundle.js",
+      "stories-Atoms-Input-stories.3bca0f83.iframe.bundle.js",
+      "stories-Atoms-Label-stories.ff0b9fd1.iframe.bundle.js",
+      "stories-Atoms-Links-stories.fee4b84e.iframe.bundle.js",
+      "stories-Atoms-List-stories.b3974454.iframe.bundle.js",
+      "stories-Atoms-Loader-stories.f4444e66.iframe.bundle.js",
+      "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js",
+      "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js",
+      "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js",
+      "stories-Atoms-Tooltip-stories.38470de7.iframe.bundle.js",
+      "stories-Atoms-Typography-stories.1c670c23.iframe.bundle.js",
+      "stories-Components-Card-stories.c85d5472.iframe.bundle.js",
+      "stories-Components-Form-stories.24ae6f43.iframe.bundle.js",
+      "stories-Components-Header-stories.9ad566d1.iframe.bundle.js",
+      "stories-Configure-mdx.f1877e78.iframe.bundle.js",
+      "stories-Pages-Page-stories.23b06d5d.iframe.bundle.js"
+    ],
+    "total": 16093182,
+    "hashes": {
+      "126.3de80df4.iframe.bundle.js": "d0095d8ff89de6f7",
+      "126.3de80df4.iframe.bundle.js.LICENSE.txt": "8bfcb64f2904ca37",
+      "126.3de80df4.iframe.bundle.js.map": "8271015c85243765",
+      "294.2d6e4361.iframe.bundle.js": "b010cec999ba08c6",
+      "364.4259c6de.iframe.bundle.js": "9c122851df357729",
+      "461.ee19b29e.iframe.bundle.js": "b87cf115e4e29dde",
+      "613.161e3322.iframe.bundle.js": "e3f7225434032819",
+      "653.f85b4f61.iframe.bundle.js": "d164129f5d277fb8",
+      "653.f85b4f61.iframe.bundle.js.LICENSE.txt": "9fe791bf2aa3b640",
+      "653.f85b4f61.iframe.bundle.js.map": "43ce0708e534ee9b",
+      "6f0263d4d5d96e23f440.png": "bfb5bc73310d743f",
+      "favicon.ico": "34c4df31bdbad226",
+      "favicon.svg": "293aff65db45e6c4",
+      "iframe.html": "f6df3597fe5e0b10",
+      "index.css": "0592055b1f3dd3e6",
+      "index.html": "8dd3df0de81771b8",
+      "index.json": "8abfb37dfe6dc793",
+      "logo192.png": "d84b06edc1baa420",
+      "logo512.png": "f57c8ac080497095",
+      "main.0a574511.iframe.bundle.js": "4201360314aa9731",
+      "manifest.json": "f954a3d8039349a1",
+      "nunito-sans-bold-italic.woff2": "d64464b3594b3fb9",
+      "nunito-sans-bold.woff2": "0bd5b61b7fb7f7d5",
+      "nunito-sans-italic.woff2": "b7807d9de055e9a0",
+      "nunito-sans-regular.woff2": "6687b7be04c2debe",
+      "project.json": "7ed4d7d9b488486e",
+      "robots.txt": "0d9b735967ef9e81",
+      "runtime~main.e675c210.iframe.bundle.js": "90988de795252e32",
+      "sb-addons/chromatic-com-storybook-10/manager-bundle.js": "db44af53b0d5b869",
+      "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt": "1130aaff59aebfe1",
+      "sb-addons/essentials-actions-3/manager-bundle.js": "ef3f1c272c3e87e7",
+      "sb-addons/essentials-actions-3/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-backgrounds-4/manager-bundle.js": "fc9516041543dc03",
+      "sb-addons/essentials-backgrounds-4/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-controls-2/manager-bundle.js": "c84fea21258d68b8",
+      "sb-addons/essentials-controls-2/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-measure-7/manager-bundle.js": "8171645f21792928",
+      "sb-addons/essentials-measure-7/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-outline-8/manager-bundle.js": "4c355a98e79035ba",
+      "sb-addons/essentials-outline-8/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-toolbars-6/manager-bundle.js": "5d0ad3873e9b8158",
+      "sb-addons/essentials-toolbars-6/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/essentials-viewport-5/manager-bundle.js": "4c063b792273a992",
+      "sb-addons/essentials-viewport-5/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/interactions-9/manager-bundle.js": "91aa3a98caebdd00",
+      "sb-addons/interactions-9/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/links-1/manager-bundle.js": "87e7a1082107654f",
+      "sb-addons/links-1/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/storybook-11/manager-bundle.js": "ae686344e5849e5b",
+      "sb-addons/storybook-11/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js": "6ec3dc61df8cc600",
+      "sb-addons/storybook-core-core-server-presets-0/common-manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
+      "sb-common-assets/favicon.svg": "293aff65db45e6c4",
+      "sb-common-assets/nunito-sans-bold-italic.woff2": "d64464b3594b3fb9",
+      "sb-common-assets/nunito-sans-bold.woff2": "0bd5b61b7fb7f7d5",
+      "sb-common-assets/nunito-sans-italic.woff2": "b7807d9de055e9a0",
+      "sb-common-assets/nunito-sans-regular.woff2": "6687b7be04c2debe",
+      "sb-manager/globals-module-info.js": "3617f58dec8e7cfc",
+      "sb-manager/globals-runtime.js": "40b064dc38921ad8",
+      "sb-manager/globals.js": "dbb1adbc9aebc9d2",
+      "sb-manager/runtime.js": "46ba9076d170614f",
+      "sb-preview/globals.js": "34694a6ced7d7b19",
+      "sb-preview/runtime.js": "662ad219d320d38a",
+      "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css": "90f1a31915c9d289",
+      "static/css/stories-Atoms-Avatar-stories.a8b4d7e0.chunk.css.map": "c49d1b9fdd34669e",
+      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css": "3b6a43332d6da91e",
+      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map": "23dcabe2c653eb97",
+      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css": "58bf5228b8380272",
+      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map": "d7284430ccc3a4fc",
+      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css": "b1b8a70e0148f8a2",
+      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map": "7518945ad32e3a40",
+      "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css": "68e302fc681bc953",
+      "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css.map": "6e2e9b024745e170",
+      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css": "aab2ff852b94a3d8",
+      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map": "f50631e78af269ee",
+      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css": "c6f186ef30bdbe94",
+      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map": "09be351294c2eda5",
+      "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css": "19133e8a1960c20b",
+      "static/css/stories-Atoms-Label-stories.f611dd23.chunk.css.map": "ee3423e8717fb8a1",
+      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css": "cfe76d86f5cce60e",
+      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map": "14504ca8637aa766",
+      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css": "2e36ad6acb06e272",
+      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map": "8fa7956ad0443b46",
+      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css": "347fce3322de64b2",
+      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map": "f34c8ec6f2726ffd",
+      "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css": "1da133d2ed1060f4",
+      "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map": "a1df6c187975a452",
+      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css": "a956a8d4e561fe35",
+      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map": "d39bca3e6d7a392c",
+      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css": "19cd2559da835af6",
+      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map": "44dbb539d46ded72",
+      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css": "98af05c947aed76c",
+      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map": "8e5fe86f1b459569",
+      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css": "cf6e7c61841dc580",
+      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map": "ec0cc9d892489acf",
+      "static/css/stories-Components-Card-stories.81c743b1.chunk.css": "483e33f1db50b7ce",
+      "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map": "2c9240918a964e9f",
+      "static/css/stories-Components-Form-stories.3ad16338.chunk.css": "12dfa5fb591c5a48",
+      "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map": "4a8b29c390709e7d",
+      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css": "93095b530c248434",
+      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map": "dcb2592543da4ef8",
+      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css": "5638597a107432fc",
+      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map": "26e09005a115d9e2",
+      "stories-Atoms-Avatar-stories.2df88c65.iframe.bundle.js": "a5915a2f26d03a08",
+      "stories-Atoms-Badge-stories.c40f31ee.iframe.bundle.js": "114e374ca2de6dea",
+      "stories-Atoms-Button-stories.88568add.iframe.bundle.js": "537e3f8c566ff43e",
+      "stories-Atoms-Checkbox-stories.a483658e.iframe.bundle.js": "35e5d9f5e4a68894",
+      "stories-Atoms-DividerLine-stories.c9d848c0.iframe.bundle.js": "fa2a9cc180934a4c",
+      "stories-Atoms-Icon-stories.c2ff5d54.iframe.bundle.js": "09237e1d6064bfe9",
+      "stories-Atoms-Input-stories.3bca0f83.iframe.bundle.js": "8701ca08440050c7",
+      "stories-Atoms-Label-stories.ff0b9fd1.iframe.bundle.js": "71c7c60e29960aeb",
+      "stories-Atoms-Links-stories.fee4b84e.iframe.bundle.js": "7030fc23d2a516f2",
+      "stories-Atoms-List-stories.b3974454.iframe.bundle.js": "c1868f32616a3e19",
+      "stories-Atoms-Loader-stories.f4444e66.iframe.bundle.js": "f5e4c8a9d505c958",
+      "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js": "bbaa57aee3f53767",
+      "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js": "b8500363ceeb0650",
+      "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js": "90206a20d9b8e7ba",
+      "stories-Atoms-Tooltip-stories.38470de7.iframe.bundle.js": "99f8c5ace9b2abb4",
+      "stories-Atoms-Typography-stories.1c670c23.iframe.bundle.js": "d0f003e8e2eb0523",
+      "stories-Components-Card-stories.c85d5472.iframe.bundle.js": "57105e6f4d03d358",
+      "stories-Components-Form-stories.24ae6f43.iframe.bundle.js": "f954da83f0423439",
+      "stories-Components-Header-stories.9ad566d1.iframe.bundle.js": "c2f733245f37697a",
+      "stories-Configure-mdx.f1877e78.iframe.bundle.js": "d309c235d68ed008",
+      "stories-Pages-Page-stories.23b06d5d.iframe.bundle.js": "8a3c42c1185ce62b"
+    }
+  },
   "flags": {
     "list": true,
-    "dryRun": true,
     "outputDir": [],
     "storybookBuildDir": [],
     "externals": [],
@@ -36,24 +2267,25 @@
   "git": {
     "version": "2.39.3 (Apple Git-146)",
     "gitUserEmail": "carmenbaez2000@gmail.com",
-    "uncommittedHash": "1e788ac1d1cce2f19e4303edca6fd75a6afdd0bd",
-    "commit": "23e93f871a68415b3572743d113cdeb9a20051fc",
-    "committedAt": 1728572409000,
+    "uncommittedHash": "d98d552405065408fd4e4c37eb3475cfd3c2ae9a",
+    "commit": "79416d230044b3016e92ef9d1798fe8a906d13a4",
+    "committedAt": 1728573882000,
     "committerEmail": "carmenbaez2000@gmail.com",
     "committerName": "Carmen Lopez",
     "branch": "main",
     "slug": "cgbl-90/ds",
     "fromCI": false,
     "parentCommits": [
-      "23e93f871a68415b3572743d113cdeb9a20051fc"
+      "79416d230044b3016e92ef9d1798fe8a906d13a4"
     ]
   },
   "input": [],
   "isOnboarding": false,
+  "isPublishOnly": false,
   "options": {
     "fromCI": false,
     "inAction": false,
-    "dryRun": true,
+    "dryRun": false,
     "debug": true,
     "autoAcceptChanges": false,
     "exitZeroOnChanges": false,
@@ -65,8 +2297,7 @@
     "originalArgv": [
       "--project-token",
       "chpt_1dfeeb5e0e7b48e",
-      "--list",
-      "--dry-run"
+      "--list"
     ],
     "list": true,
     "logFile": "chromatic.log",
@@ -143,21 +2374,28 @@
     "_id": "cgbl-design-system@0.1.0"
   },
   "packagePath": "/Users/camy-chroma/GitHub/cgbl-design-system/package.json",
-  "rebuildForBuildId": "6707ec242f8a793988f09391",
   "runtimeMetadata": {
     "nodePlatform": "darwin",
     "nodeVersion": "18.20.1",
     "packageManager": "npm",
     "packageManagerVersion": "9.5.0"
   },
-  "sessionId": "a18b1dd7-86e0-454e-b3c3-ee96f94794ae",
-  "sourceDir": "/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--22092-1o6IF7D0pOAj",
-  "startedAt": 1728573129974,
+  "sentinelUrls": [
+    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-qnincolzry/.chromatic/files-copied.118071509.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T153703Z&X-Amz-Expires=1800&X-Amz-Signature=240fc5e9a5e3626d8752216384dfd1c24b3176588774e7a02b511a2ecf7813ee&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-qnincolzry/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T153703Z&X-Amz-Expires=1980&X-Amz-Signature=75563f383bf7aaed8f41c9206e0d2b58b3d80c16a54b83bfea540294959e6198&X-Amz-SignedHeaders=host&x-id=GetObject"
+  ],
+  "sessionId": "4e3b527b-a2ca-4f06-93f0-e2e52f7d2c51",
+  "skipSnapshots": true,
+  "sourceDir": "/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--25131-rNeSLPCnCYWK",
+  "startedAt": 1728574638281,
   "storybook": {
     "addons": [],
     "viewLayer": "@storybook/react-webpack5",
     "version": "8.2.8"
   },
-  "task": "build",
+  "storybookUrl": "https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/",
+  "task": "verify",
+  "uploadedBytes": 27550,
+  "uploadedFiles": 14,
   "userError": false
 }
