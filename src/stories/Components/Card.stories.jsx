@@ -3,7 +3,7 @@ import { Card } from "./Card";
 import avatarImage from "../avatar.png";
 
 export default {
-  title: "MOLECULES/Card",
+  title: "COMPONENTS/Card",
   component: Card,
   parameters: {
     layout: "centered",

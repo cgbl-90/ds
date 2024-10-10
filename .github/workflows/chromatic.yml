@@ -36,6 +36,7 @@ jobs:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           skip: "dependabot/**"
           debug: true
+          list: true
           zip: true
           junitReport: true
 

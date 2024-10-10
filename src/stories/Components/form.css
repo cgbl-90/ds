@@ -1,0 +1,21 @@
+.storybook-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
