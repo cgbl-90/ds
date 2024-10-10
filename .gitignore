@@ -31,3 +31,4 @@ gitkey.pub
 chromatic-diagnostics.json
 chromatic.config.json
 chromatic.log 
+playwright.config.js

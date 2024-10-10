@@ -12,6 +12,10 @@ export default {
         options: ["new", "success", "warning"],
       },
     },
+    parameters: {
+      // Disables Chromatic's snapshotting on a component level
+      chromatic: { disableSnapshot: true },
+    },
   },
 };
 
