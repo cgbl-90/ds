@@ -1,3 +1,4 @@
+// Avatar.stories.js
 import { Avatar } from "./Avatar";
 import avatarImage from "../avatar.png";
 
@@ -6,6 +7,9 @@ export default {
   component: Avatar,
   parameters: {
     layout: "centered",
+  },
+  args: {
+    dataTestId: "avatar",
   },
 };
 
@@ -30,5 +34,14 @@ export const Large = {
     src: avatarImage,
     size: "large",
     alt: "Large Avatar",
+  },
+};
+
+export const HoverInteraction = {
+  args: {
+    src: avatarImage,
+    size: "medium",
+    alt: "Hover Interaction Avatar",
+    hoverDecorator: true, // Enable hover decorator
   },
 };

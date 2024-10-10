@@ -26,3 +26,8 @@ gitkey
 gitkey.pub
 
 *storybook.log
+
+#Chroma files
+chromatic-diagnostics.json
+chromatic.config.json
+chromatic.log 

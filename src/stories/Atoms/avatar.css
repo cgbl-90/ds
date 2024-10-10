@@ -19,3 +19,7 @@
 .storybook-avatar--large {
     width: 128px;
 }
+
+.storybook-avatar:hover {
+    filter: brightness(0.7);
+}

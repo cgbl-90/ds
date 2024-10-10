@@ -1,20 +1,20 @@
 {
   "activity": {},
   "announcedBuild": {
-    "id": "66fff06316ae898119ba1e10",
-    "number": 15,
+    "id": "6707027020186a092f757f64",
+    "number": 18,
     "status": "PUBLISHED",
     "autoAcceptChanges": false,
     "app": {
       "id": "66c61912622bdf9d8de37009",
       "turboSnapAvailability": "UNAVAILABLE"
     },
-    "storybookUrl": "https://66c61912622bdf9d8de37009-sbbczjrjwf.chromatic.com/"
+    "storybookUrl": "https://66c61912622bdf9d8de37009-tghjgsebcn.chromatic.com/"
   },
   "build": {
-    "id": "66fff06316ae898119ba1e10",
-    "number": 15,
-    "status": "PASSED",
+    "id": "6707027020186a092f757f64",
+    "number": 18,
+    "status": "BROKEN",
     "autoAcceptChanges": false,
     "app": {
       "manageUrl": "https://www.chromatic.com/manage?appId=66c61912622bdf9d8de37009",
@@ -28,17 +28,17 @@
         "provider": "github"
       }
     },
-    "storybookUrl": "https://66c61912622bdf9d8de37009-sbbczjrjwf.chromatic.com/",
-    "specCount": 64,
-    "componentCount": 16,
-    "testCount": 64,
+    "storybookUrl": "https://66c61912622bdf9d8de37009-tghjgsebcn.chromatic.com/",
+    "specCount": 69,
+    "componentCount": 17,
+    "testCount": 69,
     "changeCount": 0,
-    "errorCount": 0,
-    "actualTestCount": 0,
-    "actualCaptureCount": 0,
-    "inheritedCaptureCount": 60,
+    "errorCount": 1,
+    "actualTestCount": 69,
+    "actualCaptureCount": 69,
+    "inheritedCaptureCount": 0,
     "interactionTestFailuresCount": 0,
-    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=15",
+    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=18",
     "browsers": [
       {
         "browser": "chrome"
@@ -86,6 +86,22 @@
       {
         "spec": {
           "name": "Large",
+          "component": {
+            "name": "ATOMS/Avatar",
+            "displayName": "Avatar"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Hover Interaction",
           "component": {
             "name": "ATOMS/Avatar",
             "displayName": "Avatar"
@@ -711,6 +727,70 @@
         "spec": {
           "name": "Default",
           "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Large Green Dot",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Blue Dot Bottom Left",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Yellow Dot Top Left",
+          "component": {
+            "name": "Atoms/Notification Dot",
+            "displayName": "Notification Dot"
+          }
+        },
+        "parameters": {
+          "viewport": 1200,
+          "viewportIsDefault": true
+        },
+        "mode": {
+          "name": "1200px"
+        }
+      },
+      {
+        "spec": {
+          "name": "Default",
+          "component": {
             "name": "Atoms/Progress Bar",
             "displayName": "Progress Bar"
           }
@@ -1077,9 +1157,9 @@
       }
     ],
     "inProgressCount": 0,
-    "completedAt": 1728049270631
+    "completedAt": 1728512671202
   },
-  "buildCommand": "npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--10541-zrehpbjffBGD",
+  "buildCommand": "npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--45595-jg4UIN4ncq2x",
   "buildLogFile": "/Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log",
   "configuration": {
     "configFile": "chromatic.config.json",
@@ -1088,79 +1168,33 @@
     "zip": true
   },
   "environment": {},
-  "exitCode": 0,
-  "exitCodeKey": "OK",
+  "exitCode": 2,
+  "exitCodeKey": "BUILD_HAS_ERRORS",
+  "extraOptions": {
+    "configFile": "chromatic.config.json",
+    "projectId": "Project:66c61912622bdf9d8de37009",
+    "autoAcceptChanges": false,
+    "exitOnceUploaded": false,
+    "exitZeroOnChanges": true,
+    "forceRebuild": true,
+    "fromCI": false,
+    "interactive": false,
+    "isLocalBuild": true,
+    "skip": false,
+    "skipUpdateCheck": true,
+    "experimental_abortSignal": {}
+  },
   "fileInfo": {
     "lengths": [
       {
-        "pathname": "110.4e6f17f8.iframe.bundle.js",
-        "contentLength": 845793,
-        "knownAs": "110.4e6f17f8.iframe.bundle.js"
-      },
-      {
-        "pathname": "110.4e6f17f8.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 1123,
-        "knownAs": "110.4e6f17f8.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "110.4e6f17f8.iframe.bundle.js.map",
-        "contentLength": 15756,
-        "knownAs": "110.4e6f17f8.iframe.bundle.js.map"
-      },
-      {
-        "pathname": "126.c153accf.iframe.bundle.js",
-        "contentLength": 1033599,
-        "knownAs": "126.c153accf.iframe.bundle.js"
-      },
-      {
-        "pathname": "126.c153accf.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 547,
-        "knownAs": "126.c153accf.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "126.c153accf.iframe.bundle.js.map",
-        "contentLength": 1206385,
-        "knownAs": "126.c153accf.iframe.bundle.js.map"
-      },
-      {
-        "pathname": "294.2d6e4361.iframe.bundle.js",
-        "contentLength": 1631,
-        "knownAs": "294.2d6e4361.iframe.bundle.js"
-      },
-      {
-        "pathname": "364.4259c6de.iframe.bundle.js",
-        "contentLength": 505,
-        "knownAs": "364.4259c6de.iframe.bundle.js"
-      },
-      {
-        "pathname": "461.ee19b29e.iframe.bundle.js",
-        "contentLength": 39547,
-        "knownAs": "461.ee19b29e.iframe.bundle.js"
-      },
-      {
-        "pathname": "613.161e3322.iframe.bundle.js",
-        "contentLength": 3345,
-        "knownAs": "613.161e3322.iframe.bundle.js"
+        "pathname": "217.1a9c5c75.iframe.bundle.js",
+        "contentLength": 1251575,
+        "knownAs": "217.1a9c5c75.iframe.bundle.js"
       },
       {
         "pathname": "6f0263d4d5d96e23f440.png",
         "contentLength": 5865171,
         "knownAs": "6f0263d4d5d96e23f440.png"
-      },
-      {
-        "pathname": "7.7dbce6d9.iframe.bundle.js",
-        "contentLength": 919270,
-        "knownAs": "7.7dbce6d9.iframe.bundle.js"
-      },
-      {
-        "pathname": "7.7dbce6d9.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "7.7dbce6d9.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "7.7dbce6d9.iframe.bundle.js.map",
-        "contentLength": 975055,
-        "knownAs": "7.7dbce6d9.iframe.bundle.js.map"
       },
       {
         "pathname": "favicon.ico",
@@ -1174,7 +1208,7 @@
       },
       {
         "pathname": "iframe.html",
-        "contentLength": 15650,
+        "contentLength": 15530,
         "knownAs": "iframe.html"
       },
       {
@@ -1184,12 +1218,12 @@
       },
       {
         "pathname": "index.html",
-        "contentLength": 4854,
+        "contentLength": 4814,
         "knownAs": "index.html"
       },
       {
         "pathname": "index.json",
-        "contentLength": 17262,
+        "contentLength": 17259,
         "knownAs": "index.json"
       },
       {
@@ -1203,9 +1237,9 @@
         "knownAs": "logo512.png"
       },
       {
-        "pathname": "main.ccf7421c.iframe.bundle.js",
-        "contentLength": 9007,
-        "knownAs": "main.ccf7421c.iframe.bundle.js"
+        "pathname": "main.fd3193e3.iframe.bundle.js",
+        "contentLength": 6975,
+        "knownAs": "main.fd3193e3.iframe.bundle.js"
       },
       {
         "pathname": "manifest.json",
@@ -1234,7 +1268,7 @@
       },
       {
         "pathname": "project.json",
-        "contentLength": 1373,
+        "contentLength": 1484,
         "knownAs": "project.json"
       },
       {
@@ -1243,9 +1277,9 @@
         "knownAs": "robots.txt"
       },
       {
-        "pathname": "runtime~main.ff6d7ced.iframe.bundle.js",
-        "contentLength": 9783,
-        "knownAs": "runtime~main.ff6d7ced.iframe.bundle.js"
+        "pathname": "runtime~main.5c694510.iframe.bundle.js",
+        "contentLength": 6094,
+        "knownAs": "runtime~main.5c694510.iframe.bundle.js"
       },
       {
         "pathname": "sb-addons/chromatic-com-storybook-10/manager-bundle.js",
@@ -1259,7 +1293,7 @@
       },
       {
         "pathname": "sb-addons/essentials-actions-3/manager-bundle.js",
-        "contentLength": 41051,
+        "contentLength": 41065,
         "knownAs": "sb-addons/essentials-actions-3/manager-bundle.js"
       },
       {
@@ -1269,7 +1303,7 @@
       },
       {
         "pathname": "sb-addons/essentials-backgrounds-4/manager-bundle.js",
-        "contentLength": 13471,
+        "contentLength": 13622,
         "knownAs": "sb-addons/essentials-backgrounds-4/manager-bundle.js"
       },
       {
@@ -1279,7 +1313,7 @@
       },
       {
         "pathname": "sb-addons/essentials-controls-2/manager-bundle.js",
-        "contentLength": 508703,
+        "contentLength": 505242,
         "knownAs": "sb-addons/essentials-controls-2/manager-bundle.js"
       },
       {
@@ -1289,7 +1323,7 @@
       },
       {
         "pathname": "sb-addons/essentials-measure-7/manager-bundle.js",
-        "contentLength": 6203,
+        "contentLength": 6354,
         "knownAs": "sb-addons/essentials-measure-7/manager-bundle.js"
       },
       {
@@ -1299,7 +1333,7 @@
       },
       {
         "pathname": "sb-addons/essentials-outline-8/manager-bundle.js",
-        "contentLength": 6245,
+        "contentLength": 6396,
         "knownAs": "sb-addons/essentials-outline-8/manager-bundle.js"
       },
       {
@@ -1319,7 +1353,7 @@
       },
       {
         "pathname": "sb-addons/essentials-viewport-5/manager-bundle.js",
-        "contentLength": 13747,
+        "contentLength": 13898,
         "knownAs": "sb-addons/essentials-viewport-5/manager-bundle.js"
       },
       {
@@ -1329,7 +1363,7 @@
       },
       {
         "pathname": "sb-addons/interactions-9/manager-bundle.js",
-        "contentLength": 301409,
+        "contentLength": 329898,
         "knownAs": "sb-addons/interactions-9/manager-bundle.js"
       },
       {
@@ -1394,12 +1428,12 @@
       },
       {
         "pathname": "sb-manager/globals-module-info.js",
-        "contentLength": 21695,
+        "contentLength": 21932,
         "knownAs": "sb-manager/globals-module-info.js"
       },
       {
         "pathname": "sb-manager/globals-runtime.js",
-        "contentLength": 1853852,
+        "contentLength": 1887269,
         "knownAs": "sb-manager/globals-runtime.js"
       },
       {
@@ -1409,7 +1443,7 @@
       },
       {
         "pathname": "sb-manager/runtime.js",
-        "contentLength": 421260,
+        "contentLength": 430165,
         "knownAs": "sb-manager/runtime.js"
       },
       {
@@ -1419,345 +1453,183 @@
       },
       {
         "pathname": "sb-preview/runtime.js",
-        "contentLength": 348979,
+        "contentLength": 349780,
         "knownAs": "sb-preview/runtime.js"
       },
       {
-        "pathname": "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css",
-        "contentLength": 368,
-        "knownAs": "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css"
+        "pathname": "static/css/stories-Atoms-Avatar-stories.bfcb13f8.chunk.css",
+        "contentLength": 351,
+        "knownAs": "static/css/stories-Atoms-Avatar-stories.bfcb13f8.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css.map",
-        "contentLength": 620,
-        "knownAs": "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-Badge-stories.01800259.chunk.css",
+        "contentLength": 497,
+        "knownAs": "static/css/stories-Atoms-Badge-stories.01800259.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css",
-        "contentLength": 571,
-        "knownAs": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css"
+        "pathname": "static/css/stories-Atoms-Button-stories.37c5ae43.chunk.css",
+        "contentLength": 1425,
+        "knownAs": "static/css/stories-Atoms-Button-stories.37c5ae43.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map",
-        "contentLength": 872,
-        "knownAs": "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map"
-      },
-      {
-        "pathname": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css",
-        "contentLength": 1500,
-        "knownAs": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css"
-      },
-      {
-        "pathname": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map",
-        "contentLength": 2022,
-        "knownAs": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map"
-      },
-      {
-        "pathname": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css",
-        "contentLength": 1014,
-        "knownAs": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css"
-      },
-      {
-        "pathname": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map",
-        "contentLength": 1382,
-        "knownAs": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map"
-      },
-      {
-        "pathname": "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css",
-        "contentLength": 600,
-        "knownAs": "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css"
-      },
-      {
-        "pathname": "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css.map",
+        "pathname": "static/css/stories-Atoms-Checkbox-stories.ed5496a3.chunk.css",
         "contentLength": 937,
-        "knownAs": "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css.map"
+        "knownAs": "static/css/stories-Atoms-Checkbox-stories.ed5496a3.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css",
-        "contentLength": 345,
-        "knownAs": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css"
+        "pathname": "static/css/stories-Atoms-Divider-stories.3a601d6e.chunk.css",
+        "contentLength": 524,
+        "knownAs": "static/css/stories-Atoms-Divider-stories.3a601d6e.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map",
-        "contentLength": 587,
-        "knownAs": "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-Icon-stories.ee5fc170.chunk.css",
+        "contentLength": 272,
+        "knownAs": "static/css/stories-Atoms-Icon-stories.ee5fc170.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css",
-        "contentLength": 954,
-        "knownAs": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css"
+        "pathname": "static/css/stories-Atoms-Input-stories.298e3ec4.chunk.css",
+        "contentLength": 880,
+        "knownAs": "static/css/stories-Atoms-Input-stories.298e3ec4.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map",
-        "contentLength": 1323,
-        "knownAs": "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-Links-stories.338db990.chunk.css",
+        "contentLength": 564,
+        "knownAs": "static/css/stories-Atoms-Links-stories.338db990.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css",
-        "contentLength": 638,
-        "knownAs": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css"
+        "pathname": "static/css/stories-Atoms-List-stories.a484d812.chunk.css",
+        "contentLength": 546,
+        "knownAs": "static/css/stories-Atoms-List-stories.a484d812.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map",
-        "contentLength": 1003,
-        "knownAs": "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-Loader-stories.56bda2be.chunk.css",
+        "contentLength": 299,
+        "knownAs": "static/css/stories-Atoms-Loader-stories.56bda2be.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css",
-        "contentLength": 619,
-        "knownAs": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css"
+        "pathname": "static/css/stories-Atoms-NotificationDot-stories.bf3f7c96.chunk.css",
+        "contentLength": 157,
+        "knownAs": "static/css/stories-Atoms-NotificationDot-stories.bf3f7c96.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map",
-        "contentLength": 934,
-        "knownAs": "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-ProgressBar-stories.9df9d60d.chunk.css",
+        "contentLength": 478,
+        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.9df9d60d.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css",
-        "contentLength": 374,
-        "knownAs": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css"
+        "pathname": "static/css/stories-Atoms-Radio-stories.f1ed74df.chunk.css",
+        "contentLength": 964,
+        "knownAs": "static/css/stories-Atoms-Radio-stories.f1ed74df.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map",
-        "contentLength": 614,
-        "knownAs": "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-Tooltip-stories.2620390a.chunk.css",
+        "contentLength": 508,
+        "knownAs": "static/css/stories-Atoms-Tooltip-stories.2620390a.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css",
-        "contentLength": 558,
-        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css"
+        "pathname": "static/css/stories-Atoms-Typography-stories.e4fbbe95.chunk.css",
+        "contentLength": 591,
+        "knownAs": "static/css/stories-Atoms-Typography-stories.e4fbbe95.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map",
-        "contentLength": 859,
-        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map"
+        "pathname": "static/css/stories-Components-Header-stories.532df4b6.chunk.css",
+        "contentLength": 2280,
+        "knownAs": "static/css/stories-Components-Header-stories.532df4b6.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css",
-        "contentLength": 1038,
-        "knownAs": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css"
+        "pathname": "static/css/stories-Pages-Page-stories.0c63680e.chunk.css",
+        "contentLength": 3143,
+        "knownAs": "static/css/stories-Pages-Page-stories.0c63680e.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map",
-        "contentLength": 1411,
-        "knownAs": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map"
+        "pathname": "stories-Atoms-Avatar-stories.d46eceb5.iframe.bundle.js",
+        "contentLength": 1041,
+        "knownAs": "stories-Atoms-Avatar-stories.d46eceb5.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css",
-        "contentLength": 584,
-        "knownAs": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css"
+        "pathname": "stories-Atoms-Badge-stories.876dd5b9.iframe.bundle.js",
+        "contentLength": 874,
+        "knownAs": "stories-Atoms-Badge-stories.876dd5b9.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map",
-        "contentLength": 879,
-        "knownAs": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map"
+        "pathname": "stories-Atoms-Button-stories.83748b30.iframe.bundle.js",
+        "contentLength": 1750,
+        "knownAs": "stories-Atoms-Button-stories.83748b30.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css",
-        "contentLength": 670,
-        "knownAs": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css"
+        "pathname": "stories-Atoms-Checkbox-stories.e836f231.iframe.bundle.js",
+        "contentLength": 1122,
+        "knownAs": "stories-Atoms-Checkbox-stories.e836f231.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map",
-        "contentLength": 1018,
-        "knownAs": "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map"
+        "pathname": "stories-Atoms-Divider-stories.fd9dc886.iframe.bundle.js",
+        "contentLength": 1086,
+        "knownAs": "stories-Atoms-Divider-stories.fd9dc886.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css",
-        "contentLength": 2360,
-        "knownAs": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css"
+        "pathname": "stories-Atoms-Icon-stories.8be3dfe5.iframe.bundle.js",
+        "contentLength": 2989,
+        "knownAs": "stories-Atoms-Icon-stories.8be3dfe5.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map",
-        "contentLength": 3295,
-        "knownAs": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map"
+        "pathname": "stories-Atoms-Input-stories.468ad129.iframe.bundle.js",
+        "contentLength": 1291,
+        "knownAs": "stories-Atoms-Input-stories.468ad129.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css",
-        "contentLength": 3216,
-        "knownAs": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css"
+        "pathname": "stories-Atoms-Links-stories.10b55fea.iframe.bundle.js",
+        "contentLength": 1335,
+        "knownAs": "stories-Atoms-Links-stories.10b55fea.iframe.bundle.js"
       },
       {
-        "pathname": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map",
-        "contentLength": 4573,
-        "knownAs": "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map"
+        "pathname": "stories-Atoms-List-stories.83e512ff.iframe.bundle.js",
+        "contentLength": 1173,
+        "knownAs": "stories-Atoms-List-stories.83e512ff.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js",
-        "contentLength": 3429,
-        "knownAs": "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js"
+        "pathname": "stories-Atoms-Loader-stories.9be1ad74.iframe.bundle.js",
+        "contentLength": 478,
+        "knownAs": "stories-Atoms-Loader-stories.9be1ad74.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js.LICENSE.txt"
+        "pathname": "stories-Atoms-NotificationDot-stories.49825d4b.iframe.bundle.js",
+        "contentLength": 1456,
+        "knownAs": "stories-Atoms-NotificationDot-stories.49825d4b.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js",
-        "contentLength": 2889,
-        "knownAs": "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js"
+        "pathname": "stories-Atoms-ProgressBar-stories.cead6ec4.iframe.bundle.js",
+        "contentLength": 1250,
+        "knownAs": "stories-Atoms-ProgressBar-stories.cead6ec4.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js.LICENSE.txt"
+        "pathname": "stories-Atoms-Radio-stories.48056226.iframe.bundle.js",
+        "contentLength": 1092,
+        "knownAs": "stories-Atoms-Radio-stories.48056226.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js",
-        "contentLength": 6041,
-        "knownAs": "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js"
+        "pathname": "stories-Atoms-Tooltip-stories.71be7a65.iframe.bundle.js",
+        "contentLength": 1301,
+        "knownAs": "stories-Atoms-Tooltip-stories.71be7a65.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js.LICENSE.txt"
+        "pathname": "stories-Atoms-Typography-stories.3fb7eddf.iframe.bundle.js",
+        "contentLength": 1673,
+        "knownAs": "stories-Atoms-Typography-stories.3fb7eddf.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js",
-        "contentLength": 3803,
-        "knownAs": "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js"
+        "pathname": "stories-Components-Header-stories.e91f0d71.iframe.bundle.js",
+        "contentLength": 4616,
+        "knownAs": "stories-Components-Header-stories.e91f0d71.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js",
-        "contentLength": 3279,
-        "knownAs": "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js",
-        "contentLength": 5212,
-        "knownAs": "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js",
-        "contentLength": 4697,
-        "knownAs": "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js",
-        "contentLength": 3755,
-        "knownAs": "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js",
-        "contentLength": 4463,
-        "knownAs": "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js",
-        "contentLength": 2067,
-        "knownAs": "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js",
-        "contentLength": 3632,
-        "knownAs": "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Radio-stories.71693535.iframe.bundle.js",
-        "contentLength": 3737,
-        "knownAs": "stories-Atoms-Radio-stories.71693535.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Radio-stories.71693535.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Radio-stories.71693535.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js",
-        "contentLength": 4179,
-        "knownAs": "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js",
-        "contentLength": 5490,
-        "knownAs": "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Components-Header-stories.2bbc1bdc.iframe.bundle.js",
-        "contentLength": 8069,
-        "knownAs": "stories-Components-Header-stories.2bbc1bdc.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Configure-mdx.9498f391.iframe.bundle.js",
-        "contentLength": 11165,
-        "knownAs": "stories-Configure-mdx.9498f391.iframe.bundle.js"
-      },
-      {
-        "pathname": "stories-Configure-mdx.9498f391.iframe.bundle.js.LICENSE.txt",
-        "contentLength": 249,
-        "knownAs": "stories-Configure-mdx.9498f391.iframe.bundle.js.LICENSE.txt"
-      },
-      {
-        "pathname": "stories-Pages-Page-stories.6f55fd92.iframe.bundle.js",
-        "contentLength": 10898,
-        "knownAs": "stories-Pages-Page-stories.6f55fd92.iframe.bundle.js"
+        "pathname": "stories-Pages-Page-stories.3f73c876.iframe.bundle.js",
+        "contentLength": 6152,
+        "knownAs": "stories-Pages-Page-stories.3f73c876.iframe.bundle.js"
       }
     ],
     "paths": [
-      "110.4e6f17f8.iframe.bundle.js",
-      "110.4e6f17f8.iframe.bundle.js.LICENSE.txt",
-      "110.4e6f17f8.iframe.bundle.js.map",
-      "126.c153accf.iframe.bundle.js",
-      "126.c153accf.iframe.bundle.js.LICENSE.txt",
-      "126.c153accf.iframe.bundle.js.map",
-      "294.2d6e4361.iframe.bundle.js",
-      "364.4259c6de.iframe.bundle.js",
-      "461.ee19b29e.iframe.bundle.js",
-      "613.161e3322.iframe.bundle.js",
+      "217.1a9c5c75.iframe.bundle.js",
       "6f0263d4d5d96e23f440.png",
-      "7.7dbce6d9.iframe.bundle.js",
-      "7.7dbce6d9.iframe.bundle.js.LICENSE.txt",
-      "7.7dbce6d9.iframe.bundle.js.map",
       "favicon.ico",
       "favicon.svg",
       "iframe.html",
@@ -1766,7 +1638,7 @@
       "index.json",
       "logo192.png",
       "logo512.png",
-      "main.ccf7421c.iframe.bundle.js",
+      "main.fd3193e3.iframe.bundle.js",
       "manifest.json",
       "nunito-sans-bold-italic.woff2",
       "nunito-sans-bold.woff2",
@@ -1774,7 +1646,7 @@
       "nunito-sans-regular.woff2",
       "project.json",
       "robots.txt",
-      "runtime~main.ff6d7ced.iframe.bundle.js",
+      "runtime~main.5c694510.iframe.bundle.js",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt",
       "sb-addons/essentials-actions-3/manager-bundle.js",
@@ -1810,121 +1682,79 @@
       "sb-manager/runtime.js",
       "sb-preview/globals.js",
       "sb-preview/runtime.js",
-      "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css",
-      "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css.map",
-      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css",
-      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map",
-      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css",
-      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map",
-      "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css",
-      "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css.map",
-      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css",
-      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map",
-      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css",
-      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map",
-      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css",
-      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map",
-      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css",
-      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map",
-      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css",
-      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map",
-      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css",
-      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map",
-      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css",
-      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map",
-      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css",
-      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map",
-      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css",
-      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map",
-      "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js",
-      "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js",
-      "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js",
-      "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js",
-      "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js",
-      "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js",
-      "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js",
-      "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js",
-      "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js",
-      "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js",
-      "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js",
-      "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Radio-stories.71693535.iframe.bundle.js",
-      "stories-Atoms-Radio-stories.71693535.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js",
-      "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js.LICENSE.txt",
-      "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js",
-      "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js.LICENSE.txt",
-      "stories-Components-Header-stories.2bbc1bdc.iframe.bundle.js",
-      "stories-Configure-mdx.9498f391.iframe.bundle.js",
-      "stories-Configure-mdx.9498f391.iframe.bundle.js.LICENSE.txt",
-      "stories-Pages-Page-stories.6f55fd92.iframe.bundle.js"
+      "static/css/stories-Atoms-Avatar-stories.bfcb13f8.chunk.css",
+      "static/css/stories-Atoms-Badge-stories.01800259.chunk.css",
+      "static/css/stories-Atoms-Button-stories.37c5ae43.chunk.css",
+      "static/css/stories-Atoms-Checkbox-stories.ed5496a3.chunk.css",
+      "static/css/stories-Atoms-Divider-stories.3a601d6e.chunk.css",
+      "static/css/stories-Atoms-Icon-stories.ee5fc170.chunk.css",
+      "static/css/stories-Atoms-Input-stories.298e3ec4.chunk.css",
+      "static/css/stories-Atoms-Links-stories.338db990.chunk.css",
+      "static/css/stories-Atoms-List-stories.a484d812.chunk.css",
+      "static/css/stories-Atoms-Loader-stories.56bda2be.chunk.css",
+      "static/css/stories-Atoms-NotificationDot-stories.bf3f7c96.chunk.css",
+      "static/css/stories-Atoms-ProgressBar-stories.9df9d60d.chunk.css",
+      "static/css/stories-Atoms-Radio-stories.f1ed74df.chunk.css",
+      "static/css/stories-Atoms-Tooltip-stories.2620390a.chunk.css",
+      "static/css/stories-Atoms-Typography-stories.e4fbbe95.chunk.css",
+      "static/css/stories-Components-Header-stories.532df4b6.chunk.css",
+      "static/css/stories-Pages-Page-stories.0c63680e.chunk.css",
+      "stories-Atoms-Avatar-stories.d46eceb5.iframe.bundle.js",
+      "stories-Atoms-Badge-stories.876dd5b9.iframe.bundle.js",
+      "stories-Atoms-Button-stories.83748b30.iframe.bundle.js",
+      "stories-Atoms-Checkbox-stories.e836f231.iframe.bundle.js",
+      "stories-Atoms-Divider-stories.fd9dc886.iframe.bundle.js",
+      "stories-Atoms-Icon-stories.8be3dfe5.iframe.bundle.js",
+      "stories-Atoms-Input-stories.468ad129.iframe.bundle.js",
+      "stories-Atoms-Links-stories.10b55fea.iframe.bundle.js",
+      "stories-Atoms-List-stories.83e512ff.iframe.bundle.js",
+      "stories-Atoms-Loader-stories.9be1ad74.iframe.bundle.js",
+      "stories-Atoms-NotificationDot-stories.49825d4b.iframe.bundle.js",
+      "stories-Atoms-ProgressBar-stories.cead6ec4.iframe.bundle.js",
+      "stories-Atoms-Radio-stories.48056226.iframe.bundle.js",
+      "stories-Atoms-Tooltip-stories.71be7a65.iframe.bundle.js",
+      "stories-Atoms-Typography-stories.3fb7eddf.iframe.bundle.js",
+      "stories-Components-Header-stories.e91f0d71.iframe.bundle.js",
+      "stories-Pages-Page-stories.3f73c876.iframe.bundle.js"
     ],
-    "total": 15628228,
+    "total": 11817048,
     "hashes": {
-      "110.4e6f17f8.iframe.bundle.js": "4f5fc2a062edeec0",
-      "110.4e6f17f8.iframe.bundle.js.LICENSE.txt": "bddfffd86bbb24c8",
-      "110.4e6f17f8.iframe.bundle.js.map": "5795ed4adc42fd7b",
-      "126.c153accf.iframe.bundle.js": "0cab59a85b6f8e89",
-      "126.c153accf.iframe.bundle.js.LICENSE.txt": "8bfcb64f2904ca37",
-      "126.c153accf.iframe.bundle.js.map": "83339bdfb07ccf6d",
-      "294.2d6e4361.iframe.bundle.js": "b010cec999ba08c6",
-      "364.4259c6de.iframe.bundle.js": "9c122851df357729",
-      "461.ee19b29e.iframe.bundle.js": "b87cf115e4e29dde",
-      "613.161e3322.iframe.bundle.js": "e3f7225434032819",
+      "217.1a9c5c75.iframe.bundle.js": "31ef9a1f630cd96f",
       "6f0263d4d5d96e23f440.png": "bfb5bc73310d743f",
-      "7.7dbce6d9.iframe.bundle.js": "f4466fa867a1a21d",
-      "7.7dbce6d9.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "7.7dbce6d9.iframe.bundle.js.map": "d688e12cfa3b665d",
       "favicon.ico": "34c4df31bdbad226",
       "favicon.svg": "293aff65db45e6c4",
-      "iframe.html": "828fce6a3bcc8105",
+      "iframe.html": "0a81217da3b2519d",
       "index.css": "0592055b1f3dd3e6",
-      "index.html": "bc0c8ca2bdd84212",
-      "index.json": "d05e1f2991231ad0",
+      "index.html": "676e041b77e8d4d8",
+      "index.json": "f15c9af761f9464e",
       "logo192.png": "d84b06edc1baa420",
       "logo512.png": "f57c8ac080497095",
-      "main.ccf7421c.iframe.bundle.js": "b932b9729770e2ce",
+      "main.fd3193e3.iframe.bundle.js": "fc95161dabfc0cf0",
       "manifest.json": "f954a3d8039349a1",
       "nunito-sans-bold-italic.woff2": "d64464b3594b3fb9",
       "nunito-sans-bold.woff2": "0bd5b61b7fb7f7d5",
       "nunito-sans-italic.woff2": "b7807d9de055e9a0",
       "nunito-sans-regular.woff2": "6687b7be04c2debe",
-      "project.json": "b92a5aa80a392246",
+      "project.json": "8d21db345c93aaf9",
       "robots.txt": "0d9b735967ef9e81",
-      "runtime~main.ff6d7ced.iframe.bundle.js": "3627cb34480eb0fe",
+      "runtime~main.5c694510.iframe.bundle.js": "90e82db3f1a518d1",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js": "db44af53b0d5b869",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt": "1130aaff59aebfe1",
-      "sb-addons/essentials-actions-3/manager-bundle.js": "896b1132000ae7b6",
+      "sb-addons/essentials-actions-3/manager-bundle.js": "ef3f1c272c3e87e7",
       "sb-addons/essentials-actions-3/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
-      "sb-addons/essentials-backgrounds-4/manager-bundle.js": "4050a1382869b478",
+      "sb-addons/essentials-backgrounds-4/manager-bundle.js": "fc9516041543dc03",
       "sb-addons/essentials-backgrounds-4/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
-      "sb-addons/essentials-controls-2/manager-bundle.js": "68ec59aae91c6045",
+      "sb-addons/essentials-controls-2/manager-bundle.js": "c84fea21258d68b8",
       "sb-addons/essentials-controls-2/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
-      "sb-addons/essentials-measure-7/manager-bundle.js": "3a5fcb106cfd62a9",
+      "sb-addons/essentials-measure-7/manager-bundle.js": "8171645f21792928",
       "sb-addons/essentials-measure-7/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
-      "sb-addons/essentials-outline-8/manager-bundle.js": "98f79ecf72eb2b77",
+      "sb-addons/essentials-outline-8/manager-bundle.js": "4c355a98e79035ba",
       "sb-addons/essentials-outline-8/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
       "sb-addons/essentials-toolbars-6/manager-bundle.js": "5d0ad3873e9b8158",
       "sb-addons/essentials-toolbars-6/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
-      "sb-addons/essentials-viewport-5/manager-bundle.js": "584a34cc05e30254",
+      "sb-addons/essentials-viewport-5/manager-bundle.js": "4c063b792273a992",
       "sb-addons/essentials-viewport-5/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
-      "sb-addons/interactions-9/manager-bundle.js": "a593bebc0d05d1da",
+      "sb-addons/interactions-9/manager-bundle.js": "91aa3a98caebdd00",
       "sb-addons/interactions-9/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
       "sb-addons/links-1/manager-bundle.js": "87e7a1082107654f",
       "sb-addons/links-1/manager-bundle.js.LEGAL.txt": "ef46db3751d8e999",
@@ -1937,146 +1767,93 @@
       "sb-common-assets/nunito-sans-bold.woff2": "0bd5b61b7fb7f7d5",
       "sb-common-assets/nunito-sans-italic.woff2": "b7807d9de055e9a0",
       "sb-common-assets/nunito-sans-regular.woff2": "6687b7be04c2debe",
-      "sb-manager/globals-module-info.js": "d0e56fb62b273dbd",
-      "sb-manager/globals-runtime.js": "ae15f0f9a885ce57",
+      "sb-manager/globals-module-info.js": "3617f58dec8e7cfc",
+      "sb-manager/globals-runtime.js": "40b064dc38921ad8",
       "sb-manager/globals.js": "dbb1adbc9aebc9d2",
-      "sb-manager/runtime.js": "a6b481983581bf56",
+      "sb-manager/runtime.js": "46ba9076d170614f",
       "sb-preview/globals.js": "34694a6ced7d7b19",
-      "sb-preview/runtime.js": "c184bafa65dbaeed",
-      "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css": "91c31efcdbd72cb3",
-      "static/css/stories-Atoms-Avatar-stories.0c626304.chunk.css.map": "6becd6577543fc64",
-      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css": "3b6a43332d6da91e",
-      "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map": "23dcabe2c653eb97",
-      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css": "58bf5228b8380272",
-      "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map": "d7284430ccc3a4fc",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css": "b1b8a70e0148f8a2",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map": "7518945ad32e3a40",
-      "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css": "bc078ce7fba4f4b7",
-      "static/css/stories-Atoms-Divider-stories.3d1ff359.chunk.css.map": "99d89ab69e33cb3e",
-      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css": "aab2ff852b94a3d8",
-      "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css.map": "f50631e78af269ee",
-      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css": "c6f186ef30bdbe94",
-      "static/css/stories-Atoms-Input-stories.44440ac7.chunk.css.map": "09be351294c2eda5",
-      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css": "cfe76d86f5cce60e",
-      "static/css/stories-Atoms-Links-stories.e5150ebf.chunk.css.map": "14504ca8637aa766",
-      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css": "2e36ad6acb06e272",
-      "static/css/stories-Atoms-List-stories.ea49ad97.chunk.css.map": "8fa7956ad0443b46",
-      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css": "347fce3322de64b2",
-      "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map": "f34c8ec6f2726ffd",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css": "a956a8d4e561fe35",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map": "d39bca3e6d7a392c",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css": "19cd2559da835af6",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map": "44dbb539d46ded72",
-      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css": "98af05c947aed76c",
-      "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map": "8e5fe86f1b459569",
-      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css": "cf6e7c61841dc580",
-      "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map": "ec0cc9d892489acf",
-      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css": "93095b530c248434",
-      "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map": "dcb2592543da4ef8",
-      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css": "5638597a107432fc",
-      "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css.map": "26e09005a115d9e2",
-      "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js": "12833cb535d2029c",
-      "stories-Atoms-Avatar-stories.a985a582.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js": "9df977eddb19803e",
-      "stories-Atoms-Badge-stories.f86f9bdf.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js": "8664ce72acc9dcb4",
-      "stories-Atoms-Button-stories.65f2176b.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js": "2ce6238e2bb40aeb",
-      "stories-Atoms-Checkbox-stories.041a9b43.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js": "6945b49a932e3282",
-      "stories-Atoms-Divider-stories.5dcb96de.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js": "ff799284c7837fcc",
-      "stories-Atoms-Icon-stories.f34f23f5.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js": "50345d2c0ce40eef",
-      "stories-Atoms-Input-stories.5248ba83.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js": "1a56b2cd4affa98f",
-      "stories-Atoms-Links-stories.fa48b061.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js": "5bdc06c597e61b04",
-      "stories-Atoms-List-stories.323d8bc3.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js": "d2120d4e617746da",
-      "stories-Atoms-Loader-stories.68f86f2a.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js": "6f81ef5050b0c152",
-      "stories-Atoms-ProgressBar-stories.7bdd0725.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Radio-stories.71693535.iframe.bundle.js": "32196b40008b4630",
-      "stories-Atoms-Radio-stories.71693535.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js": "d3857c0905322f95",
-      "stories-Atoms-Tooltip-stories.5c474be6.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js": "53d8ef18ef334822",
-      "stories-Atoms-Typography-stories.3d507795.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Components-Header-stories.2bbc1bdc.iframe.bundle.js": "b53cf0b7070e4c06",
-      "stories-Configure-mdx.9498f391.iframe.bundle.js": "d4ac0eaea698ece1",
-      "stories-Configure-mdx.9498f391.iframe.bundle.js.LICENSE.txt": "0e014cc4729b76e3",
-      "stories-Pages-Page-stories.6f55fd92.iframe.bundle.js": "ade164bbce9345f7"
+      "sb-preview/runtime.js": "662ad219d320d38a",
+      "static/css/stories-Atoms-Avatar-stories.bfcb13f8.chunk.css": "7da1117b76fb0cfd",
+      "static/css/stories-Atoms-Badge-stories.01800259.chunk.css": "33e10d5594fac10d",
+      "static/css/stories-Atoms-Button-stories.37c5ae43.chunk.css": "79a19b7016354449",
+      "static/css/stories-Atoms-Checkbox-stories.ed5496a3.chunk.css": "b93e9ad2e39f1e7f",
+      "static/css/stories-Atoms-Divider-stories.3a601d6e.chunk.css": "ec56773cfa16799e",
+      "static/css/stories-Atoms-Icon-stories.ee5fc170.chunk.css": "e9aa80a8c795beb4",
+      "static/css/stories-Atoms-Input-stories.298e3ec4.chunk.css": "63cca44fa99e0d26",
+      "static/css/stories-Atoms-Links-stories.338db990.chunk.css": "7538bfa9460b27c4",
+      "static/css/stories-Atoms-List-stories.a484d812.chunk.css": "6b8ca9a9a8decc59",
+      "static/css/stories-Atoms-Loader-stories.56bda2be.chunk.css": "8a50cf510b7a9326",
+      "static/css/stories-Atoms-NotificationDot-stories.bf3f7c96.chunk.css": "689271cf2e70f223",
+      "static/css/stories-Atoms-ProgressBar-stories.9df9d60d.chunk.css": "d39ee0e33863142d",
+      "static/css/stories-Atoms-Radio-stories.f1ed74df.chunk.css": "51d0ec40dafca658",
+      "static/css/stories-Atoms-Tooltip-stories.2620390a.chunk.css": "b654679c73ce0a8c",
+      "static/css/stories-Atoms-Typography-stories.e4fbbe95.chunk.css": "e8fdfea54cbcde22",
+      "static/css/stories-Components-Header-stories.532df4b6.chunk.css": "4f8950559eadc202",
+      "static/css/stories-Pages-Page-stories.0c63680e.chunk.css": "9e29ed016c4c9507",
+      "stories-Atoms-Avatar-stories.d46eceb5.iframe.bundle.js": "4c1bae5d7bd8a57e",
+      "stories-Atoms-Badge-stories.876dd5b9.iframe.bundle.js": "c7a3f93f63ef9de7",
+      "stories-Atoms-Button-stories.83748b30.iframe.bundle.js": "75f7dbb56eb551bd",
+      "stories-Atoms-Checkbox-stories.e836f231.iframe.bundle.js": "82bbb54ca523c32e",
+      "stories-Atoms-Divider-stories.fd9dc886.iframe.bundle.js": "c6092eedb429177a",
+      "stories-Atoms-Icon-stories.8be3dfe5.iframe.bundle.js": "8e3096c96e9b5386",
+      "stories-Atoms-Input-stories.468ad129.iframe.bundle.js": "ec24cec46687c2f7",
+      "stories-Atoms-Links-stories.10b55fea.iframe.bundle.js": "7eaabfc9b86f3b30",
+      "stories-Atoms-List-stories.83e512ff.iframe.bundle.js": "1c0486a355ba453c",
+      "stories-Atoms-Loader-stories.9be1ad74.iframe.bundle.js": "5046a7451ed88c3c",
+      "stories-Atoms-NotificationDot-stories.49825d4b.iframe.bundle.js": "f1c8a9b17572b8fb",
+      "stories-Atoms-ProgressBar-stories.cead6ec4.iframe.bundle.js": "f9e236cc11022a60",
+      "stories-Atoms-Radio-stories.48056226.iframe.bundle.js": "1210f272baa7ee4b",
+      "stories-Atoms-Tooltip-stories.71be7a65.iframe.bundle.js": "977462ab8a288d4c",
+      "stories-Atoms-Typography-stories.3fb7eddf.iframe.bundle.js": "26fb3f3be04aeead",
+      "stories-Components-Header-stories.e91f0d71.iframe.bundle.js": "b4f2365457531f2e",
+      "stories-Pages-Page-stories.3f73c876.iframe.bundle.js": "9eaedd77a5f18fde"
     }
   },
   "flags": {
-    "ci": true,
-    "diagnosticsFile": "",
-    "junitReport": "",
-    "zip": true,
-    "onlyStoryFiles": [
-      "src/Pages/**"
-    ],
-    "outputDir": [],
-    "storybookBuildDir": [],
-    "externals": [],
-    "onlyStoryNames": [],
-    "untraced": [],
-    "fileHashing": true,
-    "interactive": true,
-    "appCode": []
+    "interactive": false
   },
   "git": {
     "version": "2.39.3 (Apple Git-146)",
     "gitUserEmail": "carmenbaez2000@gmail.com",
-    "uncommittedHash": "d0a6ad6f5467a68f359dbfe7cdc806e4e3e5a8d0",
-    "commit": "5e456730b2d27d36769920f639d81a50c141b358",
-    "committedAt": 1728049237000,
-    "committerEmail": "carmenbaez2000@gmail.com",
-    "committerName": "Carmen Lopez",
+    "uncommittedHash": "481f4cb5d5abe1dff76bc0b15768555628c3fe72",
+    "commit": "d949ce92ec6f58051ec3b7ae33391a9e99a12055",
+    "committedAt": 1728400216000,
+    "committerEmail": "58992828+cgbl-90@users.noreply.github.com",
+    "committerName": "carmen",
     "branch": "main",
     "slug": "cgbl-90/ds",
-    "fromCI": true,
+    "fromCI": false,
     "parentCommits": [
-      "0fe2d6876a9b117feb25939ce33d3c56ebab2a7d"
+      "d949ce92ec6f58051ec3b7ae33391a9e99a12055"
     ]
   },
   "input": [],
   "isOnboarding": false,
   "isPublishOnly": false,
   "options": {
-    "fromCI": true,
+    "fromCI": false,
     "inAction": false,
     "dryRun": false,
     "debug": true,
     "autoAcceptChanges": false,
-    "exitZeroOnChanges": false,
+    "exitZeroOnChanges": true,
     "exitOnceUploaded": false,
     "diagnosticsFile": "chromatic-diagnostics.json",
     "fileHashing": true,
     "interactive": false,
-    "isLocalBuild": false,
-    "originalArgv": [
-      "--project-token",
-      "chpt_1dfeeb5e0e7b48e",
-      "--ci",
-      "--diagnostics-file",
-      "--junit-report",
-      "--zip",
-      "--only-story-files",
-      "src/Pages/**"
-    ],
-    "onlyStoryFiles": [
-      "src/Pages/**"
-    ],
+    "isLocalBuild": true,
+    "originalArgv": [],
     "logFile": "chromatic.log",
-    "junitReport": "chromatic-build-{buildNumber}.xml",
+    "skip": false,
+    "forceRebuild": true,
     "zip": true,
+    "skipUpdateCheck": true,
     "buildScriptName": "build-storybook",
     "storybookLogFile": "build-storybook.log",
     "branchName": "",
     "configFile": "chromatic.config.json",
-    "projectId": "Project:66c61912622bdf9d8de37009"
+    "projectId": "Project:66c61912622bdf9d8de37009",
+    "experimental_abortSignal": {}
   },
   "packageJson": {
     "name": "cgbl-design-system",
@@ -2085,7 +1862,6 @@
     "dependencies": {
       "@testing-library/jest-dom": "^5.17.0",
       "@testing-library/react": "^13.4.0",
-      "@testing-library/user-event": "^13.5.0",
       "react": "^18.3.1",
       "react-dom": "^18.3.1",
       "react-scripts": "5.0.1",
@@ -2122,7 +1898,7 @@
     "devDependencies": {
       "@chromatic-com/storybook": "^2.0.2",
       "@storybook/addon-essentials": "^8.2.9",
-      "@storybook/addon-interactions": "^8.2.9",
+      "@storybook/addon-interactions": "^8.3.5",
       "@storybook/addon-links": "^8.2.9",
       "@storybook/addon-onboarding": "^8.2.9",
       "@storybook/blocks": "^8.2.9",
@@ -2130,8 +1906,10 @@
       "@storybook/preset-create-react-app": "^8.2.9",
       "@storybook/react": "^8.2.9",
       "@storybook/react-webpack5": "^8.2.8",
-      "@storybook/test": "^8.2.8",
+      "@storybook/test": "^8.3.5",
+      "@storybook/testing-library": "^0.2.2",
       "@storybook/theming": "^8.2.9",
+      "@testing-library/user-event": "^14.5.2",
       "chromatic": "^11.11.0",
       "eslint-plugin-storybook": "^0.8.0",
       "prop-types": "^15.8.1",
@@ -2142,7 +1920,7 @@
     "_id": "cgbl-design-system@0.1.0"
   },
   "packagePath": "/Users/camy-chroma/GitHub/cgbl-design-system/package.json",
-  "reportPath": "/Users/camy-chroma/GitHub/cgbl-design-system/chromatic-build-15.xml",
+  "rebuildForBuildId": "67054b81ccdefcdbe1ed5d2b",
   "runtimeMetadata": {
     "nodePlatform": "darwin",
     "nodeVersion": "18.20.1",
@@ -2150,20 +1928,20 @@
     "packageManagerVersion": "9.5.0"
   },
   "sentinelUrls": [
-    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-sbbczjrjwf/.chromatic/files-copied.60520525.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241004T134102Z&X-Amz-Expires=1800&X-Amz-Signature=a795559a1b7a9c26455532c2a8fd8fdd8171babe2e3946f5cf5324cf48af2745&X-Amz-SignedHeaders=host&x-id=GetObject",
-    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-sbbczjrjwf/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241004%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241004T134102Z&X-Amz-Expires=1980&X-Amz-Signature=95222a84c37dbde90c287c97fa739b8856793454c8fdf8c88315e55f0761ef96&X-Amz-SignedHeaders=host&x-id=GetObject"
+    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-tghjgsebcn/.chromatic/files-copied.110565410.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241009%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241009T222351Z&X-Amz-Expires=1800&X-Amz-Signature=cae1ccdf41574774fd967f894b2ceb6a3ad38bf636147c1a8a6128a3a57cfee5&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-tghjgsebcn/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241009%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241009T222351Z&X-Amz-Expires=1980&X-Amz-Signature=ce9efd1d4db0ef25af2087c824ed8744e3a729302eda0c2c669f211b14bd7dbe&X-Amz-SignedHeaders=host&x-id=GetObject"
   ],
-  "sessionId": "72871471-f190-4518-ad1f-707c4cabf07d",
-  "sourceDir": "/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--10541-zrehpbjffBGD",
-  "startedAt": 1728049271850,
+  "sessionId": "7b22db97-7277-44ba-93cb-d7e67666382a",
+  "sourceDir": "/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--45595-jg4UIN4ncq2x",
+  "startedAt": 1728512641212,
   "storybook": {
     "addons": [],
-    "viewLayer": "react",
-    "version": "8.2.9"
+    "viewLayer": "@storybook/react-webpack5",
+    "version": "8.2.8"
   },
-  "storybookUrl": "https://66c61912622bdf9d8de37009-sbbczjrjwf.chromatic.com/",
-  "task": "report",
-  "uploadedBytes": 14701,
-  "uploadedFiles": 8,
-  "userError": false
+  "storybookUrl": "https://66c61912622bdf9d8de37009-tghjgsebcn.chromatic.com/",
+  "task": "snapshot",
+  "uploadedBytes": 1338069,
+  "uploadedFiles": 41,
+  "userError": true
 }
