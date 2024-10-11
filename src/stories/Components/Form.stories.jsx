@@ -31,7 +31,7 @@ export const FilledForm = {
       canvas.getByPlaceholderText(/enter your favorite color/i),
       "Blue"
     );
-    await userEvent.click(canvas.getByLabelText(/female/i));
+    await userEvent.click(canvas.getByLabelText(/male/i));
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your feedback/i),
       "Great product!"
