@@ -27,6 +27,7 @@ export const FilledForm = {
       canvas.getByPlaceholderText(/enter your email/i),
       "jane@example.com"
     );
+    await delay(15000);
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your favorite color/i),
       "Blue"
