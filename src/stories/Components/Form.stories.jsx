@@ -27,11 +27,11 @@ export const FilledForm = {
       canvas.getByPlaceholderText(/enter your email/i),
       "jane@example.com"
     );
-    await delay(15000);
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your favorite color/i),
       "Blue"
     );
+    await userEvent.click(canvas.getByRole('Label'));
     await userEvent.click(canvas.getByLabelText(/female/i));
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your feedback/i),
