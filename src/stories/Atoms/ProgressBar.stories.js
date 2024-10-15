@@ -28,5 +28,5 @@ InProgress.args = {
 
 export const Minimal = Template.bind({});
 Minimal.args = {
-  progress: 25, // 25% progress
+  progress: 5, // 25% progress
 };

@@ -9,7 +9,7 @@ const ProgressBar = ({ progress }) => {
         style={{ width: `${progress}%` }} // Dynamically set the width
       />
       <div className="progress-markers">
-        <div className="progress-marker">0%</div>
+        <div className="progress-marker">5%</div>
         <div className="progress-marker">25%</div>
         <div className="progress-marker">50%</div>
         <div className="progress-marker">75%</div>

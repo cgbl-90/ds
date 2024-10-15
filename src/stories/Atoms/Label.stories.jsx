@@ -61,6 +61,5 @@ export const SmallDefaultLabel = {
     text: "Small Default Label",
     size: "small",
     color: "default",
-    style: { width: "80000px", height: "30000px" },
   },
 };
