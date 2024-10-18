@@ -1,183 +1,119 @@
-15:36:46.965  Chromatic CLI v11.10.4
+09:29:21.289  Chromatic CLI v11.10.4
               https://www.chromatic.com/docs/cli 
  
-15:36:46.969  Authenticating with Chromatic 
-15:36:46.969      → Connecting to https://index.chromatic.com
-15:36:47.336  Authenticated with Chromatic
+09:29:21.295  Authenticating with Chromatic 
+09:29:21.295      → Connecting to https://index.chromatic.com
+09:29:21.669  Authenticated with Chromatic
                   → Using project token '****************b48e'
-15:36:47.336  Retrieving git information
-15:36:47.396  git info: {"commit":{"commit":"79416d230044b3016e92ef9d1798fe8a906d13a4","committedAt":1728573882000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
-15:36:47.780  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"23e93f871a68415b3572743d113cdeb9a20051fc","committedAt":1728572409000}
-15:36:47.794  Adding last branch build commit 23e93f871a68415b3572743d113cdeb9a20051fc to commits with builds
-15:36:47.795  step: checking 20 up to 1724258813
-15:36:47.795  step: commitsWithBuilds: 23e93f871a68415b3572743d113cdeb9a20051fc
-15:36:47.795  step: commitsWithoutBuilds:
-15:36:47.795  running git rev-list HEAD       --since 1724258813       -n 20 --not 23e93f871a68415b3572743d113cdeb9a20051fc
-15:36:47.811  command output: 79416d230044b3016e92ef9d1798fe8a906d13a4,a9e6919b17a83ebef5673b4e5e295a485dfe8f70
-15:36:47.812  step: candidateCommits: 79416d230044b3016e92ef9d1798fe8a906d13a4,a9e6919b17a83ebef5673b4e5e295a485dfe8f70, visitedCommitsWithoutBuilds: 79416d230044b3016e92ef9d1798fe8a906d13a4,a9e6919b17a83ebef5673b4e5e295a485dfe8f70
-15:36:48.111  step: newCommitsWithBuilds: 79416d230044b3016e92ef9d1798fe8a906d13a4,a9e6919b17a83ebef5673b4e5e295a485dfe8f70
-15:36:48.111  step: checking 40 up to 1724258813
-15:36:48.111  step: commitsWithBuilds: 23e93f871a68415b3572743d113cdeb9a20051fc,79416d230044b3016e92ef9d1798fe8a906d13a4,a9e6919b17a83ebef5673b4e5e295a485dfe8f70
-15:36:48.111  step: commitsWithoutBuilds:
-15:36:48.111  running git rev-list HEAD       --since 1724258813       -n 40 --not 23e93f871a68415b3572743d113cdeb9a20051fc 79416d230044b3016e92ef9d1798fe8a906d13a4 a9e6919b17a83ebef5673b4e5e295a485dfe8f70
-15:36:48.141  command output:
-15:36:48.141  step: candidateCommits: , visitedCommitsWithoutBuilds:
-15:36:48.141  step: no candidateCommits; we are done
-15:36:48.690  Final commitsWithBuilds: 23e93f871a68415b3572743d113cdeb9a20051fc,79416d230044b3016e92ef9d1798fe8a906d13a4,a9e6919b17a83ebef5673b4e5e295a485dfe8f70
-15:36:48.690  running git rev-list 23e93f871a68415b3572743d113cdeb9a20051fc 79416d230044b3016e92ef9d1798fe8a906d13a4 a9e6919b17a83ebef5673b4e5e295a485dfe8f70 --not "23e93f871a68415b3572743d113cdeb9a20051fc^@" "79416d230044b3016e92ef9d1798fe8a906d13a4^@" "a9e6919b17a83ebef5673b4e5e295a485dfe8f70^@"
-15:36:48.721  command output: 79416d230044b3016e92ef9d1798fe8a906d13a4
-15:36:48.721  Found parentCommits: 79416d230044b3016e92ef9d1798fe8a906d13a4
-15:36:49.052  Retrieved git information
-                  → Commit '79416d2' on branch 'main'; found 1 parent build
-15:36:49.052  Collecting Storybook metadata
-15:36:49.056  {"storybookV6error":{}}
-15:36:49.077  {"storybookV7error":{}}
-15:36:49.089  [{"status":"fulfilled","value":{"addons":[]}},{"status":"fulfilled","value":{}},{"status":"fulfilled","value":{"viewLayer":"@storybook/react-webpack5","version":"8.2.8"}},{"status":"rejected","reason":{}}]
-15:36:49.090  Collected Storybook metadata
+09:29:21.669  Retrieving git information
+09:29:21.729  git info: {"commit":{"commit":"1d40e9117327bff0b2fe2873db5cc12fd10eb799","committedAt":1729241484000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
+09:29:22.117  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"1d40e9117327bff0b2fe2873db5cc12fd10eb799","committedAt":1729241484000}
+09:29:22.139  Adding last branch build commit 1d40e9117327bff0b2fe2873db5cc12fd10eb799 to commits with builds
+09:29:22.139  step: checking 20 up to 1724258813
+09:29:22.139  step: commitsWithBuilds: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
+09:29:22.139  step: commitsWithoutBuilds:
+09:29:22.139  running git rev-list HEAD       --since 1724258813       -n 20 --not 1d40e9117327bff0b2fe2873db5cc12fd10eb799
+09:29:22.154  command output:
+09:29:22.154  step: candidateCommits: , visitedCommitsWithoutBuilds:
+09:29:22.154  step: no candidateCommits; we are done
+09:29:22.455  Final commitsWithBuilds: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
+09:29:22.456  running git rev-list 1d40e9117327bff0b2fe2873db5cc12fd10eb799 --not "1d40e9117327bff0b2fe2873db5cc12fd10eb799^@"
+09:29:22.487  command output: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
+09:29:22.488  Found parentCommits: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
+09:29:22.808  Retrieved git information
+                  → Commit '1d40e91' on branch 'main'; found 1 parent build
+09:29:22.808  Collecting Storybook metadata
+09:29:22.811  {"storybookV6error":{}}
+09:29:22.831  {"storybookV7error":{}}
+09:29:22.841  [{"status":"fulfilled","value":{"addons":[]}},{"status":"fulfilled","value":{}},{"status":"fulfilled","value":{"viewLayer":"@storybook/react-webpack5","version":"8.2.8"}},{"status":"rejected","reason":{}}]
+09:29:22.841  Collected Storybook metadata
                   → Storybook 8.2.8 for @storybook/react Webpack5; no supported addons found
-15:36:49.090  Initializing build
-15:36:49.090  Got environment:
+09:29:22.841  Initializing build
+09:29:22.841  Got environment:
               {}
-15:36:49.922  Initialized build
-                  → Build 26 initialized
-15:36:49.925  Building your Storybook
-15:36:49.925      → Running command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--25131-rNeSLPCnCYWK
-15:36:49.926  Running build command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--25131-rNeSLPCnCYWK
-15:36:49.926  Runtime metadata: {
+09:29:23.527  Initialized build
+                  → Build 41 initialized
+09:29:23.534  Building your Storybook
+09:29:23.534      → Running command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--5517-vR6mAokaPJdk
+09:29:23.536  Running build command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--5517-vR6mAokaPJdk
+09:29:23.536  Runtime metadata: {
                 "nodePlatform": "darwin",
-                "nodeVersion": "18.20.1",
+                "nodeVersion": "20.14.0",
                 "packageManager": "npm",
-                "packageManagerVersion": "9.5.0"
+                "packageManagerVersion": "10.7.0"
               }
-15:37:02.559  Storybook built in 13 seconds
+09:29:34.988  Storybook built in 11 seconds
                   → View build log at /Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log
-15:37:02.560  Publish your built Storybook
-15:37:02.560      → Validating Storybook files
-15:37:02.564  Publishing your built Storybook
-15:37:02.564      → Calculating file hashes
-15:37:02.580  Calculated file hashes in 16ms
-15:37:02.580  Publishing your built Storybook
-15:37:02.581      → Starting publish
-15:37:02.582  Running uploadBuild batch 1 / 1
-15:37:03.097  Adding to zip archive: iframe.html
-15:37:03.098  Adding to zip archive: index.json
-15:37:03.098  Adding to zip archive: main.0a574511.iframe.bundle.js
-15:37:03.098  Adding to zip archive: project.json
-15:37:03.098  Adding to zip archive: runtime~main.e675c210.iframe.bundle.js
-15:37:03.098  Adding to zip archive: static/css/stories-Components-Form-stories.3ad16338.chunk.css
-15:37:03.098  Adding to zip archive: static/css/stories-Components-Form-stories.3ad16338.chunk.css.map
-15:37:03.098  Adding to zip archive: stories-Atoms-Checkbox-stories.a483658e.iframe.bundle.js
-15:37:03.098  Adding to zip archive: stories-Atoms-Input-stories.3bca0f83.iframe.bundle.js
-15:37:03.098  Adding to zip archive: stories-Atoms-Label-stories.ff0b9fd1.iframe.bundle.js
-15:37:03.098  Adding to zip archive: stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js
-15:37:03.098  Adding to zip archive: stories-Components-Card-stories.c85d5472.iframe.bundle.js
-15:37:03.099  Adding to zip archive: stories-Components-Form-stories.24ae6f43.iframe.bundle.js
-15:37:03.099  Adding to zip archive: stories-Configure-mdx.f1877e78.iframe.bundle.js
-15:37:03.099  Finalizing zip archive
-15:37:03.118  Compression reduced upload size by 76%
-15:37:03.119  Uploading /.chromatic/storybook.zip (27.55 kB)
-15:37:03.125      → [====================] 100%
-15:37:03.919  Uploaded /.chromatic/storybook.zip (27.55 kB)
-15:37:03.920  Publishing your built Storybook
-15:37:03.920      → Finalizing upload
-15:37:03.920  Waiting for 'files-copied.118071509.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-qnincolzry/.chromatic/files-copied.118071509.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T153703Z&X-Amz-Expires=1800&X-Amz-Signature=240fc5e9a5e3626d8752216384dfd1c24b3176588774e7a02b511a2ecf7813ee&X-Amz-SignedHeaders=host&x-id=GetObject
-15:37:03.922  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-qnincolzry/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T153703Z&X-Amz-Expires=1980&X-Amz-Signature=75563f383bf7aaed8f41c9206e0d2b58b3d80c16a54b83bfea540294959e6198&X-Amz-SignedHeaders=host&x-id=GetObject
-15:37:05.994  Sentinel file 'zip-unpacked.txt' OK.
-15:37:18.278  Sentinel file 'files-copied.118071509.txt' OK.
-15:37:18.281  Publish complete in 16 seconds
-                  → Uploaded 14 files (27.55 kB), skipped 110 files
-15:37:18.281  Verifying your Storybook
-15:37:18.281      → This may take a few minutes
-15:37:23.727  Listing available stories:
-              → ATOMS/Avatar/Small
-              → ATOMS/Avatar/Medium
-              → ATOMS/Avatar/Large
-              → ATOMS/Avatar/Hover Interaction
-              → Atoms/Badge/Default
-              → Atoms/Badge/Success
-              → Atoms/Badge/Warning
-              → ATOMS/Button/Primary
-              → ATOMS/Button/Secondary
-              → ATOMS/Button/Large
-              → ATOMS/Button/Small
-              → ATOMS/Button/Primary Pressed
-              → ATOMS/Button/Secondary Hover
-              → ATOMS/Button/Primary No Border
-              → ATOMS/Button/Secondary No Border
-              → ATOMS/Checkbox/Unchecked
-              → ATOMS/Checkbox/Checked
-              → ATOMS/Checkbox/Hover
-              → ATOMS/Checkbox/Pressed
-              → Atoms/Divider/Primary
-              → Atoms/Divider/Secondary Bold Dashed
-              → Atoms/Divider/Success Dotted
-              → ATOMS/Icon/Small
-              → ATOMS/Icon/Medium
-              → ATOMS/Icon/Large
-              → ATOMS/Input/Default
-              → ATOMS/Input/Small
-              → ATOMS/Input/Large
-              → ATOMS/Input/Hover
-              → ATOMS/Input/Focused
-              → ATOMS/Input/Disabled
-              → ATOMS/Label/Default Label
-              → ATOMS/Label/Small Primary Label
-              → ATOMS/Label/Large Secondary Label
-              → ATOMS/Label/Medium Primary Label
-              → ATOMS/Label/Small Default Label
-              → Atoms/Links/Primary
-              → Atoms/Links/Secondary
-              → Atoms/Links/Success
-              → Atoms/Links/Warning
-              → Atoms/Links/Danger
-              → ATOMS/List/Without Style
-              → ATOMS/List/With Numbers
-              → ATOMS/List/With Symbols
-              → ATOMS/List/With Devanagari Numbers
-              → ATOMS/List/With Custom Icon
-              → Atoms/Loader/Default
-              → Atoms/Notification Dot/Default
-              → Atoms/Notification Dot/Large Green Dot
-              → Atoms/Notification Dot/Blue Dot Bottom Left
-              → Atoms/Notification Dot/Yellow Dot Top Left
-              → Atoms/Progress Bar/Default
-              → Atoms/Progress Bar/Complete
-              → Atoms/Progress Bar/In Progress
-              → Atoms/Progress Bar/Minimal
-              → ATOMS/Radio/Unchecked
-              → ATOMS/Radio/Checked
-              → ATOMS/Radio/Hover
-              → ATOMS/Radio/Pressed
-              → Atoms/Tooltip/Default
-              → Atoms/Tooltip/Long Text Tooltip
-              → Atoms/Tooltip/Multiple Tooltips
-              → Atoms/Tooltip/Custom Styled Tooltip
-              → Typography/Title
-              → Typography/Subtitle
-              → Typography/Text
-              → Typography/Code
-              → Typography/Italic Text
-              → Typography/Bold Text
-              → Typography/Underline Text
-              → COMPONENTS/Card/Default Card
-              → COMPONENTS/Card/Card With Long Description
-              → COMPONENTS/Card/Card Without Description
-              → COMPONENTS/Card/Card With Custom Button
-              → COMPONENTS/Card/Card With Different Avatar Size
-              → COMPONENTS/Form/Default Form
-              → COMPONENTS/Form/Filled Form
-              → COMPONENTS/Form/Submitted Form
-              → COMPONENTS/Header/Logged In
-              → COMPONENTS/Header/Logged Out
-              → PAGES/Page/Logged Out
-              → PAGES/Page/Logged In
-              
-              ℹ Use --only-story-names to run a build for a specific component or story.
-              Globs are supported, for example: --only-story-names "ATOMS/Avatar/**"
-15:37:23.730  ✔ Storybook published
+09:29:34.989  Publish your built Storybook
+09:29:34.989      → Validating Storybook files
+09:29:34.991  Publishing your built Storybook
+09:29:34.991      → Calculating file hashes
+09:29:35.004  Calculated file hashes in 13ms
+09:29:35.004  Publishing your built Storybook
+09:29:35.004      → Starting publish
+09:29:35.005  Running uploadBuild batch 1 / 1
+09:29:35.527  Adding to zip archive: iframe.html
+09:29:35.528  Adding to zip archive: project.json
+09:29:35.529  Adding to zip archive: runtime~main.a5f8d2fd.iframe.bundle.js
+09:29:35.529  Adding to zip archive: static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css
+09:29:35.529  Adding to zip archive: static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css.map
+09:29:35.529  Adding to zip archive: static/css/stories-Components-Form-stories.035db909.chunk.css
+09:29:35.529  Adding to zip archive: static/css/stories-Components-Form-stories.035db909.chunk.css.map
+09:29:35.529  Finalizing zip archive
+09:29:35.546  Compression reduced upload size by 68%
+09:29:35.546  Uploading /.chromatic/storybook.zip (12.36 kB)
+09:29:35.552      → [====================] 100%
+09:29:36.203  Uploaded /.chromatic/storybook.zip (12.36 kB)
+09:29:36.204  Publishing your built Storybook
+09:29:36.204      → Finalizing upload
+09:29:36.204  Waiting for 'files-copied.194501131.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-yqjecelhmb/.chromatic/files-copied.194501131.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T092935Z&X-Amz-Expires=1800&X-Amz-Signature=1f3be09a69d93093c378f0266a198010c97c55b07af2c2d82aabb76f35c6fc34&X-Amz-SignedHeaders=host&x-id=GetObject
+09:29:36.206  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-yqjecelhmb/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T092935Z&X-Amz-Expires=1980&X-Amz-Signature=29db9ca3b86774b02e98b51e157c83dcab51131492cc5a280982c1f0d65ff812&X-Amz-SignedHeaders=host&x-id=GetObject
+09:29:36.732  Sentinel file 'files-copied.194501131.txt' OK.
+09:29:38.268  Sentinel file 'zip-unpacked.txt' OK.
+09:29:38.271  Publish complete in 3 seconds
+                  → Uploaded 7 files (12.36 kB), skipped 117 files
+09:29:38.271  Verifying your Storybook
+09:29:38.271      → This may take a few minutes
+09:29:43.773  ✔ Storybook published
               We found 20 components with 82 stories.
-              ℹ View your Storybook at https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/
-15:37:23.730  Started build 26
-                  → View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=26
-15:37:23.731  Tasks completed
-15:37:23.738  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
+              ℹ View your Storybook at https://66c61912622bdf9d8de37009-yqjecelhmb.chromatic.com/
+09:29:43.773  Started build 41
+                  → View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=41
+09:29:43.774  Running 82 tests
+09:29:43.774      → This may take a few minutes
+09:29:43.774  ℹ Speed up Continuous Integration
+              Your project is linked to GitHub so Chromatic will report results there.
+              This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
+              Read more here: https://www.chromatic.com/docs/cli#chromatic-options
+09:29:44.088      → [                    ] 1/82  Avatar › Small
+09:30:05.118      → [==                  ] 8/82  Button › Primary
+09:30:06.425      → [===                 ] 14/82  Button › Primary No Border
+09:30:07.770      → [====                ] 15/82  Button › Secondary No Border
+09:30:10.466      → [=====               ] 22/82  Divider › Success Dotted
+09:30:11.788      → [=======             ] 28/82  Input › Large
+09:30:13.124      → [=======             ] 29/82  Input › Hover
+09:30:14.448      → [=========           ] 36/82  Label › Small Default Label
+09:30:18.402      → [==========          ] 43/82  List › With Numbers
+09:30:19.746      → [===========         ] 45/82  List › With Devanagari Numbers
+09:30:21.084      → [============        ] 50/82  Notification Dot › Blue Dot Bottom Left
+09:30:22.382      → [==============      ] 56/82  Radio › Unchecked
+09:30:23.712      → [==============      ] 57/82  Radio › Checked
+09:30:25.029      → [===============     ] 61/82  Tooltip › Long Text Tooltip
+09:30:26.341      → [================    ] 64/82  Typography › Title
+09:30:27.663      → [=================   ] 69/82  Typography › Bold Text
+09:30:28.969      → [=================   ] 71/82  Card › Default Card
+09:30:31.639      → [==================  ] 74/82  Card › Card With Custom Button
+09:30:34.299      → [=================== ] 77/82  Form › Filled Form
+09:30:35.621      → [=================== ] 78/82  Form › Submitted Form
+09:30:36.981      → [=================== ] 79/82  Header › Logged In
+09:30:38.317      → [====================] 81/82  Page › Logged Out
+09:30:40.983      → [====================] 82/82  Page › Logged In
+09:30:42.304  ✖ Found 4 visual changes: Review the changes at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=41
+              
+              ℹ For CI/CD use cases, this command failed with exit code 1
+              Pass --exit-zero-on-changes to succeed this command regardless of changes.
+              Pass --auto-accept-changes to succeed and automatically accept any changes.
+09:30:42.304  Build 41 completed
+                  → Tested 82 stories across 20 components; captured 82 snapshots in 59 seconds
+09:30:42.305  Tasks completed
+09:30:42.315  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json

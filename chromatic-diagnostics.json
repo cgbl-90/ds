@@ -1,19 +1,19 @@
 {
   "announcedBuild": {
-    "id": "6707f49190c69cca8f6c18a4",
-    "number": 26,
+    "id": "67122a73a7c35b3c23a78df8",
+    "number": 41,
     "status": "PUBLISHED",
     "autoAcceptChanges": false,
     "app": {
       "id": "66c61912622bdf9d8de37009",
-      "turboSnapAvailability": "UNAVAILABLE"
+      "turboSnapAvailability": "UNUSED"
     },
-    "storybookUrl": "https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/"
+    "storybookUrl": "https://66c61912622bdf9d8de37009-yqjecelhmb.chromatic.com/"
   },
   "build": {
-    "id": "6707f49190c69cca8f6c18a4",
-    "number": 26,
-    "status": "IN_PROGRESS",
+    "id": "67122a73a7c35b3c23a78df8",
+    "number": 41,
+    "status": "PENDING",
     "autoAcceptChanges": false,
     "app": {
       "manageUrl": "https://www.chromatic.com/manage?appId=66c61912622bdf9d8de37009",
@@ -27,17 +27,17 @@
         "provider": "github"
       }
     },
-    "storybookUrl": "https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/",
+    "storybookUrl": "https://66c61912622bdf9d8de37009-yqjecelhmb.chromatic.com/",
     "specCount": 82,
     "componentCount": 20,
     "testCount": 82,
-    "changeCount": 0,
+    "changeCount": 4,
     "errorCount": 0,
     "actualTestCount": 82,
     "actualCaptureCount": 82,
     "inheritedCaptureCount": 0,
     "interactionTestFailuresCount": 0,
-    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=26",
+    "webUrl": "https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=41",
     "browsers": [
       {
         "browser": "chrome"
@@ -1362,9 +1362,11 @@
           "name": "1200px"
         }
       }
-    ]
+    ],
+    "inProgressCount": 0,
+    "completedAt": 1729243841187
   },
-  "buildCommand": "npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--25131-rNeSLPCnCYWK",
+  "buildCommand": "npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--5517-vR6mAokaPJdk",
   "buildLogFile": "/Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log",
   "configuration": {
     "configFile": "chromatic.config.json",
@@ -1373,8 +1375,8 @@
     "zip": true
   },
   "environment": {},
-  "exitCode": 0,
-  "exitCodeKey": "OK",
+  "exitCode": 1,
+  "exitCodeKey": "BUILD_HAS_CHANGES",
   "fileInfo": {
     "lengths": [
       {
@@ -1504,7 +1506,7 @@
       },
       {
         "pathname": "project.json",
-        "contentLength": 1512,
+        "contentLength": 1513,
         "knownAs": "project.json"
       },
       {
@@ -1513,9 +1515,9 @@
         "knownAs": "robots.txt"
       },
       {
-        "pathname": "runtime~main.e675c210.iframe.bundle.js",
+        "pathname": "runtime~main.a5f8d2fd.iframe.bundle.js",
         "contentLength": 10230,
-        "knownAs": "runtime~main.e675c210.iframe.bundle.js"
+        "knownAs": "runtime~main.a5f8d2fd.iframe.bundle.js"
       },
       {
         "pathname": "sb-addons/chromatic-com-storybook-10/manager-bundle.js",
@@ -1723,14 +1725,14 @@
         "knownAs": "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map"
       },
       {
-        "pathname": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css",
+        "pathname": "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css",
         "contentLength": 1014,
-        "knownAs": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css"
+        "knownAs": "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map",
+        "pathname": "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css.map",
         "contentLength": 1382,
-        "knownAs": "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map"
+        "knownAs": "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css.map"
       },
       {
         "pathname": "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css",
@@ -1813,24 +1815,24 @@
         "knownAs": "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map"
       },
       {
-        "pathname": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css",
-        "contentLength": 558,
-        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css"
+        "pathname": "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css",
+        "contentLength": 527,
+        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map",
-        "contentLength": 859,
-        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css.map",
+        "contentLength": 822,
+        "knownAs": "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css.map"
       },
       {
-        "pathname": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css",
-        "contentLength": 1038,
-        "knownAs": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css"
+        "pathname": "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css",
+        "contentLength": 996,
+        "knownAs": "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map",
-        "contentLength": 1411,
-        "knownAs": "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map"
+        "pathname": "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css.map",
+        "contentLength": 1361,
+        "knownAs": "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css.map"
       },
       {
         "pathname": "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css",
@@ -1863,14 +1865,14 @@
         "knownAs": "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map"
       },
       {
-        "pathname": "static/css/stories-Components-Form-stories.3ad16338.chunk.css",
-        "contentLength": 3621,
-        "knownAs": "static/css/stories-Components-Form-stories.3ad16338.chunk.css"
+        "pathname": "static/css/stories-Components-Form-stories.035db909.chunk.css",
+        "contentLength": 3579,
+        "knownAs": "static/css/stories-Components-Form-stories.035db909.chunk.css"
       },
       {
-        "pathname": "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map",
-        "contentLength": 4979,
-        "knownAs": "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map"
+        "pathname": "static/css/stories-Components-Form-stories.035db909.chunk.css.map",
+        "contentLength": 4929,
+        "knownAs": "static/css/stories-Components-Form-stories.035db909.chunk.css.map"
       },
       {
         "pathname": "static/css/stories-Components-Header-stories.bf7004f1.chunk.css",
@@ -1953,9 +1955,9 @@
         "knownAs": "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js"
       },
       {
-        "pathname": "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js",
-        "contentLength": 2575,
-        "knownAs": "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js"
+        "pathname": "stories-Atoms-ProgressBar-stories.27631706.iframe.bundle.js",
+        "contentLength": 2574,
+        "knownAs": "stories-Atoms-ProgressBar-stories.27631706.iframe.bundle.js"
       },
       {
         "pathname": "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js",
@@ -2026,7 +2028,7 @@
       "nunito-sans-regular.woff2",
       "project.json",
       "robots.txt",
-      "runtime~main.e675c210.iframe.bundle.js",
+      "runtime~main.a5f8d2fd.iframe.bundle.js",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt",
       "sb-addons/essentials-actions-3/manager-bundle.js",
@@ -2068,8 +2070,8 @@
       "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map",
       "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css",
       "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map",
+      "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css",
+      "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css.map",
       "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css",
       "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css.map",
       "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css",
@@ -2086,18 +2088,18 @@
       "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map",
       "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css",
       "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map",
+      "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css",
+      "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css.map",
+      "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css",
+      "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css.map",
       "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css",
       "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map",
       "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css",
       "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map",
       "static/css/stories-Components-Card-stories.81c743b1.chunk.css",
       "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map",
-      "static/css/stories-Components-Form-stories.3ad16338.chunk.css",
-      "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map",
+      "static/css/stories-Components-Form-stories.035db909.chunk.css",
+      "static/css/stories-Components-Form-stories.035db909.chunk.css.map",
       "static/css/stories-Components-Header-stories.bf7004f1.chunk.css",
       "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map",
       "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css",
@@ -2114,7 +2116,7 @@
       "stories-Atoms-List-stories.b3974454.iframe.bundle.js",
       "stories-Atoms-Loader-stories.f4444e66.iframe.bundle.js",
       "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js",
-      "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js",
+      "stories-Atoms-ProgressBar-stories.27631706.iframe.bundle.js",
       "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js",
       "stories-Atoms-Tooltip-stories.38470de7.iframe.bundle.js",
       "stories-Atoms-Typography-stories.1c670c23.iframe.bundle.js",
@@ -2124,7 +2126,7 @@
       "stories-Configure-mdx.f1877e78.iframe.bundle.js",
       "stories-Pages-Page-stories.23b06d5d.iframe.bundle.js"
     ],
-    "total": 16093182,
+    "total": 16092930,
     "hashes": {
       "126.3de80df4.iframe.bundle.js": "d0095d8ff89de6f7",
       "126.3de80df4.iframe.bundle.js.LICENSE.txt": "8bfcb64f2904ca37",
@@ -2139,7 +2141,7 @@
       "6f0263d4d5d96e23f440.png": "bfb5bc73310d743f",
       "favicon.ico": "34c4df31bdbad226",
       "favicon.svg": "293aff65db45e6c4",
-      "iframe.html": "f6df3597fe5e0b10",
+      "iframe.html": "e846950b38c54b9b",
       "index.css": "0592055b1f3dd3e6",
       "index.html": "8dd3df0de81771b8",
       "index.json": "8abfb37dfe6dc793",
@@ -2151,9 +2153,9 @@
       "nunito-sans-bold.woff2": "0bd5b61b7fb7f7d5",
       "nunito-sans-italic.woff2": "b7807d9de055e9a0",
       "nunito-sans-regular.woff2": "6687b7be04c2debe",
-      "project.json": "7ed4d7d9b488486e",
+      "project.json": "95808ea4f4b36dfd",
       "robots.txt": "0d9b735967ef9e81",
-      "runtime~main.e675c210.iframe.bundle.js": "90988de795252e32",
+      "runtime~main.a5f8d2fd.iframe.bundle.js": "31e918b81d7234c5",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js": "db44af53b0d5b869",
       "sb-addons/chromatic-com-storybook-10/manager-bundle.js.LEGAL.txt": "1130aaff59aebfe1",
       "sb-addons/essentials-actions-3/manager-bundle.js": "ef3f1c272c3e87e7",
@@ -2195,8 +2197,8 @@
       "static/css/stories-Atoms-Badge-stories.1320dce8.chunk.css.map": "23dcabe2c653eb97",
       "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css": "58bf5228b8380272",
       "static/css/stories-Atoms-Button-stories.acea93d0.chunk.css.map": "d7284430ccc3a4fc",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css": "b1b8a70e0148f8a2",
-      "static/css/stories-Atoms-Checkbox-stories.8cf622f7.chunk.css.map": "7518945ad32e3a40",
+      "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css": "506376a126265abb",
+      "static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css.map": "e3e461044a7d7699",
       "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css": "68e302fc681bc953",
       "static/css/stories-Atoms-DividerLine-stories.2b28059e.chunk.css.map": "6e2e9b024745e170",
       "static/css/stories-Atoms-Icon-stories.f388da6e.chunk.css": "aab2ff852b94a3d8",
@@ -2213,18 +2215,18 @@
       "static/css/stories-Atoms-Loader-stories.ec8c7bca.chunk.css.map": "f34c8ec6f2726ffd",
       "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css": "1da133d2ed1060f4",
       "static/css/stories-Atoms-NotificationDot-stories.e0b7acec.chunk.css.map": "a1df6c187975a452",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css": "a956a8d4e561fe35",
-      "static/css/stories-Atoms-ProgressBar-stories.6f9286b3.chunk.css.map": "d39bca3e6d7a392c",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css": "19cd2559da835af6",
-      "static/css/stories-Atoms-Radio-stories.ad24717a.chunk.css.map": "44dbb539d46ded72",
+      "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css": "eda1b6bf166ae29e",
+      "static/css/stories-Atoms-ProgressBar-stories.2298aab1.chunk.css.map": "444c72e7dd9f4d11",
+      "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css": "a8cd5d1e3989fc8b",
+      "static/css/stories-Atoms-Radio-stories.757f00b7.chunk.css.map": "6284acdb2f78cb47",
       "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css": "98af05c947aed76c",
       "static/css/stories-Atoms-Tooltip-stories.6c0ea062.chunk.css.map": "8e5fe86f1b459569",
       "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css": "cf6e7c61841dc580",
       "static/css/stories-Atoms-Typography-stories.7fac1d80.chunk.css.map": "ec0cc9d892489acf",
       "static/css/stories-Components-Card-stories.81c743b1.chunk.css": "483e33f1db50b7ce",
       "static/css/stories-Components-Card-stories.81c743b1.chunk.css.map": "2c9240918a964e9f",
-      "static/css/stories-Components-Form-stories.3ad16338.chunk.css": "12dfa5fb591c5a48",
-      "static/css/stories-Components-Form-stories.3ad16338.chunk.css.map": "4a8b29c390709e7d",
+      "static/css/stories-Components-Form-stories.035db909.chunk.css": "efb35b346222b5b6",
+      "static/css/stories-Components-Form-stories.035db909.chunk.css.map": "169f201b6ddf6a1c",
       "static/css/stories-Components-Header-stories.bf7004f1.chunk.css": "93095b530c248434",
       "static/css/stories-Components-Header-stories.bf7004f1.chunk.css.map": "dcb2592543da4ef8",
       "static/css/stories-Pages-Page-stories.37d34d3f.chunk.css": "5638597a107432fc",
@@ -2241,7 +2243,7 @@
       "stories-Atoms-List-stories.b3974454.iframe.bundle.js": "c1868f32616a3e19",
       "stories-Atoms-Loader-stories.f4444e66.iframe.bundle.js": "f5e4c8a9d505c958",
       "stories-Atoms-NotificationDot-stories.1ab4ee99.iframe.bundle.js": "bbaa57aee3f53767",
-      "stories-Atoms-ProgressBar-stories.d809bd04.iframe.bundle.js": "b8500363ceeb0650",
+      "stories-Atoms-ProgressBar-stories.27631706.iframe.bundle.js": "6e4fe2060338fc22",
       "stories-Atoms-Radio-stories.8f761b48.iframe.bundle.js": "90206a20d9b8e7ba",
       "stories-Atoms-Tooltip-stories.38470de7.iframe.bundle.js": "99f8c5ace9b2abb4",
       "stories-Atoms-Typography-stories.1c670c23.iframe.bundle.js": "d0f003e8e2eb0523",
@@ -2253,7 +2255,6 @@
     }
   },
   "flags": {
-    "list": true,
     "outputDir": [],
     "storybookBuildDir": [],
     "externals": [],
@@ -2267,19 +2268,21 @@
   "git": {
     "version": "2.39.3 (Apple Git-146)",
     "gitUserEmail": "carmenbaez2000@gmail.com",
-    "uncommittedHash": "d98d552405065408fd4e4c37eb3475cfd3c2ae9a",
-    "commit": "79416d230044b3016e92ef9d1798fe8a906d13a4",
-    "committedAt": 1728573882000,
+    "uncommittedHash": "3d7ef9c4cb2d1b3a238e4fdb035d0e4bad27ae97",
+    "commit": "1d40e9117327bff0b2fe2873db5cc12fd10eb799",
+    "committedAt": 1729241484000,
     "committerEmail": "carmenbaez2000@gmail.com",
     "committerName": "Carmen Lopez",
     "branch": "main",
     "slug": "cgbl-90/ds",
     "fromCI": false,
     "parentCommits": [
-      "79416d230044b3016e92ef9d1798fe8a906d13a4"
+      "1d40e9117327bff0b2fe2873db5cc12fd10eb799"
     ]
   },
-  "input": [],
+  "input": [
+    "isLocalBuild"
+  ],
   "isOnboarding": false,
   "isPublishOnly": false,
   "options": {
@@ -2297,9 +2300,8 @@
     "originalArgv": [
       "--project-token",
       "chpt_1dfeeb5e0e7b48e",
-      "--list"
+      "isLocalBuild"
     ],
-    "list": true,
     "logFile": "chromatic.log",
     "zip": true,
     "buildScriptName": "build-storybook",
@@ -2374,28 +2376,28 @@
     "_id": "cgbl-design-system@0.1.0"
   },
   "packagePath": "/Users/camy-chroma/GitHub/cgbl-design-system/package.json",
+  "rebuildForBuildId": "671221ba7b562b4f5eb419e6",
   "runtimeMetadata": {
     "nodePlatform": "darwin",
-    "nodeVersion": "18.20.1",
+    "nodeVersion": "20.14.0",
     "packageManager": "npm",
-    "packageManagerVersion": "9.5.0"
+    "packageManagerVersion": "10.7.0"
   },
   "sentinelUrls": [
-    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-qnincolzry/.chromatic/files-copied.118071509.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T153703Z&X-Amz-Expires=1800&X-Amz-Signature=240fc5e9a5e3626d8752216384dfd1c24b3176588774e7a02b511a2ecf7813ee&X-Amz-SignedHeaders=host&x-id=GetObject",
-    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-qnincolzry/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241010%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241010T153703Z&X-Amz-Expires=1980&X-Amz-Signature=75563f383bf7aaed8f41c9206e0d2b58b3d80c16a54b83bfea540294959e6198&X-Amz-SignedHeaders=host&x-id=GetObject"
+    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-yqjecelhmb/.chromatic/files-copied.194501131.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T092935Z&X-Amz-Expires=1800&X-Amz-Signature=1f3be09a69d93093c378f0266a198010c97c55b07af2c2d82aabb76f35c6fc34&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-yqjecelhmb/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T092935Z&X-Amz-Expires=1980&X-Amz-Signature=29db9ca3b86774b02e98b51e157c83dcab51131492cc5a280982c1f0d65ff812&X-Amz-SignedHeaders=host&x-id=GetObject"
   ],
-  "sessionId": "4e3b527b-a2ca-4f06-93f0-e2e52f7d2c51",
-  "skipSnapshots": true,
-  "sourceDir": "/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--25131-rNeSLPCnCYWK",
-  "startedAt": 1728574638281,
+  "sessionId": "c5e719c9-25fd-4108-a5a0-b40c67712d0c",
+  "sourceDir": "/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--5517-vR6mAokaPJdk",
+  "startedAt": 1729243783774,
   "storybook": {
     "addons": [],
     "viewLayer": "@storybook/react-webpack5",
     "version": "8.2.8"
   },
-  "storybookUrl": "https://66c61912622bdf9d8de37009-qnincolzry.chromatic.com/",
-  "task": "verify",
-  "uploadedBytes": 27550,
-  "uploadedFiles": 14,
-  "userError": false
+  "storybookUrl": "https://66c61912622bdf9d8de37009-yqjecelhmb.chromatic.com/",
+  "task": "snapshot",
+  "uploadedBytes": 12360,
+  "uploadedFiles": 7,
+  "userError": true
 }

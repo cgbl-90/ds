@@ -39,6 +39,7 @@ jobs:
           list: true
           zip: true
           junitReport: true
+          isLocalBuild: true
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report
