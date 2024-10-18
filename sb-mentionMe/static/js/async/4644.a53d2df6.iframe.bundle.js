@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_mention_me_frontend=globalThis.webpackChunk_mention_me_frontend||[]).push([["4644"],{"../node_modules/storybook/core/components/index.js":function(o,n,e){e.d(n,{createCopyToClipboardFunction:function(){return t.xV}});var t=e("../node_modules/@storybook/core/dist/components/index.js")}}]);

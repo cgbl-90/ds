@@ -34,12 +34,11 @@ jobs:
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: "sb-mentionMe"
           skip: "dependabot/**"
           debug: true
-          list: true
           zip: true
           junitReport: true
-          isLocalBuild: true
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report

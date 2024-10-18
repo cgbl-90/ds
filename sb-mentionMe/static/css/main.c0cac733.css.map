@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.c0cac733.css","sources":["webpack://@mention-me/frontend/./home/runner/work/MentionMe/MentionMe/frontend/.storybook/preview.less"],"sourcesContent":["body.sb-show-main {\n  background-color: transparent;\n}\n.sbdocs.sbdocs-content {\n  max-width: 1242px;\n}\n.docs-story {\n  position: relative;\n}\n"],"names":[],"mappings":"AAAA"}
