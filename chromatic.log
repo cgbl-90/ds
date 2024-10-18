@@ -1,119 +1,788 @@
-09:29:21.289  Chromatic CLI v11.10.4
+16:36:02.889  Chromatic CLI v11.10.4
               https://www.chromatic.com/docs/cli 
  
-09:29:21.295  Authenticating with Chromatic 
-09:29:21.295      → Connecting to https://index.chromatic.com
-09:29:21.669  Authenticated with Chromatic
-                  → Using project token '****************b48e'
-09:29:21.669  Retrieving git information
-09:29:21.729  git info: {"commit":{"commit":"1d40e9117327bff0b2fe2873db5cc12fd10eb799","committedAt":1729241484000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
-09:29:22.117  App firstBuild: %o, lastBuild: %o {"committedAt":1724258813000} {"commit":"1d40e9117327bff0b2fe2873db5cc12fd10eb799","committedAt":1729241484000}
-09:29:22.139  Adding last branch build commit 1d40e9117327bff0b2fe2873db5cc12fd10eb799 to commits with builds
-09:29:22.139  step: checking 20 up to 1724258813
-09:29:22.139  step: commitsWithBuilds: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
-09:29:22.139  step: commitsWithoutBuilds:
-09:29:22.139  running git rev-list HEAD       --since 1724258813       -n 20 --not 1d40e9117327bff0b2fe2873db5cc12fd10eb799
-09:29:22.154  command output:
-09:29:22.154  step: candidateCommits: , visitedCommitsWithoutBuilds:
-09:29:22.154  step: no candidateCommits; we are done
-09:29:22.455  Final commitsWithBuilds: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
-09:29:22.456  running git rev-list 1d40e9117327bff0b2fe2873db5cc12fd10eb799 --not "1d40e9117327bff0b2fe2873db5cc12fd10eb799^@"
-09:29:22.487  command output: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
-09:29:22.488  Found parentCommits: 1d40e9117327bff0b2fe2873db5cc12fd10eb799
-09:29:22.808  Retrieved git information
-                  → Commit '1d40e91' on branch 'main'; found 1 parent build
-09:29:22.808  Collecting Storybook metadata
-09:29:22.811  {"storybookV6error":{}}
-09:29:22.831  {"storybookV7error":{}}
-09:29:22.841  [{"status":"fulfilled","value":{"addons":[]}},{"status":"fulfilled","value":{}},{"status":"fulfilled","value":{"viewLayer":"@storybook/react-webpack5","version":"8.2.8"}},{"status":"rejected","reason":{}}]
-09:29:22.841  Collected Storybook metadata
-                  → Storybook 8.2.8 for @storybook/react Webpack5; no supported addons found
-09:29:22.841  Initializing build
-09:29:22.841  Got environment:
+16:36:02.894  Authenticating with Chromatic 
+16:36:02.894      → Connecting to https://index.chromatic.com
+16:36:03.253  Authenticated with Chromatic
+                  → Using project token '****************94f0'
+16:36:03.254  Retrieving git information
+16:36:03.328  git info: {"commit":{"commit":"51e365365edf95a8c75cc3a7e2917e46b7c10ebe","committedAt":1729244041000,"committerEmail":"carmenbaez2000@gmail.com","committerName":"Carmen Lopez"},"branch":"main","fromCI":false}
+16:36:03.708  App firstBuild: %o, lastBuild: %o {"committedAt":1728998847000} {"commit":"a8f25792f0954a3a36834db835980a3e69e1ca6a","committedAt":1728998847000}
+16:36:03.738  Adding last branch build commit a8f25792f0954a3a36834db835980a3e69e1ca6a to commits with builds
+16:36:03.738  step: checking 20 up to 1728998847
+16:36:03.738  step: commitsWithBuilds: a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:03.738  step: commitsWithoutBuilds:
+16:36:03.739  running git rev-list HEAD       --since 1728998847       -n 20 --not a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:03.758  command output: 51e365365edf95a8c75cc3a7e2917e46b7c10ebe,1d40e9117327bff0b2fe2873db5cc12fd10eb799
+16:36:03.758  step: candidateCommits: 51e365365edf95a8c75cc3a7e2917e46b7c10ebe,1d40e9117327bff0b2fe2873db5cc12fd10eb799, visitedCommitsWithoutBuilds: 51e365365edf95a8c75cc3a7e2917e46b7c10ebe,1d40e9117327bff0b2fe2873db5cc12fd10eb799
+16:36:04.059  step: newCommitsWithBuilds:
+16:36:04.059  step: checking 40 up to 1728998847
+16:36:04.059  step: commitsWithBuilds: a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:04.059  step: commitsWithoutBuilds: 51e365365edf95a8c75cc3a7e2917e46b7c10ebe,1d40e9117327bff0b2fe2873db5cc12fd10eb799
+16:36:04.059  running git rev-list HEAD       --since 1728998847       -n 42 --not a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:04.087  command output: 51e365365edf95a8c75cc3a7e2917e46b7c10ebe,1d40e9117327bff0b2fe2873db5cc12fd10eb799
+16:36:04.087  step: candidateCommits: , visitedCommitsWithoutBuilds: 51e365365edf95a8c75cc3a7e2917e46b7c10ebe,1d40e9117327bff0b2fe2873db5cc12fd10eb799
+16:36:04.087  step: no candidateCommits; we are done
+16:36:04.395  Final commitsWithBuilds: a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:04.395  running git rev-list a8f25792f0954a3a36834db835980a3e69e1ca6a --not "a8f25792f0954a3a36834db835980a3e69e1ca6a^@"
+16:36:04.414  command output: a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:04.414  Found parentCommits: a8f25792f0954a3a36834db835980a3e69e1ca6a
+16:36:04.721  Retrieved git information
+                  → Commit '51e3653' on branch 'main'; found 1 parent build
+16:36:04.721  Collecting Storybook metadata
+16:36:04.724  {}
+16:36:04.725  Collected Storybook metadata
+                  → ; no supported addons found
+16:36:04.725  Initializing build
+16:36:04.725  Got environment:
               {}
-09:29:23.527  Initialized build
-                  → Build 41 initialized
-09:29:23.534  Building your Storybook
-09:29:23.534      → Running command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--5517-vR6mAokaPJdk
-09:29:23.536  Running build command: npm run build-storybook -- --output-dir=/var/folders/m2/6x1njkpj67l49t346wfn885w0000gn/T/chromatic--5517-vR6mAokaPJdk
-09:29:23.536  Runtime metadata: {
-                "nodePlatform": "darwin",
-                "nodeVersion": "20.14.0",
-                "packageManager": "npm",
-                "packageManagerVersion": "10.7.0"
-              }
-09:29:34.988  Storybook built in 11 seconds
-                  → View build log at /Users/camy-chroma/GitHub/cgbl-design-system/build-storybook.log
-09:29:34.989  Publish your built Storybook
-09:29:34.989      → Validating Storybook files
-09:29:34.991  Publishing your built Storybook
-09:29:34.991      → Calculating file hashes
-09:29:35.004  Calculated file hashes in 13ms
-09:29:35.004  Publishing your built Storybook
-09:29:35.004      → Starting publish
-09:29:35.005  Running uploadBuild batch 1 / 1
-09:29:35.527  Adding to zip archive: iframe.html
-09:29:35.528  Adding to zip archive: project.json
-09:29:35.529  Adding to zip archive: runtime~main.a5f8d2fd.iframe.bundle.js
-09:29:35.529  Adding to zip archive: static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css
-09:29:35.529  Adding to zip archive: static/css/stories-Atoms-Checkbox-stories.606e621d.chunk.css.map
-09:29:35.529  Adding to zip archive: static/css/stories-Components-Form-stories.035db909.chunk.css
-09:29:35.529  Adding to zip archive: static/css/stories-Components-Form-stories.035db909.chunk.css.map
-09:29:35.529  Finalizing zip archive
-09:29:35.546  Compression reduced upload size by 68%
-09:29:35.546  Uploading /.chromatic/storybook.zip (12.36 kB)
-09:29:35.552      → [====================] 100%
-09:29:36.203  Uploaded /.chromatic/storybook.zip (12.36 kB)
-09:29:36.204  Publishing your built Storybook
-09:29:36.204      → Finalizing upload
-09:29:36.204  Waiting for 'files-copied.194501131.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-yqjecelhmb/.chromatic/files-copied.194501131.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T092935Z&X-Amz-Expires=1800&X-Amz-Signature=1f3be09a69d93093c378f0266a198010c97c55b07af2c2d82aabb76f35c6fc34&X-Amz-SignedHeaders=host&x-id=GetObject
-09:29:36.206  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/66c61912622bdf9d8de37009-yqjecelhmb/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T092935Z&X-Amz-Expires=1980&X-Amz-Signature=29db9ca3b86774b02e98b51e157c83dcab51131492cc5a280982c1f0d65ff812&X-Amz-SignedHeaders=host&x-id=GetObject
-09:29:36.732  Sentinel file 'files-copied.194501131.txt' OK.
-09:29:38.268  Sentinel file 'zip-unpacked.txt' OK.
-09:29:38.271  Publish complete in 3 seconds
-                  → Uploaded 7 files (12.36 kB), skipped 117 files
-09:29:38.271  Verifying your Storybook
-09:29:38.271      → This may take a few minutes
-09:29:43.773  ✔ Storybook published
-              We found 20 components with 82 stories.
-              ℹ View your Storybook at https://66c61912622bdf9d8de37009-yqjecelhmb.chromatic.com/
-09:29:43.773  Started build 41
-                  → View build details at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=41
-09:29:43.774  Running 82 tests
-09:29:43.774      → This may take a few minutes
-09:29:43.774  ℹ Speed up Continuous Integration
-              Your project is linked to GitHub so Chromatic will report results there.
-              This means you can pass the --exit-once-uploaded flag to skip waiting for build results.
-              Read more here: https://www.chromatic.com/docs/cli#chromatic-options
-09:29:44.088      → [                    ] 1/82  Avatar › Small
-09:30:05.118      → [==                  ] 8/82  Button › Primary
-09:30:06.425      → [===                 ] 14/82  Button › Primary No Border
-09:30:07.770      → [====                ] 15/82  Button › Secondary No Border
-09:30:10.466      → [=====               ] 22/82  Divider › Success Dotted
-09:30:11.788      → [=======             ] 28/82  Input › Large
-09:30:13.124      → [=======             ] 29/82  Input › Hover
-09:30:14.448      → [=========           ] 36/82  Label › Small Default Label
-09:30:18.402      → [==========          ] 43/82  List › With Numbers
-09:30:19.746      → [===========         ] 45/82  List › With Devanagari Numbers
-09:30:21.084      → [============        ] 50/82  Notification Dot › Blue Dot Bottom Left
-09:30:22.382      → [==============      ] 56/82  Radio › Unchecked
-09:30:23.712      → [==============      ] 57/82  Radio › Checked
-09:30:25.029      → [===============     ] 61/82  Tooltip › Long Text Tooltip
-09:30:26.341      → [================    ] 64/82  Typography › Title
-09:30:27.663      → [=================   ] 69/82  Typography › Bold Text
-09:30:28.969      → [=================   ] 71/82  Card › Default Card
-09:30:31.639      → [==================  ] 74/82  Card › Card With Custom Button
-09:30:34.299      → [=================== ] 77/82  Form › Filled Form
-09:30:35.621      → [=================== ] 78/82  Form › Submitted Form
-09:30:36.981      → [=================== ] 79/82  Header › Logged In
-09:30:38.317      → [====================] 81/82  Page › Logged Out
-09:30:40.983      → [====================] 82/82  Page › Logged In
-09:30:42.304  ✖ Found 4 visual changes: Review the changes at https://www.chromatic.com/build?appId=66c61912622bdf9d8de37009&number=41
-              
-              ℹ For CI/CD use cases, this command failed with exit code 1
-              Pass --exit-zero-on-changes to succeed this command regardless of changes.
-              Pass --auto-accept-changes to succeed and automatically accept any changes.
-09:30:42.304  Build 41 completed
-                  → Tested 82 stories across 20 components; captured 82 snapshots in 59 seconds
-09:30:42.305  Tasks completed
-09:30:42.315  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
+16:36:05.439  Initialized build
+                  → Build 3 initialized
+16:36:05.439  Publish your built Storybook
+16:36:05.439      → Validating Storybook files
+16:36:05.456  Publishing your built Storybook
+16:36:05.456      → Calculating file hashes
+16:36:05.500  Calculated file hashes in 43ms
+16:36:05.500  Publishing your built Storybook
+16:36:05.500      → Starting publish
+16:36:05.505  Running uploadBuild batch 1 / 1
+16:36:07.016  Adding to zip archive: iframe.html
+16:36:07.016  Adding to zip archive: index.html
+16:36:07.017  Adding to zip archive: index.json
+16:36:07.017  Adding to zip archive: mockServiceWorker.js
+16:36:07.017  Adding to zip archive: project.json
+16:36:07.017  Adding to zip archive: sb-addons/a11y-1/manager-bundle.js
+16:36:07.017  Adding to zip archive: sb-addons/chromatic-com-storybook-11/manager-bundle.js
+16:36:07.017  Adding to zip archive: sb-addons/chromatic-com-storybook-11/manager-bundle.js.LEGAL.txt
+16:36:07.017  Adding to zip archive: sb-addons/essentials-actions-4/manager-bundle.js
+16:36:07.017  Adding to zip archive: sb-addons/interactions-10/manager-bundle.js
+16:36:07.017  Adding to zip archive: sb-addons/storybook-react-i18next-2/manager-bundle.js
+16:36:07.017  Adding to zip archive: static/css/1856.c3851791.css
+16:36:07.017  Adding to zip archive: static/css/1856.c3851791.css.map
+16:36:07.017  Adding to zip archive: static/css/async/4712.6f66174e.css
+16:36:07.017  Adding to zip archive: static/css/async/4712.6f66174e.css.map
+16:36:07.017  Adding to zip archive: static/css/async/5437.47dde96d.css
+16:36:07.017  Adding to zip archive: static/css/async/5437.47dde96d.css.map
+16:36:07.018  Adding to zip archive: static/css/async/Chart.4d85a867.css
+16:36:07.018  Adding to zip archive: static/css/async/Chart.4d85a867.css.map
+16:36:07.018  Adding to zip archive: static/css/async/SingleDatePicker.9fbabc74.css
+16:36:07.018  Adding to zip archive: static/css/async/SingleDatePicker.9fbabc74.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-asset-management-design-layout-edit-components-fields-FontWeightField-FontWeightField-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-asset-management-design-layout-edit-components-fields-FontWeightField-FontWeightField-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-campaign-components-OfferSetupCard-stories.7c86249e.css
+16:36:07.018  Adding to zip archive: static/css/async/client-campaign-components-OfferSetupCard-stories.7c86249e.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-approvals-components-BulkApprovalModal-BulkActionApprovableModal-stories.c492894a.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-approvals-components-BulkApprovalModal-BulkActionApprovableModal-stories.c492894a.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActions-components-components-ConfirmPurchaseModal-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActions-components-components-ConfirmPurchaseModal-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActions-components-components-CustomerPurgeModal-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActions-components-components-CustomerPurgeModal-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItems-stories.9440f9a5.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItems-stories.9440f9a5.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForCustomerOriginSurvey-stories.9440f9a5.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForCustomerOriginSurvey-stories.9440f9a5.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferee-stories.9440f9a5.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferee-stories.9440f9a5.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferrer-stories.9440f9a5.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferrer-stories.9440f9a5.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-ApprovableEventLabels-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-ApprovableEventLabels-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-FulfillmentEventLabels-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-FulfillmentEventLabels-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-MerchantOrderEventLabels-stories.846de7da.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-MerchantOrderEventLabels-stories.846de7da.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-IncentiveForActionEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-IncentiveForActionEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-MerchantOrderEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-MerchantOrderEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-NpsEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-NpsEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-RefereeEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-RefereeEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerRewardableEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerRewardableEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-UserOfferEvent-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-UserOfferEvent-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-experiment-detail-components-ExperimentDetailSummary-stories.54b89381.css
+16:36:07.018  Adding to zip archive: static/css/async/client-experiment-detail-components-ExperimentDetailSummary-stories.54b89381.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-reporting-components-RecurrenceRuleSelector-RecurrenceRuleSelector-stories.a3efb710.css
+16:36:07.018  Adding to zip archive: static/css/async/client-reporting-components-RecurrenceRuleSelector-RecurrenceRuleSelector-stories.a3efb710.css.map
+16:36:07.018  Adding to zip archive: static/css/async/client-reporting-earned-growth-EarnedGrowthPage-stories.88e1e84f.css
+16:36:07.018  Adding to zip archive: static/css/async/client-reporting-earned-growth-EarnedGrowthPage-stories.88e1e84f.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-IncrementalValuePage-stories.1b7142c5.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-IncrementalValuePage-stories.1b7142c5.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-ChartCard-ChartCard-stories.8cd5fdc7.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-ChartCard-ChartCard-stories.8cd5fdc7.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-DonutPieChart-DonutPieChart-stories.8cd5fdc7.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-DonutPieChart-DonutPieChart-stories.8cd5fdc7.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-DualBarChart-DualBarChart-stories.8cd5fdc7.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-DualBarChart-DualBarChart-stories.8cd5fdc7.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-IncrementalValueCalculationModal-IncrementalValueCalculationModal-stories.fd041b96.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-IncrementalValueCalculationModal-IncrementalValueCalculationModal-stories.fd041b96.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-IncrementalValueSegmentExplainerModal-IncrementalValueSegmentExplainerModal-stories.7d1d3081.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-incremental-value-components-IncrementalValueSegmentExplainerModal-IncrementalValueSegmentExplainerModal-stories.7d1d3081.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-network-revenue-components-NetworkOverTimeChart-NetworkOverTimeChart-stories.8cd5fdc7.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-network-revenue-components-NetworkOverTimeChart-NetworkOverTimeChart-stories.8cd5fdc7.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-network-revenue-detail-NetworkDetailPage-stories.4db7b0b9.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-network-revenue-detail-NetworkDetailPage-stories.4db7b0b9.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-nps-NPSPage-stories.021393cd.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-nps-NPSPage-stories.021393cd.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-overall-performance-components-OverallPerformanceReportCard-stories.fa13bf3e.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-overall-performance-components-OverallPerformanceReportCard-stories.fa13bf3e.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-sentiment-analysis-SentimentAnalysisPage-stories.88e1e84f.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-sentiment-analysis-SentimentAnalysisPage-stories.88e1e84f.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-sentiment-analysis-components-SentimentAnalysisSummary-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-sentiment-analysis-components-SentimentAnalysisSummary-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-share-messages-ShareMessagesPage-stories.24b66d12.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-share-messages-ShareMessagesPage-stories.24b66d12.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-share-messages-components-ShareMessagesOverview-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-reporting-share-messages-components-ShareMessagesOverview-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-IntegrationLogFilterChooser-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-IntegrationLogFilterChooser-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-IntegrationLogStatusBanner-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-IntegrationLogStatusBanner-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-card-IntegrationLogHeader-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-card-IntegrationLogHeader-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-card-IntegrationLogValueCell-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-card-IntegrationLogValueCell-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-card-IntegrationLogVerticalList-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-card-IntegrationLogVerticalList-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-stats-IntegrationLogStatsSection-stories.a3efb710.css
+16:36:07.019  Adding to zip archive: static/css/async/client-tools-DebugDashboard-components-stats-IntegrationLogStatsSection-stories.a3efb710.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-ChoiceOfOffer-ChoiceOfOfferPage-stories.fcce62a0.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-ChoiceOfOffer-ChoiceOfOfferPage-stories.fcce62a0.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-ChoiceOfOffer-components-ChoiceOfOfferButton-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-ChoiceOfOffer-components-ChoiceOfOfferButton-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-CornerPeel-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-CornerPeel-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-CustomerOriginSurvey-CustomerOriginSurveyPage-stories.fcce62a0.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-CustomerOriginSurvey-CustomerOriginSurveyPage-stories.fcce62a0.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-NPS-NPSPage-stories.fcce62a0.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-NPS-NPSPage-stories.fcce62a0.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-NPS-NPSPageMobile-stories.fcce62a0.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-NPS-NPSPageMobile-stories.fcce62a0.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-RegistrationPage-RegistrationPage-stories.fcce62a0.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-RegistrationPage-RegistrationPage-stories.fcce62a0.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-ContentItem-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-ContentItem-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-Header-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-Header-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-InformationNotice-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-InformationNotice-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-Input-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-Input-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-TermsAndConditions-stories.0a28a08b.css
+16:36:07.019  Adding to zip archive: static/css/async/consumer-journey-components-TermsAndConditions-stories.0a28a08b.css.map
+16:36:07.019  Adding to zip archive: static/css/async/shared-components-BaseInput-BaseInput-stories.c6883c83.css
+16:36:07.019  Adding to zip archive: static/css/async/shared-components-BaseInput-BaseInput-stories.c6883c83.css.map
+16:36:07.019  Adding to zip archive: static/css/async/shared-components-Button-Button-stories.215d38cd.css
+16:36:07.019  Adding to zip archive: static/css/async/shared-components-Button-Button-stories.215d38cd.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Chart-Chart-stories.2e3f8cbf.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Chart-Chart-stories.2e3f8cbf.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-BarChart-BarChart-stories.8cd5fdc7.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-BarChart-BarChart-stories.8cd5fdc7.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-ChartHeader-ChartHeader-stories.cacea43b.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-ChartHeader-ChartHeader-stories.cacea43b.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-ChartWrapper-ChartWrapper-stories.cacea43b.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-ChartWrapper-ChartWrapper-stories.cacea43b.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-ComparisonBarChart-ComparisonBarChart-stories.806dce86.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-ComparisonBarChart-ComparisonBarChart-stories.806dce86.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-LineChart-LineChart-stories.8cd5fdc7.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-LineChart-LineChart-stories.8cd5fdc7.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-SunburstChart-SunburstChart-stories.cacea43b.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Charts-SunburstChart-SunburstChart-stories.cacea43b.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-CheckboxInput-CheckboxInput-stories.0d0df01b.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-CheckboxInput-CheckboxInput-stories.0d0df01b.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Chip-Chip-stories.18d3cccb.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Chip-Chip-stories.18d3cccb.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-ChipsFilterCheckboxList-ChipsFilterCheckboxList-stories.33c3b5ac.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-ChipsFilterCheckboxList-ChipsFilterCheckboxList-stories.33c3b5ac.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-CustomerLink-CustomerLink-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-CustomerLink-CustomerLink-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-DashboardLayout-DashboardLayout-stories.37f8f018.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-DashboardLayout-DashboardLayout-stories.37f8f018.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-DataTile-DataTile-stories.2c702827.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-DataTile-DataTile-stories.2c702827.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-EntityFilters-EntityFilters-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-EntityFilters-EntityFilters-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-GraphTileCard-GraphTileCard-stories.8cd5fdc7.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-GraphTileCard-GraphTileCard-stories.8cd5fdc7.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Iframe-Iframe-stories.a5252f06.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Iframe-Iframe-stories.a5252f06.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-ImageCrop-ImageCrop-stories.33dac2fa.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-ImageCrop-ImageCrop-stories.33dac2fa.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-IntegrationDataTermsPanel-IntegrationDataTermsPanel-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-IntegrationDataTermsPanel-IntegrationDataTermsPanel-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Label-Label-stories.e38c1e0b.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Label-Label-stories.e38c1e0b.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Loading-FullScreenLoader-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Loading-FullScreenLoader-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MerchantInformationOverlay-MerchantInformationOverlay-stories.a0a6c98e.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MerchantInformationOverlay-MerchantInformationOverlay-stories.a0a6c98e.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MultiForm-MultiForm-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MultiForm-MultiForm-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MultiSelectDropdown-MultiSelectDropdown-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MultiSelectDropdown-MultiSelectDropdown-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MultiSelectInput-MultiSelectInput-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-MultiSelectInput-MultiSelectInput-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-NavigationTabs-NavigationTabs-stories.e355bf6e.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-NavigationTabs-NavigationTabs-stories.e355bf6e.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-NoData-NoData-stories.01b5e1f2.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-NoData-NoData-stories.01b5e1f2.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Notice-Notice-stories.3df2b0eb.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Notice-Notice-stories.3df2b0eb.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Notice-NoticeList-stories.3df2b0eb.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Notice-NoticeList-stories.3df2b0eb.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Notifications-Notification-stories.4abe033b.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-Notifications-Notification-stories.4abe033b.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-NumberInput-NumberInput-stories.fa01a6cc.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-NumberInput-NumberInput-stories.fa01a6cc.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-OfferPreview-StepPreview-stories.b8e73b45.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-OfferPreview-StepPreview-stories.b8e73b45.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-OfferScreenshot-OfferScreenshot-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-OfferScreenshot-OfferScreenshot-stories.a3efb710.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-PageHeading-PageHeading-stories.215d38cd.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-PageHeading-PageHeading-stories.215d38cd.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-PerformanceTileCard-PerformanceTileCard-stories.8cd5fdc7.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-PerformanceTileCard-PerformanceTileCard-stories.8cd5fdc7.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-RequestBanner-RequestBanner-stories.eb45fdb9.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-RequestBanner-RequestBanner-stories.eb45fdb9.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-ScrollToTop-ScrollToTop-stories.14dfbfdc.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-ScrollToTop-ScrollToTop-stories.14dfbfdc.css.map
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-SearchInput-SearchInput-stories.a3efb710.css
+16:36:07.020  Adding to zip archive: static/css/async/shared-components-SearchInput-SearchInput-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-SelectInput-SelectInput-stories.a3efb710.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-SelectInput-SelectInput-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-SingleDatePicker-SingleDatePicker-stories.06246256.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-SingleDatePicker-SingleDatePicker-stories.06246256.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-Slider-Slider-stories.e5ba8f94.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-Slider-Slider-stories.e5ba8f94.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-SortableMultiSelectInput-SortableMultiSelectInput-stories.a3efb710.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-SortableMultiSelectInput-SortableMultiSelectInput-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-Table-Table-stories.a3efb710.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-Table-Table-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-TextInput-TextInput-stories.a3efb710.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-TextInput-TextInput-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-TextInputEditable-TextInputEditable-stories.a3efb710.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-TextInputEditable-TextInputEditable-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-Tile-Tile-stories.53c94a71.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-components-Tile-Tile-stories.53c94a71.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-hooks-useForm-useForm-stories.a3efb710.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-hooks-useForm-useForm-stories.a3efb710.css.map
+16:36:07.021  Adding to zip archive: static/css/async/shared-templates-SideNavigation-SideNavigation-stories.8fcaf386.css
+16:36:07.021  Adding to zip archive: static/css/async/shared-templates-SideNavigation-SideNavigation-stories.8fcaf386.css.map
+16:36:07.021  Adding to zip archive: static/css/main.c0cac733.css
+16:36:07.021  Adding to zip archive: static/css/main.c0cac733.css.map
+16:36:07.021  Adding to zip archive: static/image/static/media/Formula.5ab6b4ae.png
+16:36:07.021  Adding to zip archive: static/image/static/media/FormulaWithControl.7025b85f.png
+16:36:07.021  Adding to zip archive: static/image/static/media/RepeatRevenueFormula.7e3a6bd3.png
+16:36:07.021  Adding to zip archive: static/image/static/media/Welcome.32f4f1d7.png
+16:36:07.021  Adding to zip archive: static/image/static/media/Welcome.b0683408.png
+16:36:07.021  Adding to zip archive: static/image/static/media/chart-1.a96b9b73.png
+16:36:07.021  Adding to zip archive: static/image/static/media/chart-2.745dec6c.png
+16:36:07.021  Adding to zip archive: static/image/static/media/chart-3.059d39b9.png
+16:36:07.021  Adding to zip archive: static/image/static/media/chart-4.ae916b19.png
+16:36:07.021  Adding to zip archive: static/image/static/media/earned-growth.5054c147.png
+16:36:07.021  Adding to zip archive: static/image/static/media/ecr.ed82e600.png
+16:36:07.021  Adding to zip archive: static/image/static/media/explainer-image.2a5b6884.png
+16:36:07.021  Adding to zip archive: static/image/static/media/fred.477a9069.jpg
+16:36:07.021  Adding to zip archive: static/image/static/media/growth-acquisition.ddb3e990.png
+16:36:07.021  Adding to zip archive: static/image/static/media/growth-retained-revenue.f93d5c2c.png
+16:36:07.021  Adding to zip archive: static/image/static/media/insights-background.673445dc.png
+16:36:07.021  Adding to zip archive: static/image/static/media/integrations-marketing.a561d757.png
+16:36:07.021  Adding to zip archive: static/image/static/media/minus.b2981f4d.png
+16:36:07.021  Adding to zip archive: static/image/static/media/network-insights.8802c934.png
+16:36:07.021  Adding to zip archive: static/image/static/media/plus.940ba942.png
+16:36:07.021  Adding to zip archive: static/image/static/media/predicted-ecr.eae893e6.png
+16:36:07.021  Adding to zip archive: static/image/static/media/square-photo-nick@mention-me.com.sep2019.ec5ca299.jpg
+16:36:07.021  Adding to zip archive: static/image/static/media/table-1.3d8d9fac.png
+16:36:07.021  Adding to zip archive: static/image/static/media/table-2.a7d17e20.png
+16:36:07.021  Adding to zip archive: static/js/1856.0286a1a3.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/1856.0286a1a3.iframe.bundle.js.LICENSE.txt
+16:36:07.021  Adding to zip archive: static/js/1856.0286a1a3.iframe.bundle.js.map
+16:36:07.021  Adding to zip archive: static/js/async/1123.682d8148.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1141.9a26e724.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1308.cec129e1.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1317.1c700b6b.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1317.1c700b6b.iframe.bundle.js.LICENSE.txt
+16:36:07.021  Adding to zip archive: static/js/async/1320.adfd9842.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1379.cc7ddd41.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1379.cc7ddd41.iframe.bundle.js.LICENSE.txt
+16:36:07.021  Adding to zip archive: static/js/async/1506.01a6c862.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1522.5386307a.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1522.5386307a.iframe.bundle.js.map
+16:36:07.021  Adding to zip archive: static/js/async/1586.4b07b660.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1586.4b07b660.iframe.bundle.js.LICENSE.txt
+16:36:07.021  Adding to zip archive: static/js/async/1852.f5b6323e.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1990.1597db6d.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/1990.1597db6d.iframe.bundle.js.map
+16:36:07.021  Adding to zip archive: static/js/async/1999.7f392b7d.iframe.bundle.js
+16:36:07.021  Adding to zip archive: static/js/async/2002.fb90243c.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2002.fb90243c.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/2084.6e2707a7.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2084.6e2707a7.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/2392.78c23235.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/247.21185ad8.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2471.0348bd5c.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2471.0348bd5c.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/2627.929a973d.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2627.929a973d.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/2642.2a14b78f.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2702.30fd94f0.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2702.30fd94f0.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/2702.30fd94f0.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/2744.27d2ae90.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2772.15063acf.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2773.6029c139.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2857.dcb389a3.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2890.e1a5ede8.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2895.83e589a7.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2931.ac0fdace.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/2986.3022452b.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3145.28caa577.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3268.5d48bf9f.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3363.5e8e1b8f.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3363.5e8e1b8f.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/3439.ab63cfe1.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3446.f6849b29.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3515.618b4b51.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3515.618b4b51.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/3666.0de5189f.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3666.0de5189f.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/3768.fc4d8a65.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3768.fc4d8a65.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/3877.50f5d75a.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/3877.50f5d75a.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/413.a08d5429.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4175.6105f8e9.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4178.e7ab9d6e.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4196.d92e8fda.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4196.d92e8fda.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/4207.44a8ad2d.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4226.10089645.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4226.10089645.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/4226.10089645.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/4242.1ce1888d.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4330.a27821c0.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4375.a97abad5.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4375.a97abad5.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/439.3425fbc1.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4574.9a4badd1.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4622.231d4974.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4622.231d4974.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/4644.a53d2df6.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4684.08cebb05.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4699.128f8f2f.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4712.2a9c770e.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4860.bc8fc74b.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4878.a3b43ae7.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/4918.7fb9e699.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5023.3a5f13c5.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5124.e03bbda5.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5169.0a531c07.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5169.0a531c07.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/5347.c98ebadd.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5347.c98ebadd.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/5347.c98ebadd.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/538.aebcd085.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/538.aebcd085.iframe.bundle.js.map
+16:36:07.022  Adding to zip archive: static/js/async/5458.5c60e9ce.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5539.8f66f514.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5539.8f66f514.iframe.bundle.js.LICENSE.txt
+16:36:07.022  Adding to zip archive: static/js/async/5551.8d2ae612.iframe.bundle.js
+16:36:07.022  Adding to zip archive: static/js/async/5551.8d2ae612.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/5670.f2bab29f.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/5670.f2bab29f.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/5791.42a46e9c.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/5840.09e79e44.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/5840.09e79e44.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/5840.09e79e44.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/6064.9195f129.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6064.9195f129.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/6064.9195f129.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/6134.3e3a87db.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6168.31baab88.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6256.fe785322.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6256.fe785322.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/6257.07f714b7.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6257.07f714b7.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/6292.b912b8dd.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6555.0ee896e2.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6564.1cccbe65.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6575.7980c6da.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6709.d4b96b8a.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6734.70b9d657.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6779.4a74e34a.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6779.4a74e34a.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/6843.364fa705.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6867.1352aa0d.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/6867.1352aa0d.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/7134.7bebf245.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7186.18eea65e.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7256.2902d575.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7326.97417557.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7370.2a5523b4.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7414.2b8cd8ca.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7414.2b8cd8ca.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/7505.626605d3.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/761.d32e1bdc.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7670.6186d14e.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7670.6186d14e.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/7773.4f36332f.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7789.b0f2e5af.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7847.265bbb52.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/7847.265bbb52.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/7950.c0ca4037.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8012.760b307b.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8012.760b307b.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/8055.579aa052.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8055.579aa052.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/8143.24a69c67.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8250.8fc27b89.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8250.8fc27b89.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/8374.4a0a740e.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8406.8ecd1f3b.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8447.2e3d11ef.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8447.2e3d11ef.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/8553.115bdc9f.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8553.115bdc9f.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/8564.7fae8746.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8685.ddc71dba.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/870.5d7bbfad.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8714.bd571101.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8797.f3447fba.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8961.c044d088.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/897.86f5b633.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/8976.7901a6a6.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9151.23b3b90c.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9187.155b3d39.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9432.c0b815d8.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9493.f7dd88ef.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9493.f7dd88ef.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/9493.f7dd88ef.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/9530.a3efc049.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9530.a3efc049.iframe.bundle.js.LICENSE.txt
+16:36:07.023  Adding to zip archive: static/js/async/9530.a3efc049.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/9571.04921910.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9571.04921910.iframe.bundle.js.map
+16:36:07.023  Adding to zip archive: static/js/async/9625.a33b84ca.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9713.9bbd06dc.iframe.bundle.js
+16:36:07.023  Adding to zip archive: static/js/async/9814.871b34bb.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/983.72f3349f.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/9916.1c5297df.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/9916.1c5297df.iframe.bundle.js.map
+16:36:07.024  Adding to zip archive: static/js/async/9950.bd9e43e3.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/9950.bd9e43e3.iframe.bundle.js.map
+16:36:07.024  Adding to zip archive: static/js/async/Chart.cb1bdcfe.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/SingleDatePicker.9e632b86.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/canvg.a04fbffa.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/canvg.a04fbffa.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-asset-management-design-layout-edit-components-fields-FontWeightField-FontWeightField-stories.1dc9884a.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-asset-management-design-layout-edit-components-fields-FontWeightField-FontWeightField-stories.1dc9884a.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-campaign-components-OfferSetupCard-stories.658243ce.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-campaign-components-OfferSetupCard-stories.658243ce.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-approvals-components-BulkApprovalModal-BulkActionApprovableModal-stories.90a890c7.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-approvals-components-BulkApprovalModal-BulkActionApprovableModal-stories.90a890c7.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-approvals-components-BulkApprovalModal-BulkActionApprovableModal-stories.90a890c7.iframe.bundle.js.map
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActions-components-components-ConfirmPurchaseModal-stories.7b005129.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActions-components-components-ConfirmPurchaseModal-stories.7b005129.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActions-components-components-ConfirmPurchaseModal-stories.7b005129.iframe.bundle.js.map
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActions-components-components-CustomerPurgeModal-stories.74c781b8.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActions-components-components-CustomerPurgeModal-stories.74c781b8.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItems-stories.cf783d06.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItems-stories.cf783d06.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForCustomerOriginSurvey-stories.e75aada5.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForCustomerOriginSurvey-stories.e75aada5.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferee-stories.02da1075.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferee-stories.02da1075.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferrer-stories.59b1fddf.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-ActivityFeedItemsForReferrer-stories.59b1fddf.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-ApprovableEventLabels-stories.16d327eb.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-ApprovableEventLabels-stories.16d327eb.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-ApprovableEventLabels-stories.16d327eb.iframe.bundle.js.map
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-CustomerOriginSurveyLabels-stories.de1c81d8.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-FulfillmentEventLabels-stories.039ecead.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-FulfillmentEventLabels-stories.039ecead.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-MerchantOrderEventLabels-stories.a80c0ec4.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-MerchantOrderEventLabels-stories.a80c0ec4.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-ActivityStatusLabels-README-mdx.9413c9c6.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-CustomerOriginSurveyEvent-stories.887ef5fe.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-IncentiveForActionEvent-stories.939432d7.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-IncentiveForActionEvent-stories.939432d7.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-MerchantOrderEvent-stories.9b6eedc8.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-MerchantOrderEvent-stories.9b6eedc8.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-NpsEvent-stories.59c2a6ca.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-NpsEvent-stories.59c2a6ca.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-README-mdx.71b35a78.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-RefereeEvent-stories.d0f387ff.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-RefereeEvent-stories.d0f387ff.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerEvent-stories.998f26ad.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerEvent-stories.998f26ad.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerRewardableEvent-stories.de074138.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-ReferrerRewardableEvent-stories.de074138.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-UserOfferEvent-stories.a735c285.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-Events-UserOfferEvent-stories.a735c285.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-customer-profile-components-CustomerProfileActivity-components-ActivityFeedItems-components-README-mdx.ef6084cb.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-experiment-detail-components-ExperimentDetailSummary-stories.8d70d458.iframe.bundle.js
+16:36:07.024  Adding to zip archive: static/js/async/client-experiment-detail-components-ExperimentDetailSummary-stories.8d70d458.iframe.bundle.js.LICENSE.txt
+16:36:07.024  Adding to zip archive: static/js/async/client-market-components-CheckboxGroupTable-CheckboxGroupTable-stories.a6a08eb4.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-components-RecurrenceRuleSelector-RecurrenceRuleSelector-stories.a2f8b6ed.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-components-RecurrenceRuleSelector-RecurrenceRuleSelector-stories.a2f8b6ed.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-earned-growth-EarnedGrowthPage-stories.c9bab7cd.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-earned-growth-EarnedGrowthPage-stories.c9bab7cd.iframe.bundle.js.map
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-IncrementalValuePage-stories.9bad6fec.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-ChartCard-ChartCard-stories.c507ef83.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-DonutPieChart-DonutPieChart-stories.5a805abd.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-DualBarChart-DualBarChart-stories.91bbd64f.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-ExplainerLabel-ExplainerLabel-stories.c5841e98.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-GridChart-GridChart-stories.a31f8b6e.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-IncrementalValueCalculationModal-IncrementalValueCalculationModal-stories.0de5f1e3.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-incremental-value-components-IncrementalValueSegmentExplainerModal-IncrementalValueSegmentExplainerModal-stories.12b51d54.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-network-revenue-components-NetworkOverTimeChart-NetworkOverTimeChart-stories.47b73c5d.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-network-revenue-detail-NetworkDetailPage-stories.a58dcdc7.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-nps-NPSPage-stories.02bd635b.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-nps-NPSPage-stories.02bd635b.iframe.bundle.js.map
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-overall-performance-components-OverallPerformanceReportCard-stories.03518681.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-overall-performance-components-OverallPerformanceReportCard-stories.03518681.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-sentiment-analysis-SentimentAnalysisPage-stories.a39b746c.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-sentiment-analysis-components-SentimentAnalysisSummary-stories.f46dfcee.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-sentiment-analysis-components-SentimentAnalysisSummary-stories.f46dfcee.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-sentiment-analysis-components-SentimentAnalysisSummary-stories.f46dfcee.iframe.bundle.js.map
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-share-messages-ShareMessagesPage-stories.155a9b2d.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-reporting-share-messages-components-ShareMessagesOverview-stories.c73c9116.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-IntegrationLogFilterChooser-stories.44c2c4f7.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-IntegrationLogStatusBanner-stories.3e6c311e.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-IntegrationLogStatusBanner-stories.3e6c311e.iframe.bundle.js.map
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-card-IntegrationLogHeader-stories.435c1948.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-card-IntegrationLogValueCell-stories.f9f602df.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-card-IntegrationLogVerticalList-stories.cc1ce8fc.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-stats-IntegrationLogStatsSection-stories.0af7fba9.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/client-tools-DebugDashboard-components-stats-IntegrationLogStatsSection-stories.0af7fba9.iframe.bundle.js.map
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-ChoiceOfOffer-ChoiceOfOfferPage-stories.27a7ef2b.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-ChoiceOfOffer-components-ChoiceOfOfferButton-stories.32a0d4ac.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-CornerPeel-stories.d6e14e9d.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-CustomerOriginSurvey-CustomerOriginSurveyPage-stories.9d5832eb.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-NPS-NPSPage-stories.c627e373.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-NPS-NPSPageMobile-stories.d498c3de.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-RegistrationPage-RegistrationPage-stories.cfb84338.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-CloseButton-stories.ede2211a.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-CloseButton-stories.ede2211a.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-ContentItem-stories.9cf0061c.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-Header-stories.c63f2e71.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-InformationNotice-stories.34ff19f8.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-Input-stories.79ddccf0.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/consumer-journey-components-TermsAndConditions-stories.c12da26f.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/pdfmake.f7ee8ee9.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/pdfmake.f7ee8ee9.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/sentry.7a0d919d.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-AIPoweredLabel-AIPoweredLabel-stories.53bfc726.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-BaseInput-BaseInput-stories.c3f1d091.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-BaseInput-BaseInput-stories.c3f1d091.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-Button-Button-stories.968624ee.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-Button-Button-stories.968624ee.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-CallToActionExplainer-CallToActionExplainer-stories.d21b0466.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-Chart-Chart-stories.36e5b0cd.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-Chart-Chart-stories.36e5b0cd.iframe.bundle.js.LICENSE.txt
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-Charts-BarChart-BarChart-stories.969592a7.iframe.bundle.js
+16:36:07.025  Adding to zip archive: static/js/async/shared-components-Charts-ChartHeader-ChartHeader-stories.92e820f8.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-ChartHeader-ChartHeader-stories.92e820f8.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-ChartLegend-ChartLegend-stories.f738db3f.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-ChartTooltip-ChartTooltip-stories.19fa85d7.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-ChartWrapper-ChartWrapper-stories.5350c4c1.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-ComparisonBarChart-ComparisonBarChart-stories.0dbb8733.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-LineBarChart-LineBarChart-stories.11813cec.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-LineChart-LineChart-stories.b00c728d.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Charts-SunburstChart-SunburstChart-stories.f20196b8.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-CheckboxInput-CheckboxInput-stories.fdb6a4e3.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-CheckboxInput-CheckboxInput-stories.fdb6a4e3.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Chip-Chip-stories.6bb417e7.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Chip-Chip-stories.6bb417e7.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ChipsFilterCheckboxList-ChipsFilterCheckboxList-stories.791d800d.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ChipsFilterCheckboxList-ChipsFilterCheckboxList-stories.791d800d.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ContentItemEditor-ContentItemEditor-stories.2a82cf7f.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ContentItemEditor-ContentItemEditor-stories.2a82cf7f.iframe.bundle.js.map
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-CopyButton-CopyButton-stories.552dd49e.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-CustomerLink-CustomerLink-stories.56c17fdf.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-CustomerLink-CustomerLink-stories.56c17fdf.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-DashboardLayout-DashboardLayout-stories.7bb03d7e.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-DataTile-DataTile-stories.3765df70.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-DataTile-DataTile-stories.3765df70.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-DateFormat-DateFormat-stories.7a4708df.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Dropzone-Dropzone-stories.364faebe.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-EntityFilters-EntityFilters-stories.4b7cf187.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-EntityFilters-EntityFilters-stories.4b7cf187.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-GamingScore-GamingScore-stories.824786a1.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Gauge-Gauge-stories.6dad853f.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-GraphTileCard-GraphTileCard-stories.f698be24.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Help-Help-stories.661e3ed1.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Iframe-Iframe-stories.32d54254.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Iframe-Iframe-stories.32d54254.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Image-Image-stories.b0b75897.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ImageCrop-ImageCrop-stories.5e2751a2.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-IntegrationDataTermsPanel-IntegrationDataTermsPanel-stories.e205397d.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-IntegrationDataTermsPanel-IntegrationDataTermsPanel-stories.e205397d.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-KnowledgebaseTooltip-KnowledgebaseTooltip-stories.97049e89.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Label-Label-stories.eef9a344.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Label-Label-stories.eef9a344.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Loading-FullScreenLoader-stories.9c6bbcce.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Loading-FullScreenLoader-stories.9c6bbcce.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MerchantInformationOverlay-MerchantInformationOverlay-stories.fa567787.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MerchantInformationOverlay-MerchantInformationOverlay-stories.fa567787.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MerchantInformationOverlay-MerchantInformationOverlay-stories.fa567787.iframe.bundle.js.map
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MultiForm-MultiForm-stories.e0ef9600.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MultiForm-MultiForm-stories.e0ef9600.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MultiSelectDropdown-MultiSelectDropdown-stories.edae992c.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MultiSelectDropdown-MultiSelectDropdown-stories.edae992c.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MultiSelectInput-MultiSelectInput-stories.b010fdd5.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-MultiSelectInput-MultiSelectInput-stories.b010fdd5.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-NavigationTabs-NavigationTabs-stories.81282c59.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-NavigationTabs-NavigationTabs-stories.81282c59.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-NoData-NoData-stories.654b5006.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-NoData-NoData-stories.654b5006.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Notice-Notice-stories.be8e6154.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Notice-Notice-stories.be8e6154.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Notice-NoticeList-stories.3edae3a7.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Notice-NoticeList-stories.3edae3a7.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Notifications-Notification-stories.ea5a77b0.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-Notifications-Notification-stories.ea5a77b0.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-NumberInput-NumberInput-stories.a837a9f2.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-NumberInput-NumberInput-stories.a837a9f2.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-OfferPreview-OfferPreview-stories.13ab898e.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-OfferPreview-StepPreview-stories.d52cf6a2.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-OfferPreview-StepPreview-stories.d52cf6a2.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-OfferScreenshot-OfferScreenshot-stories.f6f889fa.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-OfferScreenshot-OfferScreenshot-stories.f6f889fa.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-PageHeading-PageHeading-stories.65c53856.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-PageHeading-PageHeading-stories.65c53856.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-PerformanceTileCard-PerformanceTileCard-stories.673d3eab.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ProgressBar-ProgressBar-stories.7a08763d.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-RangeSlider-RangeSlider-stories.46d161bd.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-RequestBanner-RequestBanner-stories.576851b9.iframe.bundle.js
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-RequestBanner-RequestBanner-stories.576851b9.iframe.bundle.js.LICENSE.txt
+16:36:07.026  Adding to zip archive: static/js/async/shared-components-ScrollToTop-ScrollToTop-stories.d8b564e9.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SearchInput-SearchInput-stories.924586bb.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SearchInput-SearchInput-stories.924586bb.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SelectInput-SelectInput-stories.f1f76fea.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SelectInput-SelectInput-stories.f1f76fea.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SingleDatePicker-SingleDatePicker-stories.0caafe87.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SingleDatePicker-SingleDatePicker-stories.0caafe87.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Slider-Slider-stories.30f2b314.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SortableMultiSelectInput-SortableMultiSelectInput-stories.647864ac.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SortableMultiSelectInput-SortableMultiSelectInput-stories.647864ac.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-SpeechBubble-SpeechBubble-stories.3617b768.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-StatusLabel-StatusLabel-stories.3b89e99b.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Table-Table-stories.67101a4d.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Table-Table-stories.67101a4d.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Tabs-Tabs-stories.33d3b253.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-TextCollapse-TextCollapse-stories.19eec323.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-TextInput-TextInput-stories.3fac5159.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-TextInput-TextInput-stories.3fac5159.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-TextInputEditable-TextInputEditable-stories.d103fe25.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-TextInputEditable-TextInputEditable-stories.d103fe25.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Tile-Tile-stories.06a85c49.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Tile-Tile-stories.06a85c49.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Tip-Tip-stories.3c984a8c.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Toaster-Toaster-stories.efc04b39.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-ToggleSwitch-ToggleSwitch-stories.814090d5.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-UpliftLabel-UpliftLabel-stories.e1796ae1.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-components-Wizard-Wizard-stories.eb9703cb.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-hooks-useForm-useForm-stories.f2832d96.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/shared-hooks-useForm-useForm-stories.f2832d96.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/async/shared-templates-SideNavigation-SideNavigation-stories.d56bebef.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/translations.bf00bb08.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/xlsx.8b7f5998.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/async/xlsx.8b7f5998.iframe.bundle.js.LICENSE.txt
+16:36:07.027  Adding to zip archive: static/js/main.0585b4f1.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/js/runtime~main.d2473de1.iframe.bundle.js
+16:36:07.027  Adding to zip archive: static/svg/icon-checked.2da0abe5.svg
+16:36:07.027  Adding to zip archive: static/svg/icon-indeterminate.a3ae734b.svg
+16:36:07.027  Adding to zip archive: static/svg/iphone-iframe-outline-small.aedd5e29.svg
+16:36:07.027  Adding to zip archive: static/svg/iphone-iframe-outline.0437c8ee.svg
+16:36:07.027  Adding to zip archive: static/svg/spinner.cf9578c4.svg
+16:36:07.027  Finalizing zip archive
+16:36:07.952  Compression reduced upload size by 68%
+16:36:07.952  Uploading /.chromatic/storybook.zip (10.02 MB)
+16:36:07.958      → [                    ] 1%
+16:36:08.340      → [=                   ] 3%
+16:36:08.872      → [=                   ] 4%
+16:36:09.051      → [=                   ] 5%
+16:36:09.224      → [=                   ] 7%
+16:36:09.400      → [==                  ] 9%
+16:36:09.573      → [===                 ] 15%
+16:36:09.751      → [=====               ] 26%
+16:36:09.919      → [=========           ] 46%
+16:36:10.019      → [==============      ] 71%
+16:36:10.121      → [================    ] 78%
+16:36:10.272      → [====================] 99%
+16:36:10.563  Uploaded /.chromatic/storybook.zip (10.02 MB)
+16:36:10.564  Publishing your built Storybook
+16:36:10.564      → Finalizing upload
+16:36:10.564  Waiting for 'files-copied.198966207.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/67110b3ac193ebac30e9c75d-yiggnawwwt/.chromatic/files-copied.198966207.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T163606Z&X-Amz-Expires=1800&X-Amz-Signature=745726324045596d1f089af50ed46216286da465028ba6e52220c62a3cfc9242&X-Amz-SignedHeaders=host&x-id=GetObject
+16:36:10.566  Waiting for 'zip-unpacked.txt' sentinel file to appear at https://chromatic-builds.s3.us-west-2.amazonaws.com/67110b3ac193ebac30e9c75d-yiggnawwwt/.chromatic/zip-unpacked.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAJVVEQEOBEEPXSNNQ%2F20241018%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20241018T163606Z&X-Amz-Expires=1980&X-Amz-Signature=499c48cd336acddd6496004f6094f0b3c1b55d442cd56519fe6460223dbd5d6e&X-Amz-SignedHeaders=host&x-id=GetObject
+16:36:11.130  Sentinel file 'files-copied.198966207.txt' OK.
+16:36:15.794  Sentinel file 'zip-unpacked.txt' OK.
+16:36:15.799  Publish complete in 10 seconds
+                  → Uploaded 655 files (10.02 MB), skipped 34 files
+16:36:15.800  Verifying your Storybook
+16:36:15.800      → This may take a few minutes
+16:36:25.591  ✔ Storybook published
+              We found 135 components with 435 stories.
+              ℹ View your Storybook at https://67110b3ac193ebac30e9c75d-yiggnawwwt.chromatic.com/
+16:36:25.591  Started build 3
+                  → Continue setup at https://www.chromatic.com/setup?appId=67110b3ac193ebac30e9c75d
+16:36:25.591  Running 372 tests
+16:36:25.591      → This may take a few minutes
+16:36:25.930      → [                    ] 1/372  AMChart › Skeleton
+16:36:44.514      → [=                   ] 10/372  ChartHeader › Default
+16:36:47.170      → [=                   ] 15/372  ComparisonBarChart › Skeleton
+16:36:48.483      → [=                   ] 24/372  GridChart › Custom Colours
+16:36:49.778      → [==                  ] 31/372  LineChart › Multi Line Skeleton
+16:36:51.083      → [==                  ] 39/372  PerformanceTileCard › Skeleton
+16:36:52.389      → [===                 ] 55/372  Desktop › Thanks
+16:36:53.681      → [===                 ] 60/372  Experiment Summary › Default
+16:36:55.001      → [===                 ] 65/372  Customer Origin Survey › Default
+16:36:56.341      → [=====               ] 87/372  ReferrerRewardable › Void
+16:36:57.659      → [=====               ] 93/372  CustomerOriginSurvey › Customer Origin Survey Recommendation
+16:36:59.004      → [======              ] 104/372  Referee › Referee Declined
+16:37:00.346      → [======              ] 120/372  FulfillmentEventLabels › Default
+16:37:01.677      → [=======             ] 130/372  Bulk Action Approvable Modal › Approve
+16:37:03.013      → [========            ] 140/372  Checkbox Group Table › Default
+16:37:04.354      → [========            ] 155/372  Earned Growth › Insufficient History Insufficient Responses
+16:37:05.685      → [=========           ] 165/372  Incremental Value Chart Card › Default
+16:37:07.022      → [=========           ] 172/372  Incremental Value Page › Insufficient Data Marketing
+16:37:08.345      → [==========          ] 191/372  Advocacy Overview › NPS Running And Last Feedback Older Than 2 Weeks Old Unhappy Path
+16:37:09.658      → [===========         ] 199/372  Overview › Happy Path
+16:37:10.955      → [===========         ] 205/372  Overview › NPS Insufficient Response Unhappy Path
+16:37:12.285      → [============        ] 220/372  Share Messages Overview › No Native Share Unhappy Path
+16:37:13.602      → [============        ] 232/372  IntegrationLogValueCell › Empty With Errors And Warnings
+16:37:14.922      → [=============       ] 240/372  IntegrationLogStatusBanner › Default
+16:37:16.245      → [==============      ] 258/372  Chip › Skeleton
+16:37:17.581      → [==============      ] 267/372  DashboardLayout › Default 932px
+16:37:18.908      → [===============     ] 278/372  DataTile › Accent 550px
+16:37:20.225      → [===============     ] 285/372  DataTile › Comparison 700px
+16:37:21.561      → [================    ] 300/372  Dropzone › Disabled
+16:37:22.887      → [=================   ] 309/372  Base Input › Checkbox
+16:37:24.213      → [=================   ] 316/372  Entity Filters › Default
+16:37:25.542      → [==================  ] 327/372  Number Input › Right Input
+16:37:26.842      → [==================  ] 337/372  Text Input › Default
+16:37:28.177      → [==================  ] 339/372  Text Input Editable › Default
+16:37:29.489      → [=================== ] 347/372  Gauge › Default
+16:37:30.803      → [=================== ] 349/372  IFrame › Base
+16:37:32.123      → [=================== ] 354/372  ImageCrop › Default
+16:37:33.440      → [=================== ] 357/372  ImageCrop › Without Aspect Ratio
+16:37:34.740      → [=================== ] 360/372  KnowledgebaseTooltip › Default
+16:37:36.063      → [====================] 364/372  MultiForm › Default
+16:37:37.357      → [====================] 365/372  MultiForm › Custom Layout
+16:37:38.695      → [====================] 366/372  MultiSelectDropdown › Default
+16:37:40.032      → [====================] 367/372  NavigationTabs › Default
+16:37:41.448      → [====================] 368/372  NoData › Base
+16:37:42.746      → [====================] 372/372  Notice › With Tooltip
+16:37:45.413  ✔ Build passed. Welcome to Chromatic!
+              We found 135 components with 435 stories and took 372 snapshots.
+              ℹ Please continue setup at https://www.chromatic.com/setup?appId=67110b3ac193ebac30e9c75d
+16:37:45.416  Build 3 auto-accepted
+                  → Tested 435 stories across 135 components; captured 372 snapshots in 1 minute 20 seconds
+16:37:45.417  Tasks completed
+16:37:45.450  ℹ Wrote Chromatic diagnostics report to chromatic-diagnostics.json
