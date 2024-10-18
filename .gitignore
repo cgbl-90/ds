@@ -29,6 +29,10 @@ gitkey.pub
 
 #Chroma files
 chromatic-diagnostics.json
+build-storybook.log
 chromatic.config.json
 chromatic.log 
 playwright.config.js
+
+#Customers' projects
+sb-*
