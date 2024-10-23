@@ -14,16 +14,16 @@
 }
 
 .badge--new {
-    background-color: #2e09d0;
+    background-color: #674ce3;
     color: white;
 }
 
 .badge--success {
-    background-color: #11b302;
+    background-color: #63d659;
     color: white;
 }
 
 .badge--warning {
-    background-color: #ef1306;
+    background-color: #ec554d;
     color: white;
 }
