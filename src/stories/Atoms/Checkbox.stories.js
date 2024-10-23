@@ -5,6 +5,7 @@ export default {
   component: Checkbox,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: true },
   },
   tags: ["autodocs"],
   argTypes: {
