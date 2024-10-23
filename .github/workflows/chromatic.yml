@@ -38,6 +38,7 @@ jobs:
           debug: true
           zip: true
           junitReport: true
+          onlyStoryNames: "Pages/**"
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report
