@@ -1,0 +1,175 @@
+/* label.css */
+.storybook-label {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: #111827;
+    display: inline-block;
+    margin-bottom: 4px;
+    cursor: default;
+}
+
+.storybook-label--small {
+    font-size: 12px;
+}
+
+.storybook-label--medium {
+    font-size: 14px;
+}
+
+.storybook-label--large {
+    font-size: 16px;
+}
+
+.storybook-label--primary {
+    color: #d88d1d;
+}
+
+.storybook-label--secondary {
+    color: #6B7280;
+}
+.storybook-input {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 250ms;
+}
+
+.storybook-input--small {
+    font-size: 12px;
+    padding: 0.5rem 0.75rem;
+}
+
+.storybook-input--medium {
+    font-size: 16px;
+    padding: 0.75rem 1rem;
+}
+
+.storybook-input--large {
+    font-size: 18px;
+    padding: 1rem 1.25rem;
+}
+
+.storybook-input--hover {
+    border-color: rgba(31, 41, 55, 0.2);
+}
+
+.storybook-input--focused {
+    border-color: #10ae1b;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.storybook-input--disabled {
+    background-color: #f3f4f6;
+    border-color: rgba(209, 213, 219, 0.5);
+    color: rgba(107, 114, 128, 0.5);
+    cursor: not-allowed;
+}
+.storybook-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 0;
+    padding: 0.5rem;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: baseline;
+}
+
+.storybook-checkbox input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 250ms, border-color 250ms;
+}
+
+.storybook-checkbox--checked input {
+    background-color: #3b82f6;
+    border-color: #eb7e25;
+}
+
+.storybook-checkbox--hover input {
+    border-color: rgba(31, 41, 55, 0.2);
+}
+
+.storybook-checkbox--pressed input {
+    background-color: #2563eb;
+    border-color: rgba(17, 24, 39, 0.3);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.storybook-radio {
+    font-family: "Work Sans", sans-serif;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.35;
+    margin: 0;
+    padding: 0.5rem;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: baseline;
+}
+
+.storybook-radio input {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 250ms, border-color 250ms;
+}
+
+.storybook-radio--checked input {
+    background-color: #3b82f6;
+    border-color: #2563eb;
+}
+
+.storybook-radio--hover input {
+    border-color: rgba(31, 41, 55, 0.2);
+}
+
+.storybook-radio--pressed input {
+    background-color: #2563eb;
+    border-color: rgba(17, 24, 39, 0.3);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.storybook-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*# sourceMappingURL=stories-Components-Form-stories.ee038fb3.chunk.css.map*/

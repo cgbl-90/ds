@@ -1,0 +1,29 @@
+.progress-bar {
+    width: 1000px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 20px;
+}
+
+.progress-bar__fill {
+    height: 100%;
+    background-color: #1350b9;
+    transition: width 0.3s ease;
+    width: 0;
+}
+
+.progress-markers {
+    top: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+}
+
+.progress-marker {
+    position: relative;
+}
+
+/*# sourceMappingURL=stories-Atoms-ProgressBar-stories.e2bdb812.chunk.css.map*/
