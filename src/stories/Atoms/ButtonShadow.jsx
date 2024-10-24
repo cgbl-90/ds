@@ -16,6 +16,9 @@ class ShadowButton extends HTMLElement {
     button.style.padding = "10px 20px";
     button.style.cursor = "pointer";
 
+    // Add a class to ignore in Chromatic
+    button.classList.add("chromatic-ignore"); // Add the ignore class
+
     // Add click event listener
     button.addEventListener("click", () => {
       const clickEvent = new CustomEvent("button-click", {
