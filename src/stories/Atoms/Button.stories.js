@@ -1,4 +1,5 @@
 import { Button } from "./Button.jsx";
+import isChromatic from "chromatic/isChromatic";
 
 export default {
   title: "ATOMS/Button",
@@ -21,8 +22,8 @@ export default {
 
 // Modify behavior based on Chromatic
 const chromaticArgs = isChromatic()
-  ? { backgroundColor: "grey", label: "Chromatic Button" } // In Chromatic testing
-  : { backgroundColor: "blue", label: "Storybook Button" }; // Normal Storybook mode
+  ? "Chromatic Button" // In Chromatic testing
+  : "Storybook Button"; // Normal Storybook mode
 
 export const Primary = {
   args: {
@@ -84,6 +85,6 @@ export const SecondaryNoBorder = {
 export const IsChromaticButton = {
   args: {
     primary: false,
-    ...chromaticArgs,
+    label: chromaticArgs,
   },
 };
