@@ -86,5 +86,6 @@ export const IsChromaticButton = {
   args: {
     primary: false,
     label: chromaticArgs,
+    state: "noborder",
   },
 };
