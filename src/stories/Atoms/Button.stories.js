@@ -1,6 +1,9 @@
 import { Button } from "./Button.jsx";
 import isChromatic from "chromatic/isChromatic";
 
+// Shadow Button
+import { ShadowButtonComponent } from "./ButtonShadow.jsx";
+
 export default {
   title: "ATOMS/Button",
   component: Button,
@@ -88,4 +91,13 @@ export const IsChromaticButton = {
     label: chromaticArgs,
     state: "noborder",
   },
+};
+
+// New story for Shadow DOM button
+export const ShadowButtonStory = {
+  args: {
+    label: "Shadow DOM Button",
+    backgroundColor: "green", // Example background color
+  },
+  render: (args) => <ShadowButtonComponent {...args} />, // Render the Shadow Button
 };
