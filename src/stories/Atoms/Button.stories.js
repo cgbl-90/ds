@@ -20,6 +20,11 @@ export default {
   args: { onClick: () => {} },
 };
 
+// Modify behavior based on Chromatic
+const chromaticArgs = isChromatic()
+  ? { backgroundColor: "grey", label: "Chromatic Button" } // In Chromatic testing
+  : { backgroundColor: "blue", label: "Storybook Button" }; // Normal Storybook mode
+
 export const Primary = {
   args: {
     primary: true,
@@ -74,5 +79,12 @@ export const SecondaryNoBorder = {
   args: {
     label: "Secondary Without Border",
     state: "noborder",
+  },
+};
+
+export const IsChromaticButton = {
+  args: {
+    primary: false,
+    ...chromaticArgs,
   },
 };
