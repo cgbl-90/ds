@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
+import isChromatic from "chromatic/isChromatic";
 
 export const Button = ({
   primary,
@@ -16,6 +17,11 @@ export const Button = ({
 
   const stateClass = state ? `storybook-button--${state}` : "";
 
+  // Conditional style for Chromatic
+  const chromaticStyle = isChromatic()
+    ? { border: "2px solid red" } // Only applies in Chromatic
+    : {};
+
   return (
     <button
       type="button"
@@ -25,7 +31,11 @@ export const Button = ({
         mode,
         stateClass,
       ].join(" ")}
-      style={backgroundColor ? { backgroundColor } : {}}
+      // Merge chromaticStyle with other styles
+      style={{
+        ...chromaticStyle,
+        ...(backgroundColor ? { backgroundColor } : {}),
+      }}
       {...props}
     >
       {label}
