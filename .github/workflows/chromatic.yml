@@ -38,7 +38,7 @@ jobs:
           debug: true
           zip: true
           junitReport: true
-          storybookBuildDir: "storybook-static"
+          # storybookBuildDir: "storybook-static"
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report
