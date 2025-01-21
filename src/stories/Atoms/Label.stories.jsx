@@ -27,8 +27,8 @@ export default {
 export const DefaultLabel = {
   args: {
     text: "Default Label",
-    size: "medium",
-    color: "default",
+    size: "small",
+    color: "secondary",
   },
 };
 
@@ -58,7 +58,7 @@ export const MediumPrimaryLabel = {
 
 export const SmallDefaultLabel = {
   args: {
-    text: "Small Default Label",
+    text: "Example",
     size: "small",
     color: "default",
   },

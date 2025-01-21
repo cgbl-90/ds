@@ -37,7 +37,9 @@ jobs:
           skip: "dependabot/**"
           debug: true
           zip: true
+          onlyChanged: true
           junitReport: true
+
           # storybookBuildDir: "storybook-static"
 
       # Step 5: Upload Reports as Artifacts

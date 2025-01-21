@@ -21,5 +21,33 @@ const config = {
     options: {},
   },
   staticDirs: ["../public"],
+
+  // Enable the viewportStoryGlobals feature flag
+  featureFlags: {
+    viewportStoryGlobals: true,
+  },
+
+  // Global parameters configuration
+  parameters: {
+    viewport: {
+      viewports: {
+        desktop: {
+          name: "Desktop",
+          styles: {
+            width: "1280px",
+            height: "800px",
+          },
+        },
+        mobile: {
+          name: "Mobile",
+          styles: {
+            width: "375px",
+            height: "667px",
+          },
+        },
+      },
+      defaultViewport: "desktop", // Default viewport to load
+    },
+  },
 };
 export default config;
