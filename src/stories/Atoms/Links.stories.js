@@ -23,7 +23,7 @@ export const Primary = Template.bind({});
 Primary.args = {
   text: "Primary Link",
   href: "#",
-  style: "primary",
+  style: "primary"
   bold: false,
   italic: false,
 };
