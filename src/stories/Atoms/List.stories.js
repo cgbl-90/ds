@@ -33,6 +33,7 @@ export const WithDevanagariNumbers = {
   args: {
     items: ["Item 1", "Item 2", "Item 3"],
     styleType: "devanagari",
+    icon: "◄",
   },
 };
 
