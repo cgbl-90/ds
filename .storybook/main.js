@@ -49,5 +49,28 @@ const config = {
       defaultViewport: "desktop", // Default viewport to load
     },
   },
+
+  webpackFinal: async (config) => {
+    // Remove the alias for @storybook/preset-create-react-app
+    delete config.resolve.alias["@storybook/preset-create-react-app"];
+
+    // Handle TS and JSX files properly with ts-loader or babel-loader
+    config.module.rules.push({
+      test: /\.(ts|tsx)$/,
+      use: [
+        {
+          loader: "ts-loader", // or babel-loader
+          options: {
+            transpileOnly: true,
+          },
+        },
+      ],
+    });
+
+    config.resolve.extensions.push(".ts", ".tsx");
+
+    return config;
+  },
 };
+
 export default config;
