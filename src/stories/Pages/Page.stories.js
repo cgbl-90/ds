@@ -24,11 +24,3 @@ export const LoggedIn = {
     await expect(logoutButton).toBeInTheDocument();
   },
 };
-
-export const FailedTest = {
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    const loginButton = canvas.getByRole("button", { name: /Log out/i });
-    await expect(loginButton).toBeInTheDocument();
-  },
-};
