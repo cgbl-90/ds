@@ -5,7 +5,13 @@ export default {
   component: Checkbox,
   parameters: {
     layout: "centered",
-    chromatic: { disableSnapshot: true },
+    chromatic: {
+      //disableSnapshot: true,
+      modes: {
+        small: allModes["small"],
+        large: allModes["large"],
+      },
+    },
   },
   tags: ["autodocs"],
   argTypes: {

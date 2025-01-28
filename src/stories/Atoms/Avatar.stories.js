@@ -7,7 +7,13 @@ export default {
   component: Avatar,
   parameters: {
     layout: "centered",
-    chromatic: { disableSnapshot: true },
+    chromatic: {
+      // disableSnapshot: true,
+      modes: {
+        small: allModes["small"],
+        large: allModes["large"],
+      },
+    },
   },
   args: {
     dataTestId: "avatar",
