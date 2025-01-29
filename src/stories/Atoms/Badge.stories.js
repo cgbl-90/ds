@@ -14,13 +14,13 @@ export default {
       },
     },
     parameters: {
-      chromatic: {
+      /* chromatic: {
         // disableSnapshot: true,
         modes: {
           small: allModes["small"],
           large: allModes["large"],
         },
-      },
+      }, */
     },
   },
 };

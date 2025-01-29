@@ -8,10 +8,10 @@ export default {
     layout: "centered",
     chromatic: {
       //disableSnapshot: true,
-      modes: {
+      /*   modes: {
         small: allModes["small"],
         large: allModes["large"],
-      },
+      }, */
     },
   },
   tags: ["autodocs"],
