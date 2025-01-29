@@ -1,5 +1,5 @@
 import { Checkbox } from "./Checkbox.js";
-import { allModes } from "./../../.storybook/modes.js";
+import { allModes } from "../../../.storybook/modes.js";
 
 export default {
   title: "ATOMS/Checkbox",

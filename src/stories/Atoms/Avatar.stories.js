@@ -1,7 +1,7 @@
 // Avatar.stories.js
 import { Avatar } from "./Avatar";
 import avatarImage from "../avatar.png";
-import { allModes } from "./../../.storybook/modes.js";
+import { allModes } from "../../../.storybook/modes.js";
 
 export default {
   title: "ATOMS/Avatar",
