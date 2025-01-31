@@ -39,6 +39,7 @@ jobs:
           zip: true
           onlyChanged: true
           junitReport: true
+          untraced: "sb-preview/runtime.js"
 
           # storybookBuildDir: "storybook-static"
 

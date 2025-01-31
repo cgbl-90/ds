@@ -54,4 +54,3 @@ Warning.args = {
   bold: false,
   italic: false,
 };
-
