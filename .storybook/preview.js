@@ -13,6 +13,10 @@ const preview = {
     },
   ],
   parameters: {
+    a11y: {
+      // Optional flag to prevent the automatic check
+      // manual: true,
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,

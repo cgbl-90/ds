@@ -15,6 +15,7 @@ const config = {
             : "production.config.json",
       },
     },
+    "@storybook/addon-a11y"
   ],
   framework: {
     name: "@storybook/react-webpack5",
