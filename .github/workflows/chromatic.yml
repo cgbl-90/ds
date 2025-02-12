@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main # or your default branch
+      - ui-review-testing-a
   pull_request:
     branches:
       - main
