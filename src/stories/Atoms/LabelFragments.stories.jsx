@@ -21,6 +21,6 @@ export const Default = {
 
 export const CustomText = {
   args: {
-    text: "Custom Fragment Label",
+    text: "Second Fragment Label",
   },
 };
