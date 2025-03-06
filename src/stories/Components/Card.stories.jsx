@@ -1,6 +1,6 @@
-// Card.stories.jsx
 import { Card } from "./Card";
 import avatarImage from "../avatar.png";
+import { Typography } from "../Atoms/Typography";
 
 export default {
   title: "COMPONENTS/Card",
@@ -19,9 +19,13 @@ export default {
 export const DefaultCard = {
   args: {
     avatarSrc: avatarImage,
-    title: "Default Card Title",
-    description:
-      "This is a default card description. It provides more context.",
+    title: <Typography type="title" label="Default Card Title" />,
+    description: (
+      <Typography
+        type="text"
+        label="This is a default card description. It provides more context."
+      />
+    ),
     buttonLabel: "Learn More",
   },
 };
@@ -29,9 +33,13 @@ export const DefaultCard = {
 export const CardWithLongDescription = {
   args: {
     avatarSrc: avatarImage,
-    title: "Long Description Card",
-    description:
-      "This card has a longer description to showcase how it handles more text. This is great for detailed information.",
+    title: <Typography type="title" label="Long Description Card" />,
+    description: (
+      <Typography
+        type="text"
+        label="This card has a longer description to showcase how it handles more text. This is great for detailed information."
+      />
+    ),
     buttonLabel: "Learn More",
   },
 };
@@ -39,7 +47,7 @@ export const CardWithLongDescription = {
 export const CardWithoutDescription = {
   args: {
     avatarSrc: avatarImage,
-    title: "Card Without Description",
+    title: <Typography type="title" label="Card Without Description" />,
     description: "",
     buttonLabel: "Learn More",
   },
@@ -48,17 +56,24 @@ export const CardWithoutDescription = {
 export const CardWithCustomButton = {
   args: {
     avatarSrc: avatarImage,
-    title: "Custom Button Card",
-    description: "This card showcases a custom button action.",
+    title: <Typography type="title" label="Custom Button Card" />,
+    description: (
+      <Typography
+        type="text"
+        label="This card showcases a custom button action."
+      />
+    ),
     buttonLabel: "Custom Action",
   },
 };
 
 export const CardWithDifferentAvatarSize = {
   args: {
-    avatarSrc: avatarImage, // Use the imported avatar image
-    title: "Small Avatar Card",
-    description: "This card uses a smaller avatar size.",
+    avatarSrc: avatarImage,
+    title: <Typography type="title" label="Small Avatar Card" />,
+    description: (
+      <Typography type="text" label="This card uses a smaller avatar size." />
+    ),
     buttonLabel: "Learn More",
   },
 };

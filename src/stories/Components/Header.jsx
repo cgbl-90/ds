@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button } from "../Atoms/Button";
-import { Icon } from "../Atoms/Icon"; // Import the Icon component
+import { Icon } from "../Atoms/Icon"; 
 import "./header.css";
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (

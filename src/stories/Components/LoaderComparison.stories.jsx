@@ -35,7 +35,10 @@ const LoaderContainer = ({ title, children }) => (
 );
 
 // Create a decorator that applies different parameters dynamically
-const withParameterConfig = (config) => (Story) => <Story />;
+const withParameterConfig = (config) => (Story, context) => {
+  context.parameters = { ...context.parameters, ...config }; // Merge parameters dynamically
+  return <Story />;
+};
 
 export const LoaderVariant1 = () => (
   <LoaderContainer title="disableSnapshot: true">

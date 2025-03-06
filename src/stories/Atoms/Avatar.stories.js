@@ -1,14 +1,14 @@
 // Avatar.stories.js
 import { Avatar } from "./Avatar";
 import avatarImage from "../avatar.png";
-import { allModes } from "../../../.storybook/modes.js";
+// import { allModes } from "../../../.storybook/modes.js";
 
 export default {
   title: "ATOMS/Avatar",
   component: Avatar,
   parameters: {
     layout: "centered",
-  /*  chromatic: {
+    /*  chromatic: {
       // disableSnapshot: true,
       modes: {
         small: allModes["small"],

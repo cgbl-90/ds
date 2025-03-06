@@ -1,16 +1,16 @@
 import { within, userEvent, expect } from "@storybook/test";
-
 import { Page } from "./Page";
 
 export default {
-  title: "PAGES/Page",
+  title: "PAGES/Page", // Make sure this matches Storybook's expected title format
   component: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const LoggedOut = {};
+// Ensure this export exists
+export const LoggedOut = () => <Page />;
 
 export const LoggedIn = {
   play: async ({ canvasElement }) => {
