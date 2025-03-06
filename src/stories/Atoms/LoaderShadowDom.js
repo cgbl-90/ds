@@ -13,7 +13,7 @@ const LoaderShadowDom = () => {
     style.textContent = `
       .loader {
           border: 8px solid #f3f3f3;
-          border-top: 8px solid #10669f;
+          border-top: 8px solidrgb(96, 178, 233);
           border-radius: 50%;
           width: 40px;
           height: 40px;
