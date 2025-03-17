@@ -34,3 +34,20 @@ export const PlayThenStop = {
     await userEvent.click(stopButton);
   },
 };
+
+export const IgnoreSelectorsTest = {
+  args: {},
+  parameters: {
+    chromatic: { ignoreSelectors: ['iframe[src*="youtube.com"]'] },
+  },
+};
+
+export const IgnoreSelectorsAfterDelay = {
+  args: {},
+  parameters: {
+    chromatic: {
+      ignoreSelectors: ['iframe[src*="youtube.com"]'],
+      delay: 3000,
+    },
+  },
+};
