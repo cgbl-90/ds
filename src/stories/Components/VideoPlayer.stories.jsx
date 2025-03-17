@@ -51,3 +51,37 @@ export const IgnoreSelectorsAfterDelay = {
     },
   },
 };
+
+// Trying other attributes
+
+export const IgnoreTitle = {
+  args: {},
+  parameters: {
+    chromatic: { ignoreSelectors: ["iframe[title='YouTube video player']"] },
+  },
+};
+
+export const IgnoreFrameBorder = {
+  args: {},
+  parameters: {
+    chromatic: { ignoreSelectors: ["iframe[frameborder='0']"] },
+  },
+};
+
+export const IgnoreAllowFullscreen = {
+  args: {},
+  parameters: {
+    chromatic: { ignoreSelectors: ["iframe[allowfullscreen]"] },
+  },
+};
+
+export const IgnoreReferrerPolicy = {
+  args: {},
+  parameters: {
+    chromatic: {
+      ignoreSelectors: [
+        "iframe[referrerpolicy='strict-origin-when-cross-origin']",
+      ],
+    },
+  },
+};
