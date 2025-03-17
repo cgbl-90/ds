@@ -38,7 +38,7 @@ export const PlayThenStop = {
 export const IgnoreSelectorsTest = {
   args: {},
   parameters: {
-    chromatic: { ignoreSelectors: ['iframe[src*="youtube.com"]'] },
+    chromatic: { ignoreSelectors: ["video-player-iframe"] },
   },
 };
 
@@ -46,7 +46,7 @@ export const IgnoreSelectorsAfterDelay = {
   args: {},
   parameters: {
     chromatic: {
-      ignoreSelectors: ['iframe[src*="youtube.com"]'],
+      ignoreSelectors: ["video-player-iframe"],
       delay: 3000,
     },
   },
