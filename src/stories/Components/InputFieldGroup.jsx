@@ -7,6 +7,6 @@ export const InputFieldGroup = ({ label, value, badgeText, onChange }) => (
   <div>
     <Label text={label} />
     <Input value={value} onChange={onChange} />
-    <Badge text={badgeText} style="success" />
+    <Badge text={badgeText} variant="success" />
   </div>
 );

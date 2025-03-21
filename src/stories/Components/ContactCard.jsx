@@ -7,6 +7,6 @@ export const ContactCard = ({ iconSrc, name, email }) => (
   <div className="storybook-card">
     <Icon size="medium" />
     <Typography type="title" label={name} />
-    <Links href={`mailto:${email}`} text={email} style="primary" />
+    <Links href={`mailto:${email}`} text={email} variant="primary" />
   </div>
 );

@@ -1,7 +1,7 @@
-import { NotificationItem } from "./NotificationItem";
+import { NotificationItem } from "./NotificationsItem";
 
 export default {
-  title: "COMPONENTS/NotificationItem",
+  title: "COMPONENTS/Notifications",
   component: NotificationItem,
 };
 
