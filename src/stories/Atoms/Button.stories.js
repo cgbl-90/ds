@@ -12,6 +12,18 @@ export default {
   },
   tags: ["autodocs"],
   argTypes: {
+    myProp: {
+      description: "Description of myProp",
+      table: {
+        type: { summary: "string" }, // Specifies the type
+      },
+    },
+    anotherProp: {
+      description: "Description of anotherProp",
+      table: {
+        type: { summary: "number" },
+      },
+    },
     backgroundColor: { control: "color" },
     state: {
       control: {
