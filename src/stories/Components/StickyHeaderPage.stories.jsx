@@ -7,6 +7,19 @@ export default {
   component: StickyHeaderPage,
   parameters: {
     layout: "fullscreen",
+    viewport: {
+      defaultViewport: "customLarge",
+      viewports: {
+        customLarge: {
+          name: "Custom 1200x900",
+          styles: {
+            width: "1200px",
+            height: "900px",
+          },
+          type: "desktop",
+        },
+      },
+    },
   },
   args: {
     onLogin: action("Login clicked"),
@@ -18,7 +31,7 @@ export default {
 export const LoggedIn = {
   args: {
     user: {
-      name: "Sticky Sally",
+      name: "Jhonny Bravo",
     },
   },
 };
@@ -28,7 +41,7 @@ export const LoggedOut = {};
 export const InteractionScroll = {
   args: {
     user: {
-      name: "Scroll Seeker",
+      name: "Jhonny Bravo",
     },
   },
   play: async ({ canvasElement }) => {
