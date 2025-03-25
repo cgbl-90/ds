@@ -34,17 +34,13 @@ export const InteractionScroll = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
 
-    // Wait for the section to appear
+    // Wait until the interaction section appears
     await waitFor(() => canvas.getByText("Here’s an interaction section 🧩"));
 
-    const interactionEl = canvas.getByText("Here’s an interaction section 🧩");
+    // Scroll to a Y position (approximate location of interaction section)
+    window.scrollTo({ top: 800, behavior: "smooth" });
 
-    // Scroll into view
-    interactionEl.scrollIntoView({ behavior: "smooth", block: "center" });
-
-    // Optional: click the fake button
-    const button = canvas.getByText("Click me");
-    await waitFor(() => button);
-    button.click();
+    // Optional: Wait for scroll to settle (not required but smoother)
+    await new Promise((res) => setTimeout(res, 800));
   },
 };
