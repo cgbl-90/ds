@@ -1,6 +1,7 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
   addons: [
     "@storybook/preset-create-react-app",
     "@storybook/addon-links",
@@ -15,12 +16,15 @@ const config = {
             : "production.config.json",
       },
     },
-    "@storybook/addon-a11y"
+    "@storybook/addon-a11y",
+    "@storybook/addon-mdx-gfm"
   ],
+
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
   },
+
   staticDirs: ["../public"],
 
   // Enable the viewportStoryGlobals feature flag
@@ -72,6 +76,14 @@ const config = {
 
     return config;
   },
+
+  docs: {
+    autodocs: true
+  },
+
+  typescript: {
+    reactDocgen: "react-docgen-typescript"
+  }
 };
 
 export default config;

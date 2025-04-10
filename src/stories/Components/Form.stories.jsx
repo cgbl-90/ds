@@ -1,6 +1,6 @@
 // Form.stories.jsx
 import { Form } from "./Form";
-import { within, userEvent } from "@storybook/testing-library";
+import { within, userEvent } from "@storybook/test";
 
 export default {
   title: "COMPONENTS/Form",
@@ -21,24 +21,24 @@ export const FilledForm = {
     const canvas = within(canvasElement);
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your name/i),
-      "Jane Doe"
+      "Jane Doe",
     );
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your email/i),
-      "jane@example.com"
+      "jane@example.com",
     );
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your favorite color/i),
-      "Blue"
+      "Blue",
     );
     await userEvent.click(canvas.getByLabelText(/female/i));
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your feedback/i),
-      "Great product!"
+      "Great product!",
     );
     await userEvent.selectOptions(canvas.getByRole("combobox"), "email");
     await userEvent.click(
-      canvas.getByLabelText(/i agree to the terms and conditions/i)
+      canvas.getByLabelText(/i agree to the terms and conditions/i),
     );
   },
 };
@@ -49,24 +49,24 @@ export const SubmittedForm = {
     const canvas = within(canvasElement);
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your name/i),
-      "Jane Doe"
+      "Jane Doe",
     );
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your email/i),
-      "jane@example.com"
+      "jane@example.com",
     );
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your favorite color/i),
-      "Green"
+      "Green",
     );
     await userEvent.click(canvas.getByLabelText(/female/i));
     await userEvent.type(
       canvas.getByPlaceholderText(/enter your feedback/i),
-      "Loved it!"
+      "Loved it!",
     );
     await userEvent.selectOptions(canvas.getByRole("combobox"), "phone");
     await userEvent.click(
-      canvas.getByLabelText(/i agree to the terms and conditions/i)
+      canvas.getByLabelText(/i agree to the terms and conditions/i),
     );
     await userEvent.click(canvas.getByRole("button", { name: /submit/i }));
   },

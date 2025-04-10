@@ -1,4 +1,4 @@
-import SecondPage from "./SecondPage"; // 
+import SecondPage from "./SecondPage"; //
 export default {
   title: "PAGES/Page",
   component: SecondPage,

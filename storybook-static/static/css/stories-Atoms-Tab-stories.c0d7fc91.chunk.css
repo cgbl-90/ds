@@ -1,0 +1,39 @@
+.tab {
+    font-family: "Work Sans", sans-serif;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-header {
+    display: flex;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-header button {
+    flex: 1 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.tab-header button:hover {
+    background-color: #ddd;
+}
+
+.tab-active {
+    background-color: #ccc !important;
+}
+
+.tab-content {
+    padding: 15px;
+    background-color: white;
+}
+
+/*# sourceMappingURL=stories-Atoms-Tab-stories.c0d7fc91.chunk.css.map*/
