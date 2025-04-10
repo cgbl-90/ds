@@ -1,6 +1,6 @@
 import { StickyHeaderPage } from "./StickyHeaderPage";
-import { action } from "@storybook/addon-actions";
-import { within, waitFor } from "@storybook/test";
+import { action } from "storybook/actions";
+import { within, waitFor } from "storybook/test";
 
 export default {
   title: "PAGES/StickyHeaderPage",

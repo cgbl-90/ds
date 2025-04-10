@@ -2,23 +2,15 @@
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
 
-  addons: [
-    "@storybook/preset-create-react-app",
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    {
-      name: "@chromatic-com/storybook",
-      options: {
-        configFile:
-          process.env.NODE_ENV === "development"
-            ? "chromatic.config.json"
-            : "production.config.json",
-      },
+  addons: ["@storybook/preset-create-react-app", "@storybook/addon-links", {
+    name: "@chromatic-com/storybook",
+    options: {
+      configFile:
+        process.env.NODE_ENV === "development"
+          ? "chromatic.config.json"
+          : "production.config.json",
     },
-    "@storybook/addon-a11y",
-    "@storybook/addon-mdx-gfm"
-  ],
+  }, "@storybook/addon-a11y", "@storybook/addon-docs"],
 
   framework: {
     name: "@storybook/react-webpack5",

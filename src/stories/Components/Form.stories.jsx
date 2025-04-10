@@ -1,6 +1,6 @@
 // Form.stories.jsx
 import { Form } from "./Form";
-import { within, userEvent } from "@storybook/test";
+import { within, userEvent } from "storybook/test";
 
 export default {
   title: "COMPONENTS/Form",
