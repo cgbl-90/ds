@@ -36,3 +36,4 @@ playwright.config.js
 
 #Customers' projects
 sb
+storybook-static
