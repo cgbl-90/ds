@@ -10,14 +10,7 @@ export default {
     layout: "centered",
     chromatic: {
       disableSnapshot: true,
-     // modes: {
-     //   small: allModes["small"],
-     //   large: allModes["large"],
-     // },
-    }, */
-  },
-  args: {
-    dataTestId: "avatar",
+    },
   },
 };
 
