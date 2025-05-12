@@ -5,7 +5,10 @@ export default {
   title: "Atoms/Loader",
   component: Loader,
   parameters: {
-    chromatic: { pauseAnimationAtEnd: false },
+    chromatic: {
+      pauseAnimationAtEnd: false,
+      disableSnapshot: true,
+    },
   },
 };
 

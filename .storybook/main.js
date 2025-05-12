@@ -10,7 +10,7 @@ const config = {
           ? "chromatic.config.json"
           : "production.config.json",
     },
-  }, "@storybook/addon-a11y", "@storybook/addon-docs"],
+  }, "@storybook/addon-a11y", "@storybook/addon-docs", "@storybook/addon-vitest"],
 
   framework: {
     name: "@storybook/react-webpack5",

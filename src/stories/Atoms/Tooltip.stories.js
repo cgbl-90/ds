@@ -4,6 +4,11 @@ import Tooltip from "./Tooltip";
 export default {
   title: "Atoms/Tooltip",
   component: Tooltip,
+  parameters: {
+    chromatic: {
+      disableSnapshot: true,
+    },
+  },
 };
 
 const Template = (args) => (

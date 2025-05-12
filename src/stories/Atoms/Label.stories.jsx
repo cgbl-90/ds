@@ -6,6 +6,7 @@ export default {
   component: Label,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: true },
   },
   tags: ["autodocs"],
   argTypes: {

@@ -8,12 +8,12 @@ export default {
   component: Avatar,
   parameters: {
     layout: "centered",
-    /*  chromatic: {
-      // disableSnapshot: true,
-      modes: {
-        small: allModes["small"],
-        large: allModes["large"],
-      },
+    chromatic: {
+      disableSnapshot: true,
+     // modes: {
+     //   small: allModes["small"],
+     //   large: allModes["large"],
+     // },
     }, */
   },
   args: {

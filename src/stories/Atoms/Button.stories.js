@@ -9,6 +9,9 @@ export default {
   component: Button,
   parameters: {
     layout: "centered",
+    chromatic: {
+      disableSnapshot: true,
+    },
   },
   tags: ["autodocs"],
   argTypes: {

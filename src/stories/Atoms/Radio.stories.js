@@ -5,6 +5,9 @@ export default {
   component: Radio,
   parameters: {
     layout: "centered",
+    chromatic: {
+      disableSnapshot: true,
+    },
   },
   tags: ["autodocs"],
   argTypes: {

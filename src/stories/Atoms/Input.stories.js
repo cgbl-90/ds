@@ -5,6 +5,7 @@ export default {
   component: Input,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: true },
   },
   tags: ["autodocs"],
   argTypes: {

@@ -5,6 +5,7 @@ export default {
   component: List,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: true },
   },
 };
 

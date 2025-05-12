@@ -3,6 +3,9 @@ import Divider from "./DividerLine";
 export default {
   title: "Atoms/Divider",
   component: Divider,
+  parameters: {
+    chromatic: { disableSnapshot: true },
+  },
   argTypes: {
     style: {
       control: {

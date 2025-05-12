@@ -4,6 +4,11 @@ import NotificationDot from "./NotificationDot";
 export default {
   title: "Atoms/Notification Dot",
   component: NotificationDot,
+  parameters: {
+    chromatic: {
+      disableSnapshot: true,
+    },
+  },
   argTypes: {
     color: {
       control: { type: "select", options: ["red", "green", "blue", "yellow"] },

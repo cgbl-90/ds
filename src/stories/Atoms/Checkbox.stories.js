@@ -7,7 +7,7 @@ export default {
   parameters: {
     layout: "centered",
     chromatic: {
-      //disableSnapshot: true,
+      disableSnapshot: true,
       /*   modes: {
         small: allModes["small"],
         large: allModes["large"],

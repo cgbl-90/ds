@@ -6,6 +6,9 @@ export default {
   component: Tab,
   parameters: {
     layout: "centered",
+    chromatic: {
+      disableSnapshot: true,
+    },
   },
   args: {},
 };

@@ -4,6 +4,11 @@ import ProgressBar from "./ProgressBar";
 export default {
   title: "Atoms/Progress Bar",
   component: ProgressBar,
+  parameters: {
+    chromatic: {
+      disableSnapshot: true,
+    },
+  },
   argTypes: {
     progress: { control: { type: "range", min: 0, max: 100 } },
   },

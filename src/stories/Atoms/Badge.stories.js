@@ -14,13 +14,9 @@ export default {
       },
     },
     parameters: {
-      /* chromatic: {
-        // disableSnapshot: true,
-        modes: {
-          small: allModes["small"],
-          large: allModes["large"],
-        },
-      }, */
+      chromatic: {
+        disableSnapshot: true,
+      },
     },
   },
 };

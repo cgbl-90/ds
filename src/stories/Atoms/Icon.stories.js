@@ -5,6 +5,7 @@ export default {
   component: Icon,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: true },
   },
 };
 

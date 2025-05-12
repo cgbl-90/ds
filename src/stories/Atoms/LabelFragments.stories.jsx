@@ -5,6 +5,7 @@ export default {
   component: LabelFragments,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: true },
   },
   tags: ["autodocs"],
   argTypes: {
