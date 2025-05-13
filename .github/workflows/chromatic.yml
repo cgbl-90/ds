@@ -38,7 +38,7 @@ jobs:
           skip: "dependabot/**"
           debug: true
           zip: true
-          onlyChanged: true
+          # onlyChanged: true
           junitReport: true
           untraced: "sb-preview/runtime.js"
 
