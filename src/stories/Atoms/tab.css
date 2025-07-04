@@ -21,6 +21,8 @@
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s ease;
+    position: relative;
+    /* Allows absolute positioning for children */
 }
 
 .tab-header button:hover {
@@ -34,4 +36,11 @@
 .tab-content {
     padding: 15px;
     background-color: white;
+}
+
+/* This is the new style for positioning the dot */
+.notification-dot-wrapper {
+    position: absolute;
+    top: 2px;
+    right: 2px;
 }
