@@ -46,6 +46,12 @@ WithNotificationDot.args = {
   ],
 };
 
+WithNotificationDot.parameters = {
+  chromatic: {
+    pauseAnimationAtEnd: true,
+  },
+};
+
 export const InteractionTab = Template.bind({});
 InteractionTab.args = { ...Default.args };
 
