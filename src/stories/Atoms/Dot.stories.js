@@ -15,7 +15,7 @@ export default {
 
 export const Default = {
   args: {
-    color: "#2ecc71", // A nice green color
+    color: "#2650C7", // A nice green color
     size: 12,
   },
 };
