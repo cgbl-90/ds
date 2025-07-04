@@ -1,0 +1,41 @@
+/* dot.css */
+
+.storybook-dot-circle {
+    /*
+      The animation 'appear' is defined by keyframes.
+      It will run for 1.2 seconds, with a 0.5-second delay.
+      The timing function is 'ease-out', making the animation slow down at the end.
+      'forwards' ensures the element retains the style values from the last keyframe.
+    */
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        r: 0;
+    }
+
+    20% {
+        r: 2;
+    }
+
+    40% {
+        r: 0.5;
+    }
+
+    60% {
+        r: 2;
+    }
+
+    80% {
+        r: 1;
+    }
+
+    100% {
+        r: 1.5;
+    }
+}
