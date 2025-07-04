@@ -1,4 +1,6 @@
-import { within, userEvent, expect, waitFor } from "storybook/test";
+import React from "react";
+// We are removing `waitFor` and using a manual delay to avoid potential parsing issues.
+import { within, userEvent, expect } from "storybook/test";
 import { Tab } from "./Tab";
 import { Dot } from "../Dot/Dot";
 
@@ -12,6 +14,9 @@ export default {
 };
 
 const Template = (args) => <Tab {...args} />;
+
+// A simple helper function to create a fixed delay.
+const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const Default = Template.bind({});
 Default.args = {
@@ -42,30 +47,21 @@ WithNotificationDot.args = {
   ],
 };
 
-// This play function programmatically waits for the animation to finish
-// and then tests that the dot is visible, which is more reliable.
+// This play function now uses a simple timeout to wait for the animation.
+// This avoids using `waitFor`, which might be causing syntax issues with your Storybook version.
 WithNotificationDot.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
 
-  // Wait for the dot to become visible. The timeout should be longer than the
-  // animation's delay (0.5s) + duration (1.2s).
-  await waitFor(
-    () => {
-      const tab2Button = canvas.getByRole("button", { name: /Tab 2/i });
-      const dotCircle = tab2Button.querySelector(".storybook-dot-circle");
+  // Wait for 2 seconds, which is longer than the animation delay (0.5s) + duration (1.2s)
+  await wait(2000);
 
-      // Check that the circle element exists in the document
-      expect(dotCircle).toBeInTheDocument();
-      // Check that its radius is no longer at the initial '0' value
-      expect(dotCircle.getAttribute("r")).not.toBe("0");
-    },
-    { timeout: 2000 }
-  ); // A 2-second timeout provides a safe margin.
-
-  // As a final check, we can assert the element is visible.
   const tab2Button = canvas.getByRole("button", { name: /Tab 2/i });
   const dotCircle = tab2Button.querySelector(".storybook-dot-circle");
-  await expect(dotCircle).toBeVisible();
+
+  // Assert that the dot is now visible and has a radius greater than 0
+  expect(dotCircle).toBeInTheDocument();
+  expect(dotCircle).toBeVisible();
+  expect(dotCircle.getAttribute("r")).not.toBe("0");
 };
 
 export const InteractionTab = Template.bind({});
@@ -86,3 +82,4 @@ InteractionTab.play = async ({ canvasElement }) => {
 
   await userEvent.click(tab3);
   await expect(canvas.getByText("Content for Tab 3")).toBeInTheDocument();
+};
