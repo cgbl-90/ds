@@ -13,6 +13,9 @@ const preview = {
     },
   ],
   parameters: {
+    chromatic: {
+      cropToViewport: true,
+    },
     a11y: {
       // Optional flag to prevent the automatic check
       // manual: true,
