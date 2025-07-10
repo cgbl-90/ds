@@ -4,7 +4,11 @@ export default {
   title: "Atoms/Links",
   component: Links,
   parameters: {
-    chromatic: { disableSnapshot: true },
+    layout: "centered",
+    chromatic: {
+      //disableSnapshot: true,
+      diffThreshold: 0,
+    },
   },
   argTypes: {
     text: { control: "text" },

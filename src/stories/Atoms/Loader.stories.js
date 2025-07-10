@@ -7,7 +7,8 @@ export default {
   parameters: {
     chromatic: {
       pauseAnimationAtEnd: false,
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
 };

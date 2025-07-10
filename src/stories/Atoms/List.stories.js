@@ -5,7 +5,10 @@ export default {
   component: List,
   parameters: {
     layout: "centered",
-    chromatic: { disableSnapshot: true },
+    chromatic: {
+      //disableSnapshot: true,
+      diffThreshold: 0,
+    },
   },
 };
 

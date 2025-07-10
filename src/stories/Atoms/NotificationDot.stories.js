@@ -5,8 +5,10 @@ export default {
   title: "Atoms/Notification Dot",
   component: NotificationDot,
   parameters: {
+    layout: "padded",
     chromatic: {
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
   argTypes: {

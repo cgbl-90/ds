@@ -5,6 +5,10 @@ export default {
   component: Dot,
   parameters: {
     layout: "centered",
+    chromatic: {
+      //disableSnapshot: true,
+      diffThreshold: 0,
+    },
   },
   tags: ["autodocs"],
   argTypes: {

@@ -4,9 +4,10 @@ export default {
   title: "Typography",
   component: Typography,
   parameters: {
-    layout: "centered",
+    layout: "fullscreen",
     chromatic: {
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
   tags: ["autodocs"],

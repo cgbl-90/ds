@@ -4,9 +4,10 @@ export default {
   title: "ATOMS/Radio",
   component: Radio,
   parameters: {
-    layout: "centered",
+    layout: "padded",
     chromatic: {
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
   tags: ["autodocs"],

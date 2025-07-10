@@ -9,6 +9,7 @@ export default {
   component: Tab,
   parameters: {
     layout: "centered",
+    diffThreshold: 0,
   },
   args: {},
 };

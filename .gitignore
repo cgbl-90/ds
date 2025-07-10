@@ -37,3 +37,4 @@ playwright.config.js
 #Customers' projects
 sb
 storybook-static
+preview-stats.json

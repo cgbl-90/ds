@@ -6,7 +6,8 @@ export default {
   component: Tooltip,
   parameters: {
     chromatic: {
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
 };

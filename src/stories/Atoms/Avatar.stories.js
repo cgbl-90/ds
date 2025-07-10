@@ -9,7 +9,8 @@ export default {
   parameters: {
     layout: "centered",
     chromatic: {
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
 };

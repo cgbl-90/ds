@@ -4,7 +4,10 @@ export default {
   title: "Atoms/Divider",
   component: Divider,
   parameters: {
-    chromatic: { disableSnapshot: true },
+    chromatic: {
+      //disableSnapshot: true,
+      diffThreshold: 0,
+    },
   },
   argTypes: {
     style: {

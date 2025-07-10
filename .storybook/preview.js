@@ -1,5 +1,6 @@
 import React from "react";
 import { hoverdecorator } from "./HoverDecorator";
+import { allModes } from "./modes";
 
 const preview = {
   decorators: [
@@ -25,9 +26,15 @@ const preview = {
     },
     viewport: {
       viewports: {
-        small: { name: "small", styles: { width: "640px", height: "800px" } },
-        large: { name: "large", styles: { width: "1024px", height: "1000px" } },
+        small: { name: "Small", styles: { width: "640px", height: "100%" } },
+        medium: { name: "Medium", styles: { width: "768px", height: "100%" } },
+        large: { name: "Large", styles: { width: "1024px", height: "100%" } },
       },
+    },
+    modes: {
+      small: allModes["small"],
+      medium: allModes["medium"],
+      large: allModes["large"],
     },
     backgrounds: {
       values: [

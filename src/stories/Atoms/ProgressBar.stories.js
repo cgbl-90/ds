@@ -6,7 +6,8 @@ export default {
   component: ProgressBar,
   parameters: {
     chromatic: {
-      disableSnapshot: true,
+      //disableSnapshot: true,
+      diffThreshold: 0,
     },
   },
   argTypes: {
