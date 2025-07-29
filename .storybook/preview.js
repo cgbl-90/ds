@@ -34,6 +34,11 @@ const preview = {
         large: { name: "Large", styles: { width: "1024px", height: "100%" } },
       },
     },
+    initialGlobals: {
+      viewport: {
+        viewport: { value: "small" },
+      },
+    },
     modes: {
       small: allModes["small"],
       medium: allModes["medium"],

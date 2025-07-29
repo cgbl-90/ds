@@ -12,6 +12,7 @@ export default {
       //disableSnapshot: true,
       diffThreshold: 0,
     },
+    
   },
 };
 

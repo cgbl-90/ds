@@ -27,6 +27,7 @@
 
 .storybook-button--primary {
   background-color: #fffdfd;
+  background: #FFF;
   color: rgba(0, 0, 0, 0.85);
 }
 

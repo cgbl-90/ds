@@ -6,6 +6,7 @@ import isChromatic from "chromatic/isChromatic";
 export const Button = ({
   primary,
   backgroundColor,
+  background,
   size,
   label,
   state,
@@ -50,10 +51,12 @@ Button.propTypes = {
   state: PropTypes.oneOf(["hover", "pressed", "noborder"]),
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
+  background: PropTypes.string,
 };
 
 Button.defaultProps = {
   backgroundColor: null,
+  background: null,
   primary: false,
   size: "medium",
   state: null,

@@ -10,7 +10,7 @@ export default {
   parameters: {
     layout: "centered",
     chromatic: {
-     //disableSnapshot: true,
+      //disableSnapshot: true,
       diffThreshold: 0,
     },
   },
@@ -29,6 +29,7 @@ export default {
       },
     },
     backgroundColor: { control: "color" },
+    background: { control: "color" },
     state: {
       control: {
         type: "select",
