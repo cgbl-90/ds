@@ -3,7 +3,8 @@ name: Run Chromatic
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
+      - ui-review-testing-a # or your default branch
   pull_request:
     branches:
       - main
