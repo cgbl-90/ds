@@ -15,6 +15,10 @@ const Template = () => <Loader />;
 export const Default = Template.bind({});
 Default.args = {};
 
+export const LoaderWith1Repetition = () => (
+  <Loader style={{ animationIterationCount: 1 }} />
+);
+
 // Adding story for LoaderShadowDom
 const ShadowDomTemplate = () => <LoaderShadowDom />;
 
