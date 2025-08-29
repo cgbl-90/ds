@@ -15,7 +15,7 @@ const config = {
             : "production.config.json",
       },
     },
-    "@storybook/addon-a11y"
+    "@storybook/addon-a11y",
   ],
   framework: {
     name: "@storybook/react-webpack5",
@@ -69,6 +69,12 @@ const config = {
     });
 
     config.resolve.extensions.push(".ts", ".tsx");
+
+    config.resolve.fallback = {
+      ...config.resolve.fallback, // Keep existing fallbacks
+      os: require.resolve("os-browserify/browser"),
+      tty: require.resolve("tty-browserify"),
+    };
 
     return config;
   },
