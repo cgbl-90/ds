@@ -52,3 +52,27 @@ jobs:
           path: |
             chromatic-diagnostics.json
             chromatic-build-*.xml
+
+      # Step 6: Generate Custom Report Summary
+      - name: Generate Custom Report Summary
+        run: |
+          # Check if the diagnostics file exists
+          if [ ! -f chromatic-diagnostics.json ]; then
+            echo "chromatic-diagnostics.json not found!"
+            exit 1
+          fi
+
+          # Extract values from the JSON file using jq
+          STORYBOOK_URL=$(jq -r '.build.storybookUrl' chromatic-diagnostics.json)
+          BUILD_NUMBER=$(jq -r '.build.number' chromatic-diagnostics.json)
+          CHANGES=$(jq -r '.build.changeCount' chromatic-diagnostics.json)
+          COMPONENTS=$(jq -r '.build.componentCount' chromatic-diagnostics.json)
+
+          # Write the formatted report to the GitHub Step Summary
+          echo "## 📊 Chromatic Build Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY # Add a newline
+          echo "**Build Number:** $BUILD_NUMBER" >> $GITHUB_STEP_SUMMARY
+          echo "**Visual Changes Found:** $CHANGES" >> $GITHUB_STEP_SUMMARY
+          echo "**Components Tested:** $COMPONENTS" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **[View Storybook]($STORYBOOK_URL)**" >> $GITHUB_STEP_SUMMARY
