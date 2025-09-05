@@ -28,13 +28,8 @@ export const composedStory = {
         alignItems: "center",
         gap: "16px",
         padding: "2rem",
-        border: "1px dashed #ccc",
-        borderRadius: "8px",
-        backgroundColor: "#f9f9f9",
       }}
     >
-      <h2>This is a Composed Story</h2>
-      <p>It combines stories from Avatar, Badge, and Button.</p>
       <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
         <ComposedAvatar />
         <ComposedButton {...PrimaryButtonStory.args} />
