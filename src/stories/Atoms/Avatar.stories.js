@@ -2,6 +2,8 @@
 import { Avatar } from "./Avatar";
 import avatarImage from "../avatar.png";
 import { allModes } from "../../../.storybook/modes.js";
+import { composeStory } from "@storybook/react";
+import Meta, * as stories from "./Avatar.stories"; // Self-import to use composeStory
 
 export default {
   title: "ATOMS/Avatar",
@@ -9,7 +11,6 @@ export default {
   parameters: {
     layout: "centered",
     chromatic: {
-      // disableSnapshot: true,
       modes: {
         small: allModes["small"],
         large: allModes["large"],
@@ -50,6 +51,26 @@ export const HoverInteraction = {
     src: avatarImage,
     size: "medium",
     alt: "Hover Interaction Avatar",
-    hoverDecorator: true, // Enable hover decorator
+    hoverDecorator: true,
   },
 };
+
+/**
+ * Side-by-side rendering of the "Medium" story
+ * in both light and dark themes.
+ */
+const MediumStory = composeStory(stories.Medium, Meta);
+
+export const MediumLightAndDark = () => (
+  <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
+    <div
+      className="light-theme"
+      style={{ padding: "1rem", background: "#fff" }}
+    >
+      <MediumStory />
+    </div>
+    <div className="dark-theme" style={{ padding: "1rem", background: "#000" }}>
+      <MediumStory />
+    </div>
+  </div>
+);
