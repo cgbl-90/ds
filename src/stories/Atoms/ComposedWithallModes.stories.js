@@ -1,4 +1,5 @@
 import { composeStory } from "@storybook/react";
+import { allModes } from "../../../.storybook/modes.js";
 
 import AvatarMeta, {
   Large as LargeAvatarStory,
@@ -15,6 +16,14 @@ const ComposedSmallAvatar = composeStory(SmallAvatarStory, AvatarMeta);
 // 2. Define metadata for the new story file.
 export default {
   title: "COMPOSITIONS/ComposedAvatarStory",
+  parameters: {
+    chromatic: {
+      modes: {
+        small: allModes["small"],
+        large: allModes["large"],
+      },
+    },
+  },
   tags: ["!autodocs"],
 };
 
