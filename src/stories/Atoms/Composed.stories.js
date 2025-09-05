@@ -1,9 +1,7 @@
 import { composeStory } from "@storybook/react";
 
 import AvatarMeta, { Large as LargeAvatarStory } from "./Avatar.stories";
-
 import BadgeMeta, { Success as SuccessBadgeStory } from "./Badge.stories";
-
 import ButtonMeta, { Primary as PrimaryButtonStory } from "./Button.stories";
 
 // 2. Create composed versions of each story
@@ -11,7 +9,7 @@ const ComposedAvatar = composeStory(LargeAvatarStory, AvatarMeta);
 const ComposedBadge = composeStory(SuccessBadgeStory, BadgeMeta);
 const ComposedButton = composeStory(PrimaryButtonStory, ButtonMeta);
 
-// 3. Define the meta for your new composed story file
+// 3. Define
 export default {
   title: "COMPOSITIONS/ComposedStory",
   component: ComposedAvatar,
