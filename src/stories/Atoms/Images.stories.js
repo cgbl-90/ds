@@ -4,6 +4,10 @@ import localImage from "./placeholder.jpeg";
 export default {
   title: "ATOMS/Image",
   component: Image,
+  parameters: {
+    // Overrides the default behavior and pauses the animation at the first frame at the component level for all stories.
+    chromatic: { delay: 300 },
+  },
 };
 
 const onlineImageUrl = "https://picsum.photos/200/300";
