@@ -6,7 +6,7 @@ export default {
   component: Image,
   parameters: {
     // Overrides the default behavior and pauses the animation at the first frame at the component level for all stories.
-    chromatic: { delay: 300 },
+    chromatic: { delay: 3000 },
   },
 };
 
