@@ -1,23 +1,17 @@
-import { composeStory } from "@storybook/react";
+import { Avatar } from "./Avatar";
+import { Button } from "./Button";
+import { Badge } from "./Badge";
 
-import AvatarMeta, { Large as LargeAvatarStory } from "./Avatar.stories";
-import BadgeMeta, { Success as SuccessBadgeStory } from "./Badge.stories";
-import ButtonMeta, { Primary as PrimaryButtonStory } from "./Button.stories";
+import { Large as LargeAvatarStory } from "./Avatar.stories";
+import { Primary as PrimaryButtonStory } from "./Button.stories";
+import { Success as SuccessBadgeStory } from "./Badge.stories";
 
-// 2. Create composed versions of each story
-const ComposedAvatar = composeStory(LargeAvatarStory, AvatarMeta);
-const ComposedBadge = composeStory(SuccessBadgeStory, BadgeMeta);
-const ComposedButton = composeStory(PrimaryButtonStory, ButtonMeta);
-
-// 3. Define
+// Default export is required by Storybook
 export default {
   title: "COMPOSITIONS/ComposedStory",
-  component: ComposedAvatar,
-  subcomponents: { ComposedBadge, ComposedButton },
   tags: ["!autodocs"],
 };
 
-// 4. Create the new story that renders the composed stories together
 export const composedStory = {
   name: "Default",
   render: () => (
@@ -31,9 +25,9 @@ export const composedStory = {
       }}
     >
       <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-        <ComposedAvatar />
-        <ComposedButton {...PrimaryButtonStory.args} />
-        <ComposedBadge />
+        <Avatar {...LargeAvatarStory.args} />
+        <Button {...PrimaryButtonStory.args} />
+        <Badge {...SuccessBadgeStory.args} />
       </div>
     </div>
   ),
