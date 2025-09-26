@@ -1,0 +1,103 @@
+.storybook-avatar {
+    border-radius: 50%;
+    font-family: "Work Sans", sans-serif;
+}
+
+.storybook-avatar-img {
+    width: 80%;
+    height: auto;
+}
+
+.storybook-avatar--small {
+    width: 32px;
+}
+
+.storybook-avatar--medium {
+    width: 64px;
+}
+
+.storybook-avatar--large {
+    width: 128px;
+}
+
+.storybook-avatar:hover {
+    filter: brightness(1);
+}
+.typography {
+    line-height: 1.6;
+    font-family: "Work Sans", sans-serif;
+}
+
+.typography--title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.typography--subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.typography--text {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.typography--code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.875rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+.typography--italic {
+    font-style: italic;
+}
+
+.typography--bold {
+    font-weight: 700;
+}
+
+.typography--underline {
+    text-decoration: underline;
+}
+.divider {
+    border: 0;
+    height: 1px;
+    margin: 20px 0;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.divider--primary {
+    background-color: #e7ece8;
+}
+
+.divider--secondary {
+    background-color: #6c757d;
+}
+
+.divider--success {
+    background-color: #28a745;
+}
+
+.divider--warning {
+    background-color: #ffc107;
+}
+
+.divider--danger {
+    background-color: #dc3545;
+}
+
+.divider--dashed {
+    border-top: 1px dashed;
+}
+
+.divider--dotted {
+    border-top: 1px dotted;
+}
+
+.divider--bold {
+    height: 3px;
+}
+
+/*# sourceMappingURL=stories-Components-Comment-stories.fde47c0d.chunk.css.map*/

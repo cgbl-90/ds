@@ -1,0 +1,89 @@
+.tab {
+    font-family: "Work Sans", sans-serif;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.tab-header {
+    display: flex;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-header button {
+    flex: 1 1;
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    position: relative;
+    /* Allows absolute positioning for children */
+}
+
+.tab-header button:hover {
+    background-color: #ddd;
+}
+
+.tab-active {
+    background-color: #ccc !important;
+}
+
+.tab-content {
+    padding: 15px;
+    background-color: white;
+}
+
+/* This is the new style for positioning the dot */
+.notification-dot-wrapper {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+/* dot.css */
+
+.storybook-dot-circle {
+    /*
+      The animation 'appear' is defined by keyframes.
+      It will run for 1.2 seconds, with a 0.5-second delay.
+      The timing function is 'ease-out', making the animation slow down at the end.
+      'forwards' ensures the element retains the style values from the last keyframe.
+    */
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+    0% {
+        r: 0;
+    }
+
+    20% {
+        r: 2;
+    }
+
+    40% {
+        r: 0.5;
+    }
+
+    60% {
+        r: 2;
+    }
+
+    80% {
+        r: 1;
+    }
+
+    100% {
+        r: 1.5;
+    }
+}
+
+/*# sourceMappingURL=stories-Atoms-Tab-stories.197bcc17.chunk.css.map*/

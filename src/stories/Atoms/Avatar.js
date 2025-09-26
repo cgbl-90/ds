@@ -8,6 +8,7 @@ export const Avatar = ({ src, size, alt }) => {
       <img
         src={src}
         alt={alt}
+        data-testid="avatar"
         className={`storybook-avatar-img storybook-avatar--${size}`}
       />
     </div>

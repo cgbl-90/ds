@@ -1,4 +1,8 @@
 import { Button } from "./Button.jsx";
+import isChromatic from "chromatic/isChromatic";
+
+// Shadow Button
+import { ShadowButtonComponent } from "./ButtonShadow.jsx";
 
 export default {
   title: "ATOMS/Button",
@@ -18,6 +22,11 @@ export default {
   },
   args: { onClick: () => {} },
 };
+
+// Modify behavior based on Chromatic
+const chromaticArgs = isChromatic()
+  ? "Chromatic Button" // In Chromatic testing
+  : "Storybook Button"; // Normal Storybook mode
 
 export const Primary = {
   args: {
@@ -74,4 +83,21 @@ export const SecondaryNoBorder = {
     label: "Secondary Without Border",
     state: "noborder",
   },
+};
+
+export const IsChromaticButton = {
+  args: {
+    primary: false,
+    label: chromaticArgs,
+    state: "noborder",
+  },
+};
+
+// New story for Shadow DOM button
+export const ShadowButtonStory = {
+  args: {
+    label: "Shadow DOM Button",
+    backgroundColor: "green", // Example background color
+  },
+  render: (args) => <ShadowButtonComponent {...args} />, // Render the Shadow Button
 };

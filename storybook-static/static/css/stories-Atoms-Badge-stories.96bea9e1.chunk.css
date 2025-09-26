@@ -1,0 +1,31 @@
+.badge {
+    padding: 3px 5px;
+    border-radius: 45px;
+    display: inline-block;
+    font-family: "Work Sans", sans-serif;
+}
+
+.badge-text {
+    font-size: 10px;
+    font-family: "Work Sans", sans-serif;
+    text-transform: capitalize;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+.badge--new {
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.badge--success {
+    background-color: #011e58;
+    color: white;
+}
+
+.badge--warning {
+    background-color: #ec554d;
+    color: white;
+}
+
+/*# sourceMappingURL=stories-Atoms-Badge-stories.96bea9e1.chunk.css.map*/

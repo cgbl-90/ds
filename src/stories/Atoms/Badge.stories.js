@@ -1,5 +1,6 @@
 import React from "react";
 import Badge from "./Badge";
+import { allModes } from "../../../.storybook/modes.js";
 
 export default {
   title: "Atoms/Badge",
@@ -11,6 +12,15 @@ export default {
         type: "select",
         options: ["new", "success", "warning"],
       },
+    },
+    parameters: {
+      /* chromatic: {
+        // disableSnapshot: true,
+        modes: {
+          small: allModes["small"],
+          large: allModes["large"],
+        },
+      }, */
     },
   },
 };

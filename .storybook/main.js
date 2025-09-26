@@ -15,11 +15,69 @@ const config = {
             : "production.config.json",
       },
     },
+    "@storybook/addon-a11y",
   ],
   framework: {
     name: "@storybook/react-webpack5",
     options: {},
   },
   staticDirs: ["../public"],
+
+  // Enable the viewportStoryGlobals feature flag
+  featureFlags: {
+    viewportStoryGlobals: true,
+  },
+
+  // Global parameters configuration
+  parameters: {
+    viewport: {
+      viewports: {
+        desktop: {
+          name: "Desktop",
+          styles: {
+            width: "1280px",
+            height: "800px",
+          },
+        },
+        mobile: {
+          name: "Mobile",
+          styles: {
+            width: "375px",
+            height: "667px",
+          },
+        },
+      },
+      defaultViewport: "desktop", // Default viewport to load
+    },
+  },
+
+  webpackFinal: async (config) => {
+    // Remove the alias for @storybook/preset-create-react-app
+    delete config.resolve.alias["@storybook/preset-create-react-app"];
+
+    // Handle TS and JSX files properly with ts-loader or babel-loader
+    config.module.rules.push({
+      test: /\.(ts|tsx)$/,
+      use: [
+        {
+          loader: "ts-loader", // or babel-loader
+          options: {
+            transpileOnly: true,
+          },
+        },
+      ],
+    });
+
+    config.resolve.extensions.push(".ts", ".tsx");
+
+    config.resolve.fallback = {
+      ...config.resolve.fallback, // Keep existing fallbacks
+      os: require.resolve("os-browserify/browser"),
+      tty: require.resolve("tty-browserify"),
+    };
+
+    return config;
+  },
 };
+
 export default config;

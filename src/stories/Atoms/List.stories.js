@@ -24,8 +24,8 @@ export const WithNumbers = {
 
 export const WithSymbols = {
   args: {
-    items: ["Item 1", "Item 2", "Item 3"],
-    styleType: "circle",
+    items: ["Example 1", "Example 2", "Example 3"],
+    styleType: "custom-icon",
   },
 };
 
@@ -33,6 +33,7 @@ export const WithDevanagariNumbers = {
   args: {
     items: ["Item 1", "Item 2", "Item 3"],
     styleType: "devanagari",
+    icon: "*",
   },
 };
 
@@ -41,5 +42,21 @@ export const WithCustomIcon = {
     items: ["Item 1", "Item 2", "Item 3"],
     styleType: "custom-icon",
     icon: "✓",
+  },
+};
+
+export const WithPlus = {
+  args: {
+    items: ["Item 1", "Item 2", "Item 3", "Item 4"],
+    styleType: "custom-icon",
+    icon: "+",
+  },
+};
+
+export const WithLove = {
+  args: {
+    items: ["Item 1", "Item 2", "Item 3", "Item 4"],
+    styleType: "custom-icon",
+    icon: "♡",
   },
 };

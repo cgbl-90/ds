@@ -1,0 +1,44 @@
+.storybook-image {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px 0;
+    /* Ensure the image doesn't exceed its container */
+    max-width: 100%;
+    height: auto;
+    /* Maintain aspect ratio by default */
+}
+
+.storybook-image--small {
+    width: 100px;
+    height: 100px;
+}
+
+.storybook-image--medium {
+    width: 200px;
+    height: 200px;
+}
+
+.storybook-image--large {
+    width: 300px;
+    height: 300px;
+}
+
+/* For responsive images that take up container width */
+.storybook-image--responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Object-fit classes */
+/* The 'object-fit' property itself is applied here. */
+/* Sizing (width/height) is handled by the size classes above, */
+/* allowing object-fit to be combined with any size. */
+.storybook-image--fit-contain {
+    object-fit: contain;
+    background-color: #f0f0f0;
+    /* Optional: background to see the contain effect */
+}
+
+.storybook-image--fit-cover {
+    object-fit: cover;
+}

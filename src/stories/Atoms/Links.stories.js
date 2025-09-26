@@ -54,12 +54,3 @@ Warning.args = {
   bold: false,
   italic: false,
 };
-
-export const Danger = Template.bind({});
-Danger.args = {
-  text: "Danger Link",
-  href: "#",
-  style: "danger",
-  bold: false,
-  italic: false,
-};

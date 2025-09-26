@@ -1,10 +1,18 @@
 import { Checkbox } from "./Checkbox.js";
+import { allModes } from "../../../.storybook/modes.js";
 
 export default {
   title: "ATOMS/Checkbox",
   component: Checkbox,
   parameters: {
     layout: "centered",
+    chromatic: {
+      //disableSnapshot: true,
+      /*   modes: {
+        small: allModes["small"],
+        large: allModes["large"],
+      }, */
+    },
   },
   tags: ["autodocs"],
   argTypes: {

@@ -4,7 +4,7 @@
 }
 
 .storybook-avatar-img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
@@ -18,4 +18,8 @@
 
 .storybook-avatar--large {
     width: 128px;
+}
+
+.storybook-avatar:hover {
+    filter: brightness(1);
 }

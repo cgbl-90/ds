@@ -26,12 +26,12 @@
 
 
 .storybook-button--primary {
-  background-color: #FFFFFF;
+  background-color: #c6c3c3;
   color: rgba(0, 0, 0, 0.85);
 }
 
 .storybook-button--secondary {
-  background-color: #F3F4F6;
+  background-color: #033497;
   color: rgba(55, 65, 81, 0.85);
 }
 

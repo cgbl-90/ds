@@ -3,7 +3,8 @@ name: Run Chromatic
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
+      - ui-review-testing-a # or your default branch
   pull_request:
     branches:
       - main
@@ -37,11 +38,15 @@ jobs:
           skip: "dependabot/**"
           debug: true
           zip: true
+          onlyChanged: true
           junitReport: true
+          untraced: "sb-preview/runtime.js"
+
+          # storybookBuildDir: "storybook-static"
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: chromatic-reports
           path: |
