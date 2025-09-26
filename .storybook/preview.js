@@ -1,5 +1,5 @@
-import React from "react";
 import { hoverdecorator } from "./HoverDecorator";
+import CustomTheme from "./customTheme";
 
 const preview = {
   decorators: [
@@ -32,12 +32,17 @@ const preview = {
         large: { name: "large", styles: { width: "1024px", height: "1000px" } },
       },
     },
+    docs: {
+      theme: CustomTheme, // Apply the theme to docs
+    },
+    /*
     backgrounds: {
       values: [
         { name: "light", value: "#fff" },
         { name: "dark", value: "#000" },
       ],
     },
+    */
   },
 };
 

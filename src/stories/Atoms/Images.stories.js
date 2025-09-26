@@ -4,111 +4,106 @@ import localImage from "./placeholder.jpeg";
 export default {
   title: "ATOMS/Image",
   component: Image,
+  // Define argTypes to provide better controls in Storybook's addon panel.
+  argTypes: {
+    // Creates radio buttons to easily switch image sources.
+    src: {
+      control: "radio",
+      options: {
+        Local: localImage,
+        "Online (Picsum)": "https://picsum.photos/id/42/800/600",
+      },
+    },
+    // Allows object editing for the `sources` prop, used in the <picture> element.
+    sources: { control: "object" },
+  },
   parameters: {
-    // Overrides the default behavior and pauses the animation at the first frame at the component level for all stories.
     chromatic: { delay: 3000 },
   },
 };
 
-const onlineImageUrl = "https://picsum.photos/200/300";
-
-export const SmallOnline = {
-  args: {
-    src: onlineImageUrl,
-    alt: "Small Online Image",
-    size: "small",
-  },
-};
-
-export const MediumOnline = {
-  args: {
-    src: onlineImageUrl,
-    alt: "Medium Online Image",
-    size: "medium",
-  },
-};
-
-export const LargeOnline = {
-  args: {
-    src: onlineImageUrl,
-    alt: "Large Online Image",
-    size: "large",
-  },
-};
-
-export const SmallLocal = {
-  args: {
-    src: localImage,
-    alt: "Small Local Image",
-    size: "small",
-  },
-};
-
-export const MediumLocal = {
-  args: {
-    src: localImage,
-    alt: "Medium Local Image",
-    size: "medium",
-  },
-};
-
-export const LargeLocal = {
-  args: {
-    src: localImage,
-    alt: "Large Local Image",
-    size: "large",
-  },
+// A "template" for args that can be reused and overridden in specific stories.
+const baseArgs = {
+  alt: "Placeholder image",
+  loading: "lazy",
+  objectFit: null,
+  aspectRatio: null,
+  srcSet: "",
+  sizes: "",
+  sources: [],
 };
 
 /**
- * 1. Lazy Loading:
- * The `loading="lazy"` attribute tells the browser to defer loading of off-screen images
- * until the user scrolls near them. This is the easiest and most effective way to improve
- * performance and reduce initial page load time.
+ * ### Default Story
+ * This is the standard story that showcases the Image component.
+ * All props are available to be manipulated in the Controls panel.
  */
-export const LazyLoaded = {
-  name: "Lazy Loading",
+export const Default = {
   args: {
-    src: "https://picsum.photos/id/10/800/800",
-    alt: "A large, lazy-loaded image",
-    size: "large",
-    loading: "lazy",
+    ...baseArgs,
+    src: localImage,
+    size: "medium",
+    alt: "Default image",
   },
 };
 
 /**
- * 2. Responsive Images with `srcset`:
- * The `srcset` attribute allows you to provide a list of image sources for the browser to choose from,
- * based on the device's screen resolution and size. The `sizes` attribute tells the browser how wide
- * the image will be at different viewport sizes. This ensures high-resolution screens get crisp images
- * without forcing low-resolution devices to download unnecessarily large files.
+ * ### Sizing
+ * The `size` prop controls the dimensions of the image.
+ * Options include `small`, `medium`, `large`, and `responsive`.
+ */
+export const Small = {
+  args: {
+    ...baseArgs,
+    src: "https://picsum.photos/200/300",
+    size: "small",
+    alt: "Small 100x100px image",
+  },
+};
+
+export const Medium = {
+  args: {
+    ...baseArgs,
+    src: "https://picsum.photos/200/300",
+    size: "medium",
+    alt: "Medium 200x200px image",
+  },
+};
+
+export const Large = {
+  args: {
+    ...baseArgs,
+    src: "https://picsum.photos/200/300",
+    size: "large",
+    alt: "Large 300x300px image",
+  },
+};
+
+/**
+ * ### Optimization: Responsive Images (`srcset`)
+ * Use `srcset` and `sizes` to serve appropriately-sized images based on screen resolution and viewport size.
+ * This ensures high-resolution screens get crisp images without forcing low-resolution devices to download unnecessarily large files.
  */
 export const ResponsiveSrcSet = {
-  name: "Responsive Images (srcset)",
   args: {
-    // A default `src` is still required for older browsers.
-    src: "https://picsum.photos/id/20/400/400",
+    ...baseArgs,
+    src: "https://picsum.photos/id/20/400/400", // Fallback for older browsers
     alt: "A responsive image using srcset",
-    // `size` is set to responsive to make the image take up 100% of its container width.
-    size: "responsive",
-    // Here we define image sources and their intrinsic widths (e.g., '.../400 400w').
+    size: "responsive", // Makes the image take up 100% of its container width
     srcSet:
       "https://picsum.photos/id/20/400/400 400w, https://picsum.photos/id/20/800/800 800w, https://picsum.photos/id/20/1200/1200 1200w",
-    // This tells the browser the image will be 100% of the viewport width. Adjust as needed.
-    sizes: "100vw",
+    sizes: "100vw", // This tells the browser the image will be 100% of the viewport width.
   },
 };
 
 /**
- * 3. Art Direction with `<picture>`:
- * The `<picture>` element allows for more direct control over which image displays. You can use
- * media queries to serve completely different images based on viewport size. This is ideal for
- * "art direction," where a different crop or composition works better on mobile vs. desktop.
+ * ### Optimization: Art Direction (`<picture>`)
+ * The `<picture>` element provides more direct control over which image to display using media queries.
+ * This is ideal for "art direction," where a different crop or composition works better on mobile vs. desktop.
  */
-export const ArtDirectionPicture = {
-  name: "Art Direction (<picture>)",
+export const ArtDirection = {
   args: {
-    // The `<img>` inside `<picture>` is the default fallback.
+    ...baseArgs,
     src: "https://picsum.photos/id/30/800/400", // Default wide image
     alt: "An image with art direction",
     size: "responsive",
@@ -123,20 +118,17 @@ export const ArtDirectionPicture = {
 };
 
 /**
- * 4. Next-Gen Formats (WebP) with Fallback:
- * Modern image formats like WebP or AVIF offer better compression than JPEG/PNG, leading to smaller
- * file sizes and faster loads. The `<picture>` element is perfect for providing a WebP source
- * while including a fallback (like JPEG) for browsers that don't support it.
+ * ### Optimization: Next-Gen Formats (WebP)
+ * Serve modern image formats like WebP or AVIF for better compression.
+ * The `<picture>` element is perfect for providing a WebP source with a fallback for browsers that don't support it.
  */
 export const NextGenFormat = {
-  name: "Next-Gen Format (WebP)",
   args: {
-    // The fallback JPEG for older browsers.
-    src: "https://www.gstatic.com/webp/gallery/4.jpg",
+    ...baseArgs,
+    src: "https://www.gstatic.com/webp/gallery/4.jpg", // Fallback JPEG
     alt: "An image using WebP with a JPEG fallback",
     size: "large",
     sources: [
-      // Browsers that support WebP will download and display this version.
       {
         srcset: "https://www.gstatic.com/webp/gallery/4.webp",
         type: "image/webp",
@@ -146,47 +138,44 @@ export const NextGenFormat = {
 };
 
 /**
- * 5. Aspect Ratio for Preventing Layout Shift:
- * When an image loads, it can cause the content below it to "jump" down, which is called
- * Cumulative Layout Shift (CLS). By setting the `aspect-ratio` CSS property on the image,
- * the browser reserves the correct amount of space for the image before it even loads,
- * preventing any layout shift.
+ * ### Layout: Aspect Ratio
+ * Setting `aspect-ratio` reserves space for the image before it loads, preventing Cumulative Layout Shift (CLS).
  */
 export const AspectRatio = {
-  name: "Aspect Ratio (No Layout Shift)",
   args: {
+    ...baseArgs,
     src: "https://picsum.photos/id/50/800/600",
     alt: "An image with a defined aspect ratio",
     size: "responsive",
-    // The browser will reserve a space with a 4:3 aspect ratio.
-    aspectRatio: "800 / 600",
+    aspectRatio: "800 / 600", // Browser reserves a 4:3 space
   },
 };
 
 /**
- * 6. CSS Object-Fit for Sizing Control:
- * The `object-fit` property controls how an `<img>`'s content responds to the height/width
- * of its container. `contain` ensures the entire image is visible without being cropped or
- * stretched. `cover` scales the image to fill the container, cropping it if necessary.
+ * ### Layout: `object-fit: contain`
+ * `contain` ensures the entire image is visible within the component's dimensions without being cropped or stretched.
+ * A background color is added in the CSS to make the effect clear.
  */
 export const ObjectFitContain = {
-  name: "Sizing with object-fit (Contain)",
   args: {
+    ...baseArgs,
     src: "https://picsum.photos/id/60/800/400", // A wide image
     alt: "Image with object-fit: contain",
-    // The container is 300px tall (from CSS), but the image will be scaled down to fit inside.
-    size: "responsive",
+    size: "large", // The wide image is contained within the 300x300px container
     objectFit: "contain",
   },
 };
 
+/**
+ * ### Layout: `object-fit: cover`
+ * `cover` scales the image to fill the container, cropping it if necessary while maintaining the aspect ratio.
+ */
 export const ObjectFitCover = {
-  name: "Sizing with object-fit (Cover)",
   args: {
+    ...baseArgs,
     src: "https://picsum.photos/id/70/400/800", // A tall image
     alt: "Image with object-fit: cover",
-    // The image is scaled up and cropped to cover the 300px tall container.
-    size: "responsive",
+    size: "large", // The tall image is cropped to cover the 300x300px container
     objectFit: "cover",
   },
 };
