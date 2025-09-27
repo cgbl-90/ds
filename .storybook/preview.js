@@ -1,5 +1,6 @@
 import { hoverdecorator } from "./HoverDecorator";
 import { allModes } from "./modes";
+import "./../src/scrollbar.css";
 
 const preview = {
   decorators: [
