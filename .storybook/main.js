@@ -1,18 +1,25 @@
 /** @type { import('@storybook/react-webpack5').StorybookConfig } */
-const config = {
-  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
 
-  addons: [// This is the new, recommended way to get essential addons
-  "@storybook/addon-essentials", "@storybook/addon-links", "@storybook/addon-a11y", 
-  "@storybook/addon-vitest", {
-    name: "@chromatic-com/storybook",
-    options: {
-      configFile:
-        process.env.NODE_ENV === "development"
-          ? "chromatic.config.json"
-          : "production.config.json",
+const config = {
+  stories: ["../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
+
+  addons: [
+    // This is the new, recommended way to get essential addons
+    "@storybook/addon-essentials",
+    "@storybook/addon-links",
+    "@storybook/addon-a11y",
+    "@storybook/addon-vitest",
+    {
+      name: "@chromatic-com/storybook",
+      options: {
+        configFile:
+          process.env.NODE_ENV === "development"
+            ? "chromatic.config.json"
+            : "production.config.json",
+      },
     },
-  }, "@storybook/addon-webpack5-compiler-babel"],
+    "@storybook/addon-webpack5-compiler-babel",
+  ],
 
   framework: {
     name: "@storybook/react-webpack5",
