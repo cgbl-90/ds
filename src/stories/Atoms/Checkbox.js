@@ -7,8 +7,7 @@ export const Checkbox = ({ label, checked, state, ...props }) => {
   const checkedClass = checked ? "storybook-checkbox--checked" : "";
 
   return (
-    <label
-      className={["storybook-checkbox", stateClass, checkedClass].join(" ")}
+    <label className={["storybook-checkbox", stateClass, checkedClass].join(" ")}
       {...props}
     >
       <input type="checkbox" checked={checked} readOnly />

@@ -1,0 +1,16 @@
+.storybook-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+    /* Placeholder color */
+}
+
+.storybook-image--rounded {
+    border-radius: 12px;
+}
+
+.storybook-image--circle {
+    border-radius: 50%;
+    /* For circle to work well, width and height should be equal */
+}
