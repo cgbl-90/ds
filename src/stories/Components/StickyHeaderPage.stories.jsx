@@ -1,79 +1,44 @@
 import { StickyHeaderPage } from "./StickyHeaderPage";
-import { Header } from "./Header"; // Assuming Header is in the same directory
+import { Header } from "./Header";
 import { Typography } from "../Atoms/Typography";
 import { action } from "storybook/actions";
-import { within, waitFor, expect } from "storybook/test";
+import { within, expect } from "storybook/test";
 
 export default {
   title: "PAGES/StickyHeaderPage",
   component: StickyHeaderPage,
   parameters: {
     layout: "fullscreen",
-    viewport: {
-      defaultViewport: "customLarge",
-      viewports: {
-        customLarge: {
-          name: "Custom 1200x900",
-          styles: {
-            width: "1200px",
-            height: "900px",
-          },
-          type: "desktop",
-        },
-      },
-    },
+    // Disable snapshots by default for all stories in this file
+    // chromatic: { disableSnapshot: true },
   },
   args: {
     onLogin: action("Login clicked"),
     onLogout: action("Logout clicked"),
     onCreateAccount: action("Sign up clicked"),
   },
+  // Decorator to wrap stories in a fixed-height container to make them scrollable
+  decorators: [
+    (Story) => (
+      <div style={{ height: "600px" }}>
+        <Story />
+      </div>
+    ),
+  ],
 };
 
-// --- Original Stories ---
-
-export const LoggedIn = {
-  args: {
-    user: {
-      name: "Jhonny Bravo",
-    },
-  },
-};
-
-export const LoggedOut = {};
-
-export const InteractionScroll = {
-  args: {
-    user: {
-      name: "Jhonny Bravo",
-    },
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    await waitFor(() => canvas.getByText("Here’s an interaction section 🧩"));
-    window.scrollTo({ top: 800, behavior: "smooth" });
-    await new Promise((res) => setTimeout(res, 800));
-  },
-};
-
-// --- New Scroll Interaction Stories ---
-
-/**
- * A helper component for the new stories.
- * It renders the sticky Header and a list of 10 images to create a long, scrollable page.
- */
-const ScrollablePageWithImages = (args) => (
+// --- Reusable Layout for Scrollable Content ---
+const ScrollablePageLayout = ({ imageCount = 7, ...args }) => (
   <div>
     <div className="sticky-header">
       <Header {...args} />
     </div>
     <div className="content">
-      <Typography type="title" label="Scroll Demo with Images" />
-      {[...Array(10)].map((_, i) => (
+      <Typography type="title" label={`Page with ${imageCount} Images`} />
+      {[...Array(imageCount)].map((_, i) => (
         <div
           key={i}
-          // Add a test ID to the 9th image to target it for scrolling
-          data-testid={i === 8 ? "target-image-element" : undefined}
+          data-testid={`image-container-${i}`}
           style={{ margin: "40px 0" }}
         >
           <img
@@ -92,59 +57,130 @@ const ScrollablePageWithImages = (args) => (
   </div>
 );
 
-/**
- * This story demonstrates scrolling to a specific coordinate using `window.scrollTo()`.
- * The play function automatically scrolls the page down to a fixed point.
- */
-export const ScrollToCoordinate = {
+// ============================================================================
+// --- 1. Original Stories (Kept as Requested) ---
+// ============================================================================
+
+export const LoggedIn = {
+  // This story does not have the scroll decorator, it uses the original component
+  decorators: [],
   args: {
-    ...LoggedIn.args, // Reuses args from the LoggedIn story
+    user: {
+      name: "Jhonny Bravo",
+    },
   },
-  render: (args) => <ScrollablePageWithImages {...args} />,
-  decorators: [
-    (Story) => (
-      <div style={{ height: "600px" }}>
-        <Story />
-      </div>
-    ),
-  ],
-  play: async () => {
-    // Wait for a moment to ensure the content has rendered
-    await new Promise((res) => setTimeout(res, 500));
-    // Scroll to a specific Y-coordinate (1200px from the top)
-    await waitFor(() => window.scrollTo({ top: 1200, behavior: "smooth" }));
-    // Wait for the smooth scroll animation to complete
+};
+
+export const LoggedOut = {
+  decorators: [],
+};
+
+// This story uses smooth scrolling for demonstrating the animation to a human user.
+// It is not ideal for snapshotting, so chromatic is left disabled.
+export const InteractionScroll = {
+  decorators: [],
+  args: { ...LoggedIn.args },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const interactionSection = await canvas.findByText(
+      "Here’s an interaction section 🧩"
+    );
+    interactionSection.scrollIntoView({ behavior: "smooth" });
     await new Promise((res) => setTimeout(res, 1000));
   },
 };
 
-/**
- * This story demonstrates scrolling a specific element into view using `scrollIntoView()`.
- * The play function finds the 9th image and scrolls until it is centered in the viewport.
- */
-export const ScrollIntoView = {
-  args: {
-    ...LoggedIn.args, // Reuses args from the LoggedIn story
-  },
-  render: (args) => <ScrollablePageWithImages {...args} />,
-  decorators: [
-    (Story) => (
-      <div style={{ height: "600px" }}>
-        <Story />
-      </div>
-    ),
-  ],
+// ============================================================================
+// --- 2. New Stories for Snapshotting Scroll States (7 Versions) ---
+// ============================================================================
+
+// --- Story 1: Scroll to Center ---
+export const ScrolledToCenter = {
+  render: (args) => <ScrollablePageLayout {...args} />,
+  args: { ...LoggedIn.args },
+  parameters: { chromatic: { disableSnapshot: false } }, // Enable snapshot
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    // Find the target element using its data-testid
-    const targetImage = await canvas.findByTestId("target-image-element");
-    await expect(targetImage).toBeInTheDocument();
-    // Scroll the element's ancestor container to bring the element into view
-    targetImage.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-    // Wait for the smooth scroll animation to complete
-    await new Promise((res) => setTimeout(res, 1000));
+    const target = await canvas.findByTestId("image-container-3"); // Target middle element
+    target.scrollIntoView({ behavior: "auto", block: "center" });
+    await new Promise((resolve) => setTimeout(resolve, 50)); // Wait for repaint
+  },
+};
+
+// --- Story 2: Scroll to Bottom ---
+export const ScrolledToBottom = {
+  render: (args) => <ScrollablePageLayout {...args} />,
+  args: { ...LoggedIn.args },
+  parameters: { chromatic: { disableSnapshot: false } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const target = await canvas.findByTestId("image-container-6"); // Target last element
+    target.scrollIntoView({ behavior: "auto", block: "end" });
+    await new Promise((resolve) => setTimeout(resolve, 50));
+  },
+};
+
+// --- Story 3: Scroll with Top Alignment ---
+export const ScrolledWithTopAlignment = {
+  render: (args) => <ScrollablePageLayout {...args} />,
+  args: { ...LoggedIn.args },
+  parameters: { chromatic: { disableSnapshot: false } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const target = await canvas.findByTestId("image-container-4");
+    // Aligns the top of the element to the top of the scroll container
+    target.scrollIntoView({ behavior: "auto", block: "start" });
+    await new Promise((resolve) => setTimeout(resolve, 50));
+  },
+};
+
+// --- Story 4: Scroll While Logged Out ---
+export const ScrolledWhileLoggedOut = {
+  render: (args) => <ScrollablePageLayout {...args} />,
+  args: { user: null }, // Logged out state
+  parameters: { chromatic: { disableSnapshot: false } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const target = await canvas.findByTestId("image-container-3");
+    target.scrollIntoView({ behavior: "auto", block: "center" });
+    await new Promise((resolve) => setTimeout(resolve, 50));
+  },
+};
+
+// --- Story 5: Scroll to an Absolute Coordinate ---
+export const ScrolledToCoordinate = {
+  render: (args) => <ScrollablePageLayout {...args} />,
+  args: { ...LoggedIn.args },
+  parameters: { chromatic: { disableSnapshot: false } },
+  play: async () => {
+    // Uses window.scrollTo instead of targeting an element
+    window.scrollTo({ top: 1200, behavior: "auto" });
+    await new Promise((resolve) => setTimeout(resolve, 50));
+  },
+};
+
+// --- Story 6: No Scroll on Short Page ---
+export const NoScrollOnShortPage = {
+  // Renders only 1 image, which is not enough to cause scrolling
+  render: (args) => <ScrollablePageLayout imageCount={1} {...args} />,
+  args: { ...LoggedIn.args },
+  parameters: { chromatic: { disableSnapshot: false } },
+  play: async () => {
+    // This story should not scroll, we can assert this state.
+    expect(window.scrollY).toBe(0);
+  },
+};
+
+// --- Story 7: Scrolled on a Very Long Page ---
+export const ScrolledOnLongPage = {
+  // Renders 20 images to ensure a long scroll container
+  render: (args) => <ScrollablePageLayout imageCount={20} {...args} />,
+  args: { ...LoggedIn.args },
+  parameters: { chromatic: { disableSnapshot: false } },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const target = await canvas.findByTestId("image-container-18"); // Target near the bottom
+    target.scrollIntoView({ behavior: "auto", block: "center" });
+    await new Promise((resolve) => setTimeout(resolve, 50));
   },
 };
