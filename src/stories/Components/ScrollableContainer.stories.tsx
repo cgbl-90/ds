@@ -90,3 +90,24 @@ export const AlwaysVisibleScrollbar: Story = {
     });
   },
 };
+
+/**
+ * This story uses `overflow-y: scroll` to ensure the scrollbar
+ * is always rendered, even in headless browsers.
+ */
+export const ForceVisibleScrollbarInHeadless: Story = {
+  args: {
+    scrollbarClassName: "force-visible-scrollbar",
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const targetElement = await canvas.findByTestId("item-25");
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+    await waitFor(() => {
+      expect(targetElement).toBeVisible();
+    });
+  },
+};
