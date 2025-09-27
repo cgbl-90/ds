@@ -1,6 +1,5 @@
-// src/components/ScrollableContainer.stories.tsx
 import type { Meta, StoryObj } from "@storybook/react";
-import { expect, userEvent, waitFor, within } from "storybook/test";
+import { expect, waitFor, within } from "storybook/test";
 import { ScrollableContainer } from "./ScrollableContainer";
 
 const meta: Meta<typeof ScrollableContainer> = {
@@ -81,7 +80,7 @@ export const AlwaysVisibleScrollbar: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const targetElement = await canvas.findByTestId("item-55");
+    const targetElement = await canvas.findByTestId("item-25");
     targetElement.scrollIntoView({
       behavior: "smooth",
       block: "center",
