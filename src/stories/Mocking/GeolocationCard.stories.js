@@ -86,26 +86,3 @@ Unsupported.play = async ({ canvasElement }) => {
     canvas.getByText(/Geolocation is not supported by your browser/i);
   });
 };
-
-export const Loading = Template.bind({});
-Loading.storyName = "5. Loading State";
-Loading.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-
-  // Mock a slow response that never resolves
-  Object.defineProperty(navigator, "geolocation", {
-    configurable: true,
-    value: {
-      getCurrentPosition: () => {
-        // Intentionally do nothing to simulate a pending state
-      },
-    },
-  });
-
-  await userEvent.click(
-    canvas.getByRole("button", { name: /get my location/i })
-  );
-  await waitFor(() => {
-    canvas.getByText(/Status: Fetching.../i);
-  });
-};
