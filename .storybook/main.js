@@ -3,7 +3,7 @@ const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
 
   addons: [// This is the new, recommended way to get essential addons
-  "@storybook/addon-essentials", "@storybook/addon-links", "@storybook/addon-a11y", // Make sure this is installed
+  "@storybook/addon-essentials", "@storybook/addon-links", "@storybook/addon-a11y", 
   "@storybook/addon-vitest", {
     name: "@chromatic-com/storybook",
     options: {
