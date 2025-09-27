@@ -1,19 +1,14 @@
 import { UserProfile } from "./UserProfile";
-import { within, userEvent, fn } from "@storybook/test";
-
-// The local avatar image import caused a resolution error.
-// Using a placeholder URL is a more reliable approach for this environment.
+import { within, fn } from "storybook/test";
 const avatarImage = "https://placehold.co/100x100/EEE/333?text=Avatar";
 
 export default {
-  title: "MOLECULES/UserProfile",
+  title: "COMPONENTS/UserProfile",
   component: UserProfile,
   parameters: {
     layout: "centered",
   },
-  // This tag tells Storybook to automatically generate documentation for the component
   tags: ["autodocs"],
-  // We can define argTypes to customize the controls in Storybook's UI
   argTypes: {
     onSendMessage: { action: "messageSent" }, // Log the onSendMessage event
   },
