@@ -1,4 +1,4 @@
-import { within, userEvent, waitFor } from "@storybook/test";
+import { within, userEvent, waitFor } from "storybook/test";
 import { GeolocationCard } from "./GeolocationCard";
 
 export default {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import { Button } from "./Atoms/Button";
-import { Icon } from "./Atoms/Icon";
+import { Button } from "../Atoms/Button";
+import { Icon } from "../Atoms/Icon";
 import "./geolocation-card.css";
 
 export const GeolocationCard = ({ onLocationUpdate }) => {
