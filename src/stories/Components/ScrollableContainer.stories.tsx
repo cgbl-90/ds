@@ -79,4 +79,15 @@ export const AlwaysVisibleScrollbar: Story = {
   args: {
     scrollbarClassName: "always-visible-scrollbar",
   },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const targetElement = await canvas.findByTestId("item-55");
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+    await waitFor(() => {
+      expect(targetElement).toBeVisible();
+    });
+  },
 };
