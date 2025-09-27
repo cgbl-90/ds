@@ -1,13 +1,15 @@
+/* src/styles/scrollbar.css */
+
 /*
   Global styles for custom scrollbars.
   This file should be imported once in the Storybook preview configuration.
 */
 .custom-scrollbar {
-    /*
+  /*
     1. W3C Standard for Firefox and modern browsers.
   */
-    scrollbar-width: thin;
-    scrollbar-color: cornflowerblue #e0e0e0;
+  scrollbar-width: thin;
+  scrollbar-color: cornflowerblue #e0e0e0;
 }
 
 /*
@@ -15,20 +17,40 @@
   This provides a more detailed, custom scrollbar.
 */
 .custom-scrollbar::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-    background: #e0e0e0;
+  background: #e0e0e0;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: cornflowerblue;
-    border-radius: 10px;
-    border: 3px solid #e0e0e0;
+  background-color: cornflowerblue;
+  border-radius: 10px;
+  border: 3px solid #e0e0e0;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: #4a71c4;
+  background-color: #4a71c4;
+}
+
+/*
+  NEW: Class to force the scrollbar to be always visible,
+  overriding macOS's default auto-hiding behavior.
+*/
+.always-visible-scrollbar::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+}
+
+.always-visible-scrollbar::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.always-visible-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d62929;
+  border-radius: 10px;
+  border: 3px solid #f0f0f0;
 }

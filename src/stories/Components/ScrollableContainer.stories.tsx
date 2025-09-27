@@ -11,8 +11,16 @@ const meta: Meta<typeof ScrollableContainer> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/**
+ * This story captures the default, unscrolled state of the component.
+ * It serves as the baseline for visual regression tests in Chromatic.
+ */
 export const Default: Story = {};
 
+/**
+ * This story demonstrates how to programmatically scroll the container
+ * and capture a stable snapshot in Chromatic.
+ */
 export const ScrolledToBottom: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
@@ -27,6 +35,10 @@ export const ScrolledToBottom: Story = {
   },
 };
 
+/**
+ * This story uses `scrollIntoView` to scroll to a specific element
+ * positioned in the middle of the list (Item 25).
+ */
 export const ScrollIntoView: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
@@ -41,6 +53,10 @@ export const ScrollIntoView: Story = {
   },
 };
 
+/**
+ * This story uses the `scrollTo` method on the container itself
+ * to scroll down by a specific pixel amount (800px).
+ */
 export const ScrollTo: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
@@ -52,5 +68,15 @@ export const ScrollTo: Story = {
     await waitFor(() => {
       expect(scrollContainer.scrollTop).toBe(800);
     });
+  },
+};
+
+/**
+ * This story applies a specific CSS class to force the scrollbar
+ * to be visible at all times, even when not actively scrolling.
+ */
+export const AlwaysVisibleScrollbar: Story = {
+  args: {
+    scrollbarClassName: "always-visible-scrollbar",
   },
 };
