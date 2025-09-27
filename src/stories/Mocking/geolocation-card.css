@@ -1,0 +1,42 @@
+.storybook-geolocation-card {
+    font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    width: 320px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.storybook-geolocation-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.storybook-geolocation-card .card-header h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.storybook-geolocation-card .card-body {
+    padding: 16px 0;
+    min-height: 80px;
+}
+
+.storybook-geolocation-card .card-body p {
+    margin: 8px 0;
+}
+
+.storybook-geolocation-card .error-message {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.storybook-geolocation-card .card-footer {
+    text-align: right;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}

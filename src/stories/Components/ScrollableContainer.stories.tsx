@@ -3,7 +3,7 @@ import { expect, waitFor, within } from "storybook/test";
 import { ScrollableContainer } from "./ScrollableContainer";
 
 const meta: Meta<typeof ScrollableContainer> = {
-  title: "Components/ScrollableContainer",
+  title: "COMPONENTS/ScrollableContainer",
   component: ScrollableContainer,
 };
 

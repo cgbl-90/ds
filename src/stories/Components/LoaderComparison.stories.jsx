@@ -2,7 +2,7 @@ import Loader from "../Atoms/Loader";
 import "../Atoms/loader.css";
 
 export default {
-  title: "Components/LoaderGrid",
+  title: "COMPONENTS/LoaderGrid",
   component: Loader,
 };
 

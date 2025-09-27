@@ -1,5 +1,5 @@
 import { UserProfile } from "./UserProfile";
-import { within, fn } from "storybook/test";
+import { within, fn, userEvent } from "storybook/test";
 const avatarImage = "https://placehold.co/100x100/EEE/333?text=Avatar";
 
 export default {
@@ -61,7 +61,6 @@ export const WarningStatus = {
 
 /**
  * This story includes a `play` function to simulate a user clicking the "Send Message" button.
- * It's a great way to write interaction tests for your components.
  */
 export const MessageSent = {
   args: {
