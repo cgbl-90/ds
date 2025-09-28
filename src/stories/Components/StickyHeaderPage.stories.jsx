@@ -5,7 +5,7 @@ import { action } from "storybook/actions";
 import { within, expect } from "storybook/test";
 
 export default {
-  title: "PAGES/StickyHeaderPage",
+  title: "PAGES/Sticky Header",
   component: StickyHeaderPage,
   parameters: {
     layout: "fullscreen",
@@ -91,7 +91,7 @@ export const InteractionScroll = {
 };
 
 // ============================================================================
-// --- 2. New Stories for Snapshotting Scroll States (7 Versions) ---
+// --- New Stories for Snapshotting Scroll States ---
 // ============================================================================
 
 // --- Story 1: Scroll to Center ---
