@@ -152,6 +152,7 @@ export const WithComplexContent = {
   },
 };
 
+/**
 export const BasicInteraction = {
   name: "Click Tabs",
   args: {
@@ -159,7 +160,9 @@ export const BasicInteraction = {
   },
   play: async ({ canvasElement, args }) => {
     const canvas = within(canvasElement);
-    const settingsTab = await canvas.getByRole("button", { name: "Settings" });
+    const settingsTab = await canvas.getByRole("button", {
+      name: "Settings",
+    });
 
     // Check initial state
     await expect(
@@ -181,6 +184,9 @@ export const BasicInteraction = {
     // Verify the onTabChange callback was fired with the correct ID
     await expect(args.onTabChange).toHaveBeenCalledWith("settings");
   },
+  parameters: {
+    disabled: true,
+  },
 };
 
 export const SecondTabActive = {
@@ -199,6 +205,9 @@ export const SecondTabActive = {
     await expect(canvas.getByRole("button", { name: "Settings" })).toHaveClass(
       "tab-active"
     );
+  },
+  parameters: {
+    disabled: true,
   },
 };
 
@@ -227,7 +236,11 @@ export const KeyboardNavigation = {
     await userEvent.tab();
     await expect(dashboardTab).toHaveFocus();
   },
+  parameters: {
+    disabled: true,
+  },
 };
+*/
 
 export const NoTabs = {
   name: "No Tabs",

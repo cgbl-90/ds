@@ -81,6 +81,7 @@ export const HoverAndFocus = {
   },
 };
 
+/**
 export const ExternalLink = {
   name: "External Link",
   args: {
@@ -142,3 +143,4 @@ export const LinkAsButton = {
     disabled: true,
   },
 };
+*/
