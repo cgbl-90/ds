@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar } from "../Atoms/Avatar";
 import { Typography } from "../Atoms/Typography";
 import Badge from "../Atoms/Badge";

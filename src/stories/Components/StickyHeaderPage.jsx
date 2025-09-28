@@ -1,4 +1,3 @@
-import React from "react";
 import { Header } from "./Header";
 import { Typography } from "../Atoms/Typography";
 import "./stickyHeaderPage.css";

@@ -1,10 +1,10 @@
-import React from "react";
 import Tooltip from "./Tooltip";
 
 export default {
   title: "Atoms/Tooltip",
   component: Tooltip,
   parameters: {
+    layout: "centered",
     chromatic: {
       //disableSnapshot: true,
       diffThreshold: 0,

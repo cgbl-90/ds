@@ -10,16 +10,8 @@ const meta: Meta<typeof ScrollableContainer> = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-/**
- * This story captures the default, unscrolled state of the component.
- * It serves as the baseline for visual regression tests in Chromatic.
- */
 export const Default: Story = {};
 
-/**
- * This story demonstrates how to programmatically scroll the container
- * and capture a stable snapshot in Chromatic.
- */
 export const ScrolledToBottom: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

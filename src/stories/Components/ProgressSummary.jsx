@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography } from "../Atoms/Typography";
 import ProgressBar from "../Atoms/ProgressBar";
 

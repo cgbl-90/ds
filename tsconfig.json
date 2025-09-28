@@ -3,7 +3,6 @@
     "target": "es5",
     "lib": ["dom", "esnext"],
     "jsx": "react-jsx",
-    "moduleResolution": "bundler",
     "esModuleInterop": true
   },
   "include": ["src"]

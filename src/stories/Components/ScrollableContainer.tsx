@@ -1,6 +1,5 @@
-// src/components/ScrollableContainer.tsx
 import React from "react";
-import "./scrollablecontainer.css"; // Component-specific styles
+import "./scrollablecontainer.css";
 
 interface ScrollableContainerProps {
   scrollbarClassName?: string;

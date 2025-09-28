@@ -1,4 +1,3 @@
-import React from "react";
 import { Label } from "../Atoms/Label";
 import { Radio } from "../Atoms/Radio";
 

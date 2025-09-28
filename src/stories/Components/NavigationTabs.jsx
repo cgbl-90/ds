@@ -1,4 +1,3 @@
-import React from "react";
 import { Tab } from "../Atoms/Tab";
 import { Icon } from "../Atoms/Icon";
 

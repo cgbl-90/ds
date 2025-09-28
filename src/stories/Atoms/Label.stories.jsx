@@ -1,4 +1,3 @@
-// Label.stories.jsx
 import { Label } from "./Label";
 
 export default {

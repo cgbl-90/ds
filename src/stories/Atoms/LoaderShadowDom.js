@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import "./loader.css"; 
+import { useRef, useEffect } from "react";
+import "./loader.css";
 
 const LoaderShadowDom = () => {
   const loaderRef = useRef(null);

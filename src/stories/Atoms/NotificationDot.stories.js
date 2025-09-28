@@ -1,8 +1,7 @@
-import React from "react";
 import NotificationDot from "./NotificationDot";
 
 export default {
-  title: "Atoms/Notification Dot",
+  title: "ATOMS/Notification Dot",
   component: NotificationDot,
   parameters: {
     layout: "padded",

@@ -1,5 +1,3 @@
-import React from "react";
-// We are removing `waitFor` and using a manual delay to avoid potential parsing issues.
 import { within, userEvent, expect } from "storybook/test";
 import { Tab } from "./Tab";
 import { Dot } from "./Dot";

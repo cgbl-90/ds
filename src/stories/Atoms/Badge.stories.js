@@ -1,4 +1,3 @@
-import React from "react";
 import Badge from "./Badge";
 // import { allModes } from "../../../.storybook/modes.js";
 

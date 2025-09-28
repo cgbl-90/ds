@@ -1,4 +1,3 @@
-import React from "react";
 import Loader from "../Atoms/Loader";
 import { Typography } from "../Atoms/Typography";
 
