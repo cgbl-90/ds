@@ -1,5 +1,5 @@
 import { expect, userEvent, within } from "storybook/test";
-import { action } from "@storybook/addon-actions";
+import { action } from "storybook/actions";
 import Links from "./Links";
 
 const storyStyles = `
