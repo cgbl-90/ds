@@ -1,24 +1,34 @@
-import React from "react";
 import PropTypes from "prop-types";
 import "./typography.css";
 
-export const Typography = ({ type, styleType, label, ...props }) => {
+export const Typography = ({ type, styleType, label, as, ...props }) => {
+  const typeToTag = {
+    title: "h1",
+    subtitle: "h2",
+    text: "p",
+    code: "pre",
+  };
+
+  const Component = as || typeToTag[type] || "div";
+
   const typeClass = `typography--${type}`;
   const styleClass = styleType ? `typography--${styleType}` : "";
 
   return (
-    <div className={`typography ${typeClass} ${styleClass}`} {...props}>
-      {label}
-    </div>
+    <Component className={`typography ${typeClass} ${styleClass}`} {...props}>
+      {type === "code" ? <code>{label}</code> : label}
+    </Component>
   );
 };
 
 Typography.propTypes = {
-  type: PropTypes.oneOf(["title", "subtitle", "text", "code"]).isRequired,
-  styleType: PropTypes.oneOf(["italic", "bold", "underline"]),
-  label: PropTypes.node.isRequired,
+  type: PropTypes.oneOf(["title", "subtitle", "text", "code"]).isRequired, // Semantic type.
+  styleType: PropTypes.oneOf(["italic", "bold", "underline"]), // Styling options.
+  label: PropTypes.node.isRequired, // Content to display.
+  as: PropTypes.string, // Override the default HTML tag for the component.
 };
 
 Typography.defaultProps = {
   styleType: null,
+  as: null,
 };

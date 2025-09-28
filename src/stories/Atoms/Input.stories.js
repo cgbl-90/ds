@@ -76,7 +76,6 @@ export const NumbersOnly = {
   },
 };
 
-/**
 export const ForceLowercase = {
   name: "Force Lowercase",
   render: (args) => {
@@ -97,8 +96,8 @@ export const ForceLowercase = {
     await expect(input.value).toBe("this is a mixed case string");
   },
 };
-*/
 
+/**
 export const WithCharacterLimit = {
   name: "Character Limit",
   args: {
@@ -117,6 +116,7 @@ export const WithCharacterLimit = {
     disabled: true,
   },
 };
+*/
 
 export const PasswordInput = {
   name: "Password",
