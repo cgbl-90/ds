@@ -21,6 +21,7 @@ const mockNotificationAPI = (permission) => {
 export default {
   title: "API/Notification",
   component: NotificationCard,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

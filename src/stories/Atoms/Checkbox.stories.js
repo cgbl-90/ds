@@ -4,6 +4,7 @@ import { Checkbox } from "./Checkbox.js";
 export default {
   title: "ATOMS/Checkbox",
   component: Checkbox,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {
@@ -11,7 +12,6 @@ export default {
       diffThreshold: 0,
     },
   },
-  tags: ["autodocs"],
   argTypes: {
     state: {
       control: {

@@ -8,6 +8,7 @@ export default {
   parameters: {
     layout: "centered",
   },
+  tags: ["autodocs"],
   args: {
     videoId: "zhrboql8UuU", // Example video ID
   },

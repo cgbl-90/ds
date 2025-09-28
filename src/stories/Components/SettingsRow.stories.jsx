@@ -3,6 +3,7 @@ import { SettingsRow } from "./SettingsRow";
 export default {
   title: "COMPONENTS/SettingsRow",
   component: SettingsRow,
+  tags: ["autodocs"],
 };
 
 export const NameSetting = {

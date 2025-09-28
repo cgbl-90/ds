@@ -4,6 +4,7 @@ import "../Atoms/loader.css";
 export default {
   title: "COMPONENTS/LoaderGrid",
   component: Loader,
+  tags: ["autodocs"],
 };
 
 // Common styles

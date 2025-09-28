@@ -4,6 +4,7 @@ import { ClipboardCard } from "./ClipboardCard";
 export default {
   title: "API/Clipboard",
   component: ClipboardCard,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

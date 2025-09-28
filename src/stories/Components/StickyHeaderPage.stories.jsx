@@ -17,7 +17,7 @@ export default {
     onLogout: action("Logout clicked"),
     onCreateAccount: action("Sign up clicked"),
   },
-  // Decorator to wrap stories in a fixed-height container to make them scrollable
+  tags: ["autodocs"],
   decorators: [
     (Story) => (
       <div style={{ height: "600px" }}>

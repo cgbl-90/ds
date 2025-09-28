@@ -3,6 +3,7 @@ import { NotificationItem } from "./NotificationsItem";
 export default {
   title: "COMPONENTS/Notifications",
   component: NotificationItem,
+  tags: ["autodocs"],
 };
 
 export const NewMessage = {

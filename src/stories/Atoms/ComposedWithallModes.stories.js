@@ -14,7 +14,7 @@ const ComposedSmallAvatar = composeStory(SmallAvatarStory, AvatarMeta);
 // 2. Define metadata for the new story file.
 export default {
   title: "COMPOSITIONS/ComposedAvatarStory",
-  tags: ["!autodocs"],
+  tags: ["autodocs"],
 };
 
 // 3. Create a new story that renders the composed components.

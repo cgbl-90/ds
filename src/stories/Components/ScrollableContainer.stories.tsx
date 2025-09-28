@@ -5,6 +5,7 @@ import { ScrollableContainer } from "./ScrollableContainer";
 const meta: Meta<typeof ScrollableContainer> = {
   title: "COMPONENTS/ScrollableContainer",
   component: ScrollableContainer,
+  tags: ["autodocs"],
 };
 
 export default meta;

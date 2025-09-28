@@ -3,6 +3,7 @@ import Tooltip from "./Tooltip";
 export default {
   title: "Atoms/Tooltip",
   component: Tooltip,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {

@@ -6,6 +6,7 @@ import Women from "../woman.png";
 export default {
   title: "COMPONENTS/Comment",
   component: Comment,
+  tags: ["autodocs"],
 };
 
 export const BasicComment = {

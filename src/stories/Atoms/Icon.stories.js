@@ -3,6 +3,7 @@ import { Icon } from "./Icon";
 export default {
   title: "ATOMS/Icon",
   component: Icon,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {

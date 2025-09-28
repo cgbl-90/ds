@@ -3,6 +3,7 @@ import NotificationDot from "./NotificationDot";
 export default {
   title: "ATOMS/Notification Dot",
   component: NotificationDot,
+  tags: ["autodocs"],
   parameters: {
     layout: "padded",
     chromatic: {

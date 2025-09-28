@@ -4,6 +4,7 @@ import { Page } from "./Page";
 export default {
   title: "PAGES/Page", // Make sure this matches Storybook's expected title format
   component: Page,
+  tags: ["autodocs"],
   parameters: {
     layout: "fullscreen",
   },

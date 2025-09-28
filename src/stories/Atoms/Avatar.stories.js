@@ -5,7 +5,7 @@ import avatarImage from "../avatar.png"; // Make sure this path is correct
 const meta = {
   title: "ATOMS/Avatar",
   component: Avatar,
-  tags: ["autodocs"], // Enable automatic documentation
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

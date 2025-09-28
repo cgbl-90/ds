@@ -3,6 +3,7 @@ import { LoaderOverlay } from "./LoaderOverlay";
 export default {
   title: "COMPONENTS/LoaderOverlay",
   component: LoaderOverlay,
+  tags: ["autodocs"],
 };
 
 export const LoadingDashboard = {

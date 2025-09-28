@@ -13,8 +13,8 @@ const ComposedButton = composeStory(PrimaryButtonStory, ButtonMeta);
 export default {
   title: "COMPOSITIONS/ComposedStory",
   component: ComposedAvatar,
+  tags: ["autodocs"],
   subcomponents: { ComposedBadge, ComposedButton },
-  tags: ["!autodocs"],
 };
 
 // 4. Create the new story that renders the composed stories together

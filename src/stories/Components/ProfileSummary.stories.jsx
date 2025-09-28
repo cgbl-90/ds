@@ -6,6 +6,7 @@ import Women from "../woman.png";
 export default {
   title: "COMPONENTS/ProfileSummary",
   component: ProfileSummary,
+  tags: ["autodocs"],
 };
 
 export const ActiveUser = {

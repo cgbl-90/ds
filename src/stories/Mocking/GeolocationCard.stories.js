@@ -4,6 +4,7 @@ import { GeolocationCard } from "./GeolocationCard";
 export default {
   title: "API/Geolocation",
   component: GeolocationCard,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
   },

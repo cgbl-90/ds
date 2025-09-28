@@ -8,6 +8,7 @@ export default {
   parameters: {
     layout: "centered",
   },
+  tags: ["autodocs"],
   argTypes: {
     onSendMessage: { action: "messageSent" }, // Log the onSendMessage event
   },

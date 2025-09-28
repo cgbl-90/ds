@@ -3,6 +3,7 @@ import { List } from "./List";
 export default {
   title: "ATOMS/List",
   component: List,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {

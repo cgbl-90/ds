@@ -3,6 +3,7 @@ import Divider from "./DividerLine";
 export default {
   title: "Atoms/Divider",
   component: Divider,
+  tags: ["autodocs"],
   parameters: {
     chromatic: {
       //disableSnapshot: true,

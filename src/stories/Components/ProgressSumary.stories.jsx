@@ -3,6 +3,7 @@ import { ProgressSummary } from "./ProgressSummary";
 export default {
   title: "COMPONENTS/ProgressSummary",
   component: ProgressSummary,
+  tags: ["autodocs"],
 };
 
 export const LearningProgress = {

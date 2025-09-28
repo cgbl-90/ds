@@ -4,6 +4,7 @@ import LoaderShadowDom from "./LoaderShadowDom";
 export default {
   title: "Atoms/Loader",
   component: Loader,
+  tags: ["autodocs"],
   parameters: {
     chromatic: {
       pauseAnimationAtEnd: false,

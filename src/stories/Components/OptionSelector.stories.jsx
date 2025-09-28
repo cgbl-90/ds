@@ -3,6 +3,7 @@ import { OptionSelector } from "./OptionSelector";
 export default {
   title: "COMPONENTS/OptionSelector",
   component: OptionSelector,
+  tags: ["autodocs"],
 };
 
 export const ThemeSelector = {

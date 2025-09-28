@@ -7,6 +7,7 @@ import { ShadowButtonComponent } from "./ButtonShadow.jsx";
 export default {
   title: "ATOMS/Button",
   component: Button,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {

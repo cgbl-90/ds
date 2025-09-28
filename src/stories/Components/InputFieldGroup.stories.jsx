@@ -3,6 +3,7 @@ import { InputFieldGroup } from "./InputFieldGroup";
 export default {
   title: "COMPONENTS/InputFieldGroup",
   component: InputFieldGroup,
+  tags: ["autodocs"],
 };
 
 export const WithHint = {

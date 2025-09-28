@@ -6,6 +6,7 @@ import Women from "../woman.png";
 export default {
   title: "COMPONENTS/ContactCard",
   component: ContactCard,
+  tags: ["autodocs"],
 };
 
 export const BusinessContact = {

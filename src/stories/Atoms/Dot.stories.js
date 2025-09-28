@@ -3,6 +3,7 @@ import { Dot } from "./Dot";
 export default {
   title: "ATOMS/Dot",
   component: Dot,
+  tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {
@@ -10,7 +11,6 @@ export default {
       diffThreshold: 0,
     },
   },
-  tags: ["autodocs"],
   argTypes: {
     color: { control: "color" },
     size: { control: { type: "range", min: 6, max: 50, step: 1 } },

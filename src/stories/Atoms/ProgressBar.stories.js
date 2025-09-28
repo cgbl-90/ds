@@ -3,6 +3,7 @@ import ProgressBar from "./ProgressBar";
 export default {
   title: "Atoms/Progress Bar",
   component: ProgressBar,
+  tags: ["autodocs"],
   parameters: {
     chromatic: {
       //disableSnapshot: true,
