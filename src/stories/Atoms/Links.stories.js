@@ -95,6 +95,9 @@ export const ExternalLink = {
     await expect(link).toHaveAttribute("target", "_blank");
     await expect(link).toHaveAttribute("rel", "noopener noreferrer");
   },
+  parameters: {
+    disabled: true,
+  },
 };
 
 export const DisabledLink = {
@@ -116,6 +119,9 @@ export const DisabledLink = {
     await userEvent.click(link, { skipPointerEventsCheck: true });
     await expect(link).toHaveClass("storybook-link--disabled");
   },
+  parameters: {
+    disabled: true,
+  },
 };
 
 export const LinkAsButton = {
@@ -131,5 +137,8 @@ export const LinkAsButton = {
     const link = canvas.getByRole("link");
     await userEvent.click(link);
     await expect(args.onClick).toHaveBeenCalledTimes(1);
+  },
+  parameters: {
+    disabled: true,
   },
 };

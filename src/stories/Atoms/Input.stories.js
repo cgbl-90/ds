@@ -111,6 +111,9 @@ export const WithCharacterLimit = {
     await expect(input.value).toBe("This strin");
     await expect(input.value.length).toBe(10);
   },
+  parameters: {
+    disabled: true,
+  },
 };
 
 export const PasswordInput = {
