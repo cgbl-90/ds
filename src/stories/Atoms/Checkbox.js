@@ -1,4 +1,3 @@
-import React from "react";
 import PropTypes from "prop-types";
 import "./checkbox.css";
 
@@ -7,10 +6,11 @@ export const Checkbox = ({ label, checked, state, ...props }) => {
   const checkedClass = checked ? "storybook-checkbox--checked" : "";
 
   return (
-    <label className={["storybook-checkbox", stateClass, checkedClass].join(" ")}
+    <label
+      className={["storybook-checkbox", stateClass, checkedClass].join(" ")}
       {...props}
     >
-      <input type="checkbox" checked={checked} readOnly />
+      <input type="checkbox" checked={checked} {...props} />
       {label}
     </label>
   );

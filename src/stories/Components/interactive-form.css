@@ -1,0 +1,39 @@
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group .storybook-label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.radio-group-container,
+.checkbox-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-submit-button {
+    margin-top: 2rem;
+}
+
+.form-success-message {
+    margin-top: 1.5rem;
+    color: #16a34a;
+    background-color: #f0fdf4;
+    border: 1px solid #86efac;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}

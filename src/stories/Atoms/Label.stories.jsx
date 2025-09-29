@@ -3,15 +3,23 @@ import { Label } from "./Label";
 export default {
   title: "ATOMS/Label",
   component: Label,
-  parameters: {
-    layout: "centered",
-    chromatic: {
-      //disableSnapshot: true,
-      diffThreshold: 0,
-    },
-  },
   tags: ["autodocs"],
   argTypes: {
+    children: {
+      control: "text",
+      description: "The content displayed inside the label.",
+    },
+    htmlFor: {
+      control: "text",
+      description: "The ID of the form element the label is associated with.",
+    },
+    as: {
+      control: {
+        type: "select",
+        options: ["label", "span"],
+      },
+      description: "Render the component as a different HTML element.",
+    },
     size: {
       control: {
         type: "select",
@@ -27,42 +35,34 @@ export default {
   },
 };
 
-export const DefaultLabel = {
+export const Default = {
   args: {
-    text: "Default Label",
-    size: "small",
-    color: "secondary",
+    children: "Default Label",
   },
 };
 
-export const SmallPrimaryLabel = {
+export const ForInput = {
+  name: "Label for an Input (with htmlFor)",
   args: {
-    text: "Small Primary Label",
-    size: "small",
+    children: "Email Address",
+    htmlFor: "email-input",
     color: "primary",
   },
 };
 
-export const LargeSecondaryLabel = {
+export const AsSpan = {
+  name: "Label for a Group (as a span)",
   args: {
-    text: "Large Secondary Label",
+    children: "Select your preferences",
+    as: "span",
     size: "large",
-    color: "secondary",
   },
 };
 
-export const MediumPrimaryLabel = {
+export const SmallSecondary = {
   args: {
-    text: "Medium Primary Label",
-    size: "medium",
-    color: "primary",
-  },
-};
-
-export const SmallDefaultLabel = {
-  args: {
-    text: "Example",
+    children: "Small Secondary Label",
     size: "small",
-    color: "default",
+    color: "secondary",
   },
 };

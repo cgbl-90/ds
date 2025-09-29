@@ -1,31 +1,39 @@
-// Label.jsx
-import React from "react";
 import PropTypes from "prop-types";
 import "./label.css";
 
-export const Label = ({ text, size, color }) => {
+export const Label = ({
+  htmlFor,
+  children,
+  size,
+  color,
+  as: Component = "label",
+  ...props
+}) => {
   const sizeClass = `storybook-label--${size}`;
-  const colorClass =
-    color === "primary"
-      ? "storybook-label--primary"
-      : color === "secondary"
-      ? "storybook-label--secondary"
-      : "";
+  const colorClass = color !== "default" ? `storybook-label--${color}` : "";
 
   return (
-    <label className={["storybook-label", sizeClass, colorClass].join(" ")}>
-      {text}
-    </label>
+    <Component
+      className={["storybook-label", sizeClass, colorClass].join(" ")}
+      htmlFor={Component === "label" ? htmlFor : undefined}
+      {...props}
+    >
+      {children}
+    </Component>
   );
 };
 
 Label.propTypes = {
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  htmlFor: PropTypes.string,
+  as: PropTypes.elementType,
   size: PropTypes.oneOf(["small", "medium", "large"]),
   color: PropTypes.oneOf(["default", "primary", "secondary"]),
 };
 
 Label.defaultProps = {
+  htmlFor: undefined,
+  as: "label",
   size: "medium",
   color: "default",
 };
