@@ -1,9 +1,8 @@
-// Form.jsx
-import React, { useState } from "react";
-import { Label } from "../Atoms/Label"; 
-import { Input } from "../Atoms/Input"; 
-import { Checkbox } from "../Atoms/Checkbox"; 
-import { Radio } from "../Atoms/Radio"; 
+import { useState } from "react";
+import { Label } from "../Atoms/Label";
+import { Input } from "../Atoms/Input";
+import { Checkbox } from "../Atoms/Checkbox";
+import { Radio } from "../Atoms/Radio";
 import "./form.css";
 
 export const Form = () => {

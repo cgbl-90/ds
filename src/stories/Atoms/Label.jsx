@@ -3,6 +3,7 @@ import "./label.css";
 
 export const Label = ({
   htmlFor,
+  text,
   children,
   size,
   color,
@@ -18,13 +19,15 @@ export const Label = ({
       htmlFor={Component === "label" ? htmlFor : undefined}
       {...props}
     >
-      {children}
+      {/* Prioritize children, but fall back to the text prop if children are not provided. */}
+      {children || text}
     </Component>
   );
 };
 
 Label.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
+  text: PropTypes.string,
   htmlFor: PropTypes.string,
   as: PropTypes.elementType,
   size: PropTypes.oneOf(["small", "medium", "large"]),
@@ -36,4 +39,6 @@ Label.defaultProps = {
   as: "label",
   size: "medium",
   color: "default",
+  text: "",
+  children: null,
 };
