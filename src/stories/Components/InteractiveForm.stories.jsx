@@ -18,6 +18,14 @@ const fillFormSteps = async (canvas) => {
   await userEvent.click(canvas.getByLabelText("Married"));
   await userEvent.click(canvas.getByLabelText("JavaScript"));
   await userEvent.click(canvas.getByLabelText("Python"));
+  await userEvent.type(
+    canvas.getByLabelText("10. Any feedback for us?"),
+    "This is a great form!"
+  );
+  await userEvent.type(
+    canvas.getByLabelText("11. How did you hear about us?"),
+    "LinkedIn"
+  );
   await userEvent.click(
     canvas.getByLabelText("Yes, I'd like to receive updates.")
   );
