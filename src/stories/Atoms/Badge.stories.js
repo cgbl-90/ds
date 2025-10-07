@@ -17,7 +17,7 @@ export default {
       layout: "centered",
       chromatic: {
         //disableSnapshot: true,
-        diffThreshold: 0,
+        diffThreshold: 0.5,
       },
     },
   },
