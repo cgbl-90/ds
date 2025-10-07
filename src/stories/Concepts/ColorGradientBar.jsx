@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export const ColorGradientBar = ({ width, height }) => {
   const color1 = "#021F57"; // Minimal shift
   const color2 = "#2563EB";
-  const color3 = "#01FEFE"; // Minimal shift
+  const color3 = "#039696ff"; // Minimal shift
 
   const gradientStyle = {
     width: width,
