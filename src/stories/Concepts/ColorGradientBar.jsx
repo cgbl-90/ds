@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
 export const ColorGradientBar = ({ width, height }) => {
-  const color1 = "#021F57"; // Minimal shift
+  const color1 = "#011949ff"; //Darker color
   const color2 = "#2563EB";
-  const color3 = "#039696ff"; // Minimal shift
+  const color3 = "#039696ff";
 
   const gradientStyle = {
     width: width,
