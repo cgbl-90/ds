@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 export const ColorGradientBar = ({ isSubtlyChanged, width, height }) => {
   const color1 = "#011E58";
   const color2 = "#2563EB";
-  const color3 = "#FF00FF";
+  const color3 = "#EF02EF";
 
-  const subtleChangeColor = "#F000F0";
+  const subtleChangeColor = "#EF02EF";
 
   const finalColor3 = isSubtlyChanged ? subtleChangeColor : color3;
 
