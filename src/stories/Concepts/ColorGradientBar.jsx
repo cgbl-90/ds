@@ -1,18 +1,14 @@
 import PropTypes from "prop-types";
 
-export const ColorGradientBar = ({ isSubtlyChanged, width, height }) => {
-  const color1 = "#011E58";
+export const ColorGradientBar = ({ width, height }) => {
+  const color1 = "#021F57"; // Minimal shift
   const color2 = "#2563EB";
-  const color3 = "#00FFFF"; // Color change to Cyan
-
-  const subtleChangeColor = "#00FFFF"; // Color change to Cyan
-
-  const finalColor3 = isSubtlyChanged ? subtleChangeColor : color3;
+  const color3 = "#01FEFE"; // Minimal shift
 
   const gradientStyle = {
     width: width,
     height: height,
-    background: `linear-gradient(90deg, ${color1} 0%, ${color2} 50%, ${finalColor3} 100%)`,
+    background: `linear-gradient(90deg, ${color1} 0%, ${color2} 50%, ${color3} 100%)`,
     borderRadius: "4px",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   };
@@ -25,13 +21,11 @@ export const ColorGradientBar = ({ isSubtlyChanged, width, height }) => {
 };
 
 ColorGradientBar.propTypes = {
-  isSubtlyChanged: PropTypes.bool,
   width: PropTypes.string,
   height: PropTypes.string,
 };
 
 ColorGradientBar.defaultProps = {
-  isSubtlyChanged: false,
   width: "400px",
   height: "50px",
 };

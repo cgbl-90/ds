@@ -11,10 +11,6 @@ export default {
     },
   },
   argTypes: {
-    isSubtlyChanged: {
-      control: "boolean",
-      description: "Simulate a color change in the gradient.",
-    },
     style: { control: "object", table: { disable: true } },
   },
 };
@@ -23,9 +19,6 @@ const Template = (args) => <ColorGradientBar {...args} />;
 
 export const DefaultThresholdBaseline = Template.bind({});
 DefaultThresholdBaseline.storyName = "Baseline Threshold (0.063)";
-DefaultThresholdBaseline.args = {
-  isSubtlyChanged: false,
-};
 DefaultThresholdBaseline.parameters = {
   docs: {
     description: {
@@ -37,9 +30,6 @@ DefaultThresholdBaseline.parameters = {
 
 export const HighThresholdSubtleChange = Template.bind({});
 HighThresholdSubtleChange.storyName = "High Threshold (0.63)";
-HighThresholdSubtleChange.args = {
-  isSubtlyChanged: true,
-};
 HighThresholdSubtleChange.parameters = {
   chromatic: {
     diffThreshold: 0.63,
@@ -53,9 +43,6 @@ HighThresholdSubtleChange.parameters = {
 
 export const LowThresholdSubtleChange = Template.bind({});
 LowThresholdSubtleChange.storyName = "Low Threshold (0.005)";
-LowThresholdSubtleChange.args = {
-  isSubtlyChanged: true,
-};
 LowThresholdSubtleChange.parameters = {
   chromatic: {
     diffThreshold: 0.005,
@@ -70,7 +57,6 @@ LowThresholdSubtleChange.parameters = {
 export const LowPPIDisplay_SubtleChange = Template.bind({});
 LowPPIDisplay_SubtleChange.storyName = "Low PPI (Small Viewport)";
 LowPPIDisplay_SubtleChange.args = {
-  isSubtlyChanged: true,
   width: "200px",
 };
 LowPPIDisplay_SubtleChange.parameters = {
@@ -87,7 +73,6 @@ LowPPIDisplay_SubtleChange.parameters = {
 export const HighPPIDisplay_SubtleChange = Template.bind({});
 HighPPIDisplay_SubtleChange.storyName = "High PPI (Large Viewport)";
 HighPPIDisplay_SubtleChange.args = {
-  isSubtlyChanged: true,
   width: "600px",
 };
 HighPPIDisplay_SubtleChange.parameters = {
