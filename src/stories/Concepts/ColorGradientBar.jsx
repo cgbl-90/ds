@@ -1,10 +1,9 @@
 import PropTypes from "prop-types";
 
 export const ColorGradientBar = ({ isSubtlyChanged, width, height }) => {
-  // Define base gradient colors
-  const color1 = "#011E58"; // Dark Blue
-  const color2 = "#2563EB"; // Bright Blue
-  const color3 = "#FF00FF"; // Fuchsia (replacing Yellow)
+  const color1 = "#011E58";
+  const color2 = "#2563EB";
+  const color3 = "#FF00FF";
 
   const subtleChangeColor = "#F000F0";
 
@@ -13,7 +12,6 @@ export const ColorGradientBar = ({ isSubtlyChanged, width, height }) => {
   const gradientStyle = {
     width: width,
     height: height,
-    // Note: The 'background' can be overridden by 'style' prop in stories for MajorChange test
     background: `linear-gradient(90deg, ${color1} 0%, ${color2} 50%, ${finalColor3} 100%)`,
     borderRadius: "4px",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
