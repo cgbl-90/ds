@@ -21,4 +21,5 @@ export const rows = [
   ["Rachel Young", "rachel.young@example.com", "Viewer", "Pending"],
   ["Steve Clark", "steve.clark@example.com", "Editor", "Inactive"],
   ["Tina Brooks", "tina.brooks@example.com", "Admin", "Active"],
+  ["Pedro Brooks", "pedro.brooks@example.com", "Viewer", "Inactive"],
 ];
