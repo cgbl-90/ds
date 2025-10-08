@@ -85,3 +85,23 @@ HighPPIDisplay_SubtleChange.parameters = {
     },
   },
 };
+
+export const GradientAntiAliasingTest = Template.bind({});
+GradientAntiAliasingTest.storyName = "Anti-Aliasing & Perceptual Bleed Gradient";
+GradientAntiAliasingTest.args = {
+  width: "400px",
+  height: "50px",
+  style: {
+    background: "linear-gradient(90deg, #F00000 0%, #00F0F0 30%)", // Red to Cyan over a short 30% span
+  },
+};
+GradientAntiAliasingTest.parameters = {
+  chromatic: {
+    diffThreshold: 0.005,
+  },
+  docs: {
+    description: {
+      story: `This gradient uses highly contrasting, near-complementary colors (Red to Cyan) with a short transition (0% to 30%). This combination forces the browser's rendering engine to heavily use **anti-aliasing and dithering** to smooth the transition, especially on the short, sharp edge.`,
+    },
+  },
+};

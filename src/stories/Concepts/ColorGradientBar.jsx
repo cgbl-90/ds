@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
-export const ColorGradientBar = ({ width, height }) => {
-  const color1 = "#011949ff"; //Darker color
+export const ColorGradientBar = ({ width, height, style, ...props }) => {
+  const color1 = "#011949ff";
   const color2 = "#2563EB";
   const color3 = "#039696ff";
 
-  const gradientStyle = {
+  const internalGradientStyle = {
     width: width,
     height: height,
     background: `linear-gradient(90deg, ${color1} 0%, ${color2} 50%, ${color3} 100%)`,
@@ -13,8 +13,18 @@ export const ColorGradientBar = ({ width, height }) => {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
   };
 
+  const finalStyle = {
+    ...internalGradientStyle,
+    ...style,
+  };
+
   return (
-    <div style={gradientStyle} role="img" aria-label="Color gradient bar">
+    <div
+      style={finalStyle}
+      role="img"
+      aria-label="Color gradient bar"
+      {...props}
+    >
       {/* Intentionally empty for visual demonstration */}
     </div>
   );
@@ -23,9 +33,11 @@ export const ColorGradientBar = ({ width, height }) => {
 ColorGradientBar.propTypes = {
   width: PropTypes.string,
   height: PropTypes.string,
+  style: PropTypes.object,
 };
 
 ColorGradientBar.defaultProps = {
   width: "400px",
   height: "50px",
+  style: null,
 };
