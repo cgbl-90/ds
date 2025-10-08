@@ -1,0 +1,24 @@
+export const headers = ["Name", "Email", "Role", "Status"];
+
+export const rows = [
+  ["Alice Johnson", "alice.johnson@example.com", "Admin", "Active"],
+  ["Bob Smith", "bob.smith@example.com", "Editor", "Pending"],
+  ["Charlie Brown", "charlie.brown@example.com", "Viewer", "Inactive"],
+  ["Dana White", "dana.white@example.com", "Admin", "Active"],
+  ["Ethan Lee", "ethan.lee@example.com", "Viewer", "Pending"],
+  ["Fiona Davis", "fiona.davis@example.com", "Editor", "Inactive"],
+  ["George Hill", "george.hill@example.com", "Admin", "Active"],
+  ["Hannah Scott", "hannah.scott@example.com", "Viewer", "Active"],
+  ["Ian Thompson", "ian.thompson@example.com", "Editor", "Pending"],
+  ["Julia Roberts", "julia.roberts@example.com", "Viewer", "Inactive"],
+  ["Kevin Adams", "kevin.adams@example.com", "Admin", "Active"],
+  ["Laura Bennett", "laura.bennett@example.com", "Viewer", "Pending"],
+  ["Mark Wilson", "mark.wilson@example.com", "Editor", "Active"],
+  ["Nina Turner", "nina.turner@example.com", "Viewer", "Inactive"],
+  ["Oscar King", "oscar.king@example.com", "Admin", "Active"],
+  ["Paula Reed", "paula.reed@example.com", "Editor", "Pending"],
+  ["Quentin Stone", "quentin.stone@example.com", "Viewer", "Active"],
+  ["Rachel Young", "rachel.young@example.com", "Viewer", "Pending"],
+  ["Steve Clark", "steve.clark@example.com", "Editor", "Inactive"],
+  ["Tina Brooks", "tina.brooks@example.com", "Admin", "Active"],
+];

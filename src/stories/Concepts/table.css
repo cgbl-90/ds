@@ -1,0 +1,32 @@
+.table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.table-header {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+.table-cell {
+    padding: 0.75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.table-flex .table-header,
+.table-flex .table-row {
+    display: flex;
+}
+
+.table-flex .table-header>.table-cell,
+.table-flex .table-row>.table-cell {
+    flex: 1 1 0;
+    text-align: left;
+}
+
+.table-flex .table-header>.table-cell {
+    border-bottom: 2px solid #ccc;
+}
