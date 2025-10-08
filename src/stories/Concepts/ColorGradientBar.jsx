@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export const ColorGradientBar = ({ width, height, style, ...props }) => {
   const color1 = "#011949ff";
   const color2 = "#2563EB";
-  const color3 = "#039696ff";
+  const color3 = "#05e7e7ff";
 
   const internalGradientStyle = {
     width: width,
