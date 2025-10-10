@@ -2,7 +2,7 @@ import { userEvent, within, fireEvent } from "storybook/test";
 import { InteractiveForm } from "./InteractiveForm";
 
 export default {
-  title: "COMPONENTS/InteractiveForm",
+  title: "Concepts/InteractiveForm",
   component: InteractiveForm,
 };
 
