@@ -42,7 +42,7 @@ jobs:
           onlyChanged: true
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
-          # onlyStoryFiles: "src/stories/Components/InteractiveForm.*"
+          onlyStoryFiles: "src/stories/Components/InteractiveForm.*"
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report

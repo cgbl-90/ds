@@ -1,26 +1,22 @@
 import { Button } from "./Button.jsx";
 import isChromatic from "chromatic/isChromatic";
-
-// Shadow Button
 import { ShadowButtonComponent } from "./ButtonShadow.jsx";
 
-export default {
+const meta = {
   title: "ATOMS/Button",
   component: Button,
   tags: ["autodocs"],
   parameters: {
     layout: "centered",
     chromatic: {
-      //disableSnapshot: true,
       diffThreshold: 0.5,
     },
   },
-  tags: ["autodocs"],
   argTypes: {
     myProp: {
       description: "Description of myProp",
       table: {
-        type: { summary: "string" }, // Specifies the type
+        type: { summary: "string" },
       },
     },
     anotherProp: {
@@ -41,10 +37,9 @@ export default {
   args: { onClick: () => {} },
 };
 
-// Modify behavior based on Chromatic
-const chromaticArgs = isChromatic()
-  ? "Chromatic Button" // In Chromatic testing
-  : "Storybook Button"; // Normal Storybook mode
+export default meta;
+
+const chromaticArgs = isChromatic() ? "Chromatic Button" : "Storybook Button";
 
 export const Primary = {
   args: {
@@ -111,11 +106,10 @@ export const IsChromaticButton = {
   },
 };
 
-// New story for Shadow DOM button
 export const ShadowButtonStory = {
   args: {
     label: "Shadow DOM Button",
-    backgroundColor: "green", // Example background color
+    backgroundColor: "green",
   },
-  render: (args) => <ShadowButtonComponent {...args} />, // Render the Shadow Button
+  render: (args) => <ShadowButtonComponent {...args} />,
 };
