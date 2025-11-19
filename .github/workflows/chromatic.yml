@@ -39,7 +39,7 @@ jobs:
           debug: true
           zip: true
           junitReport: true
-          onlyChanged: true
+          # onlyChanged: true
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
           onlyStoryFiles: "src/stories/Components/InteractiveForm.*"
