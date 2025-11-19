@@ -16,7 +16,7 @@ const preview = {
   parameters: {
     chromatic: {
       cropToViewport: true,
-      disableSnapshot: true,
+      // disableSnapshot: true,
     },
     a11y: {
       // Optional flag to prevent the automatic check
