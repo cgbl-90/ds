@@ -4,6 +4,10 @@ import { InteractiveForm } from "./InteractiveForm";
 export default {
   title: "Concepts/InteractiveForm",
   component: InteractiveForm,
+  parameters: {
+    // Added to enabled, because snapshots are disabled globally
+    chromatic: { disableSnapshot: false },
+  },
 };
 
 const fillFormSteps = async (canvas) => {
