@@ -1,10 +1,8 @@
 .square {
-
     background-color: #4f46e5;
     border: 1px solid #3730a3;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
 }
 
 .square-50 {
