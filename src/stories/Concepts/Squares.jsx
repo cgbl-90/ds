@@ -9,10 +9,10 @@ import "./squares.css";
 export const Square = ({ sizeClass = "square-50", className = "" }) => {
   const combinedClassName = `square ${sizeClass} ${className}`.trim();
   return (
-    <div>
-      <div>
+    <span>
+      <span>
         <div className={combinedClassName} title="The 50x50 Square" />
-      </div>
-    </div>
+      </span>
+    </span>
   );
 };
