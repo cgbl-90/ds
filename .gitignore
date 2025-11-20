@@ -43,3 +43,6 @@ package-lock.json
 pnpm-lock.yaml
 .vscode
 .idea
+
+# List of all flags 
+all-flags.json
