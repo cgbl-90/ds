@@ -42,7 +42,8 @@ jobs:
           # onlyChanged: true
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
-          onlyStoryFiles: "src/stories/Concepts/Squares*"
+          # onlyStoryFiles: "src/stories/Concepts/Squares*"
+          exitZeroOnChanges: true # 👈 Fail workflow if changes are found
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report
