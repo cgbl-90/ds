@@ -1,6 +1,7 @@
-import { Avatar } from "./Avatar";
-import { userEvent, within } from "storybook/test";
-import avatarImage from "../avatar.png"; // Make sure this path is correct
+import type { Meta, StoryObj } from '@storybook/react';
+import { userEvent, within } from 'storybook/test';
+import { Avatar } from './Avatar';
+import avatarImage from "../avatar.png"; 
 
 const meta = {
   title: "ATOMS/Avatar",
@@ -13,8 +14,8 @@ const meta = {
     size: {
       control: {
         type: "select",
-        options: ["small", "medium", "large"],
       },
+      options: ["small", "medium", "large"],
       description: "Specifies the size of the avatar.",
       table: {
         defaultValue: { summary: "medium" },
@@ -29,11 +30,12 @@ const meta = {
       description: "Alternative text for the avatar image.",
     },
   },
-};
+} satisfies Meta<typeof Avatar>;
 
 export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Primary = {
+export const Primary: Story = {
   args: {
     src: avatarImage,
     size: "medium",
@@ -41,15 +43,15 @@ export const Primary = {
   },
 };
 
-export const Small = {
+export const Small: Story = {
   args: {
-    ...Primary.args, // Inherit args from Primary story
+    ...Primary.args,
     size: "small",
     alt: "Small Avatar",
   },
 };
 
-export const Medium = {
+export const Medium: Story = {
   args: {
     ...Primary.args,
     size: "medium",
@@ -57,7 +59,7 @@ export const Medium = {
   },
 };
 
-export const Large = {
+export const Large: Story = {
   args: {
     ...Primary.args,
     size: "large",
@@ -65,7 +67,7 @@ export const Large = {
   },
 };
 
-export const BrokenImage = {
+export const BrokenImage: Story = {
   args: {
     ...Primary.args,
     src: "https://invalid-url.com/non-existent-image.png",
@@ -82,7 +84,7 @@ export const BrokenImage = {
   },
 };
 
-export const Hover = {
+export const Hover: Story = {
   args: {
     ...Primary.args,
   },

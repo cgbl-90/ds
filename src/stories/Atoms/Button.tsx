@@ -1,15 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "./button.css";
 import isChromatic from "chromatic/isChromatic";
 
-export const Button = ({
-  primary,
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  primary?: boolean;
+  backgroundColor?: string;
+  background?: string;
+  size?: "small" | "medium" | "large";
+  label: string;
+  state?: "hover" | "pressed" | "noborder" | null;
+}
+
+export const Button: React.FC<ButtonProps> = ({
+  primary = false,
   backgroundColor,
   background,
-  size,
+  size = "medium",
   label,
-  state,
+  state = null,
   ...props
 }) => {
   const mode = primary
@@ -31,34 +39,18 @@ export const Button = ({
         `storybook-button--${size}`,
         mode,
         stateClass,
-      ].join(" ")}
+      ]
+        .filter(Boolean)
+        .join(" ")}
       // Merge chromaticStyle with other styles
       style={{
         ...chromaticStyle,
         ...(backgroundColor ? { backgroundColor } : {}),
+        ...(background ? { background } : {}),
       }}
       {...props}
     >
       {label}
     </button>
   );
-};
-
-Button.propTypes = {
-  primary: PropTypes.bool,
-  backgroundColor: PropTypes.string,
-  size: PropTypes.oneOf(["small", "medium", "large"]),
-  state: PropTypes.oneOf(["hover", "pressed", "noborder"]),
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-  background: PropTypes.string,
-};
-
-Button.defaultProps = {
-  backgroundColor: null,
-  background: null,
-  primary: false,
-  size: "medium",
-  state: null,
-  onClick: undefined,
 };

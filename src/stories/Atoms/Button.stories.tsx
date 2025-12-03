@@ -1,6 +1,7 @@
-import { Button } from "./Button.jsx";
+import type { Meta, StoryObj } from "@storybook/react";
+import { Button } from "./Button";
 import isChromatic from "chromatic/isChromatic";
-import { ShadowButtonComponent } from "./ButtonShadow.jsx";
+import { ShadowButtonComponent } from "./ButtonShadow";
 
 const meta = {
   title: "ATOMS/Button",
@@ -13,62 +14,51 @@ const meta = {
     },
   },
   argTypes: {
-    myProp: {
-      description: "Description of myProp",
-      table: {
-        type: { summary: "string" },
-      },
-    },
-    anotherProp: {
-      description: "Description of anotherProp",
-      table: {
-        type: { summary: "number" },
-      },
-    },
     backgroundColor: { control: "color" },
     background: { control: "color" },
     state: {
       control: {
         type: "select",
-        options: ["hover", "pressed", "noborder", null],
       },
+      options: ["hover", "pressed", "noborder", null],
     },
   },
   args: { onClick: () => {} },
-};
+} satisfies Meta<typeof Button>;
 
 export default meta;
+type Story = StoryObj<typeof meta>;
 
 const chromaticArgs = isChromatic() ? "Chromatic Button" : "Storybook Button";
 
-export const Primary = {
+export const Primary: Story = {
   args: {
     primary: true,
     label: "Primary",
   },
 };
 
-export const Secondary = {
+export const Secondary: Story = {
   args: {
     label: "Secondary",
   },
 };
 
-export const Large = {
+export const Large: Story = {
   args: {
     size: "large",
     label: "Large Button",
   },
 };
 
-export const Small = {
+export const Small: Story = {
   args: {
     size: "small",
     label: "Small Button",
   },
 };
 
-export const PrimaryPressed = {
+export const PrimaryPressed: Story = {
   args: {
     primary: true,
     label: "Primary Pressed",
@@ -76,14 +66,14 @@ export const PrimaryPressed = {
   },
 };
 
-export const SecondaryHover = {
+export const SecondaryHover: Story = {
   args: {
     label: "Secondary Hover",
     state: "hover",
   },
 };
 
-export const PrimaryNoBorder = {
+export const PrimaryNoBorder: Story = {
   args: {
     primary: true,
     label: "Primary Without Border",
@@ -91,14 +81,14 @@ export const PrimaryNoBorder = {
   },
 };
 
-export const SecondaryNoBorder = {
+export const SecondaryNoBorder: Story = {
   args: {
     label: "Secondary Without Border",
     state: "noborder",
   },
 };
 
-export const IsChromaticButton = {
+export const IsChromaticButton: Story = {
   args: {
     primary: false,
     label: chromaticArgs,
@@ -106,7 +96,7 @@ export const IsChromaticButton = {
   },
 };
 
-export const ShadowButtonStory = {
+export const ShadowButtonStory: Story = {
   args: {
     label: "Shadow DOM Button",
     backgroundColor: "green",
