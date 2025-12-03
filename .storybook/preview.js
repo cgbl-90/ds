@@ -16,12 +16,10 @@ const preview = {
   parameters: {
     chromatic: {
       cropToViewport: true,
-      disableSnapshot: (context) => {
-        // Get the story file name from the context
-        const fileName = context.parameters.fileName || context.id || "";
-        // Only enable snapshots for files that include "Button" in their name
+      disableSnapshot: (storyName) => {
+        // Only enable snapshots for stories that include "Button" in their name
         // Return true to disable snapshot, false to enable it
-        return !fileName.toLowerCase().includes("button");
+        return !storyName.toLowerCase().includes("button");
       },
     },
     a11y: {
