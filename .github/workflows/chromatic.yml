@@ -39,11 +39,11 @@ jobs:
           debug: true
           zip: true
           junitReport: true
-          # onlyChanged: true
+          onlyChanged: true
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
           # onlyStoryFiles: "src/stories/Concepts/Squares*"
-          exitZeroOnChanges: true # 👈 Fail workflow if changes are found
+          # exitZeroOnChanges: true # 👈 Fail workflow if changes are found
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report
