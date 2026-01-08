@@ -44,6 +44,9 @@ jobs:
           # storybookBuildDir: "storybook-static"
           # onlyStoryFiles: "src/stories/Concepts/Squares*"
           # exitZeroOnChanges: true # 👈 Fail workflow if changes are found
+        env:
+          # This triggers the logic in your preview.js
+          STORYBOOK_DISABLE_SNAPSHOTS: "true"
 
       # Step 5: Upload Reports as Artifacts
       - name: Upload Build Report

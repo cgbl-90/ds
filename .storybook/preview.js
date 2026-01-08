@@ -16,6 +16,7 @@ const preview = {
   parameters: {
     chromatic: {
       cropToViewport: true,
+      disableSnapshot: process.env.STORYBOOK_DISABLE_SNAPSHOTS === "true",
       //disableSnapshot: (storyName) => {
       // Only enable snapshots for stories that include "Button" in their name
       // Return true to disable snapshot, false to enable it
