@@ -16,11 +16,11 @@ const preview = {
   parameters: {
     chromatic: {
       cropToViewport: true,
-      disableSnapshot: (storyName) => {
-        // Only enable snapshots for stories that include "Button" in their name
-        // Return true to disable snapshot, false to enable it
-        return !storyName.toLowerCase().includes("button");
-      },
+      //disableSnapshot: (storyName) => {
+      // Only enable snapshots for stories that include "Button" in their name
+      // Return true to disable snapshot, false to enable it
+      // return !storyName.toLowerCase().includes("button");
+      //},
     },
     a11y: {
       // Optional flag to prevent the automatic check

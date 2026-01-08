@@ -103,21 +103,28 @@ export const FocusSelectsInputText: Story = {
 export const TabNavigationSequence: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
+    const user = userEvent.setup();
 
-    // Start with first interactive element
-    const firstButton = canvas.getByText("Open Dropdown");
-    await userEvent.click(firstButton);
+    const openButton = canvas.getByText("Open Dropdown");
 
-    // Tab through elements
-    await userEvent.tab(); // Should move to dropdown
-    await userEvent.tab(); // Should move to hover button
-    await userEvent.tab(); // Should move to input
+    // Explicitly start focus
+    await user.click(openButton);
+    expect(openButton).toHaveFocus();
 
-    // Verify input has focus after tab sequence
+    // 1️⃣ First tab: active dropdown item
+    await user.tab();
+    const tab1 = canvas.getByText("TAB1");
+    expect(tab1).toHaveFocus();
+
+    // 2️⃣ Second tab: hover button
+    await user.tab();
+    const hoverButton = canvas.getByText("Hover Button");
+    expect(hoverButton).toHaveFocus();
+
+    // 3️⃣ Third tab: input
+    await user.tab();
     const input = canvas.getByTestId("focus-input");
-    await expect(input).toHaveFocus();
-
-    await new Promise((resolve) => setTimeout(resolve, 200));
+    expect(input).toHaveFocus();
   },
 };
 
