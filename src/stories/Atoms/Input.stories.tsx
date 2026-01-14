@@ -34,7 +34,8 @@ export const NumbersOnly: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const input = await canvas.getByTestId("numeric-input");
+    const input = await canvas.getByRole("textbox");
+    // const input = await canvas.getByTestId("numeric-input");
     await userEvent.type(input, "abc123def");
     await expect((input as HTMLInputElement).value).toBe("123");
   },
@@ -57,7 +58,8 @@ export const ForceLowercase: Story = {
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const input = await canvas.getByTestId("lowercase-input");
+    const input = await canvas.getByRole("textbox");
+    // const input = await canvas.getByTestId("lowercase-input");
     await userEvent.type(input, "HELLO");
     await expect((input as HTMLInputElement).value).toBe("hello");
   },

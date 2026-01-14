@@ -1,46 +1,65 @@
 .tab {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Inter", -apple-system, sans-serif;
     width: 100%;
-    max-width: 400px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
+    max-width: 600px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    background: white;
 }
 
 .tab-header {
     display: flex;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    gap: 2px;
 }
 
-.tab-header button {
+.tab-button {
     flex: 1;
-    padding: 10px;
-    background: none;
+    padding: 12px 16px;
+    background: transparent;
     border: none;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
+    font-weight: 600;
+    color: #64748b;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    /* Allows absolute positioning for children */
 }
 
-.tab-header button:hover {
-    background-color: #ddd;
+.tab-button:hover {
+    background-color: #f1f5f9;
+    color: #0f172a;
 }
 
 .tab-active {
-    background-color: #ccc !important;
+    color: #2563eb !important;
+    background-color: white !important;
+}
+
+.tab-active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #2563eb;
 }
 
 .tab-content {
-    padding: 15px;
-    background-color: white;
+    padding: 24px;
+    animation: fadeIn 0.3s ease-out;
 }
 
-/* This is the new style for positioning the dot */
-.notification-dot-wrapper {
-    position: absolute;
-    top: 2px;
-    right: 2px;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
