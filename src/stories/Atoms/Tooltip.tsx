@@ -1,7 +1,6 @@
-import React from "react";
 import "./tooltip.css";
 
-const Tooltip = ({ text, children }) => {
+const Tooltip = ({ text, children }: { text: string; children: React.ReactNode }) => {
   return (
     <div className="tooltip">
       {children}

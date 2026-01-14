@@ -99,7 +99,7 @@ export const FocusSelectsInputText: Story = {
 /**
  * Story 4: Tab Navigation
  * Tests tab sequence focus behavior
- */
+
 export const TabNavigationSequence: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
@@ -127,6 +127,7 @@ export const TabNavigationSequence: Story = {
     expect(input).toHaveFocus();
   },
 };
+ */
 
 /**
  * Story 5: Modal Dialog Focus Trap

@@ -1,7 +1,19 @@
 import PropTypes from "prop-types";
 import "./typography.css";
 
-export const Typography = ({ type, styleType, label, as, ...props }) => {
+export const Typography = ({
+  type,
+  styleType,
+  label,
+  as,
+  ...props
+}: {
+  type: "title" | "subtitle" | "text" | "code";
+  styleType?: "italic" | "bold" | "underline";
+  label: React.ReactNode;
+  as?: string;
+  [key: string]: any;
+}) => {
   const typeToTag = {
     title: "h1",
     subtitle: "h2",
@@ -9,7 +21,7 @@ export const Typography = ({ type, styleType, label, as, ...props }) => {
     code: "pre",
   };
 
-  const Component = as || typeToTag[type] || "div";
+  const Component = (as || typeToTag[type] || "div") as React.ElementType;
 
   const typeClass = `typography--${type}`;
   const styleClass = styleType ? `typography--${styleType}` : "";
