@@ -17,3 +17,13 @@
     width: 100px;
     height: auto;
 }
+
+.storybook-icon--xlarge {
+    width: 200px;
+    height: auto;
+}
+
+.storybook-icon:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}

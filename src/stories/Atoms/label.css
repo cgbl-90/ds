@@ -1,11 +1,12 @@
-/* label.css */
 .storybook-label {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
     color: #111827;
     display: inline-block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    /* Increased spacing */
     cursor: default;
+    transition: color 0.2s ease;
 }
 
 .storybook-label--small {
@@ -26,4 +27,9 @@
 
 .storybook-label--secondary {
     color: #6B7280;
+}
+
+/* Added hover effect for associated inputs */
+.storybook-label:hover {
+    color: #011e58;
 }

@@ -3,7 +3,8 @@
     font-size: 14px;
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
 }
 
 .link--primary {
@@ -26,19 +27,29 @@
     color: #dc3545;
 }
 
-.link:hover {
+.link:hover:not(.link--disabled) {
     text-decoration: underline;
+    opacity: 0.8;
+}
+
+.link--disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
 }
 
 .link--bold {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .link--italic {
     font-style: italic;
 }
 
-.link--bold:hover,
-.link--italic:hover {
-    text-decoration: none;
+/* Focus ring for accessibility */
+.link:focus-visible {
+    outline: 2px solid #011e58;
+    outline-offset: 4px;
+    border-radius: 2px;
 }

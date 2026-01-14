@@ -5,6 +5,7 @@ import "./../src/scrollbar.css";
 const preview = {
   decorators: [
     (Story, context) => {
+      // Logic to toggle the hover decorator based on story args
       const shouldApplyHover = context.args.hoverDecorator;
       const dataTestId = context.args.dataTestId || "default";
       if (shouldApplyHover) {
@@ -16,16 +17,14 @@ const preview = {
   parameters: {
     chromatic: {
       cropToViewport: true,
-      disableSnapshot: process.env.STORYBOOK_DISABLE_SNAPSHOTS === "true",
-      //disableSnapshot: (storyName) => {
-      // Only enable snapshots for stories that include "Button" in their name
-      // Return true to disable snapshot, false to enable it
-      // return !storyName.toLowerCase().includes("button");
-      //},
+      // FIX: Added a check to see if 'process' exists before accessing env.
+      // This prevents the "ReferenceError: process is not defined" crash.
+      disableSnapshot:
+        typeof process !== "undefined" &&
+        process.env?.STORYBOOK_DISABLE_SNAPSHOTS === "true",
     },
     a11y: {
-      // Optional flag to prevent the automatic check
-      // manual: true,
+      // Accessibility settings can be configured here
     },
     controls: {
       matchers: {

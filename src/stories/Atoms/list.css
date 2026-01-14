@@ -1,9 +1,11 @@
 .storybook-list {
     font-family: "Work Sans", sans-serif;
-    padding-left: 10px;
-    list-style-type: none;
-    padding: 5px 0;
-    gap: 10px;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .storybook-list--none {
@@ -22,12 +24,15 @@
     list-style-type: '\0966';
 }
 
-.storybook-list--custom-icon {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.storybook-list--custom-icon li {
+.storybook-list-item {
     display: flex;
     align-items: center;
+    line-height: 1.5;
+}
+
+.storybook-list-icon {
+    margin-right: 10px;
+    color: #011e58;
+    /* Match brand primary */
+    font-weight: bold;
 }

@@ -1,11 +1,16 @@
 import "./avatar.css";
 
 interface AvatarProps {
+  /** The image URL (can be a local import or remote link) */
   src: string;
+  /** How big should it be? */
   size?: "small" | "medium" | "large";
+  /** Screen reader text for accessibility */
   alt?: string;
 }
 
+/** * Simple circular avatar component for user profiles.
+ */
 export const Avatar = ({
   src,
   size = "medium",

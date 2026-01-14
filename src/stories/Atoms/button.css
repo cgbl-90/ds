@@ -68,3 +68,40 @@
   border: none;
   box-shadow: none;
 }
+
+.storybook-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.storybook-button--loading {
+  color: transparent !important;
+  pointer-events: none;
+}
+
+.storybook-button--loading::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-top-color: currentColor;
+  border-radius: 50%;
+  animation: button-loading-spinner 1s linear infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

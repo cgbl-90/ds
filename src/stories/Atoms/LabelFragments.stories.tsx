@@ -1,4 +1,5 @@
 import { LabelFragments } from "./LabelFragment";
+import type { StoryObj } from "@storybook/react";
 
 export default {
   title: "ATOMS/LabelFragments",

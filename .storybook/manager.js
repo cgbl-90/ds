@@ -1,44 +1,49 @@
-import { addons } from "storybook/manager-api";
-import { create } from "storybook/theming/create";
+import { addons } from "@storybook/manager-api";
+import { create } from "@storybook/theming/create";
+import logo from "../src/stories/logo.png"; // ESM import is safer in SB10
 
 const theme = create({
-  base: "light",
-  fontBase: "Verdana",
-  fontCode: "monospace",
+  base: "light", // Keeps the main docs readable
 
-  brandTitle: "Camy's",
-  brandUrl: "https://github.com/cgbl-90",
-  brandImage: require("../src/stories/logo.png"),
+  // Typography
+  fontBase: '"Instrument Sans", "Inter", sans-serif',
+  fontCode: '"JetBrains Mono", "Fira Code", monospace',
+
+  brandTitle: "CGBL Design System",
+  brandUrl: "https://cgbl-90.github.io/clopez/",
+  brandImage: logo,
   brandTarget: "_self",
 
-  //
-  colorPrimary: "#2e09d0",
-  colorSecondary: "#585C6D",
+  // Colors - Using your favorite Blue
+  colorPrimary: "#007bff",
+  colorSecondary: "#2e09d0", // Your primary blue from the component
 
-  // UI
-  appBg: "#ffffff",
-  appContentBg: "#ffffff",
+  // UI - Clean and high-contrast
+  appBg: "#ffffffff",
+  appContentBg: "#ffffffff",
   appPreviewBg: "#ffffff",
-  appBorderColor: "#585C6D",
-  appBorderRadius: 5,
+  appBorderColor: "#e1e4e8",
+  appBorderRadius: 8, // Slightly rounder for a modern feel
 
   // Text colors
-  textColor: "#10162F",
+  textColor: "#212529",
   textInverseColor: "#ffffff",
 
-  // Toolbar default and active colors
-  barTextColor: "#9E9E9E",
-  barSelectedColor: "#585C6D",
-  barHoverColor: "#2e09d0",
+  // Toolbar (The top bar)
+  barTextColor: "#6c757d",
+  barSelectedColor: "#3207f3ff",
   barBg: "#ffffff",
 
-  // Form colors
+  // Forms
   inputBg: "#ffffff",
-  inputBorder: "#10162F",
-  inputTextColor: "#10162F",
-  inputBorderRadius: 5,
+  inputBorder: "#ffffffff",
+  inputTextColor: "#212529",
+  inputBorderRadius: 4,
 });
 
 addons.setConfig({
   theme,
+  // This hides the 'Addons' panel by default for a cleaner 'Gallery' view
+  showPanel: true,
+  panelPosition: "bottom",
 });

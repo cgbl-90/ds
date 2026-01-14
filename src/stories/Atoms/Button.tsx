@@ -3,11 +3,17 @@ import "./button.css";
 import isChromatic from "chromatic/isChromatic";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /** Is this the principal call to action? */
   primary?: boolean;
+  /** Custom hex or CSS color for background */
   backgroundColor?: string;
+  /** Custom background gradient or shorthand */
   background?: string;
+  /** Size variants */
   size?: "small" | "medium" | "large";
+  /** Button text content */
   label: string;
+  /** Forced visual states for documentation/testing */
   state?: "hover" | "pressed" | "noborder" | null;
 }
 

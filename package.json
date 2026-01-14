@@ -63,6 +63,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "babel-loader": "^10.0.0",
+    "baseline-browser-mapping": "^2.9.14",
     "chromatic": "^13.0.1",
     "eslint-plugin-storybook": "^9.1.8",
     "glob": "^11.0.3",
@@ -75,6 +76,5 @@
   "packageManager": "yarn@1.22.22",
   "overrides": {
     "storybook": "$storybook"
-  },
-  "type": "module"
+  }
 }

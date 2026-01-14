@@ -8,40 +8,26 @@ const meta: Meta<typeof Badge> = {
   parameters: {
     layout: "centered",
     chromatic: {
-      diffThreshold: 0.5,
+      diffThreshold: 0.5, // Allows for slight anti-aliasing differences
     },
   },
-  argTypes: {
-    text: { control: "text" },
-    style: {
-      control: {
-        type: "select",
-      },
-      options: ["new", "success", "warning"],
-    },
-  },
+  // argTypes defined here will show up in the Controls table
 };
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/** Standard 'New' badge with dark background */
 export const Default: Story = {
-  args: {
-    text: "New",
-    style: "new",
-  },
+  args: { text: "New", style: "new" },
 };
 
+/** Success state using the deep blue brand color */
 export const Success: Story = {
-  args: {
-    text: "Success",
-    style: "success",
-  },
+  args: { text: "Success", style: "success" },
 };
 
+/** Warning state using the alert red color */
 export const Warning: Story = {
-  args: {
-    text: "Warning",
-    style: "warning",
-  },
+  args: { text: "Warning", style: "warning" },
 };

@@ -1,8 +1,83 @@
 .notification-dot {
     display: inline-block;
-    width: 8px;
-    height: 8px;
     border-radius: 50%;
+    position: absolute;
+    border: 2px solid #ffffff;
+    /* Contrast ring */
+    box-sizing: content-box;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Color Variants */
+.notification-dot--red {
+    background-color: #ec554d;
+}
+
+.notification-dot--green {
+    background-color: #28a745;
+}
+
+.notification-dot--blue {
+    background-color: #007bff;
+}
+
+.notification-dot--yellow {
+    background-color: #ffc107;
+}
+
+.notification-dot--brand {
     background-color: #011e58;
-    /* Red color */
+}
+
+/* Position Variants */
+.notification-dot--top-right {
+    top: 0;
+    right: 0;
+    transform: translate(25%, -25%);
+}
+
+.notification-dot--top-left {
+    top: 0;
+    left: 0;
+    transform: translate(-25%, -25%);
+}
+
+.notification-dot--bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: translate(25%, 25%);
+}
+
+.notification-dot--bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: translate(-25%, 25%);
+}
+
+.notification-dot--center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Subtle pulse animation for Storybook 9 showcase */
+.notification-dot--animated {
+    animation: pulse-breathing 2s infinite ease-in-out;
+}
+
+@keyframes pulse-breathing {
+    0% {
+        transform: translate(inherit) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(inherit) scale(1.2);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(inherit) scale(1);
+        opacity: 1;
+    }
 }
