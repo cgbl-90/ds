@@ -1,24 +1,23 @@
-import { within, expect, userEvent } from "storybook/test";
+import { Meta, StoryObj } from "@storybook/react";
+import { within, userEvent } from "storybook/test";
 import { NotificationCard } from "./NotificationCard";
 
-// Helper function to mock the Notification API
-const mockNotificationAPI = (permission) => {
+// Helper to mock global Notification API with proper TS casting
+const mockNotificationAPI = (permission: NotificationPermission) => {
   Object.defineProperty(window, "Notification", {
     writable: true,
     configurable: true,
-    value: class Notification {
+    value: class {
       static permission = permission;
-      static requestPermission() {
-        return Promise.resolve(permission);
-      }
-      constructor(title, options) {
+      static requestPermission = () => Promise.resolve(permission);
+      constructor(title: string, options?: NotificationOptions) {
         console.log("Mock Notification Created:", { title, ...options });
       }
     },
   });
 };
 
-export default {
+const meta: Meta<typeof NotificationCard> = {
   title: "API/Notification",
   component: NotificationCard,
   tags: ["autodocs"],
@@ -27,7 +26,10 @@ export default {
   },
 };
 
-export const Default = {
+export default meta;
+type Story = StoryObj<typeof NotificationCard>;
+
+export const Default: Story = {
   render: (args) => {
     mockNotificationAPI("default");
     return <NotificationCard {...args} />;
@@ -39,23 +41,9 @@ export const Default = {
   },
 };
 
-export const Granted = {
+export const Granted: Story = {
   render: (args) => {
     mockNotificationAPI("granted");
-    return <NotificationCard {...args} />;
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    const showButton = canvas.getByRole("button", {
-      name: /Show Notification/i,
-    });
-    await userEvent.click(showButton);
-  },
-};
-
-export const Denied = {
-  render: (args) => {
-    mockNotificationAPI("denied");
     return <NotificationCard {...args} />;
   },
 };

@@ -3,10 +3,19 @@ import { Button } from "../Atoms/Button";
 import { Typography } from "../Atoms/Typography";
 import "./clipboard-card.css";
 
-export const ClipboardCard = ({ textToCopy }) => {
-  const [status, setStatus] = useState("Idle");
+interface ClipboardCardProps {
+  /** The string content to be copied to the user's clipboard */
+  textToCopy: string;
+}
 
-  const handleCopy = async () => {
+// Define the possible states for the copy action
+type ClipboardStatus = "Idle" | "Copying..." | "Copied!" | "Error";
+
+export const ClipboardCard: React.FC<ClipboardCardProps> = ({ textToCopy }) => {
+  const [status, setStatus] = useState<ClipboardStatus>("Idle");
+
+  const handleCopy = async (): Promise<void> => {
+    // Check if the browser supports the Clipboard API
     if (!navigator.clipboard) {
       setStatus("Error");
       return;
@@ -40,7 +49,7 @@ export const ClipboardCard = ({ textToCopy }) => {
         <Typography
           type="text"
           styleType={
-            status === "Error" ? "bold" : status === "Copied!" ? "italic" : null
+            status === "Error" ? "bold" : status === "Copied!" ? "italic" : undefined
           }
           label={`Status: ${status}`}
         />

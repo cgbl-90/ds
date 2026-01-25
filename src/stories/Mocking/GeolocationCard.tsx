@@ -1,13 +1,22 @@
-import { useState } from "react";
-import PropTypes from "prop-types";
+import React, { useState } from "react";
 import { Button } from "../Atoms/Button";
 import { Icon } from "../Atoms/Icon";
 import "./geolocation-card.css";
 
-export const GeolocationCard = ({ onLocationUpdate }) => {
-  const [status, setStatus] = useState("Idle");
-  const [location, setLocation] = useState(null);
-  const [error, setError] = useState(null);
+interface LocationData {
+  latitude: number;
+  longitude: number;
+}
+
+interface GeolocationCardProps {
+  /** Optional callback triggered when location is successfully retrieved */
+  onLocationUpdate?: (location: LocationData) => void;
+}
+
+export const GeolocationCard: React.FC<GeolocationCardProps> = ({ onLocationUpdate }) => {
+  const [status, setStatus] = useState<string>("Idle");
+  const [location, setLocation] = useState<LocationData | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   const getLocation = () => {
     if (!navigator.geolocation) {
@@ -67,8 +76,4 @@ export const GeolocationCard = ({ onLocationUpdate }) => {
       </div>
     </div>
   );
-};
-
-GeolocationCard.propTypes = {
-  onLocationUpdate: PropTypes.func,
 };

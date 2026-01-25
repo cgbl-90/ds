@@ -1,7 +1,8 @@
+import { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "storybook/test";
 import { ClipboardCard } from "./ClipboardCard";
 
-export default {
+const meta: Meta<typeof ClipboardCard> = {
   title: "API/Clipboard",
   component: ClipboardCard,
   tags: ["autodocs"],
@@ -13,17 +14,17 @@ export default {
   },
 };
 
-// Default state with a functional clipboard
-export const Default = {};
+export default meta;
+type Story = StoryObj<typeof ClipboardCard>;
 
-// Mocks a successful copy action
-export const CopySuccess = {
+export const Default: Story = {};
+
+export const CopySuccess: Story = {
   play: async ({ canvasElement }) => {
+    // Mocking navigator.clipboard for TS compliance
     Object.defineProperty(navigator, "clipboard", {
       value: {
-        writeText: () => {
-          return Promise.resolve();
-        },
+        writeText: () => Promise.resolve(),
       },
       configurable: true,
     });
@@ -34,14 +35,11 @@ export const CopySuccess = {
   },
 };
 
-// Mocks a failed copy action
-export const CopyError = {
+export const CopyError: Story = {
   play: async ({ canvasElement }) => {
     Object.defineProperty(navigator, "clipboard", {
       value: {
-        writeText: () => {
-          return Promise.reject(new Error("Copy failed!"));
-        },
+        writeText: () => Promise.reject(new Error("Copy failed!")),
       },
       configurable: true,
     });
@@ -52,8 +50,7 @@ export const CopyError = {
   },
 };
 
-// Mocks a browser where the Clipboard API is not supported
-export const ApiNotSupported = {
+export const ApiNotSupported: Story = {
   play: async ({ canvasElement }) => {
     Object.defineProperty(navigator, "clipboard", {
       value: undefined,

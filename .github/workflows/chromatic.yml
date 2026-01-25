@@ -43,7 +43,17 @@ jobs:
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
           # onlyStoryFiles: "src/stories/Concepts/Squares*"
+          # onlyStoryNames: "Button/*"  
           # exitZeroOnChanges: true # 👈 Fail workflow if changes are found
+          # buildScriptName: "build-storybook"   
+          # configFile: "chromatic.config.json"  Path to your Chromatic config file
+          # externals: "public/**" → Files to include in the build that aren't in Storybook
+          # autoAcceptChanges: "main"  → Auto-accept changes on specific branches
+          # forceRebuild: true → Ignore TurboSnap and force a full rebuild
+          # skip: "chore/**" → Skip Chromatic for specific branches/commits
+          # traceChanged: "expanded" → Debug TurboSnap by showing why stories changed
+          # exitOnceUploaded: true → Finish the job as soon as the build is uploaded
+          # ignoreLastBuildOnBranch: "branch-name" → Useful for re-basing scenarios
         env:
           # This triggers the logic in your preview.js
           STORYBOOK_DISABLE_SNAPSHOTS: "true"

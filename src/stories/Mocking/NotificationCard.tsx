@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../Atoms/Button";
 import { Typography } from "../Atoms/Typography";
 import "./notification-card.css";
 
-export const NotificationCard = () => {
-  const [permission, setPermission] = useState("default");
+export const NotificationCard: React.FC = () => {
+  const [permission, setPermission] = useState<NotificationPermission>("default");
 
   useEffect(() => {
     if ("Notification" in window) {
@@ -12,19 +12,18 @@ export const NotificationCard = () => {
     }
   }, []);
 
-  const requestPermission = () => {
+  const requestPermission = (): void => {
     if (!("Notification" in window)) {
-      // In a real app, you might show a custom modal instead of an alert.
       console.error("This browser does not support desktop notification");
       return;
     }
 
-    Notification.requestPermission().then((result) => {
+    Notification.requestPermission().then((result: NotificationPermission) => {
       setPermission(result);
     });
   };
 
-  const showNotification = () => {
+  const showNotification = (): void => {
     if (permission === "granted") {
       new Notification("Hello from Storybook!", {
         body: "This is a mocked notification.",

@@ -9,12 +9,15 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "node", // See Note Below
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "src/**/*",              // Recursively include everything in src
+    "declarations.d.ts"      // Ensure this file is in the same folder as tsconfig.json
+  ],
   "exclude": ["node_modules"]
 }
