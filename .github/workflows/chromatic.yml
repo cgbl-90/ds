@@ -39,13 +39,13 @@ jobs:
           debug: true
           zip: true
           junitReport: true
-          onlyChanged: true
+          # onlyChanged: true
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
           # onlyStoryFiles: "src/stories/Concepts/Squares*"
-          # onlyStoryNames: "Button/*"  
+          onlyStoryNames: "Button/*"
           # exitZeroOnChanges: true # 👈 Fail workflow if changes are found
-          # buildScriptName: "build-storybook"   
+          # buildScriptName: "build-storybook"
           # configFile: "chromatic.config.json"  Path to your Chromatic config file
           # externals: "public/**" → Files to include in the build that aren't in Storybook
           # autoAcceptChanges: "main"  → Auto-accept changes on specific branches
