@@ -30,9 +30,22 @@ export const InteractiveDemo: Story = {
     const canvas = within(canvasElement);
 
     await step("Change to Settings tab", async () => {
+      // 1. Locate the Settings tab button
       const settingsTab = canvas.getByRole("tab", { name: /settings/i });
+
+      // 2. Click the tab
       await userEvent.click(settingsTab);
-      await expect(canvas.getByText("System Configuration")).toBeVisible();
+
+      /**
+       * FIX: Use 'findByText' instead of 'getByText'.
+       * Because your CSS has a 0.3s fadeIn animation starting at opacity: 0,
+       * 'getByText' would fail immediately. 'findByText' will wait for the
+       * animation to complete and the element to become visible.
+       */
+      const content = await canvas.findByText("System Configuration");
+
+      // 3. Confirm the content is now visible to the user
+      await expect(content).toBeVisible();
     });
   },
 };
@@ -51,5 +64,18 @@ export const LargeDataset: Story = {
       label: `Tab ${i + 1}`,
       content: `Content for Tab ${i + 1}`,
     })),
+  },
+};
+
+export const TabSixActive: Story = {
+  args: {
+    // Replicating the LargeDataset logic where id is the index as a string
+    tabs: Array.from({ length: 8 }, (_, i) => ({
+      id: `${i}`,
+      label: `Tab ${i + 1}`,
+      content: `Content for Tab ${i + 1}`,
+    })),
+    // Setting the initial active tab to the 6th item (index 5)
+    initialTabId: "5",
   },
 };
