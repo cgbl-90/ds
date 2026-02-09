@@ -24,7 +24,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20" # or your preferred version
+          node-version: "24" # or your preferred version
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -43,12 +43,12 @@ jobs:
           # untraced: "sb-preview/runtime.js"
           # storybookBuildDir: "storybook-static"
           # onlyStoryFiles: "src/stories/Concepts/Squares*"
-          onlyStoryNames: "Button/*"
+          # onlyStoryNames: "Button/*"
           # exitZeroOnChanges: true # 👈 Fail workflow if changes are found
           # buildScriptName: "build-storybook"
           # configFile: "chromatic.config.json"  Path to your Chromatic config file
           # externals: "public/**" → Files to include in the build that aren't in Storybook
-          # autoAcceptChanges: "main"  → Auto-accept changes on specific branches
+          autoAcceptChanges: "main" # → Auto-accept changes on specific branches
           # forceRebuild: true → Ignore TurboSnap and force a full rebuild
           # skip: "chore/**" → Skip Chromatic for specific branches/commits
           # traceChanged: "expanded" → Debug TurboSnap by showing why stories changed
