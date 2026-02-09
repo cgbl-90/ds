@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { expect, userEvent, within } from "storybook/test";
+import { expect, userEvent, within, waitFor } from "storybook/test";
 import { Tab } from "./Tab";
 
 const meta: Meta<typeof Tab> = {
@@ -8,6 +8,7 @@ const meta: Meta<typeof Tab> = {
   tags: ["autodocs"],
   parameters: {
     layout: "centered",
+    pauseAnimationsAtEnd: false,
   },
   argTypes: {
     onTabChange: { action: "tabChanged" },
@@ -41,11 +42,18 @@ export const InteractiveDemo: Story = {
        * Because your CSS has a 0.3s fadeIn animation starting at opacity: 0,
        * 'getByText' would fail immediately. 'findByText' will wait for the
        * animation to complete and the element to become visible.
+       * Prev code: const content = await canvas.findByText("System Configuration");
        */
-      const content = await canvas.findByText("System Configuration");
 
-      // 3. Confirm the content is now visible to the user
-      await expect(content).toBeVisible();
+      await waitFor(
+        async () => {
+          await expect(canvas.getByText("System Configuration")).toBeVisible();
+        },
+        { timeout: 500 },
+      );
+
+      // Step removed as the code above changed to waitFor
+      // await expect(content).toBeVisible();
     });
   },
 };
