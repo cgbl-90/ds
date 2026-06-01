@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -8,16 +7,15 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node", // See Note Below
+    "module": "esnext", // See Note Below
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx"
   },
   "include": [
-    "src/**/*",              // Recursively include everything in src
-    "declarations.d.ts"      // Ensure this file is in the same folder as tsconfig.json
+    "src/**/*", // Recursively include everything in src
+    "declarations.d.ts" // Ensure this file is in the same folder as tsconfig.json
   ],
   "exclude": ["node_modules"]
 }
