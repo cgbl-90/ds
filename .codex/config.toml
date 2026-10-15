@@ -1,0 +1,5 @@
+[mcp_servers.hawkins-auth-prod-two]
+url = "https://d9b1c8e5a0f2c3e4b5a6d7e8-fgqjv6n7h8.chromatic.com/mcp"
+
+[mcp_servers.hawkins-auth-test]
+url = "https://6660ebc2b5354cce3ebff235-qkewamujhb.chromatic.com/mcp"
